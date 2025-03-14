@@ -27,31 +27,34 @@ import java.util.Map;
  */
 public class MaxSubArray{
     public static void main(String[] args) {
-        int[] input = {-1};
-//        int max = approach(input);
+        int[] input = {-2,1,-3,4,-1,2,1,-5,4};
+        int max = approach(input);
+        System.out.println("normal approach:"+max);
         int [] sumLocal = approach1(input);
-        System.out.println(sumLocal[1]);
+        System.out.println("recursive approach:"+sumLocal[1]);
     }
 
     private static int[] approach1(int[] input) {
-        int[] sumLocal = new int[2];
-        sumLocal[1] = Integer.MIN_VALUE;
-        recursivelyFindTheMaxSumInArray(0, input, sumLocal);
-        return sumLocal;
+        int[] ans = new int[2];
+        ans[1] = Integer.MIN_VALUE;
+        recursivelyFindTheMaxSumInArray(0, input.length , input, ans);
+        return ans;
     }
 
-    private static int[] recursivelyFindTheMaxSumInArray(int index, int[] input, int[] sumLocal) {
-        if(input.length == index){
-            return sumLocal;
+    private static int[] recursivelyFindTheMaxSumInArray(int startingAddress, int endingAddress, int[] input, int[] ans) {
+        if(endingAddress == startingAddress){
+            ans[0] = 0;
+            return ans;
         }
-        int[] sumLocal1 = recursivelyFindTheMaxSumInArray(index+1, input, sumLocal);
-        sumLocal[0] = input[index] + sumLocal1[0];
-        if(sumLocal[0] > sumLocal[1]){
-            sumLocal[1] = sumLocal[0];
+        ans = recursivelyFindTheMaxSumInArray(startingAddress, endingAddress - 1, input, ans);
+        ans[0] = ans[0] + input[endingAddress - 1];
+        if(ans[0] > ans[1]){
+            ans[1] = ans[0];
         }
-        return sumLocal;
-    }
+        return ans;
 
+    }
+//{-2,1,-3,4,-1,2,1,-5,4}
     public static int approach(int[] input){
         int localMax = 0;
         int globalMax = Integer.MIN_VALUE;
