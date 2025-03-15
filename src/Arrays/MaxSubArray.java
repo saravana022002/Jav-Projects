@@ -1,9 +1,6 @@
 package Arrays;
 
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Given an integer array nums, find the subarray with the largest sum, and return its sum.
  *
@@ -28,11 +25,44 @@ import java.util.Map;
 public class MaxSubArray{
     public static void main(String[] args) {
         int[] input = {-2,1,-3,4,-1,2,1,-5,4};
-        int max = approach(input);
+        int max = bruteForce(input);
         System.out.println("normal approach:"+max);
-        int [] sumLocal = approach1(input);
-        System.out.println("recursive approach:"+sumLocal[1]);
+
+//        this is not the approach
+//        int [] sumLocal = approach1(input);
+//        System.out.println("recursive approach:"+sumLocal[1]);
+        int nsqComplexity = betterApproach(input);
+        System.out.println("better approach:"+nsqComplexity);
+
+        int nComplexity = optimalApproach(input, input.length);
+        System.out.println("better approach:"+nComplexity);
+
     }
+
+    private static int betterApproach(int[] input) {
+        int globalMax = Integer.MIN_VALUE;
+        for (int i = 0; i < input.length; i++) {
+            int sum = 0;
+            for(int j = i; j < input.length; j++){
+                sum += input[j];
+                globalMax = Math.max(globalMax, sum);
+            }
+        }
+        return globalMax;
+    }
+
+
+    public static int optimalApproach(int[] input, int n) {
+        int globalMax = Integer.MIN_VALUE;
+        int currentMax = 0;
+
+        for (int i = 0; i < n; i++) {
+            currentMax = Math.max(input[i], currentMax + input[i]);
+            globalMax = Math.max(globalMax, currentMax);
+        }
+        return globalMax;
+    }
+
 
     private static int[] approach1(int[] input) {
         int[] ans = new int[2];
@@ -46,16 +76,18 @@ public class MaxSubArray{
             ans[0] = 0;
             return ans;
         }
-        ans = recursivelyFindTheMaxSumInArray(startingAddress, endingAddress - 1, input, ans);
-        ans[0] = ans[0] + input[endingAddress - 1];
-        if(ans[0] > ans[1]){
-            ans[1] = ans[0];
+        for (int i = startingAddress; i < endingAddress; i++) {
+            ans = recursivelyFindTheMaxSumInArray(startingAddress, endingAddress - 1, input, ans);
+            ans[0] = ans[0] + input[endingAddress - 1];
+            if (ans[0] > ans[1]) {
+                ans[1] = ans[0];
+            }
         }
         return ans;
 
     }
 //{-2,1,-3,4,-1,2,1,-5,4}
-    public static int approach(int[] input){
+    public static int bruteForce(int[] input){
         int localMax = 0;
         int globalMax = Integer.MIN_VALUE;
         int startingIndex = 0;
