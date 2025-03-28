@@ -1,9 +1,15 @@
 package Arrays2;
 
+import java.util.Arrays;
+
 public class Find1DuplicateAmongNint {
     public static void main(String[] args) {
         int[] arr = {1,3,4,2,2};
-        int dup = findDuplicateWithFrequency(arr);
+        int duplicateWithFrequency = findDuplicateWithFrequency(arr);
+        int dupWithSorting = findDuplicateWithSorting(arr);
+
+        System.out.println("The Duplicate Element with frequency,"+duplicateWithFrequency);
+        System.out.println("The Duplicate Element with sorting,"+dupWithSorting);
     }
 
     private static int findDuplicateWithFrequency(int[] arr) {
@@ -14,6 +20,21 @@ public class Find1DuplicateAmongNint {
                 freq[arr[i]]++;
             }else {
                 return arr[i];
+            }
+        }
+        return 0;
+    }
+
+    private static int findDuplicateWithSorting(int[] arr) {
+        int size = arr.length;
+        Arrays.sort(arr);
+
+        int comparingElement = arr[0];
+        for (int i = 1; i < size; i++) {
+            if(comparingElement == arr[i]){
+                return comparingElement;
+            }else {
+                comparingElement = arr[i];
             }
         }
         return 0;
