@@ -146,6 +146,34 @@ public class SetMatrixZeros {
         System.out.println(matrix);
     }
 
+
+
+    private static void approach2Primitive(int[][] matrix,int n, int m) {
+        int[] rowArr = new int[n];
+        int[] columnArr = new int[m];
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                if(matrix[i][j] == 0){
+                    rowArr[i] = 1;
+                    columnArr[j] = 1;
+                }
+            }
+        }
+
+
+        for(int i = 0; i < n; i++){
+            if(rowArr[i] == 1){
+                makeRowZeroPrimitive(m, i, matrix);
+            }
+        }
+
+        for(int j = 0; j < m; j++){
+            if(columnArr[j] == 1){
+                makeColumnZeroPrimitive(n, j, matrix);
+            }
+        }
+    }
+
     private static void approach1(ArrayList<ArrayList<Integer>> matrix,int n, int m) {
         ArrayList<ArrayList<Integer>> arr = new ArrayList<>();
         for (ArrayList<Integer> row : matrix) {
@@ -158,8 +186,41 @@ public class SetMatrixZeros {
              }
           }
        }
+       System.out.println(arr);
+    }
 
-        System.out.println(arr);
+    private static void approachPrimitive(int[][] matrix,int n, int m) {
+        int[][] copy = new int[matrix.length][];
+        for (int i = 0; i < matrix.length; i++) {
+            copy[i] = Arrays.copyOf(matrix[i], matrix[i].length);
+        }
+
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                if(copy[i][j] == 0){
+                    returnMakeZerosPrimitive(n, m, i, j, matrix);
+                }
+            }
+        }
+    }
+
+
+    public static void returnMakeZerosPrimitive(int n, int m, int i, int j, int[][] matrix){
+        makeRowZeroPrimitive(m, i, matrix);
+        makeColumnZeroPrimitive(n, j, matrix);
+    }
+
+
+    private static void makeRowZeroPrimitive(int arrSize, int index, int[][] matrix) {
+        for(int k = 0; k < arrSize; k++){
+            matrix[index][k] = 0;
+        }
+    }
+
+    private static void makeColumnZeroPrimitive(int arrSize, int index, int[][] matrix) {
+        for(int k = 0; k < arrSize; k++){
+            matrix[k][index] = 0;
+        }
     }
     public static void returnMakeZeros(int n, int m, int i, int j, ArrayList<ArrayList<Integer>> arr){
         makeRowZero(m, i, arr);
