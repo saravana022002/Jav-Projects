@@ -12,7 +12,7 @@ public class UniquePaths {
         System.out.println(System.currentTimeMillis());
     }
 
-    public static int uniquePaths(int i, int j, int m, int n, ) {
+    public static int uniquePaths(int i, int j, int m, int n) {
         if(i == (m - 1) && j == (n - 1)){
             return 1;
         }
