@@ -1,13 +1,14 @@
 package LinkedList2;
 
+
 public class PalindromeOfaLL {
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
         head.next.next = new ListNode(4);
-        head.next.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(2);
         head.next.next.next.next = new ListNode(1);
-        System.out.println(isPalindrome(head));
+        System.out.println(isPalindrome1(head));
     }
     public static boolean isPalindrome(ListNode head) {
         ListNode dummy = new ListNode(0);
@@ -52,6 +53,45 @@ public class PalindromeOfaLL {
         return true;
     }
 
+    public static boolean isPalindrome1(ListNode head) {
+        ListNode trav = head;
+        ListNode hare = head;
+        ListNode tortoise = head;
+        while(hare != null && hare.next != null){
+            tortoise = tortoise.next;
+            hare = hare.next.next;
+        }
+        if(hare != null){
+            tortoise = tortoise.next;
+        }
+        ListNode prev = null;
+        ListNode curr = tortoise;
+        while (curr != null){
+            ListNode temp = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = temp;
+        }
+        while (prev != null){
+            if(prev.val != trav.val){
+                return false;
+            }
+            prev = prev.next;
+            trav = trav.next;
+        }
+        return true;
+    }
+
+
+    public static ListNode middleNode(ListNode head) {
+        ListNode hare = head;
+        ListNode tortoise = head;
+        while(hare != null && hare.next != null){
+            tortoise = tortoise.next;
+            hare = hare.next.next;
+        }
+        return tortoise;
+    }
     public static class ListNode {
         int val;
         ListNode next;
