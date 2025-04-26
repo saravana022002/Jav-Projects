@@ -14,27 +14,27 @@ public class CountOveralppingPaternStr {
         countCells(grid, pattern);
     }
     public static int countCells(char[][] grid, String pattern) {
-        int size = grid.length;
-        int jSize = grid[0].length;
-        int patterSize = grid[0].length;
+        int m = grid.length;
+        int n = grid[0].length;
+        int patterSize = pattern.length();
 
-        boolean[][] horizontal = new boolean[size][jSize];
-        boolean[][] vertical = new boolean[size][jSize];
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < jSize; j++) {
+        boolean[][] horizontal = new boolean[m][n];
+        boolean[][] vertical = new boolean[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
                 boolean match = true;
                 for (int k = 0; k < patterSize; k++) {
-                    int ni = (i + (j + k) / jSize);
-                    int nj = (j % jSize);
-                    if(ni >= size || pattern.charAt(k) != grid[ni][nj]){
+                    int ni = (i + (j + k) / n);
+                    int nj = (j + k) % n;
+                    if(ni >= m || pattern.charAt(k) != grid[ni][nj]){
                         match = false;
                         break;
                     }
                 }
                 if(match){
                     for (int k = 0; k < patterSize; k++) {
-                        int ni = (i + (j + k) / jSize);
-                        int nj = (j % jSize);
+                        int ni = (i + (j + k) / n);
+                        int nj = (j + k) % n;
                         horizontal[ni][nj] = true;
                     }
                 }
@@ -42,29 +42,29 @@ public class CountOveralppingPaternStr {
         }
 
 
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < jSize; j++) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
                 boolean match = true;
                 for (int k = 0; k < patterSize; k++) {
-                    int nj = (j + (i + k) / size);
-                    int ni = (i + k) % size;
-                    if (nj >= jSize || grid[ni][nj] != pattern.charAt(k)) {
+                    int nj = (j + (i + k) / m);
+                    int ni = (i + k) % m;
+                    if (nj >= n || grid[ni][nj] != pattern.charAt(k)) {
                         match = false;
                         break;
                     }
                 }
                 if (match) {
                     for (int k = 0; k < patterSize; k++) {
-                        int nj = (j + (i + k) / size);
-                        int ni = (i + k) % size;
+                        int nj = (j + (i + k) / m);
+                        int ni = (i + k) % m;
                         vertical[ni][nj] = true;
                     }
                 }
             }
         }
         int count = 0;
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < jSize; j++) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
                 if (horizontal[i][j] && vertical[i][j]) {
                     count++;
                 }
