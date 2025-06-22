@@ -44,8 +44,7 @@ public class TopViewOfTree {
     public static class Node {
         int data;
         Node left, right;
-        public Node(int key)
-        {
+        public Node(int key) {
             data = key;
             left = right = null;
         }
