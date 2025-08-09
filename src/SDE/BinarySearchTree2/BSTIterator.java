@@ -14,7 +14,7 @@ public class BSTIterator {
 
     public int next() {
         TreeNode tempNode = stkNodes.pop();
-        pushAll(tempNode);
+        pushAll(tempNode.right);
         return tempNode.val;
     }
 
