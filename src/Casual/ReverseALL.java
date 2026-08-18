@@ -1,4 +1,4 @@
-package Posh;
+package Casual;
 
 public class ReverseALL {
     public static void main(String[] args) {

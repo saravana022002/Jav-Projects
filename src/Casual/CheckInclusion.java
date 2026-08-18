@@ -1,4 +1,4 @@
-package Posh;
+package Casual;
 
 public class CheckInclusion {
     public static void main(String[] args) {

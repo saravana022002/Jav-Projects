@@ -1,6 +1,4 @@
-package Posh;
-
-import java.util.Arrays;
+package Casual;
 
 public class ReversePrefix {
     public static void main(String[] args) {

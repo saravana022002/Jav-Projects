@@ -1,4 +1,4 @@
-package Posh;
+package Casual;
 
 import java.util.HashMap;
 import java.util.Map;

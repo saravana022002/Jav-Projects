@@ -1,4 +1,4 @@
-package Posh;
+package Casual;
 
 public class RemoveNthFromEnd {
 

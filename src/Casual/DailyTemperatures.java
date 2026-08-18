@@ -1,6 +1,4 @@
-package Posh;
-
-import SDE.StackAndQueue.LargestRectangleInHistogram;
+package Casual;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
