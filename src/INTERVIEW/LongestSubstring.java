@@ -1,7 +1,9 @@
 package INTERVIEW;
 
+import java.util.ArrayDeque;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Queue;
 
 public class LongestSubstring {
 
@@ -22,8 +24,8 @@ public class LongestSubstring {
 //    Output: 3
 //    Explanation: "wke" or "kew"
     public static void main(String[] args) {
-        String s = "abcabcbb";
-        System.out.println(longestSubstring(s));
+        String s = "pwwkew";
+        System.out.println(lengthOfLongestSubstring(s));
     }
 
     private static int longestSubstring(String s) {
@@ -43,6 +45,24 @@ public class LongestSubstring {
         }
         return max;
     }
+
+
+    public static int lengthOfLongestSubstring(String s) {
+        Queue<Character> hello = new ArrayDeque<>();
+        int max = 0;
+        for (int i = 0; i < s.length(); i++) {
+            while(!hello.isEmpty() && hello.contains(s.charAt(i))){
+                hello.poll();
+            }
+            hello.offer(s.charAt(i));
+            max = Math.max(max, hello.size());
+        }
+        return max;
+    }
+
+
+
+
 
 
 }
