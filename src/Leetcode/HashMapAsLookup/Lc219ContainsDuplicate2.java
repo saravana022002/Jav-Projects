@@ -14,10 +14,10 @@ public class Lc219ContainsDuplicate2 {
         Map<Integer, Integer> ints = new HashMap<>();
         int i = 0;
         for (int num : nums) {
-            if(ints.containsKey(num) && Math.abs(i - ints.get(num)) <= k){
+            Integer prev = ints.put(num, i);
+            if(prev != null && Math.abs(i - prev) <= k){
                 return true;
             }
-            ints.put(num, i);
             i++;
         }
         return false;
