@@ -1,15 +1,18 @@
-package Leetcode.HashMapAsLookup;
+package Leetcode.PrefixSum2;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
-public class LC523ContinuousSubArraySum {
-
+public class LC523ContinuousSubarraySum {
     public static void main(String[] args) {
         int[] nums = {23,2,4,6,7};
         int k = 6;
-        checkSubarraySum(nums, k);
+        System.out.println(checkSubarraySum(nums, k));
     }
+
+    // p[r] - p[l] = x , // where t is multiple of k , //x = n * k , n can be 0 also, r - l >= 2
     public static boolean checkSubarraySum(int[] nums, int k) {
         Map<Integer, Integer> map = new HashMap<>();
         map.put(0, -1);

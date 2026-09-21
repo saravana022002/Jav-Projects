@@ -1,4 +1,4 @@
-package Leetcode.FrequencyAndMultisetResoning;
+package Leetcode.FrequencyAndMultisetResoning4;
 
 import java.util.HashMap;
 import java.util.Map;

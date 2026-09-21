@@ -1,4 +1,4 @@
-package Leetcode.PrefixSum;
+package Leetcode.PrefixSum2;
 
 public class LC1991findMiddleIndex {
     public static void main(String[] args) {

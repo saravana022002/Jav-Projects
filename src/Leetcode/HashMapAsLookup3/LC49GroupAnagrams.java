@@ -1,4 +1,4 @@
-package Leetcode.HashMapAsLookup;
+package Leetcode.HashMapAsLookup3;
 
 import java.util.ArrayList;
 import java.util.HashMap;

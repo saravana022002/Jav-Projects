@@ -1,4 +1,4 @@
-package Leetcode.PrefixSum;
+package Leetcode.PrefixSum2;
 
 import java.util.StringTokenizer;
 

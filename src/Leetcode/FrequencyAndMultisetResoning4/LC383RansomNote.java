@@ -1,4 +1,4 @@
-package Leetcode.FrequencyAndMultisetResoning;
+package Leetcode.FrequencyAndMultisetResoning4;
 
 public class LC383RansomNote {
     public static void main(String[] args) {

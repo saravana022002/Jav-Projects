@@ -1,4 +1,4 @@
-package Leetcode.HashMapAsLookup;
+package Leetcode.HashMapAsLookup3;
 
 public class LC974SubarraysDivByK {
     public static void main(String[] args) {

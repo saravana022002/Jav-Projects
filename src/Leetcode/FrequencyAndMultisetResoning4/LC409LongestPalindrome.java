@@ -1,4 +1,4 @@
-package Leetcode.FrequencyAndMultisetResoning;
+package Leetcode.FrequencyAndMultisetResoning4;
 
 public class LC409LongestPalindrome {
     public static void main(String[] args) {
