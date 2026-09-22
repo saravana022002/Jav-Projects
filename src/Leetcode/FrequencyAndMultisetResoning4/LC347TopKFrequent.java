@@ -46,35 +46,34 @@ public class LC347TopKFrequent {
     }
 
     public static int[] topKFrequent(int[] nums, int k) {
-        List<Integer>[] buckets = new List[nums.length + 1];
-        Map<Integer, Integer> map = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap<>(nums.length);
         for (int num : nums) {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
 
-        for (Map.Entry<Integer, Integer> mapEntry : map.entrySet()){
-            if(buckets[mapEntry.getValue()] == null){
-                buckets[mapEntry.getValue()] = new ArrayList<>();
+        List<Integer>[] buckets = new List[nums.length + 1];
+        for (Map.Entry<Integer, Integer> mapEntry : map.entrySet()) {
+            int freq = mapEntry.getValue();
+            if (buckets[freq] == null) {
+                buckets[freq] = new ArrayList<>();
             }
             buckets[mapEntry.getValue()].add(mapEntry.getKey());
         }
 
 
-        List<Integer> arraylist = new ArrayList<>();
-        int count = 0;
+        int[] result = new int[k];
+        int index = 0;
         for (int i = buckets.length - 1; i > 0; i--) {
-            if(buckets[i] == null){
+            if (buckets[i] == null) {
                 continue;
             }
-            for(int l : buckets[i]) {
-                count++;
-                if (count <= k) {
-                    arraylist.add(l);
+            for (int l : buckets[i]) {
+                result[index++] = l;
+                if (index == k) {
+                    return result;
                 }
             }
         }
-        return arraylist.stream()
-                .mapToInt(Integer::intValue)
-                .toArray();
+        return result;
     }
 }
