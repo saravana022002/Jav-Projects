@@ -1,4 +1,4 @@
-package Leetcode.BitManipulationAsASetEncoding;
+package Leetcode.BitManipulationAsASetEncoding5;
 
 import java.util.Arrays;
 

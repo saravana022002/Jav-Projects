@@ -1,4 +1,4 @@
-package Leetcode.BitManipulationAsASetEncoding;
+package Leetcode.BitManipulationAsASetEncoding5;
 
 public class LC191NumberFo1Bits {
     public static void main(String[] args) {
