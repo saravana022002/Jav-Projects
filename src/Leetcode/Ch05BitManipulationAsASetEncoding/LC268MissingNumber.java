@@ -33,37 +33,37 @@ import java.util.function.Supplier;
 public class LC268MissingNumber {
 
     /**
-     * Variant A - hash set of the numbers, then test each value of 0..n
+     * Variant A
      * <br>Target: time O(n), space O(n)
      */
-    public static int missingNumberHashSet(int[] nums) {
+    public static int missingNumberA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - arithmetic: the expected total of 0..n minus the actual total
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static int missingNumberSum(int[] nums) {
+    public static int missingNumberB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: XOR all array values together with all of 0..n
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static int missingNumber(int[] nums) {
+    public static int missingNumberC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC268MissingNumber::missingNumberHashSet);
-        runAll("B", LC268MissingNumber::missingNumberSum);
-        runAll("C", LC268MissingNumber::missingNumber);
+        runAll("A", LC268MissingNumber::missingNumberA);
+        runAll("B", LC268MissingNumber::missingNumberB);
+        runAll("C", LC268MissingNumber::missingNumberC);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -35,37 +35,37 @@ import java.util.function.Supplier;
 public class LC394DecodeString {
 
     /**
-     * Variant A - brute force: expand one innermost k[text] group in place, repeat until none left
+     * Variant A
      * <br>Target: time O(n * (n + L)), space O(n + L)    (L = length of the decoded string)
      */
-    public static String decodeStringBruteForce(String s) {
+    public static String decodeStringA(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - recursion: one call per bracket level, returning at the matching ']'
+     * Variant B
      * <br>Target: time O(n + L * d), space O(L + d)    (d = nesting depth)
      */
-    public static String decodeStringRecursive(String s) {
+    public static String decodeStringB(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: stack of (repeat count, text so far) pairs
+     * Variant C
      * <br>Target: time O(n + L * d), space O(L + d)
      */
-    public static String decodeString(String s) {
+    public static String decodeStringC(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC394DecodeString::decodeStringBruteForce);
-        runAll("B", LC394DecodeString::decodeStringRecursive);
-        runAll("C", LC394DecodeString::decodeString);
+        runAll("A", LC394DecodeString::decodeStringA);
+        runAll("B", LC394DecodeString::decodeStringB);
+        runAll("C", LC394DecodeString::decodeStringC);
         System.out.println(passed + "/" + total + " passed");
     }
 

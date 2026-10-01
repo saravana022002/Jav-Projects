@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC1004MaxConsecutiveOnesIII {
 
     /**
-     * Variant A - brute force: from every start, extend until more than k zeros are inside
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int longestOnesBruteForce(int[] nums, int k) {
+    public static int longestOnesA(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - prefix counts of zeros, binary-search the farthest legal end for each start
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int longestOnesPrefixBinarySearch(int[] nums, int k) {
+    public static int longestOnesB(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sliding window holding at most k zeros
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static int longestOnes(int[] nums, int k) {
+    public static int longestOnesC(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1004MaxConsecutiveOnesIII::longestOnesBruteForce);
-        runAll("B", LC1004MaxConsecutiveOnesIII::longestOnesPrefixBinarySearch);
-        runAll("C", LC1004MaxConsecutiveOnesIII::longestOnes);
+        runAll("A", LC1004MaxConsecutiveOnesIII::longestOnesA);
+        runAll("B", LC1004MaxConsecutiveOnesIII::longestOnesB);
+        runAll("C", LC1004MaxConsecutiveOnesIII::longestOnesC);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -37,11 +37,11 @@ import java.util.function.Supplier;
 public class LC732MyCalendarIII {
 
     /**
-     * Variant A - keep every event; on each book sort all starts and ends and sweep
+     * Variant A
      * <br>Target: time O(n log n) per book, space O(n)     (n = events booked so far)
      */
-    public static class MyCalendarThreeRecompute {
-        public MyCalendarThreeRecompute() {
+    public static class MyCalendarThreeA {
+        public MyCalendarThreeA() {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -53,11 +53,11 @@ public class LC732MyCalendarIII {
     }
 
     /**
-     * Variant B - this chapter's technique: ordered map of +1/-1 changes per coordinate, then sweep
-     * <br>Target: time O(n) per book (O(log n) to update, O(n) to sweep), space O(n)
+     * Variant B
+     * <br>Target: time O(n) per book, space O(n)
      */
-    public static class MyCalendarThree {
-        public MyCalendarThree() {
+    public static class MyCalendarThreeB {
+        public MyCalendarThreeB() {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -69,11 +69,11 @@ public class LC732MyCalendarIII {
     }
 
     /**
-     * Variant C - dynamic segment tree over the time range: range add, global maximum
+     * Variant C
      * <br>Target: time O(log C) per book, space O(n log C)     (C = 10^9, the range of times)
      */
-    public static class MyCalendarThreeSegmentTree {
-        public MyCalendarThreeSegmentTree() {
+    public static class MyCalendarThreeC {
+        public MyCalendarThreeC() {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -87,17 +87,17 @@ public class LC732MyCalendarIII {
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
         runAll("A", () -> {
-            LC732MyCalendarIII.MyCalendarThreeRecompute c =
-                    new LC732MyCalendarIII.MyCalendarThreeRecompute();
+            LC732MyCalendarIII.MyCalendarThreeA c =
+                    new LC732MyCalendarIII.MyCalendarThreeA();
             return c::book;
         });
         runAll("B", () -> {
-            LC732MyCalendarIII.MyCalendarThree c = new LC732MyCalendarIII.MyCalendarThree();
+            LC732MyCalendarIII.MyCalendarThreeB c = new LC732MyCalendarIII.MyCalendarThreeB();
             return c::book;
         });
         runAll("C", () -> {
-            LC732MyCalendarIII.MyCalendarThreeSegmentTree c =
-                    new LC732MyCalendarIII.MyCalendarThreeSegmentTree();
+            LC732MyCalendarIII.MyCalendarThreeC c =
+                    new LC732MyCalendarIII.MyCalendarThreeC();
             return c::book;
         });
         System.out.println(passed + "/" + total + " passed");

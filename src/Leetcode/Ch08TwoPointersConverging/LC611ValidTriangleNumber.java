@@ -31,37 +31,37 @@ import java.util.function.Supplier;
 public class LC611ValidTriangleNumber {
 
     /**
-     * Variant A - brute force: check every triple of positions
+     * Variant A
      * <br>Target: time O(n^3), space O(1)
      */
-    public static int triangleNumberBruteForce(int[] nums) {
+    public static int triangleNumberA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sort, fix the two shorter sides, binary-search how many third sides fit
+     * Variant B
      * <br>Target: time O(n^2 log n), space O(1)
      */
-    public static int triangleNumberBinarySearch(int[] nums) {
+    public static int triangleNumberB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sort, fix the longest side, two converging pointers
+     * Variant C
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int triangleNumber(int[] nums) {
+    public static int triangleNumberC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC611ValidTriangleNumber::triangleNumberBruteForce);
-        runAll("B", LC611ValidTriangleNumber::triangleNumberBinarySearch);
-        runAll("C", LC611ValidTriangleNumber::triangleNumber);
+        runAll("A", LC611ValidTriangleNumber::triangleNumberA);
+        runAll("B", LC611ValidTriangleNumber::triangleNumberB);
+        runAll("C", LC611ValidTriangleNumber::triangleNumberC);
         System.out.println(passed + "/" + total + " passed");
     }
 

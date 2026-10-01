@@ -37,37 +37,37 @@ import java.util.function.Supplier;
 public class LC448FindAllNumbersDisappearedInAnArray {
 
     /**
-     * Variant A - mark every value in a boolean array, then collect the unmarked numbers
+     * Variant A
      * <br>Target: time O(n), space O(n)
      */
-    public static List<Integer> findDisappearedNumbersSeen(int[] nums) {
+    public static List<Integer> findDisappearedNumbersA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: cyclic sort, then every misplaced slot is a gap
+     * Variant B
      * <br>Target: time O(n), space O(1) extra (the output list does not count)
      */
-    public static List<Integer> findDisappearedNumbers(int[] nums) {
+    public static List<Integer> findDisappearedNumbersB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - index-as-address: mark slot v - 1 for every value v, collect unmarked slots
+     * Variant C
      * <br>Target: time O(n), space O(1) extra (the output list does not count)
      */
-    public static List<Integer> findDisappearedNumbersMarking(int[] nums) {
+    public static List<Integer> findDisappearedNumbersC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC448FindAllNumbersDisappearedInAnArray::findDisappearedNumbersSeen);
-        runAll("B", LC448FindAllNumbersDisappearedInAnArray::findDisappearedNumbers);
-        runAll("C", LC448FindAllNumbersDisappearedInAnArray::findDisappearedNumbersMarking);
+        runAll("A", LC448FindAllNumbersDisappearedInAnArray::findDisappearedNumbersA);
+        runAll("B", LC448FindAllNumbersDisappearedInAnArray::findDisappearedNumbersB);
+        runAll("C", LC448FindAllNumbersDisappearedInAnArray::findDisappearedNumbersC);
         System.out.println(passed + "/" + total + " passed");
     }
 

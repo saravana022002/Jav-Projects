@@ -38,37 +38,37 @@ import java.util.function.Supplier;
 public class LC3LongestSubstringWithoutRepeatingCharacters {
 
     /**
-     * Variant A - brute force: from every start, extend until a character repeats
+     * Variant A
      * <br>Target: time O(n^2), space O(min(n, a))    (a = alphabet size)
      */
-    public static int lengthOfLongestSubstringBruteForce(String s) {
+    public static int lengthOfLongestSubstringA(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: grow the window, shrink it from the left on a repeat
+     * Variant B
      * <br>Target: time O(n), space O(min(n, a))
      */
-    public static int lengthOfLongestSubstring(String s) {
+    public static int lengthOfLongestSubstringB(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - same window, but jump the left edge using each character's last position
+     * Variant C
      * <br>Target: time O(n), space O(min(n, a))
      */
-    public static int lengthOfLongestSubstringLastSeen(String s) {
+    public static int lengthOfLongestSubstringC(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC3LongestSubstringWithoutRepeatingCharacters::lengthOfLongestSubstringBruteForce);
-        runAll("B", LC3LongestSubstringWithoutRepeatingCharacters::lengthOfLongestSubstring);
-        runAll("C", LC3LongestSubstringWithoutRepeatingCharacters::lengthOfLongestSubstringLastSeen);
+        runAll("A", LC3LongestSubstringWithoutRepeatingCharacters::lengthOfLongestSubstringA);
+        runAll("B", LC3LongestSubstringWithoutRepeatingCharacters::lengthOfLongestSubstringB);
+        runAll("C", LC3LongestSubstringWithoutRepeatingCharacters::lengthOfLongestSubstringC);
         System.out.println(passed + "/" + total + " passed");
     }
 

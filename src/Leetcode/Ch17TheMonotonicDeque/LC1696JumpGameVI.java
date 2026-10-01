@@ -34,37 +34,37 @@ import java.util.function.Supplier;
 public class LC1696JumpGameVI {
 
     /**
-     * Variant A - dp over positions; best of the previous k states found by scanning them
+     * Variant A
      * <br>Target: time O(n * k), space O(n)
      */
-    public static int maxResultBruteForce(int[] nums, int k) {
+    public static int maxResultA(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - the same dp; best of the last k states from a lazy max-heap
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int maxResultHeap(int[] nums, int k) {
+    public static int maxResultB(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: the same dp, window of states in a monotonic deque
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int maxResult(int[] nums, int k) {
+    public static int maxResultC(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1696JumpGameVI::maxResultBruteForce);
-        runAll("B", LC1696JumpGameVI::maxResultHeap);
-        runAll("C", LC1696JumpGameVI::maxResult);
+        runAll("A", LC1696JumpGameVI::maxResultA);
+        runAll("B", LC1696JumpGameVI::maxResultB);
+        runAll("C", LC1696JumpGameVI::maxResultC);
         System.out.println(passed + "/" + total + " passed");
     }
 

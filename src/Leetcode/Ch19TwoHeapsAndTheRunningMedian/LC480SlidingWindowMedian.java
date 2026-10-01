@@ -34,37 +34,37 @@ import java.util.function.Supplier;
 public class LC480SlidingWindowMedian {
 
     /**
-     * Variant A - brute force: copy every window and sort the copy
+     * Variant A
      * <br>Target: time O(n * k log k), space O(k)
      */
-    public static double[] medianSlidingWindowBruteForce(int[] nums, int k) {
+    public static double[] medianSlidingWindowA(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - keep the window as a sorted array: binary-search the leaver and the newcomer
-     * <br>Target: time O(n * k) (shifting), space O(k)
+     * Variant B
+     * <br>Target: time O(n * k), space O(k)
      */
-    public static double[] medianSlidingWindowSortedWindow(int[] nums, int k) {
+    public static double[] medianSlidingWindowB(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: two heaps around the median plus lazy deletion
+     * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
-    public static double[] medianSlidingWindow(int[] nums, int k) {
+    public static double[] medianSlidingWindowC(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC480SlidingWindowMedian::medianSlidingWindowBruteForce);
-        runAll("B", LC480SlidingWindowMedian::medianSlidingWindowSortedWindow);
-        runAll("C", LC480SlidingWindowMedian::medianSlidingWindow);
+        runAll("A", LC480SlidingWindowMedian::medianSlidingWindowA);
+        runAll("B", LC480SlidingWindowMedian::medianSlidingWindowB);
+        runAll("C", LC480SlidingWindowMedian::medianSlidingWindowC);
         System.out.println(passed + "/" + total + " passed");
     }
 

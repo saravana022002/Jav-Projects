@@ -36,37 +36,37 @@ import java.util.function.Supplier;
 public class LC74SearchA2DMatrix {
 
     /**
-     * Variant A - brute force: check every cell
+     * Variant A
      * <br>Target: time O(m * n), space O(1)
      */
-    public static boolean searchMatrixBruteForce(int[][] matrix, int target) {
+    public static boolean searchMatrixA(int[][] matrix, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - two binary searches: first find the row, then search inside that row
+     * Variant B
      * <br>Target: time O(log m + log n), space O(1)
      */
-    public static boolean searchMatrixTwoSearches(int[][] matrix, int target) {
+    public static boolean searchMatrixB(int[][] matrix, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: one binary search over the m * n cells read as a list
+     * Variant C
      * <br>Target: time O(log(m * n)), space O(1)
      */
-    public static boolean searchMatrix(int[][] matrix, int target) {
+    public static boolean searchMatrixC(int[][] matrix, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC74SearchA2DMatrix::searchMatrixBruteForce);
-        runAll("B", LC74SearchA2DMatrix::searchMatrixTwoSearches);
-        runAll("C", LC74SearchA2DMatrix::searchMatrix);
+        runAll("A", LC74SearchA2DMatrix::searchMatrixA);
+        runAll("B", LC74SearchA2DMatrix::searchMatrixB);
+        runAll("C", LC74SearchA2DMatrix::searchMatrixC);
         System.out.println(passed + "/" + total + " passed");
     }
 

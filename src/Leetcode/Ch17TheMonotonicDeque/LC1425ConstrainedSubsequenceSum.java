@@ -34,37 +34,37 @@ import java.util.function.Supplier;
 public class LC1425ConstrainedSubsequenceSum {
 
     /**
-     * Variant A - dp[i] = best sum ending at i; scan the previous k states
+     * Variant A
      * <br>Target: time O(n * k), space O(n)
      */
-    public static int constrainedSubsetSumBruteForce(int[] nums, int k) {
+    public static int constrainedSubsetSumA(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - the same dp; best of the last k states from a lazy max-heap
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int constrainedSubsetSumHeap(int[] nums, int k) {
+    public static int constrainedSubsetSumB(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: the same dp, window of states in a monotonic deque
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int constrainedSubsetSum(int[] nums, int k) {
+    public static int constrainedSubsetSumC(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1425ConstrainedSubsequenceSum::constrainedSubsetSumBruteForce);
-        runAll("B", LC1425ConstrainedSubsequenceSum::constrainedSubsetSumHeap);
-        runAll("C", LC1425ConstrainedSubsequenceSum::constrainedSubsetSum);
+        runAll("A", LC1425ConstrainedSubsequenceSum::constrainedSubsetSumA);
+        runAll("B", LC1425ConstrainedSubsequenceSum::constrainedSubsetSumB);
+        runAll("C", LC1425ConstrainedSubsequenceSum::constrainedSubsetSumC);
         System.out.println(passed + "/" + total + " passed");
     }
 

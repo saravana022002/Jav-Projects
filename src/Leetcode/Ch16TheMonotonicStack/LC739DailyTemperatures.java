@@ -38,37 +38,37 @@ import java.util.function.Supplier;
 public class LC739DailyTemperatures {
 
     /**
-     * Variant A - brute force: for every day, scan the following days until a warmer one shows up
+     * Variant A
      * <br>Target: time O(n^2), space O(1)    (besides the answer array)
      */
-    public static int[] dailyTemperaturesBruteForce(int[] temperatures) {
+    public static int[] dailyTemperaturesA(int[] temperatures) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - go right to left, remember the latest day of each temperature
+     * Variant B
      * <br>Target: time O(n * R), space O(R)    (R = 71 possible temperatures)
      */
-    public static int[] dailyTemperaturesLatestDay(int[] temperatures) {
+    public static int[] dailyTemperaturesB(int[] temperatures) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: stack of the days that are still waiting
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int[] dailyTemperatures(int[] temperatures) {
+    public static int[] dailyTemperaturesC(int[] temperatures) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC739DailyTemperatures::dailyTemperaturesBruteForce);
-        runAll("B", LC739DailyTemperatures::dailyTemperaturesLatestDay);
-        runAll("C", LC739DailyTemperatures::dailyTemperatures);
+        runAll("A", LC739DailyTemperatures::dailyTemperaturesA);
+        runAll("B", LC739DailyTemperatures::dailyTemperaturesB);
+        runAll("C", LC739DailyTemperatures::dailyTemperaturesC);
         System.out.println(passed + "/" + total + " passed");
     }
 

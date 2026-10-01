@@ -45,11 +45,11 @@ import java.util.function.Supplier;
 public class LC1670DesignFrontMiddleBackQueue {
 
     /**
-     * Variant A - keep one list; insert and remove at an index
+     * Variant A
      * <br>Target: time O(n) per operation (O(1) at the back), space O(n)
      */
-    public static class FrontMiddleBackQueueList {
-        public FrontMiddleBackQueueList() {
+    public static class FrontMiddleBackQueueA {
+        public FrontMiddleBackQueueA() {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -86,11 +86,11 @@ public class LC1670DesignFrontMiddleBackQueue {
     }
 
     /**
-     * Variant B - this chapter's technique: two deques (front half, back half), kept balanced
+     * Variant B
      * <br>Target: time O(1) per operation, space O(n)
      */
-    public static class FrontMiddleBackQueue {
-        public FrontMiddleBackQueue() {
+    public static class FrontMiddleBackQueueB {
+        public FrontMiddleBackQueueB() {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -129,8 +129,8 @@ public class LC1670DesignFrontMiddleBackQueue {
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
         runAll("A", () -> {
-            LC1670DesignFrontMiddleBackQueue.FrontMiddleBackQueueList q =
-                    new LC1670DesignFrontMiddleBackQueue.FrontMiddleBackQueueList();
+            LC1670DesignFrontMiddleBackQueue.FrontMiddleBackQueueA q =
+                    new LC1670DesignFrontMiddleBackQueue.FrontMiddleBackQueueA();
             return new Ops() {
                 public void pushFront(int val) { q.pushFront(val); }
                 public void pushMiddle(int val) { q.pushMiddle(val); }
@@ -141,8 +141,8 @@ public class LC1670DesignFrontMiddleBackQueue {
             };
         });
         runAll("B", () -> {
-            LC1670DesignFrontMiddleBackQueue.FrontMiddleBackQueue q =
-                    new LC1670DesignFrontMiddleBackQueue.FrontMiddleBackQueue();
+            LC1670DesignFrontMiddleBackQueue.FrontMiddleBackQueueB q =
+                    new LC1670DesignFrontMiddleBackQueue.FrontMiddleBackQueueB();
             return new Ops() {
                 public void pushFront(int val) { q.pushFront(val); }
                 public void pushMiddle(int val) { q.pushMiddle(val); }

@@ -35,37 +35,37 @@ import java.util.function.Supplier;
 public class LC315CountOfSmallerNumbersAfterSelf {
 
     /**
-     * Variant A - brute force: for every position, scan everything to its right
+     * Variant A
      * <br>Target: time O(n^2), space O(1) extra besides the answer
      */
-    public static List<Integer> countSmallerBruteForce(int[] nums) {
+    public static List<Integer> countSmallerA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - Fenwick tree over the values: scan from the right, count the smaller ones seen
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static List<Integer> countSmallerFenwick(int[] nums) {
+    public static List<Integer> countSmallerB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: merge sort that carries the indices, counting in merges
+     * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
-    public static List<Integer> countSmaller(int[] nums) {
+    public static List<Integer> countSmallerC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC315CountOfSmallerNumbersAfterSelf::countSmallerBruteForce);
-        runAll("B", LC315CountOfSmallerNumbersAfterSelf::countSmallerFenwick);
-        runAll("C", LC315CountOfSmallerNumbersAfterSelf::countSmaller);
+        runAll("A", LC315CountOfSmallerNumbersAfterSelf::countSmallerA);
+        runAll("B", LC315CountOfSmallerNumbersAfterSelf::countSmallerB);
+        runAll("C", LC315CountOfSmallerNumbersAfterSelf::countSmallerC);
         System.out.println(passed + "/" + total + " passed");
     }
 

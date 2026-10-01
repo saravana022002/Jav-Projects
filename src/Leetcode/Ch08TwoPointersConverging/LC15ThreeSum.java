@@ -40,37 +40,37 @@ import java.util.function.Supplier;
 public class LC15ThreeSum {
 
     /**
-     * Variant A - brute force: three nested loops over all index triples
+     * Variant A
      * <br>Target: time O(n^3), space O(1) besides the result
      */
-    public static List<List<Integer>> threeSumBruteForce(int[] nums) {
+    public static List<List<Integer>> threeSumA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sort, fix the first number, find the other two with a hash set
+     * Variant B
      * <br>Target: time O(n^2), space O(n)
      */
-    public static List<List<Integer>> threeSumHashSet(int[] nums) {
+    public static List<List<Integer>> threeSumB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sort, fix the first number, two converging pointers
+     * Variant C
      * <br>Target: time O(n^2), space O(1) besides the result
      */
-    public static List<List<Integer>> threeSum(int[] nums) {
+    public static List<List<Integer>> threeSumC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC15ThreeSum::threeSumBruteForce);
-        runAll("B", LC15ThreeSum::threeSumHashSet);
-        runAll("C", LC15ThreeSum::threeSum);
+        runAll("A", LC15ThreeSum::threeSumA);
+        runAll("B", LC15ThreeSum::threeSumB);
+        runAll("C", LC15ThreeSum::threeSumC);
         System.out.println(passed + "/" + total + " passed");
     }
 

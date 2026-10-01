@@ -38,38 +38,37 @@ import java.util.function.Supplier;
 public class LC76MinimumWindowSubstring {
 
     /**
-     * Variant A - brute force: from every start, extend right until the window covers t
-     * <br>Target: time O(m^2 + n), space O(1)    (52 letter counts)
+     * Variant A
+     * <br>Target: time O(m^2 + n), space O(1)
      */
-    public static String minWindowBruteForce(String s, String t) {
+    public static String minWindowA(String s, String t) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - slide a window, compare its 52 letter counts with t's after every step
+     * Variant B
      * <br>Target: time O(52 * m + n), space O(1)
      */
-    public static String minWindowCompareCounts(String s, String t) {
+    public static String minWindowB(String s, String t) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: same window, a counter of still-missing letters
-     *             replaces the 52-slot comparison
+     * Variant C
      * <br>Target: time O(m + n), space O(1)
      */
-    public static String minWindow(String s, String t) {
+    public static String minWindowC(String s, String t) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC76MinimumWindowSubstring::minWindowBruteForce);
-        runAll("B", LC76MinimumWindowSubstring::minWindowCompareCounts);
-        runAll("C", LC76MinimumWindowSubstring::minWindow);
+        runAll("A", LC76MinimumWindowSubstring::minWindowA);
+        runAll("B", LC76MinimumWindowSubstring::minWindowB);
+        runAll("C", LC76MinimumWindowSubstring::minWindowC);
         System.out.println(passed + "/" + total + " passed");
     }
 

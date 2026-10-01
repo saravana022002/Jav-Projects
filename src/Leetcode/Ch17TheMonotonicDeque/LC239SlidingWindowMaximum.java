@@ -39,37 +39,37 @@ import java.util.function.Supplier;
 public class LC239SlidingWindowMaximum {
 
     /**
-     * Variant A - brute force: scan every window for its maximum
+     * Variant A
      * <br>Target: time O(n * k), space O(1) extra (the answer array not counted)
      */
-    public static int[] maxSlidingWindowBruteForce(int[] nums, int k) {
+    public static int[] maxSlidingWindowA(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - monotonic deque of indices, stored in a plain int[] with head and tail positions
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int[] maxSlidingWindowArrayDeque(int[] nums, int k) {
+    public static int[] maxSlidingWindowB(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: monotonic deque of indices in a java.util.ArrayDeque
+     * Variant C
      * <br>Target: time O(n), space O(k)
      */
-    public static int[] maxSlidingWindow(int[] nums, int k) {
+    public static int[] maxSlidingWindowC(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC239SlidingWindowMaximum::maxSlidingWindowBruteForce);
-        runAll("B", LC239SlidingWindowMaximum::maxSlidingWindowArrayDeque);
-        runAll("C", LC239SlidingWindowMaximum::maxSlidingWindow);
+        runAll("A", LC239SlidingWindowMaximum::maxSlidingWindowA);
+        runAll("B", LC239SlidingWindowMaximum::maxSlidingWindowB);
+        runAll("C", LC239SlidingWindowMaximum::maxSlidingWindowC);
         System.out.println(passed + "/" + total + " passed");
     }
 

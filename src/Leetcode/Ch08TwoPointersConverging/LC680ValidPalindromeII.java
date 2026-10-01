@@ -31,27 +31,27 @@ import java.util.function.Supplier;
 public class LC680ValidPalindromeII {
 
     /**
-     * Variant A - try deleting every single character and test whether the rest is a palindrome
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static boolean validPalindromeBruteForce(String s) {
+    public static boolean validPalindromeA(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: two pointers moving inwards, one allowed skip
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static boolean validPalindrome(String s) {
+    public static boolean validPalindromeB(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC680ValidPalindromeII::validPalindromeBruteForce);
-        runAll("B", LC680ValidPalindromeII::validPalindrome);
+        runAll("A", LC680ValidPalindromeII::validPalindromeA);
+        runAll("B", LC680ValidPalindromeII::validPalindromeB);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -33,37 +33,37 @@ import java.util.function.Supplier;
 public class LC34FindFirstAndLastPositionOfElementInSortedArray {
 
     /**
-     * Variant A - brute force: scan for the first occurrence, keep going for the last
+     * Variant A
      * <br>Target: time O(n), space O(1)
      */
-    public static int[] searchRangeBruteForce(int[] nums, int target) {
+    public static int[] searchRangeA(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - two separate binary searches, one biased to the left and one to the right
+     * Variant B
      * <br>Target: time O(log n), space O(1)
      */
-    public static int[] searchRangeTwoSearches(int[] nums, int target) {
+    public static int[] searchRangeB(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: first-index boundary search run twice (>= and >)
+     * Variant C
      * <br>Target: time O(log n), space O(1)
      */
-    public static int[] searchRange(int[] nums, int target) {
+    public static int[] searchRangeC(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC34FindFirstAndLastPositionOfElementInSortedArray::searchRangeBruteForce);
-        runAll("B", LC34FindFirstAndLastPositionOfElementInSortedArray::searchRangeTwoSearches);
-        runAll("C", LC34FindFirstAndLastPositionOfElementInSortedArray::searchRange);
+        runAll("A", LC34FindFirstAndLastPositionOfElementInSortedArray::searchRangeA);
+        runAll("B", LC34FindFirstAndLastPositionOfElementInSortedArray::searchRangeB);
+        runAll("C", LC34FindFirstAndLastPositionOfElementInSortedArray::searchRangeC);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -31,37 +31,37 @@ import java.util.function.Supplier;
 public class LC852PeakIndexInAMountainArray {
 
     /**
-     * Variant A - brute force: scan for the first element that is larger than its successor
+     * Variant A
      * <br>Target: time O(n), space O(1)
      */
-    public static int peakIndexInMountainArrayBruteForce(int[] arr) {
+    public static int peakIndexInMountainArrayA(int[] arr) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - binary search that looks at both neighbours of mid and stops on the peak
+     * Variant B
      * <br>Target: time O(log n), space O(1)
      */
-    public static int peakIndexInMountainArrayThreeWay(int[] arr) {
+    public static int peakIndexInMountainArrayB(int[] arr) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: boundary search on "arr[i] > arr[i + 1]"
+     * Variant C
      * <br>Target: time O(log n), space O(1)
      */
-    public static int peakIndexInMountainArray(int[] arr) {
+    public static int peakIndexInMountainArrayC(int[] arr) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC852PeakIndexInAMountainArray::peakIndexInMountainArrayBruteForce);
-        runAll("B", LC852PeakIndexInAMountainArray::peakIndexInMountainArrayThreeWay);
-        runAll("C", LC852PeakIndexInAMountainArray::peakIndexInMountainArray);
+        runAll("A", LC852PeakIndexInAMountainArray::peakIndexInMountainArrayA);
+        runAll("B", LC852PeakIndexInAMountainArray::peakIndexInMountainArrayB);
+        runAll("C", LC852PeakIndexInAMountainArray::peakIndexInMountainArrayC);
         System.out.println(passed + "/" + total + " passed");
     }
 

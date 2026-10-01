@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC2251NumberOfFlowersInFullBloom {
 
     /**
-     * Variant A - brute force: for each person, scan all flowers
+     * Variant A
      * <br>Target: time O(n * m), space O(1) besides the answer     (n flowers, m people)
      */
-    public static int[] fullBloomFlowersBruteForce(int[][] flowers, int[] people) {
+    public static int[] fullBloomFlowersA(int[][] flowers, int[] people) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sort starts and ends separately; per person binary-search started minus ended
+     * Variant B
      * <br>Target: time O((n + m) log n), space O(n)
      */
-    public static int[] fullBloomFlowersBinarySearch(int[][] flowers, int[] people) {
+    public static int[] fullBloomFlowersB(int[][] flowers, int[] people) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: merge the people into the sorted events, sweep once
+     * Variant C
      * <br>Target: time O((n + m) log (n + m)), space O(n + m)
      */
-    public static int[] fullBloomFlowers(int[][] flowers, int[] people) {
+    public static int[] fullBloomFlowersC(int[][] flowers, int[] people) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC2251NumberOfFlowersInFullBloom::fullBloomFlowersBruteForce);
-        runAll("B", LC2251NumberOfFlowersInFullBloom::fullBloomFlowersBinarySearch);
-        runAll("C", LC2251NumberOfFlowersInFullBloom::fullBloomFlowers);
+        runAll("A", LC2251NumberOfFlowersInFullBloom::fullBloomFlowersA);
+        runAll("B", LC2251NumberOfFlowersInFullBloom::fullBloomFlowersB);
+        runAll("C", LC2251NumberOfFlowersInFullBloom::fullBloomFlowersC);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -38,37 +38,37 @@ import java.util.function.Supplier;
 public class LC33SearchInRotatedSortedArray {
 
     /**
-     * Variant A - brute force: scan from the left until the value appears
+     * Variant A
      * <br>Target: time O(n), space O(1)
      */
-    public static int searchBruteForce(int[] nums, int target) {
+    public static int searchA(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - two phases: binary-search the rotation point, then search the right part
+     * Variant B
      * <br>Target: time O(log n), space O(1)
      */
-    public static int searchTwoPhase(int[] nums, int target) {
+    public static int searchB(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: one binary search, work out which half is sorted
+     * Variant C
      * <br>Target: time O(log n), space O(1)
      */
-    public static int search(int[] nums, int target) {
+    public static int searchC(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC33SearchInRotatedSortedArray::searchBruteForce);
-        runAll("B", LC33SearchInRotatedSortedArray::searchTwoPhase);
-        runAll("C", LC33SearchInRotatedSortedArray::search);
+        runAll("A", LC33SearchInRotatedSortedArray::searchA);
+        runAll("B", LC33SearchInRotatedSortedArray::searchB);
+        runAll("C", LC33SearchInRotatedSortedArray::searchC);
         System.out.println(passed + "/" + total + " passed");
     }
 

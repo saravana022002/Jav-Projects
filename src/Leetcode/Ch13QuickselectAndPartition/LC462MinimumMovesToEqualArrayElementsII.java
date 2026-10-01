@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC462MinimumMovesToEqualArrayElementsII {
 
     /**
-     * Variant A - brute force: try every array value as the common target, add up the distances
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int minMoves2BruteForce(int[] nums) {
+    public static int minMoves2A(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sort the array, then read the best common target off the sorted order
-     * <br>Target: time O(n log n), space O(1) extra (the sort works in place)
+     * Variant B
+     * <br>Target: time O(n log n), space O(1) extra
      */
-    public static int minMoves2Sorting(int[] nums) {
+    public static int minMoves2B(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: quickselect finds that target without a full sort
+     * Variant C
      * <br>Target: time O(n) expected (O(n^2) worst case), space O(1)
      */
-    public static int minMoves2(int[] nums) {
+    public static int minMoves2C(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC462MinimumMovesToEqualArrayElementsII::minMoves2BruteForce);
-        runAll("B", LC462MinimumMovesToEqualArrayElementsII::minMoves2Sorting);
-        runAll("C", LC462MinimumMovesToEqualArrayElementsII::minMoves2);
+        runAll("A", LC462MinimumMovesToEqualArrayElementsII::minMoves2A);
+        runAll("B", LC462MinimumMovesToEqualArrayElementsII::minMoves2B);
+        runAll("C", LC462MinimumMovesToEqualArrayElementsII::minMoves2C);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -35,37 +35,37 @@ import java.util.function.Supplier;
 public class LC973KClosestPointsToOrigin {
 
     /**
-     * Variant A - sort all points by their distance to the origin, take the first k
-     * <br>Target: time O(n log n), space O(n) for the sort (besides the answer)
+     * Variant A
+     * <br>Target: time O(n log n), space O(n) besides the answer
      */
-    public static int[][] kClosestSorting(int[][] points, int k) {
+    public static int[][] kClosestA(int[][] points, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - quickselect on the distance until the k closest points sit in front
+     * Variant B
      * <br>Target: time O(n) expected (O(n^2) worst case), space O(1) extra besides the answer
      */
-    public static int[][] kClosestQuickselect(int[][] points, int k) {
+    public static int[][] kClosestB(int[][] points, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: a max-heap holding the k closest points seen so far
+     * Variant C
      * <br>Target: time O(n log k), space O(k)
      */
-    public static int[][] kClosest(int[][] points, int k) {
+    public static int[][] kClosestC(int[][] points, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC973KClosestPointsToOrigin::kClosestSorting);
-        runAll("B", LC973KClosestPointsToOrigin::kClosestQuickselect);
-        runAll("C", LC973KClosestPointsToOrigin::kClosest);
+        runAll("A", LC973KClosestPointsToOrigin::kClosestA);
+        runAll("B", LC973KClosestPointsToOrigin::kClosestB);
+        runAll("C", LC973KClosestPointsToOrigin::kClosestC);
         System.out.println(passed + "/" + total + " passed");
     }
 

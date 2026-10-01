@@ -30,37 +30,37 @@ import java.util.function.Supplier;
 public class LC1456MaximumNumberOfVowelsInASubstringOfGivenLength {
 
     /**
-     * Variant A - brute force: count the vowels of every window of k characters from scratch
+     * Variant A
      * <br>Target: time O(n * k), space O(1)
      */
-    public static int maxVowelsBruteForce(String s, int k) {
+    public static int maxVowelsA(String s, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - prefix counts of vowels: every window count is one subtraction
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int maxVowelsPrefixCounts(String s, int k) {
+    public static int maxVowelsB(String s, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: fixed-size window, update the vowel count as it slides
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static int maxVowels(String s, int k) {
+    public static int maxVowelsC(String s, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1456MaximumNumberOfVowelsInASubstringOfGivenLength::maxVowelsBruteForce);
-        runAll("B", LC1456MaximumNumberOfVowelsInASubstringOfGivenLength::maxVowelsPrefixCounts);
-        runAll("C", LC1456MaximumNumberOfVowelsInASubstringOfGivenLength::maxVowels);
+        runAll("A", LC1456MaximumNumberOfVowelsInASubstringOfGivenLength::maxVowelsA);
+        runAll("B", LC1456MaximumNumberOfVowelsInASubstringOfGivenLength::maxVowelsB);
+        runAll("C", LC1456MaximumNumberOfVowelsInASubstringOfGivenLength::maxVowelsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

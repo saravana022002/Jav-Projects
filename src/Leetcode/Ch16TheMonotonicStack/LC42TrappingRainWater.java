@@ -37,37 +37,37 @@ import java.util.function.Supplier;
 public class LC42TrappingRainWater {
 
     /**
-     * Variant A - brute force: for every bar, find the tallest bar on its left and on its right
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int trapBruteForce(int[] height) {
+    public static int trapA(int[] height) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - two pointers moving inwards, always advancing the side with the lower wall
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static int trapTwoPointers(int[] height) {
+    public static int trapB(int[] height) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: stack of falling bars, a taller bar pops and fills
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int trap(int[] height) {
+    public static int trapC(int[] height) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC42TrappingRainWater::trapBruteForce);
-        runAll("B", LC42TrappingRainWater::trapTwoPointers);
-        runAll("C", LC42TrappingRainWater::trap);
+        runAll("A", LC42TrappingRainWater::trapA);
+        runAll("B", LC42TrappingRainWater::trapB);
+        runAll("C", LC42TrappingRainWater::trapC);
         System.out.println(passed + "/" + total + " passed");
     }
 

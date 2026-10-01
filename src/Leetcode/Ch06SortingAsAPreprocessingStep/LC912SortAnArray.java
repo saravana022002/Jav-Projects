@@ -38,37 +38,37 @@ import java.util.function.Supplier;
 public class LC912SortAnArray {
 
     /**
-     * Variant A - insertion sort: grow a sorted prefix, sliding each new value into place
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int[] sortArrayInsertionSort(int[] nums) {
+    public static int[] sortArrayA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - quicksort: random pivot, partition in place, recurse on both sides
+     * Variant B
      * <br>Target: time O(n log n) expected (O(n^2) worst case), space O(log n)
      */
-    public static int[] sortArrayQuickSort(int[] nums) {
+    public static int[] sortArrayB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: merge sort, sort both halves then merge them
+     * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int[] sortArray(int[] nums) {
+    public static int[] sortArrayC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC912SortAnArray::sortArrayInsertionSort);
-        runAll("B", LC912SortAnArray::sortArrayQuickSort);
-        runAll("C", LC912SortAnArray::sortArray);
+        runAll("A", LC912SortAnArray::sortArrayA);
+        runAll("B", LC912SortAnArray::sortArrayB);
+        runAll("C", LC912SortAnArray::sortArrayC);
         System.out.println(passed + "/" + total + " passed");
     }
 

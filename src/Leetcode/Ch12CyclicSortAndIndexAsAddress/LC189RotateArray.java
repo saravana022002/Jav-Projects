@@ -33,37 +33,37 @@ import java.util.function.Supplier;
 public class LC189RotateArray {
 
     /**
-     * Variant A - extra array: put element i at index (i + k) % n of a new array, copy it back
+     * Variant A
      * <br>Target: time O(n), space O(n)
      */
-    public static void rotateExtraArray(int[] nums, int k) {
+    public static void rotateA(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - three reversals: the whole array, then the first k elements, then the rest
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static void rotateReverse(int[] nums, int k) {
+    public static void rotateB(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: cyclic replacement, carry values along i -> (i + k) % n
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static void rotate(int[] nums, int k) {
+    public static void rotateC(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC189RotateArray::rotateExtraArray);
-        runAll("B", LC189RotateArray::rotateReverse);
-        runAll("C", LC189RotateArray::rotate);
+        runAll("A", LC189RotateArray::rotateA);
+        runAll("B", LC189RotateArray::rotateB);
+        runAll("C", LC189RotateArray::rotateC);
         System.out.println(passed + "/" + total + " passed");
     }
 

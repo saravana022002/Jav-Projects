@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC921MinimumAddToMakeParenthesesValid {
 
     /**
-     * Variant A - brute force: delete adjacent "()" pairs again and again, count what is left
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int minAddToMakeValidBruteForce(String s) {
+    public static int minAddToMakeValidA(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - stack: push every '(', a ')' pops one or counts as unmatched
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int minAddToMakeValidStack(String s) {
+    public static int minAddToMakeValidB(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: only one kind of symbol, so the stack is just a counter
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static int minAddToMakeValid(String s) {
+    public static int minAddToMakeValidC(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC921MinimumAddToMakeParenthesesValid::minAddToMakeValidBruteForce);
-        runAll("B", LC921MinimumAddToMakeParenthesesValid::minAddToMakeValidStack);
-        runAll("C", LC921MinimumAddToMakeParenthesesValid::minAddToMakeValid);
+        runAll("A", LC921MinimumAddToMakeParenthesesValid::minAddToMakeValidA);
+        runAll("B", LC921MinimumAddToMakeParenthesesValid::minAddToMakeValidB);
+        runAll("C", LC921MinimumAddToMakeParenthesesValid::minAddToMakeValidC);
         System.out.println(passed + "/" + total + " passed");
     }
 

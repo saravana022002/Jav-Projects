@@ -43,11 +43,11 @@ import java.util.List;
 public class LC146LRUCache {
 
     /**
-     * Variant A - brute force: keep keys in a recency list, scan it on every operation
+     * Variant A
      * <br>Target: time O(capacity) per get and per put, space O(capacity)
      */
-    public static class LRUCacheBruteForce {
-        public LRUCacheBruteForce(int capacity) {
+    public static class LRUCacheA {
+        public LRUCacheA(int capacity) {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -64,11 +64,11 @@ public class LC146LRUCache {
     }
 
     /**
-     * Variant B - let java.util.LinkedHashMap keep the keys in access order
+     * Variant B
      * <br>Target: time O(1) per get and per put, space O(capacity)
      */
-    public static class LRUCacheLinkedHashMap {
-        public LRUCacheLinkedHashMap(int capacity) {
+    public static class LRUCacheB {
+        public LRUCacheB(int capacity) {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -85,11 +85,11 @@ public class LC146LRUCache {
     }
 
     /**
-     * Variant C - this chapter's technique: hash map into a hand-built doubly linked list
+     * Variant C
      * <br>Target: time O(1) per get and per put, space O(capacity)
      */
-    public static class LRUCache {
-        public LRUCache(int capacity) {
+    public static class LRUCacheC {
+        public LRUCacheC(int capacity) {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -108,22 +108,22 @@ public class LC146LRUCache {
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
         runAll("A", capacity -> {
-            LC146LRUCache.LRUCacheBruteForce c = new LC146LRUCache.LRUCacheBruteForce(capacity);
+            LC146LRUCache.LRUCacheA c = new LC146LRUCache.LRUCacheA(capacity);
             return new Cache() {
                 public int get(int key) { return c.get(key); }
                 public void put(int key, int value) { c.put(key, value); }
             };
         });
         runAll("B", capacity -> {
-            LC146LRUCache.LRUCacheLinkedHashMap c =
-                    new LC146LRUCache.LRUCacheLinkedHashMap(capacity);
+            LC146LRUCache.LRUCacheB c =
+                    new LC146LRUCache.LRUCacheB(capacity);
             return new Cache() {
                 public int get(int key) { return c.get(key); }
                 public void put(int key, int value) { c.put(key, value); }
             };
         });
         runAll("C", capacity -> {
-            LC146LRUCache.LRUCache c = new LC146LRUCache.LRUCache(capacity);
+            LC146LRUCache.LRUCacheC c = new LC146LRUCache.LRUCacheC(capacity);
             return new Cache() {
                 public int get(int key) { return c.get(key); }
                 public void put(int key, int value) { c.put(key, value); }

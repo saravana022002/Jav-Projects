@@ -34,37 +34,37 @@ import java.util.function.Supplier;
 public class LC224BasicCalculator {
 
     /**
-     * Variant A - brute force: evaluate an innermost "( ... )", put its value in its place, repeat
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int calculateBruteForce(String s) {
+    public static int calculateA(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - recursion: a '(' starts a nested call that returns at the matching ')'
-     * <br>Target: time O(n), space O(n)    (the call stack can get n / 2 deep)
-     */
-    public static int calculateRecursive(String s) {
-        // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
-    }
-
-    /**
-     * Variant C - this chapter's technique: stack saving the result and sign so far at each '('
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int calculate(String s) {
+    public static int calculateB(String s) {
+        // TODO: write your solution
+        throw new UnsupportedOperationException("not solved yet");
+    }
+
+    /**
+     * Variant C
+     * <br>Target: time O(n), space O(n)
+     */
+    public static int calculateC(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC224BasicCalculator::calculateBruteForce);
-        runAll("B", LC224BasicCalculator::calculateRecursive);
-        runAll("C", LC224BasicCalculator::calculate);
+        runAll("A", LC224BasicCalculator::calculateA);
+        runAll("B", LC224BasicCalculator::calculateB);
+        runAll("C", LC224BasicCalculator::calculateC);
         System.out.println(passed + "/" + total + " passed");
     }
 

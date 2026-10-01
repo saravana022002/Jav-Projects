@@ -31,37 +31,37 @@ import java.util.function.Supplier;
 public class LC713SubarrayProductLessThanK {
 
     /**
-     * Variant A - brute force: from every start, extend while the product stays below k
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int numSubarrayProductLessThanKBruteForce(int[] nums, int k) {
+    public static int numSubarrayProductLessThanKA(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - prefix sums of logarithms, binary-search the farthest legal end per start
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int numSubarrayProductLessThanKLogBinarySearch(int[] nums, int k) {
+    public static int numSubarrayProductLessThanKB(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sliding window, shrink while the product >= k
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static int numSubarrayProductLessThanK(int[] nums, int k) {
+    public static int numSubarrayProductLessThanKC(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC713SubarrayProductLessThanK::numSubarrayProductLessThanKBruteForce);
-        runAll("B", LC713SubarrayProductLessThanK::numSubarrayProductLessThanKLogBinarySearch);
-        runAll("C", LC713SubarrayProductLessThanK::numSubarrayProductLessThanK);
+        runAll("A", LC713SubarrayProductLessThanK::numSubarrayProductLessThanKA);
+        runAll("B", LC713SubarrayProductLessThanK::numSubarrayProductLessThanKB);
+        runAll("C", LC713SubarrayProductLessThanK::numSubarrayProductLessThanKC);
         System.out.println(passed + "/" + total + " passed");
     }
 

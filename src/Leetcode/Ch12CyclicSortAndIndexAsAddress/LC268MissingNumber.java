@@ -33,37 +33,37 @@ import java.util.function.Supplier;
 public class LC268MissingNumber {
 
     /**
-     * Variant A - brute force: sort, then find the first index whose value differs from it
-     * <br>Target: time O(n log n), space O(1) (sorting in place)
+     * Variant A
+     * <br>Target: time O(n log n), space O(1)
      */
-    public static int missingNumberSort(int[] nums) {
+    public static int missingNumberA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - arithmetic: the sum of 0..n minus the sum of the array
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static int missingNumberSum(int[] nums) {
+    public static int missingNumberB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: cyclic sort into slots 0..n-1, skipping the value n
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static int missingNumber(int[] nums) {
+    public static int missingNumberC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC268MissingNumber::missingNumberSort);
-        runAll("B", LC268MissingNumber::missingNumberSum);
-        runAll("C", LC268MissingNumber::missingNumber);
+        runAll("A", LC268MissingNumber::missingNumberA);
+        runAll("B", LC268MissingNumber::missingNumberB);
+        runAll("C", LC268MissingNumber::missingNumberC);
         System.out.println(passed + "/" + total + " passed");
     }
 

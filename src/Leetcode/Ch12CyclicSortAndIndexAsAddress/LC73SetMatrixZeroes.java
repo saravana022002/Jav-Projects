@@ -36,37 +36,37 @@ import java.util.function.Supplier;
 public class LC73SetMatrixZeroes {
 
     /**
-     * Variant A - read the zeros from a copy of the matrix, write the changes into the original
+     * Variant A
      * <br>Target: time O(m * n), space O(m * n)
      */
-    public static void setZeroesCopy(int[][] matrix) {
+    public static void setZeroesA(int[][] matrix) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - two boolean arrays remember which rows and which columns hold a zero
+     * Variant B
      * <br>Target: time O(m * n), space O(m + n)
      */
-    public static void setZeroesFlags(int[][] matrix) {
+    public static void setZeroesB(int[][] matrix) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: the matrix's own first row and column hold the flags
+     * Variant C
      * <br>Target: time O(m * n), space O(1)
      */
-    public static void setZeroes(int[][] matrix) {
+    public static void setZeroesC(int[][] matrix) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC73SetMatrixZeroes::setZeroesCopy);
-        runAll("B", LC73SetMatrixZeroes::setZeroesFlags);
-        runAll("C", LC73SetMatrixZeroes::setZeroes);
+        runAll("A", LC73SetMatrixZeroes::setZeroesA);
+        runAll("B", LC73SetMatrixZeroes::setZeroesB);
+        runAll("C", LC73SetMatrixZeroes::setZeroesC);
         System.out.println(passed + "/" + total + " passed");
     }
 

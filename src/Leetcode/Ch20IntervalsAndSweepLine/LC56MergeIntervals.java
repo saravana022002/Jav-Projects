@@ -39,37 +39,37 @@ import java.util.function.Supplier;
 public class LC56MergeIntervals {
 
     /**
-     * Variant A - brute force: repeatedly merge any two overlapping intervals until none overlap
+     * Variant A
      * <br>Target: time O(n^3), space O(n)
      */
-    public static int[][] mergeBruteForce(int[][] intervals) {
+    public static int[][] mergeA(int[][] intervals) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - events: +1 at every start, -1 at every end; a merged interval ends at count 0
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int[][] mergeEventSweep(int[][] intervals) {
+    public static int[][] mergeB(int[][] intervals) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: order the intervals by start, then sweep and extend
+     * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int[][] merge(int[][] intervals) {
+    public static int[][] mergeC(int[][] intervals) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC56MergeIntervals::mergeBruteForce);
-        runAll("B", LC56MergeIntervals::mergeEventSweep);
-        runAll("C", LC56MergeIntervals::merge);
+        runAll("A", LC56MergeIntervals::mergeA);
+        runAll("B", LC56MergeIntervals::mergeB);
+        runAll("C", LC56MergeIntervals::mergeC);
         System.out.println(passed + "/" + total + " passed");
     }
 

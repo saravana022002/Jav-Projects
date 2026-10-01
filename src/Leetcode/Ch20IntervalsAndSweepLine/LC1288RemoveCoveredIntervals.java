@@ -34,27 +34,27 @@ import java.util.function.Supplier;
 public class LC1288RemoveCoveredIntervals {
 
     /**
-     * Variant A - brute force: for each interval, check whether some other interval covers it
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int removeCoveredIntervalsBruteForce(int[][] intervals) {
+    public static int removeCoveredIntervalsA(int[][] intervals) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: sort the intervals, then sweep with the furthest end
-     * <br>Target: time O(n log n), space O(1) besides the sort
+     * Variant B
+     * <br>Target: time O(n log n), space O(1)
      */
-    public static int removeCoveredIntervals(int[][] intervals) {
+    public static int removeCoveredIntervalsB(int[][] intervals) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1288RemoveCoveredIntervals::removeCoveredIntervalsBruteForce);
-        runAll("B", LC1288RemoveCoveredIntervals::removeCoveredIntervals);
+        runAll("A", LC1288RemoveCoveredIntervals::removeCoveredIntervalsA);
+        runAll("B", LC1288RemoveCoveredIntervals::removeCoveredIntervalsB);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -31,37 +31,37 @@ import java.util.function.Supplier;
 public class LC905SortArrayByParity {
 
     /**
-     * Variant A - extra array: copy all evens first, then all odds
+     * Variant A
      * <br>Target: time O(n), space O(n)
      */
-    public static int[] sortArrayByParityExtraArray(int[] nums) {
+    public static int[] sortArrayByParityA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - two pointers from both ends: swap an odd on the left with an even on the right
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static int[] sortArrayByParityTwoEnds(int[] nums) {
+    public static int[] sortArrayByParityB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: one partition pass, swap each even into the front
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static int[] sortArrayByParity(int[] nums) {
+    public static int[] sortArrayByParityC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC905SortArrayByParity::sortArrayByParityExtraArray);
-        runAll("B", LC905SortArrayByParity::sortArrayByParityTwoEnds);
-        runAll("C", LC905SortArrayByParity::sortArrayByParity);
+        runAll("A", LC905SortArrayByParity::sortArrayByParityA);
+        runAll("B", LC905SortArrayByParity::sortArrayByParityB);
+        runAll("C", LC905SortArrayByParity::sortArrayByParityC);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -34,28 +34,28 @@ import java.util.function.Supplier;
 public class LC1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit {
 
     /**
-     * Variant A - brute force: from every start, extend while max - min stays within limit
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int longestSubarrayBruteForce(int[] nums, int limit) {
+    public static int longestSubarrayA(int[] nums, int limit) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sliding window; min and max read from a TreeMap used as a multiset
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int longestSubarrayTreeMap(int[] nums, int limit) {
+    public static int longestSubarrayB(int[] nums, int limit) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sliding window with two monotonic deques (max and min)
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int longestSubarray(int[] nums, int limit) {
+    public static int longestSubarrayC(int[] nums, int limit) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
@@ -63,11 +63,11 @@ public class LC1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLim
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
         runAll("A", LC1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit
-                ::longestSubarrayBruteForce);
+                ::longestSubarrayA);
         runAll("B", LC1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit
-                ::longestSubarrayTreeMap);
+                ::longestSubarrayB);
         runAll("C", LC1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit
-                ::longestSubarray);
+                ::longestSubarrayC);
         System.out.println(passed + "/" + total + " passed");
     }
 

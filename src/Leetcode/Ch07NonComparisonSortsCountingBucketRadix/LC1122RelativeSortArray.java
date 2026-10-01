@@ -33,37 +33,37 @@ import java.util.function.Supplier;
 public class LC1122RelativeSortArray {
 
     /**
-     * Variant A - for each value of arr2 pull its copies out of arr1, then sort the rest
+     * Variant A
      * <br>Target: time O(n * m + n log n), space O(n)    (n = arr1.length, m = arr2.length)
      */
-    public static int[] relativeSortArrayBruteForce(int[] arr1, int[] arr2) {
+    public static int[] relativeSortArrayA(int[] arr1, int[] arr2) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - comparison sort of arr1 with a custom order taken from arr2's positions
+     * Variant B
      * <br>Target: time O(n log n + m), space O(n + m)
      */
-    public static int[] relativeSortArrayComparator(int[] arr1, int[] arr2) {
+    public static int[] relativeSortArrayB(int[] arr1, int[] arr2) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: count the values, then drain the counts in a set order
+     * Variant C
      * <br>Target: time O(n + m + R), space O(R)    (R = largest possible value = 1000)
      */
-    public static int[] relativeSortArray(int[] arr1, int[] arr2) {
+    public static int[] relativeSortArrayC(int[] arr1, int[] arr2) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1122RelativeSortArray::relativeSortArrayBruteForce);
-        runAll("B", LC1122RelativeSortArray::relativeSortArrayComparator);
-        runAll("C", LC1122RelativeSortArray::relativeSortArray);
+        runAll("A", LC1122RelativeSortArray::relativeSortArrayA);
+        runAll("B", LC1122RelativeSortArray::relativeSortArrayB);
+        runAll("C", LC1122RelativeSortArray::relativeSortArrayC);
         System.out.println(passed + "/" + total + " passed");
     }
 

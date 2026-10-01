@@ -40,27 +40,27 @@ import java.util.function.Supplier;
 public class LC1801NumberOfOrdersInTheBacklog {
 
     /**
-     * Variant A - brute force: backlog as a list of batches, scan it all for the best match
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int getNumberOfBacklogOrdersBruteForce(int[][] orders) {
+    public static int getNumberOfBacklogOrdersA(int[][] orders) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: a max-heap of buys and a min-heap of sells
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int getNumberOfBacklogOrders(int[][] orders) {
+    public static int getNumberOfBacklogOrdersB(int[][] orders) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1801NumberOfOrdersInTheBacklog::getNumberOfBacklogOrdersBruteForce);
-        runAll("B", LC1801NumberOfOrdersInTheBacklog::getNumberOfBacklogOrders);
+        runAll("A", LC1801NumberOfOrdersInTheBacklog::getNumberOfBacklogOrdersA);
+        runAll("B", LC1801NumberOfOrdersInTheBacklog::getNumberOfBacklogOrdersB);
         System.out.println(passed + "/" + total + " passed");
     }
 

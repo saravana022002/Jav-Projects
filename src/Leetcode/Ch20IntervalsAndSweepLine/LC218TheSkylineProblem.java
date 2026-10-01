@@ -42,37 +42,37 @@ import java.util.function.Supplier;
 public class LC218TheSkylineProblem {
 
     /**
-     * Variant A - brute force: at each building edge take the tallest building covering it
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static List<List<Integer>> getSkylineBruteForce(int[][] buildings) {
+    public static List<List<Integer>> getSkylineA(int[][] buildings) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sweep over sorted edges; active heights in a max-heap with lazy deletion
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static List<List<Integer>> getSkylineHeap(int[][] buildings) {
+    public static List<List<Integer>> getSkylineB(int[][] buildings) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sweep line over sorted edges, ordered multiset
+     * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
-    public static List<List<Integer>> getSkyline(int[][] buildings) {
+    public static List<List<Integer>> getSkylineC(int[][] buildings) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC218TheSkylineProblem::getSkylineBruteForce);
-        runAll("B", LC218TheSkylineProblem::getSkylineHeap);
-        runAll("C", LC218TheSkylineProblem::getSkyline);
+        runAll("A", LC218TheSkylineProblem::getSkylineA);
+        runAll("B", LC218TheSkylineProblem::getSkylineB);
+        runAll("C", LC218TheSkylineProblem::getSkylineC);
         System.out.println(passed + "/" + total + " passed");
     }
 

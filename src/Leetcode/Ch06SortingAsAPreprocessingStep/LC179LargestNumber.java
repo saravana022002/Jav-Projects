@@ -32,27 +32,27 @@ import java.util.function.Supplier;
 public class LC179LargestNumber {
 
     /**
-     * Variant A - brute force: build every ordering of the numbers and keep the largest result
+     * Variant A
      * <br>Target: time O(n! * n), space O(n)
      */
-    public static String largestNumberBruteForce(int[] nums) {
+    public static String largestNumberA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: sort the numbers with a custom comparator, join them
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static String largestNumber(int[] nums) {
+    public static String largestNumberB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC179LargestNumber::largestNumberBruteForce);
-        runAll("B", LC179LargestNumber::largestNumber);
+        runAll("A", LC179LargestNumber::largestNumberA);
+        runAll("B", LC179LargestNumber::largestNumberB);
         System.out.println(passed + "/" + total + " passed");
     }
 

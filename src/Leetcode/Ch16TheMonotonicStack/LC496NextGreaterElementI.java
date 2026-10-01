@@ -39,27 +39,27 @@ import java.util.function.Supplier;
 public class LC496NextGreaterElementI {
 
     /**
-     * Variant A - brute force: for each query, find it in nums2, then scan to its right
+     * Variant A
      * <br>Target: time O(m * n), space O(1)    (m = nums1.length, n = nums2.length)
      */
-    public static int[] nextGreaterElementBruteForce(int[] nums1, int[] nums2) {
+    public static int[] nextGreaterElementA(int[] nums1, int[] nums2) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: monotonic stack over nums2, results kept in a hash map
+     * Variant B
      * <br>Target: time O(m + n), space O(n)
      */
-    public static int[] nextGreaterElement(int[] nums1, int[] nums2) {
+    public static int[] nextGreaterElementB(int[] nums1, int[] nums2) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC496NextGreaterElementI::nextGreaterElementBruteForce);
-        runAll("B", LC496NextGreaterElementI::nextGreaterElement);
+        runAll("A", LC496NextGreaterElementI::nextGreaterElementA);
+        runAll("B", LC496NextGreaterElementI::nextGreaterElementB);
         System.out.println(passed + "/" + total + " passed");
     }
 

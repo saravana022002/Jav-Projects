@@ -38,37 +38,37 @@ import java.util.function.Supplier;
 public class LC547NumberOfProvinces {
 
     /**
-     * Variant A - depth-first search: start a new search at every city not reached yet
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int findCircleNumDfs(int[][] isConnected) {
+    public static int findCircleNumA(int[][] isConnected) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - breadth-first search with a queue, one search per province
+     * Variant B
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int findCircleNumBfs(int[][] isConnected) {
+    public static int findCircleNumB(int[][] isConnected) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: union-find with union by rank and path compression
+     * Variant C
      * <br>Target: time O(n^2 * alpha(n)), space O(n)
      */
-    public static int findCircleNum(int[][] isConnected) {
+    public static int findCircleNumC(int[][] isConnected) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC547NumberOfProvinces::findCircleNumDfs);
-        runAll("B", LC547NumberOfProvinces::findCircleNumBfs);
-        runAll("C", LC547NumberOfProvinces::findCircleNum);
+        runAll("A", LC547NumberOfProvinces::findCircleNumA);
+        runAll("B", LC547NumberOfProvinces::findCircleNumB);
+        runAll("C", LC547NumberOfProvinces::findCircleNumC);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -40,37 +40,37 @@ import java.util.function.Supplier;
 public class LC18FourSum {
 
     /**
-     * Variant A - brute force: four nested loops, never reporting a quadruplet twice
+     * Variant A
      * <br>Target: time O(n^4), space O(1) besides the result
      */
-    public static List<List<Integer>> fourSumBruteForce(int[] nums, int target) {
+    public static List<List<Integer>> fourSumA(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sort, fix three numbers, binary-search the fourth
+     * Variant B
      * <br>Target: time O(n^3 log n), space O(1) besides the result
      */
-    public static List<List<Integer>> fourSumBinarySearch(int[] nums, int target) {
+    public static List<List<Integer>> fourSumB(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sort, fix two numbers, two converging pointers
+     * Variant C
      * <br>Target: time O(n^3), space O(1) besides the result
      */
-    public static List<List<Integer>> fourSum(int[] nums, int target) {
+    public static List<List<Integer>> fourSumC(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC18FourSum::fourSumBruteForce);
-        runAll("B", LC18FourSum::fourSumBinarySearch);
-        runAll("C", LC18FourSum::fourSum);
+        runAll("A", LC18FourSum::fourSumA);
+        runAll("B", LC18FourSum::fourSumB);
+        runAll("C", LC18FourSum::fourSumC);
         System.out.println(passed + "/" + total + " passed");
     }
 

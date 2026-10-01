@@ -36,27 +36,27 @@ import java.util.function.Supplier;
 public class LC1475FinalPricesWithASpecialDiscountInAShop {
 
     /**
-     * Variant A - brute force: for every item, scan to its right for the first price not higher
+     * Variant A
      * <br>Target: time O(n^2), space O(1)    (besides the answer array)
      */
-    public static int[] finalPricesBruteForce(int[] prices) {
+    public static int[] finalPricesA(int[] prices) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: stack of the items that still wait for a discount
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int[] finalPrices(int[] prices) {
+    public static int[] finalPricesB(int[] prices) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1475FinalPricesWithASpecialDiscountInAShop::finalPricesBruteForce);
-        runAll("B", LC1475FinalPricesWithASpecialDiscountInAShop::finalPrices);
+        runAll("A", LC1475FinalPricesWithASpecialDiscountInAShop::finalPricesA);
+        runAll("B", LC1475FinalPricesWithASpecialDiscountInAShop::finalPricesB);
         System.out.println(passed + "/" + total + " passed");
     }
 

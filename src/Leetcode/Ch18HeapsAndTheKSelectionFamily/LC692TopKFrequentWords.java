@@ -37,27 +37,27 @@ import java.util.function.Supplier;
 public class LC692TopKFrequentWords {
 
     /**
-     * Variant A - count the words, sort the distinct words by (count desc, word asc), take k
+     * Variant A
      * <br>Target: time O(n log n), space O(n)
      */
-    public static List<String> topKFrequentSorting(String[] words, int k) {
+    public static List<String> topKFrequentA(String[] words, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: count the words, heap of at most k words
+     * Variant B
      * <br>Target: time O(n log k), space O(n)
      */
-    public static List<String> topKFrequent(String[] words, int k) {
+    public static List<String> topKFrequentB(String[] words, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC692TopKFrequentWords::topKFrequentSorting);
-        runAll("B", LC692TopKFrequentWords::topKFrequent);
+        runAll("A", LC692TopKFrequentWords::topKFrequentA);
+        runAll("B", LC692TopKFrequentWords::topKFrequentB);
         System.out.println(passed + "/" + total + " passed");
     }
 

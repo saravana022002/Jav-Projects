@@ -41,11 +41,11 @@ import java.util.function.Supplier;
 public class LC703KthLargestElementInAStream {
 
     /**
-     * Variant A - keep every score in a list; sort it on each add and read the k-th largest
+     * Variant A
      * <br>Target: time O(n log n) per add, space O(n)     (n = scores seen so far)
      */
-    public static class KthLargestSorting {
-        public KthLargestSorting(int k, int[] nums) {
+    public static class KthLargestA {
+        public KthLargestA(int k, int[] nums) {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -57,11 +57,11 @@ public class LC703KthLargestElementInAStream {
     }
 
     /**
-     * Variant B - keep every score in a list; quickselect the k-th largest on each add
+     * Variant B
      * <br>Target: time O(n) expected per add, space O(n)
      */
-    public static class KthLargestQuickselect {
-        public KthLargestQuickselect(int k, int[] nums) {
+    public static class KthLargestB {
+        public KthLargestB(int k, int[] nums) {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -73,11 +73,11 @@ public class LC703KthLargestElementInAStream {
     }
 
     /**
-     * Variant C - where partition stops helping (scores keep arriving): min-heap capped at k
+     * Variant C
      * <br>Target: time O(log k) per add (O(n log k) to build), space O(k)
      */
-    public static class KthLargest {
-        public KthLargest(int k, int[] nums) {
+    public static class KthLargestC {
+        public KthLargestC(int k, int[] nums) {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -91,11 +91,11 @@ public class LC703KthLargestElementInAStream {
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
         runAll("A", (k, nums) ->
-                new LC703KthLargestElementInAStream.KthLargestSorting(k, nums)::add);
+                new LC703KthLargestElementInAStream.KthLargestA(k, nums)::add);
         runAll("B", (k, nums) ->
-                new LC703KthLargestElementInAStream.KthLargestQuickselect(k, nums)::add);
+                new LC703KthLargestElementInAStream.KthLargestB(k, nums)::add);
         runAll("C", (k, nums) ->
-                new LC703KthLargestElementInAStream.KthLargest(k, nums)::add);
+                new LC703KthLargestElementInAStream.KthLargestC(k, nums)::add);
         System.out.println(passed + "/" + total + " passed");
     }
 

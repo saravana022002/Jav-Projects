@@ -32,27 +32,27 @@ import java.util.function.Supplier;
 public class LC11ContainerWithMostWater {
 
     /**
-     * Variant A - brute force: try every pair of lines
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int maxAreaBruteForce(int[] height) {
+    public static int maxAreaA(int[] height) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: two pointers at the ends, moving towards each other
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static int maxArea(int[] height) {
+    public static int maxAreaB(int[] height) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC11ContainerWithMostWater::maxAreaBruteForce);
-        runAll("B", LC11ContainerWithMostWater::maxArea);
+        runAll("A", LC11ContainerWithMostWater::maxAreaA);
+        runAll("B", LC11ContainerWithMostWater::maxAreaB);
         System.out.println(passed + "/" + total + " passed");
     }
 

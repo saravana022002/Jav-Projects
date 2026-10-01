@@ -37,37 +37,37 @@ import java.util.function.Supplier;
 public class LC560SubarraySumEqualsK {
 
     /**
-     * Variant A - brute force: for every start, extend the end while keeping a running sum
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int subarraySumBruteForce(int[] nums, int k) {
+    public static int subarraySumA(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - prefix-sum array; for every end, search the earlier prefix values for a match
+     * Variant B
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int subarraySumPrefixSearch(int[] nums, int k) {
+    public static int subarraySumB(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: one pass, a hash map counting the running sums seen
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int subarraySum(int[] nums, int k) {
+    public static int subarraySumC(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC560SubarraySumEqualsK::subarraySumBruteForce);
-        runAll("B", LC560SubarraySumEqualsK::subarraySumPrefixSearch);
-        runAll("C", LC560SubarraySumEqualsK::subarraySum);
+        runAll("A", LC560SubarraySumEqualsK::subarraySumA);
+        runAll("B", LC560SubarraySumEqualsK::subarraySumB);
+        runAll("C", LC560SubarraySumEqualsK::subarraySumC);
         System.out.println(passed + "/" + total + " passed");
     }
 

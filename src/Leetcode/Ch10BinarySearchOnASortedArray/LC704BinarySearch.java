@@ -34,38 +34,37 @@ import java.util.function.Supplier;
 public class LC704BinarySearch {
 
     /**
-     * Variant A - brute force: scan from the left until the value appears
+     * Variant A
      * <br>Target: time O(n), space O(1)
      */
-    public static int searchBruteForce(int[] nums, int target) {
+    public static int searchA(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - classic binary search: compare the middle, then branch three ways
+     * Variant B
      * <br>Target: time O(log n), space O(1)
      */
-    public static int searchThreeWay(int[] nums, int target) {
+    public static int searchB(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: find the first index with nums[i] >= target,
-     *             then check it really holds target
+     * Variant C
      * <br>Target: time O(log n), space O(1)
      */
-    public static int search(int[] nums, int target) {
+    public static int searchC(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC704BinarySearch::searchBruteForce);
-        runAll("B", LC704BinarySearch::searchThreeWay);
-        runAll("C", LC704BinarySearch::search);
+        runAll("A", LC704BinarySearch::searchA);
+        runAll("B", LC704BinarySearch::searchB);
+        runAll("C", LC704BinarySearch::searchC);
         System.out.println(passed + "/" + total + " passed");
     }
 

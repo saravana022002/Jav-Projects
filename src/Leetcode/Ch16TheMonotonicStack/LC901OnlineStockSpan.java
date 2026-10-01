@@ -40,12 +40,12 @@ import java.util.function.Supplier;
 public class LC901OnlineStockSpan {
 
     /**
-     * Variant A - brute force: keep the whole price history, walk back over it on every call
+     * Variant A
      * <br>Target: time O(n) per next() call (n = calls so far), space O(n)
      */
-    public static class StockSpannerBruteForce {
+    public static class StockSpannerA {
 
-        public StockSpannerBruteForce() {
+        public StockSpannerA() {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -57,12 +57,12 @@ public class LC901OnlineStockSpan {
     }
 
     /**
-     * Variant B - this chapter's technique: stack of (price, span) pairs, popped spans merge
+     * Variant B
      * <br>Target: time O(1) amortised per next() call, space O(n)
      */
-    public static class StockSpanner {
+    public static class StockSpannerB {
 
-        public StockSpanner() {
+        public StockSpannerB() {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -75,8 +75,8 @@ public class LC901OnlineStockSpan {
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", () -> new LC901OnlineStockSpan.StockSpannerBruteForce()::next);
-        runAll("B", () -> new LC901OnlineStockSpan.StockSpanner()::next);
+        runAll("A", () -> new LC901OnlineStockSpan.StockSpannerA()::next);
+        runAll("B", () -> new LC901OnlineStockSpan.StockSpannerB()::next);
         System.out.println(passed + "/" + total + " passed");
     }
 
@@ -84,7 +84,7 @@ public class LC901OnlineStockSpan {
     // Tests for this class (LC 901. Online Stock Span)
     // https://leetcode.com/problems/online-stock-span/
     // Run main(): every case prints PASS or FAIL, then a summary line.
-    // Each variant (A = StockSpannerBruteForce, B = StockSpanner) is checked separately with the
+    // Each variant (A = StockSpannerA, B = StockSpannerB) is checked separately with the
     // same cases. A case creates a fresh object, replays a sequence of next() calls and compares
     // the list of results: the official example plus edge cases confirmed with an independent
     // brute-force reference.

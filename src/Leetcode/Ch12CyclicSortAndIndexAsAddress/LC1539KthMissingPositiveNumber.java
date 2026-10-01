@@ -33,37 +33,37 @@ import java.util.function.Supplier;
 public class LC1539KthMissingPositiveNumber {
 
     /**
-     * Variant A - count up from 1, skipping the values found in a HashSet, until k gaps are seen
+     * Variant A
      * <br>Target: time O(n + k), space O(n)
      */
-    public static int findKthPositiveSet(int[] arr, int k) {
+    public static int findKthPositiveA(int[] arr, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - one pass over arr: every element not beyond the answer pushes it one further
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static int findKthPositiveLinear(int[] arr, int k) {
+    public static int findKthPositiveB(int[] arr, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: binary search on how many numbers are missing so far
+     * Variant C
      * <br>Target: time O(log n), space O(1)
      */
-    public static int findKthPositive(int[] arr, int k) {
+    public static int findKthPositiveC(int[] arr, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1539KthMissingPositiveNumber::findKthPositiveSet);
-        runAll("B", LC1539KthMissingPositiveNumber::findKthPositiveLinear);
-        runAll("C", LC1539KthMissingPositiveNumber::findKthPositive);
+        runAll("A", LC1539KthMissingPositiveNumber::findKthPositiveA);
+        runAll("B", LC1539KthMissingPositiveNumber::findKthPositiveB);
+        runAll("C", LC1539KthMissingPositiveNumber::findKthPositiveC);
         System.out.println(passed + "/" + total + " passed");
     }
 

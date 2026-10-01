@@ -39,27 +39,27 @@ import java.util.function.Supplier;
 public class LC20ValidParentheses {
 
     /**
-     * Variant A - brute force: keep deleting adjacent "()", "[]", "{}" pairs until none is left
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static boolean isValidBruteForce(String s) {
+    public static boolean isValidA(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: stack of opening brackets, each closer meets the top
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static boolean isValid(String s) {
+    public static boolean isValidB(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC20ValidParentheses::isValidBruteForce);
-        runAll("B", LC20ValidParentheses::isValid);
+        runAll("A", LC20ValidParentheses::isValidA);
+        runAll("B", LC20ValidParentheses::isValidB);
         System.out.println(passed + "/" + total + " passed");
     }
 

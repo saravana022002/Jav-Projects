@@ -36,37 +36,37 @@ import java.util.function.Supplier;
 public class LC378KthSmallestElementInASortedMatrix {
 
     /**
-     * Variant A - copy all entries into one array and sort it (O(n^2) memory, the baseline to beat)
+     * Variant A
      * <br>Target: time O(n^2 log n), space O(n^2)
      */
-    public static int kthSmallestSorting(int[][] matrix, int k) {
+    public static int kthSmallestA(int[][] matrix, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - binary search on the value: count the entries <= mid with a staircase walk
+     * Variant B
      * <br>Target: time O(n log(max - min)), space O(1)
      */
-    public static int kthSmallestBinarySearch(int[][] matrix, int k) {
+    public static int kthSmallestB(int[][] matrix, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: k-way merge of the rows with a min-heap, stop at k
+     * Variant C
      * <br>Target: time O(k log min(n, k)), space O(min(n, k))
      */
-    public static int kthSmallest(int[][] matrix, int k) {
+    public static int kthSmallestC(int[][] matrix, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC378KthSmallestElementInASortedMatrix::kthSmallestSorting);
-        runAll("B", LC378KthSmallestElementInASortedMatrix::kthSmallestBinarySearch);
-        runAll("C", LC378KthSmallestElementInASortedMatrix::kthSmallest);
+        runAll("A", LC378KthSmallestElementInASortedMatrix::kthSmallestA);
+        runAll("B", LC378KthSmallestElementInASortedMatrix::kthSmallestB);
+        runAll("C", LC378KthSmallestElementInASortedMatrix::kthSmallestC);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -37,37 +37,37 @@ import java.util.function.Supplier;
 public class LC75SortColors {
 
     /**
-     * Variant A - hand-written comparison sort done in place (e.g. insertion sort)
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static void sortColorsInsertionSort(int[] nums) {
+    public static void sortColorsA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: count each colour, then overwrite nums
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static void sortColors(int[] nums) {
+    public static void sortColorsB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - single pass with two boundary pointers, swapping elements into place
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static void sortColorsOnePass(int[] nums) {
+    public static void sortColorsC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC75SortColors::sortColorsInsertionSort);
-        runAll("B", LC75SortColors::sortColors);
-        runAll("C", LC75SortColors::sortColorsOnePass);
+        runAll("A", LC75SortColors::sortColorsA);
+        runAll("B", LC75SortColors::sortColorsB);
+        runAll("C", LC75SortColors::sortColorsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

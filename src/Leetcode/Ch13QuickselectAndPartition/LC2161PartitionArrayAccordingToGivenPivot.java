@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC2161PartitionArrayAccordingToGivenPivot {
 
     /**
-     * Variant A - brute force: stable insertion sort of the elements by band (< , = , >)
+     * Variant A
      * <br>Target: time O(n^2), space O(1) besides the returned array
      */
-    public static int[] pivotArrayBruteForce(int[] nums, int pivot) {
+    public static int[] pivotArrayA(int[] nums, int pivot) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - three lists (smaller, equal, bigger) filled in order, then concatenated
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int[] pivotArrayThreeLists(int[] nums, int pivot) {
+    public static int[] pivotArrayB(int[] nums, int pivot) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: stable partition into one result buffer
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int[] pivotArray(int[] nums, int pivot) {
+    public static int[] pivotArrayC(int[] nums, int pivot) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC2161PartitionArrayAccordingToGivenPivot::pivotArrayBruteForce);
-        runAll("B", LC2161PartitionArrayAccordingToGivenPivot::pivotArrayThreeLists);
-        runAll("C", LC2161PartitionArrayAccordingToGivenPivot::pivotArray);
+        runAll("A", LC2161PartitionArrayAccordingToGivenPivot::pivotArrayA);
+        runAll("B", LC2161PartitionArrayAccordingToGivenPivot::pivotArrayB);
+        runAll("C", LC2161PartitionArrayAccordingToGivenPivot::pivotArrayC);
         System.out.println(passed + "/" + total + " passed");
     }
 

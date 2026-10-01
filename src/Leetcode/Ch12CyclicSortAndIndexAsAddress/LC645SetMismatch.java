@@ -34,37 +34,37 @@ import java.util.function.Supplier;
 public class LC645SetMismatch {
 
     /**
-     * Variant A - count every value in an array, the repeat has count 2, the gap has count 0
+     * Variant A
      * <br>Target: time O(n), space O(n)
      */
-    public static int[] findErrorNumsCounting(int[] nums) {
+    public static int[] findErrorNumsA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - arithmetic: compare the sum and the sum of squares with those of 1..n
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static int[] findErrorNumsMath(int[] nums) {
+    public static int[] findErrorNumsB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: cyclic sort, the one misplaced slot shows both numbers
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static int[] findErrorNums(int[] nums) {
+    public static int[] findErrorNumsC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC645SetMismatch::findErrorNumsCounting);
-        runAll("B", LC645SetMismatch::findErrorNumsMath);
-        runAll("C", LC645SetMismatch::findErrorNums);
+        runAll("A", LC645SetMismatch::findErrorNumsA);
+        runAll("B", LC645SetMismatch::findErrorNumsB);
+        runAll("C", LC645SetMismatch::findErrorNumsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

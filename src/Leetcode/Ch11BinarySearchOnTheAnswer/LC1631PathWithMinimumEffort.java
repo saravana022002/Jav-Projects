@@ -39,37 +39,37 @@ import java.util.function.Supplier;
 public class LC1631PathWithMinimumEffort {
 
     /**
-     * Variant A - brute force: try effort limits 0, 1, 2, ... with a flood fill for each
+     * Variant A
      * <br>Target: time O(R * C * H), space O(R * C)   (R rows, C columns, H = largest height)
      */
-    public static int minimumEffortPathTryEachLimit(int[][] heights) {
+    public static int minimumEffortPathA(int[][] heights) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - Dijkstra with a min-heap, where a route costs its largest single step
+     * Variant B
      * <br>Target: time O(R * C * log(R * C)), space O(R * C)
      */
-    public static int minimumEffortPathDijkstra(int[][] heights) {
+    public static int minimumEffortPathB(int[][] heights) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: binary search on the effort limit, flood fill as check
+     * Variant C
      * <br>Target: time O(R * C * log H), space O(R * C)
      */
-    public static int minimumEffortPath(int[][] heights) {
+    public static int minimumEffortPathC(int[][] heights) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1631PathWithMinimumEffort::minimumEffortPathTryEachLimit);
-        runAll("B", LC1631PathWithMinimumEffort::minimumEffortPathDijkstra);
-        runAll("C", LC1631PathWithMinimumEffort::minimumEffortPath);
+        runAll("A", LC1631PathWithMinimumEffort::minimumEffortPathA);
+        runAll("B", LC1631PathWithMinimumEffort::minimumEffortPathB);
+        runAll("C", LC1631PathWithMinimumEffort::minimumEffortPathC);
         System.out.println(passed + "/" + total + " passed");
     }
 

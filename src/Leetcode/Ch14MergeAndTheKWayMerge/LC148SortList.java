@@ -42,37 +42,37 @@ public class LC148SortList {
     }
 
     /**
-     * Variant A - copy the values into an array, sort it, write the values back into the nodes
+     * Variant A
      * <br>Target: time O(n log n), space O(n)
      */
-    public static ListNode sortListArray(ListNode head) {
+    public static ListNode sortListA(ListNode head) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - top-down merge sort: cut the list in the middle, sort both halves, merge
-     * <br>Target: time O(n log n), space O(log n) for the recursion
+     * Variant B
+     * <br>Target: time O(n log n), space O(log n)
      */
-    public static ListNode sortListTopDown(ListNode head) {
+    public static ListNode sortListB(ListNode head) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: bottom-up merge sort, splicing runs of width 1, 2, 4...
+     * Variant C
      * <br>Target: time O(n log n), space O(1)
      */
-    public static ListNode sortList(ListNode head) {
+    public static ListNode sortListC(ListNode head) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC148SortList::sortListArray);
-        runAll("B", LC148SortList::sortListTopDown);
-        runAll("C", LC148SortList::sortList);
+        runAll("A", LC148SortList::sortListA);
+        runAll("B", LC148SortList::sortListB);
+        runAll("C", LC148SortList::sortListC);
         System.out.println(passed + "/" + total + " passed");
     }
 

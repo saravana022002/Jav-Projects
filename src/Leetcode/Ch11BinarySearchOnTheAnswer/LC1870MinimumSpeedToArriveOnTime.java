@@ -37,27 +37,27 @@ import java.util.function.Supplier;
 public class LC1870MinimumSpeedToArriveOnTime {
 
     /**
-     * Variant A - brute force: try speeds 1, 2, 3, ... up to 10^7 and simulate the journey
+     * Variant A
      * <br>Target: time O(n * 10^7), space O(1)
      */
-    public static int minSpeedOnTimeLinearScan(int[] dist, double hour) {
+    public static int minSpeedOnTimeA(int[] dist, double hour) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: binary search on the integer speed, test the journey
+     * Variant B
      * <br>Target: time O(n log 10^7), space O(1)
      */
-    public static int minSpeedOnTime(int[] dist, double hour) {
+    public static int minSpeedOnTimeB(int[] dist, double hour) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1870MinimumSpeedToArriveOnTime::minSpeedOnTimeLinearScan);
-        runAll("B", LC1870MinimumSpeedToArriveOnTime::minSpeedOnTime);
+        runAll("A", LC1870MinimumSpeedToArriveOnTime::minSpeedOnTimeA);
+        runAll("B", LC1870MinimumSpeedToArriveOnTime::minSpeedOnTimeB);
         System.out.println(passed + "/" + total + " passed");
     }
 

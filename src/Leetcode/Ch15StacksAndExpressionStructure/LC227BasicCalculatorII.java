@@ -35,37 +35,37 @@ import java.util.function.Supplier;
 public class LC227BasicCalculatorII {
 
     /**
-     * Variant A - brute force: split into tokens, collapse every * and / first, then fold + and -
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int calculateBruteForce(String s) {
+    public static int calculateA(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - no stack: keep only the running sum and the term being built
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static int calculateTwoVariables(String s) {
+    public static int calculateB(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: stack of signed terms, * and / fire on the top at once
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int calculate(String s) {
+    public static int calculateC(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC227BasicCalculatorII::calculateBruteForce);
-        runAll("B", LC227BasicCalculatorII::calculateTwoVariables);
-        runAll("C", LC227BasicCalculatorII::calculate);
+        runAll("A", LC227BasicCalculatorII::calculateA);
+        runAll("B", LC227BasicCalculatorII::calculateB);
+        runAll("C", LC227BasicCalculatorII::calculateC);
         System.out.println(passed + "/" + total + " passed");
     }
 

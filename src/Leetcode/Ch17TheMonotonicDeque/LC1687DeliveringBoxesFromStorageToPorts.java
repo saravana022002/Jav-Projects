@@ -40,39 +40,39 @@ import java.util.function.Supplier;
 public class LC1687DeliveringBoxesFromStorageToPorts {
 
     /**
-     * Variant A - dp over prefixes; for each end, try every allowed start of the last load
+     * Variant A
      * <br>Target: time O(n * maxBoxes) (at most O(n^2)), space O(n)
      */
-    public static int boxDeliveringBruteForce(int[][] boxes, int portsCount, int maxBoxes,
+    public static int boxDeliveringA(int[][] boxes, int portsCount, int maxBoxes,
                                               int maxWeight) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - the same dp; the best state in the allowed window read from a min-heap
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int boxDeliveringHeap(int[][] boxes, int portsCount, int maxBoxes,
+    public static int boxDeliveringB(int[][] boxes, int portsCount, int maxBoxes,
                                         int maxWeight) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: the same dp, the allowed window in a monotonic deque
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int boxDelivering(int[][] boxes, int portsCount, int maxBoxes, int maxWeight) {
+    public static int boxDeliveringC(int[][] boxes, int portsCount, int maxBoxes, int maxWeight) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1687DeliveringBoxesFromStorageToPorts::boxDeliveringBruteForce);
-        runAll("B", LC1687DeliveringBoxesFromStorageToPorts::boxDeliveringHeap);
-        runAll("C", LC1687DeliveringBoxesFromStorageToPorts::boxDelivering);
+        runAll("A", LC1687DeliveringBoxesFromStorageToPorts::boxDeliveringA);
+        runAll("B", LC1687DeliveringBoxesFromStorageToPorts::boxDeliveringB);
+        runAll("C", LC1687DeliveringBoxesFromStorageToPorts::boxDeliveringC);
         System.out.println(passed + "/" + total + " passed");
     }
 

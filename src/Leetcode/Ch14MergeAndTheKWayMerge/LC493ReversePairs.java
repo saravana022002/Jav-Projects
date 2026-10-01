@@ -36,37 +36,37 @@ import java.util.function.Supplier;
 public class LC493ReversePairs {
 
     /**
-     * Variant A - brute force: test every pair of positions
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int reversePairsBruteForce(int[] nums) {
+    public static int reversePairsA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - Fenwick tree over compressed values: scan left to right, count earlier values
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int reversePairsFenwick(int[] nums) {
+    public static int reversePairsB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: merge sort; count the cross pairs before each merge
+     * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int reversePairs(int[] nums) {
+    public static int reversePairsC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC493ReversePairs::reversePairsBruteForce);
-        runAll("B", LC493ReversePairs::reversePairsFenwick);
-        runAll("C", LC493ReversePairs::reversePairs);
+        runAll("A", LC493ReversePairs::reversePairsA);
+        runAll("B", LC493ReversePairs::reversePairsB);
+        runAll("C", LC493ReversePairs::reversePairsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

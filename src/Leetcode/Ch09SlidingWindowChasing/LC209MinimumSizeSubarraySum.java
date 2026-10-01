@@ -33,37 +33,37 @@ import java.util.function.Supplier;
 public class LC209MinimumSizeSubarraySum {
 
     /**
-     * Variant A - brute force: from every start, extend until the sum reaches target
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int minSubArrayLenBruteForce(int target, int[] nums) {
+    public static int minSubArrayLenA(int target, int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - prefix sums, binary-search the nearest end reaching target for each start
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int minSubArrayLenBinarySearch(int target, int[] nums) {
+    public static int minSubArrayLenB(int target, int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sliding window, shrink while sum >= target
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static int minSubArrayLen(int target, int[] nums) {
+    public static int minSubArrayLenC(int target, int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC209MinimumSizeSubarraySum::minSubArrayLenBruteForce);
-        runAll("B", LC209MinimumSizeSubarraySum::minSubArrayLenBinarySearch);
-        runAll("C", LC209MinimumSizeSubarraySum::minSubArrayLen);
+        runAll("A", LC209MinimumSizeSubarraySum::minSubArrayLenA);
+        runAll("B", LC209MinimumSizeSubarraySum::minSubArrayLenB);
+        runAll("C", LC209MinimumSizeSubarraySum::minSubArrayLenC);
         System.out.println(passed + "/" + total + " passed");
     }
 

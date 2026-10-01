@@ -34,37 +34,37 @@ import java.util.function.Supplier;
 public class LC862ShortestSubarrayWithSumAtLeastK {
 
     /**
-     * Variant A - brute force: from every start, extend until the running sum reaches k
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int shortestSubarrayBruteForce(int[] nums, int k) {
+    public static int shortestSubarrayA(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - prefix sums, with a min-heap of the earlier (prefix value, index) pairs
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int shortestSubarrayHeap(int[] nums, int k) {
+    public static int shortestSubarrayB(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: prefix sums plus a monotonic deque of indices
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int shortestSubarray(int[] nums, int k) {
+    public static int shortestSubarrayC(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC862ShortestSubarrayWithSumAtLeastK::shortestSubarrayBruteForce);
-        runAll("B", LC862ShortestSubarrayWithSumAtLeastK::shortestSubarrayHeap);
-        runAll("C", LC862ShortestSubarrayWithSumAtLeastK::shortestSubarray);
+        runAll("A", LC862ShortestSubarrayWithSumAtLeastK::shortestSubarrayA);
+        runAll("B", LC862ShortestSubarrayWithSumAtLeastK::shortestSubarrayB);
+        runAll("C", LC862ShortestSubarrayWithSumAtLeastK::shortestSubarrayC);
         System.out.println(passed + "/" + total + " passed");
     }
 

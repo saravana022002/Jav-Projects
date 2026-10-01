@@ -33,27 +33,27 @@ import java.util.function.Supplier;
 public class LC1051HeightChecker {
 
     /**
-     * Variant A - sort a copy of the array, then compare it with the original
+     * Variant A
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int heightCheckerSort(int[] heights) {
+    public static int heightCheckerA(int[] heights) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: count each height, read the counts back in order
+     * Variant B
      * <br>Target: time O(n + R), space O(R)    (R = largest possible height = 100)
      */
-    public static int heightChecker(int[] heights) {
+    public static int heightCheckerB(int[] heights) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1051HeightChecker::heightCheckerSort);
-        runAll("B", LC1051HeightChecker::heightChecker);
+        runAll("A", LC1051HeightChecker::heightCheckerA);
+        runAll("B", LC1051HeightChecker::heightCheckerB);
         System.out.println(passed + "/" + total + " passed");
     }
 

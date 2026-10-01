@@ -31,37 +31,37 @@ import java.util.function.Supplier;
 public class LC274HIndex {
 
     /**
-     * Variant A - try h from n down to 0, counting the papers with at least h citations
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int hIndexBruteForce(int[] citations) {
+    public static int hIndexA(int[] citations) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sort the citations, then scan the sorted array once
-     * <br>Target: time O(n log n), space O(1)    (sort the input array in place)
+     * Variant B
+     * <br>Target: time O(n log n), space O(1)
      */
-    public static int hIndexSort(int[] citations) {
+    public static int hIndexB(int[] citations) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: count the papers per citation value, scan the counts
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int hIndex(int[] citations) {
+    public static int hIndexC(int[] citations) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC274HIndex::hIndexBruteForce);
-        runAll("B", LC274HIndex::hIndexSort);
-        runAll("C", LC274HIndex::hIndex);
+        runAll("A", LC274HIndex::hIndexA);
+        runAll("B", LC274HIndex::hIndexB);
+        runAll("C", LC274HIndex::hIndexC);
         System.out.println(passed + "/" + total + " passed");
     }
 

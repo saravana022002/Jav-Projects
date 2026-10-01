@@ -37,37 +37,37 @@ import java.util.function.Supplier;
 public class LC217ContainsDuplicate {
 
     /**
-     * Variant A - brute force: compare every pair of elements
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static boolean containsDuplicateBruteForce(int[] nums) {
+    public static boolean containsDuplicateA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - hash set: remember what you have seen, stop at the first repeat
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static boolean containsDuplicateHashSet(int[] nums) {
+    public static boolean containsDuplicateB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sort nums, then look for two equal values side by side
-     * <br>Target: time O(n log n), space O(1) extra (nums is sorted in place)
+     * Variant C
+     * <br>Target: time O(n log n), space O(1) extra
      */
-    public static boolean containsDuplicate(int[] nums) {
+    public static boolean containsDuplicateC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC217ContainsDuplicate::containsDuplicateBruteForce);
-        runAll("B", LC217ContainsDuplicate::containsDuplicateHashSet);
-        runAll("C", LC217ContainsDuplicate::containsDuplicate);
+        runAll("A", LC217ContainsDuplicate::containsDuplicateA);
+        runAll("B", LC217ContainsDuplicate::containsDuplicateB);
+        runAll("C", LC217ContainsDuplicate::containsDuplicateC);
         System.out.println(passed + "/" + total + " passed");
     }
 

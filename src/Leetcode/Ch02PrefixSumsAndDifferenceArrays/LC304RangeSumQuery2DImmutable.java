@@ -40,11 +40,11 @@ import java.util.Arrays;
 public class LC304RangeSumQuery2DImmutable {
 
     /**
-     * Variant A - brute force: add up every cell of the rectangle on each query
+     * Variant A
      * <br>Target: time O(1) to build, O(m * n) per sumRegion, space O(1) extra
      */
-    public static class NumMatrixBruteForce {
-        public NumMatrixBruteForce(int[][] matrix) {
+    public static class NumMatrixA {
+        public NumMatrixA(int[][] matrix) {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -56,11 +56,11 @@ public class LC304RangeSumQuery2DImmutable {
     }
 
     /**
-     * Variant B - a prefix-sum array per row; each query adds one slice per row
+     * Variant B
      * <br>Target: time O(m * n) to build, O(m) per sumRegion, space O(m * n)
      */
-    public static class NumMatrixRowPrefix {
-        public NumMatrixRowPrefix(int[][] matrix) {
+    public static class NumMatrixB {
+        public NumMatrixB(int[][] matrix) {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -72,11 +72,11 @@ public class LC304RangeSumQuery2DImmutable {
     }
 
     /**
-     * Variant C - this chapter's technique: 2D prefix sums, each query reads four table entries
+     * Variant C
      * <br>Target: time O(m * n) to build, O(1) per sumRegion, space O(m * n)
      */
-    public static class NumMatrix {
-        public NumMatrix(int[][] matrix) {
+    public static class NumMatrixC {
+        public NumMatrixC(int[][] matrix) {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -90,18 +90,18 @@ public class LC304RangeSumQuery2DImmutable {
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
         runAll("A", m -> {
-            LC304RangeSumQuery2DImmutable.NumMatrixBruteForce nm =
-                    new LC304RangeSumQuery2DImmutable.NumMatrixBruteForce(m);
+            LC304RangeSumQuery2DImmutable.NumMatrixA nm =
+                    new LC304RangeSumQuery2DImmutable.NumMatrixA(m);
             return nm::sumRegion;
         });
         runAll("B", m -> {
-            LC304RangeSumQuery2DImmutable.NumMatrixRowPrefix nm =
-                    new LC304RangeSumQuery2DImmutable.NumMatrixRowPrefix(m);
+            LC304RangeSumQuery2DImmutable.NumMatrixB nm =
+                    new LC304RangeSumQuery2DImmutable.NumMatrixB(m);
             return nm::sumRegion;
         });
         runAll("C", m -> {
-            LC304RangeSumQuery2DImmutable.NumMatrix nm =
-                    new LC304RangeSumQuery2DImmutable.NumMatrix(m);
+            LC304RangeSumQuery2DImmutable.NumMatrixC nm =
+                    new LC304RangeSumQuery2DImmutable.NumMatrixC(m);
             return nm::sumRegion;
         });
         System.out.println(passed + "/" + total + " passed");

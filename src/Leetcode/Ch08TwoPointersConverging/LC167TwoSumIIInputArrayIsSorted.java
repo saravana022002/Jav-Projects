@@ -33,37 +33,37 @@ import java.util.function.Supplier;
 public class LC167TwoSumIIInputArrayIsSorted {
 
     /**
-     * Variant A - brute force: check every pair of positions
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int[] twoSumBruteForce(int[] numbers, int target) {
+    public static int[] twoSumA(int[] numbers, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - for each element, binary-search the rest for its partner
+     * Variant B
      * <br>Target: time O(n log n), space O(1)
      */
-    public static int[] twoSumBinarySearch(int[] numbers, int target) {
+    public static int[] twoSumB(int[] numbers, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: two pointers moving towards each other
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static int[] twoSum(int[] numbers, int target) {
+    public static int[] twoSumC(int[] numbers, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC167TwoSumIIInputArrayIsSorted::twoSumBruteForce);
-        runAll("B", LC167TwoSumIIInputArrayIsSorted::twoSumBinarySearch);
-        runAll("C", LC167TwoSumIIInputArrayIsSorted::twoSum);
+        runAll("A", LC167TwoSumIIInputArrayIsSorted::twoSumA);
+        runAll("B", LC167TwoSumIIInputArrayIsSorted::twoSumB);
+        runAll("C", LC167TwoSumIIInputArrayIsSorted::twoSumC);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC253MeetingRoomsII {
 
     /**
-     * Variant A - brute force: at every start time, count the meetings that are running
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int minMeetingRoomsBruteForce(int[][] intervals) {
+    public static int minMeetingRoomsA(int[][] intervals) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sort by start; a min-heap of end times tells which room frees up first
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int minMeetingRoomsHeap(int[][] intervals) {
+    public static int minMeetingRoomsB(int[][] intervals) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sweep over sorted start and end events with a counter
+     * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int minMeetingRooms(int[][] intervals) {
+    public static int minMeetingRoomsC(int[][] intervals) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC253MeetingRoomsII::minMeetingRoomsBruteForce);
-        runAll("B", LC253MeetingRoomsII::minMeetingRoomsHeap);
-        runAll("C", LC253MeetingRoomsII::minMeetingRooms);
+        runAll("A", LC253MeetingRoomsII::minMeetingRoomsA);
+        runAll("B", LC253MeetingRoomsII::minMeetingRoomsB);
+        runAll("C", LC253MeetingRoomsII::minMeetingRoomsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

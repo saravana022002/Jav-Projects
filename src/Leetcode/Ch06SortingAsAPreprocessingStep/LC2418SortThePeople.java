@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC2418SortThePeople {
 
     /**
-     * Variant A - selection sort on the heights, swapping the names along with them
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static String[] sortPeopleSelectionSort(String[] names, int[] heights) {
+    public static String[] sortPeopleA(String[] names, int[] heights) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - map each height to its name, read the names off the sorted heights
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static String[] sortPeopleHeightMap(String[] names, int[] heights) {
+    public static String[] sortPeopleB(String[] names, int[] heights) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sort the indices 0..n-1 using height as the key
+     * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
-    public static String[] sortPeople(String[] names, int[] heights) {
+    public static String[] sortPeopleC(String[] names, int[] heights) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC2418SortThePeople::sortPeopleSelectionSort);
-        runAll("B", LC2418SortThePeople::sortPeopleHeightMap);
-        runAll("C", LC2418SortThePeople::sortPeople);
+        runAll("A", LC2418SortThePeople::sortPeopleA);
+        runAll("B", LC2418SortThePeople::sortPeopleB);
+        runAll("C", LC2418SortThePeople::sortPeopleC);
         System.out.println(passed + "/" + total + " passed");
     }
 

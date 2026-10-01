@@ -38,37 +38,37 @@ import java.util.function.Supplier;
 public class LC75SortColors {
 
     /**
-     * Variant A - brute force: sort by hand with insertion sort (no library sort)
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static void sortColorsBruteForce(int[] nums) {
+    public static void sortColorsA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - count the 0s, 1s and 2s, then overwrite the array
-     * <br>Target: time O(n), space O(1)   (two passes)
+     * Variant B
+     * <br>Target: time O(n), space O(1)
      */
-    public static void sortColorsCounting(int[] nums) {
+    public static void sortColorsB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: a single pass that partitions into three bands
-     * <br>Target: time O(n), space O(1)   (one pass)
+     * Variant C
+     * <br>Target: time O(n), space O(1)
      */
-    public static void sortColors(int[] nums) {
+    public static void sortColorsC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC75SortColors::sortColorsBruteForce);
-        runAll("B", LC75SortColors::sortColorsCounting);
-        runAll("C", LC75SortColors::sortColors);
+        runAll("A", LC75SortColors::sortColorsA);
+        runAll("B", LC75SortColors::sortColorsB);
+        runAll("C", LC75SortColors::sortColorsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

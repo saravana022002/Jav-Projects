@@ -34,38 +34,37 @@ import java.util.function.Supplier;
 public class LC540SingleElementInASortedArray {
 
     /**
-     * Variant A - brute force: XOR all the numbers, the equal pairs cancel out
+     * Variant A
      * <br>Target: time O(n), space O(1)
      */
-    public static int singleNonDuplicateBruteForce(int[] nums) {
+    public static int singleNonDuplicateA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - binary search on mid and its twin, using the parity of the left part's size
+     * Variant B
      * <br>Target: time O(log n), space O(1)
      */
-    public static int singleNonDuplicateThreeWay(int[] nums) {
+    public static int singleNonDuplicateB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: boundary search on "does the pair at i, i + 1 match"
-     *             over the even indices
+     * Variant C
      * <br>Target: time O(log n), space O(1)
      */
-    public static int singleNonDuplicate(int[] nums) {
+    public static int singleNonDuplicateC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC540SingleElementInASortedArray::singleNonDuplicateBruteForce);
-        runAll("B", LC540SingleElementInASortedArray::singleNonDuplicateThreeWay);
-        runAll("C", LC540SingleElementInASortedArray::singleNonDuplicate);
+        runAll("A", LC540SingleElementInASortedArray::singleNonDuplicateA);
+        runAll("B", LC540SingleElementInASortedArray::singleNonDuplicateB);
+        runAll("C", LC540SingleElementInASortedArray::singleNonDuplicateC);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -38,37 +38,37 @@ import java.util.function.Supplier;
 public class LC1094CarPooling {
 
     /**
-     * Variant A - brute force: at every pick-up, add up the passengers of all trips on board
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static boolean carPoolingBruteForce(int[][] trips, int capacity) {
+    public static boolean carPoolingA(int[][] trips, int capacity) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - difference array over the kilometres, then a running sum
+     * Variant B
      * <br>Target: time O(n + L), space O(L)     (L = largest kilometre, at most 1000)
      */
-    public static boolean carPoolingDifferenceArray(int[][] trips, int capacity) {
+    public static boolean carPoolingB(int[][] trips, int capacity) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sweep over sorted events carrying passenger counts
+     * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
-    public static boolean carPooling(int[][] trips, int capacity) {
+    public static boolean carPoolingC(int[][] trips, int capacity) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1094CarPooling::carPoolingBruteForce);
-        runAll("B", LC1094CarPooling::carPoolingDifferenceArray);
-        runAll("C", LC1094CarPooling::carPooling);
+        runAll("A", LC1094CarPooling::carPoolingA);
+        runAll("B", LC1094CarPooling::carPoolingB);
+        runAll("C", LC1094CarPooling::carPoolingC);
         System.out.println(passed + "/" + total + " passed");
     }
 

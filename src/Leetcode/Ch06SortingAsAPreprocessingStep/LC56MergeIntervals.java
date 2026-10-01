@@ -38,37 +38,37 @@ import java.util.function.Supplier;
 public class LC56MergeIntervals {
 
     /**
-     * Variant A - brute force: link every overlapping pair, merge each connected group
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int[][] mergeOverlapGraph(int[][] intervals) {
+    public static int[][] mergeA(int[][] intervals) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sort the starts and the ends separately, sweep them counting open intervals
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int[][] mergeStartsAndEnds(int[][] intervals) {
+    public static int[][] mergeB(int[][] intervals) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sort the intervals by start, then one merging pass
+     * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int[][] merge(int[][] intervals) {
+    public static int[][] mergeC(int[][] intervals) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC56MergeIntervals::mergeOverlapGraph);
-        runAll("B", LC56MergeIntervals::mergeStartsAndEnds);
-        runAll("C", LC56MergeIntervals::merge);
+        runAll("A", LC56MergeIntervals::mergeA);
+        runAll("B", LC56MergeIntervals::mergeB);
+        runAll("C", LC56MergeIntervals::mergeC);
         System.out.println(passed + "/" + total + " passed");
     }
 

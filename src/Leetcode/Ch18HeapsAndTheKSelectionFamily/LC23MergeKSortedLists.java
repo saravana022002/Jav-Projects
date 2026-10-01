@@ -49,37 +49,37 @@ public class LC23MergeKSortedLists {
     }
 
     /**
-     * Variant A - collect every value into an array, sort it, build a fresh list
+     * Variant A
      * <br>Target: time O(N log N), space O(N)
      */
-    public static ListNode mergeKListsSorting(ListNode[] lists) {
+    public static ListNode mergeKListsA(ListNode[] lists) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - merge the lists two at a time, round after round
-     * <br>Target: time O(N log k), space O(1) extra (O(log k) if you use recursion)
+     * Variant B
+     * <br>Target: time O(N log k), space O(1) extra
      */
-    public static ListNode mergeKListsPairwise(ListNode[] lists) {
+    public static ListNode mergeKListsB(ListNode[] lists) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: a min-heap holding the current head of each list
+     * Variant C
      * <br>Target: time O(N log k), space O(k)
      */
-    public static ListNode mergeKLists(ListNode[] lists) {
+    public static ListNode mergeKListsC(ListNode[] lists) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC23MergeKSortedLists::mergeKListsSorting);
-        runAll("B", LC23MergeKSortedLists::mergeKListsPairwise);
-        runAll("C", LC23MergeKSortedLists::mergeKLists);
+        runAll("A", LC23MergeKSortedLists::mergeKListsA);
+        runAll("B", LC23MergeKSortedLists::mergeKListsB);
+        runAll("C", LC23MergeKSortedLists::mergeKListsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

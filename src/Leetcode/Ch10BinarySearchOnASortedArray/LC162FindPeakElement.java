@@ -33,37 +33,37 @@ import java.util.function.Supplier;
 public class LC162FindPeakElement {
 
     /**
-     * Variant A - brute force: scan for the first element that is larger than its successor
+     * Variant A
      * <br>Target: time O(n), space O(1)
      */
-    public static int findPeakElementBruteForce(int[] nums) {
+    public static int findPeakElementA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - binary search: stop if mid beats both neighbours, else move to the larger one
+     * Variant B
      * <br>Target: time O(log n), space O(1)
      */
-    public static int findPeakElementThreeWay(int[] nums) {
+    public static int findPeakElementB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: boundary search on "nums[i] > nums[i + 1]"
+     * Variant C
      * <br>Target: time O(log n), space O(1)
      */
-    public static int findPeakElement(int[] nums) {
+    public static int findPeakElementC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC162FindPeakElement::findPeakElementBruteForce);
-        runAll("B", LC162FindPeakElement::findPeakElementThreeWay);
-        runAll("C", LC162FindPeakElement::findPeakElement);
+        runAll("A", LC162FindPeakElement::findPeakElementA);
+        runAll("B", LC162FindPeakElement::findPeakElementB);
+        runAll("C", LC162FindPeakElement::findPeakElementC);
         System.out.println(passed + "/" + total + " passed");
     }
 

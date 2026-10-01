@@ -38,27 +38,27 @@ import java.util.function.Supplier;
 public class LC150EvaluateReversePolishNotation {
 
     /**
-     * Variant A - brute force: find the first operator, replace "a b op" by its value, repeat
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int evalRPNBruteForce(String[] tokens) {
+    public static int evalRPNA(String[] tokens) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: stack of operands, an operator combines the top two
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int evalRPN(String[] tokens) {
+    public static int evalRPNB(String[] tokens) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC150EvaluateReversePolishNotation::evalRPNBruteForce);
-        runAll("B", LC150EvaluateReversePolishNotation::evalRPN);
+        runAll("A", LC150EvaluateReversePolishNotation::evalRPNA);
+        runAll("B", LC150EvaluateReversePolishNotation::evalRPNB);
         System.out.println(passed + "/" + total + " passed");
     }
 

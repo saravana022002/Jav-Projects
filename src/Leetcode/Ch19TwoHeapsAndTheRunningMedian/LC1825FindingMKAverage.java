@@ -41,11 +41,11 @@ import java.util.function.Supplier;
 public class LC1825FindingMKAverage {
 
     /**
-     * Variant A - queue of the last m numbers; on every query sort a copy, add up the middle
+     * Variant A
      * <br>Target: time O(1) per addElement, O(m log m) per calculateMKAverage, space O(m)
      */
-    public static class MKAverageSorting {
-        public MKAverageSorting(int m, int k) {
+    public static class MKAverageA {
+        public MKAverageA(int m, int k) {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -62,11 +62,11 @@ public class LC1825FindingMKAverage {
     }
 
     /**
-     * Variant B - also keep the window sorted (binary search + shifting); sum the middle on query
-     * <br>Target: time O(m) per addElement (shifting), O(m) per calculateMKAverage, space O(m)
+     * Variant B
+     * <br>Target: time O(m) per addElement, O(m) per calculateMKAverage, space O(m)
      */
-    public static class MKAverageSortedWindow {
-        public MKAverageSortedWindow(int m, int k) {
+    public static class MKAverageB {
+        public MKAverageB(int m, int k) {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -83,11 +83,11 @@ public class LC1825FindingMKAverage {
     }
 
     /**
-     * Variant C - this chapter's technique: three groups (k smallest, middle, k largest)
+     * Variant C
      * <br>Target: time O(log m) per addElement, O(1) per calculateMKAverage, space O(m)
      */
-    public static class MKAverage {
-        public MKAverage(int m, int k) {
+    public static class MKAverageC {
+        public MKAverageC(int m, int k) {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -106,23 +106,23 @@ public class LC1825FindingMKAverage {
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
         runAll("A", (m, k) -> {
-            LC1825FindingMKAverage.MKAverageSorting s =
-                    new LC1825FindingMKAverage.MKAverageSorting(m, k);
+            LC1825FindingMKAverage.MKAverageA s =
+                    new LC1825FindingMKAverage.MKAverageA(m, k);
             return new Stream() {
                 public void add(int num) { s.addElement(num); }
                 public int average() { return s.calculateMKAverage(); }
             };
         });
         runAll("B", (m, k) -> {
-            LC1825FindingMKAverage.MKAverageSortedWindow s =
-                    new LC1825FindingMKAverage.MKAverageSortedWindow(m, k);
+            LC1825FindingMKAverage.MKAverageB s =
+                    new LC1825FindingMKAverage.MKAverageB(m, k);
             return new Stream() {
                 public void add(int num) { s.addElement(num); }
                 public int average() { return s.calculateMKAverage(); }
             };
         });
         runAll("C", (m, k) -> {
-            LC1825FindingMKAverage.MKAverage s = new LC1825FindingMKAverage.MKAverage(m, k);
+            LC1825FindingMKAverage.MKAverageC s = new LC1825FindingMKAverage.MKAverageC(m, k);
             return new Stream() {
                 public void add(int num) { s.addElement(num); }
                 public int average() { return s.calculateMKAverage(); }

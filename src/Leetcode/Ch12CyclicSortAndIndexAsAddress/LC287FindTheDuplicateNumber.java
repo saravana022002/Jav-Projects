@@ -39,37 +39,37 @@ import java.util.function.Supplier;
 public class LC287FindTheDuplicateNumber {
 
     /**
-     * Variant A - brute force: compare every pair of positions
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int findDuplicateAllPairs(int[] nums) {
+    public static int findDuplicateA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - binary search on the value, count the entries <= mid (pigeonhole principle)
+     * Variant B
      * <br>Target: time O(n log n), space O(1)
      */
-    public static int findDuplicateBinarySearch(int[] nums) {
+    public static int findDuplicateB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: follow i -> nums[i] as pointers, Floyd's cycle finding
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static int findDuplicate(int[] nums) {
+    public static int findDuplicateC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC287FindTheDuplicateNumber::findDuplicateAllPairs);
-        runAll("B", LC287FindTheDuplicateNumber::findDuplicateBinarySearch);
-        runAll("C", LC287FindTheDuplicateNumber::findDuplicate);
+        runAll("A", LC287FindTheDuplicateNumber::findDuplicateA);
+        runAll("B", LC287FindTheDuplicateNumber::findDuplicateB);
+        runAll("C", LC287FindTheDuplicateNumber::findDuplicateC);
         System.out.println(passed + "/" + total + " passed");
     }
 

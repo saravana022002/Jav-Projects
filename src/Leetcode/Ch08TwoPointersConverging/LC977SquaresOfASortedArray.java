@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC977SquaresOfASortedArray {
 
     /**
-     * Variant A - square every element, then sort the result
+     * Variant A
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int[] sortedSquaresSort(int[] nums) {
+    public static int[] sortedSquaresA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - find where the numbers turn non-negative, then merge the two sorted halves
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int[] sortedSquaresMerge(int[] nums) {
+    public static int[] sortedSquaresB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: two pointers at the ends, moving towards each other
+     * Variant C
      * <br>Target: time O(n), space O(n)    (the result array)
      */
-    public static int[] sortedSquares(int[] nums) {
+    public static int[] sortedSquaresC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC977SquaresOfASortedArray::sortedSquaresSort);
-        runAll("B", LC977SquaresOfASortedArray::sortedSquaresMerge);
-        runAll("C", LC977SquaresOfASortedArray::sortedSquares);
+        runAll("A", LC977SquaresOfASortedArray::sortedSquaresA);
+        runAll("B", LC977SquaresOfASortedArray::sortedSquaresB);
+        runAll("C", LC977SquaresOfASortedArray::sortedSquaresC);
         System.out.println(passed + "/" + total + " passed");
     }
 

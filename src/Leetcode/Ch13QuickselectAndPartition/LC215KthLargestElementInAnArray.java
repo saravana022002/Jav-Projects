@@ -38,37 +38,37 @@ import java.util.function.Supplier;
 public class LC215KthLargestElementInAnArray {
 
     /**
-     * Variant A - sort the array, then read the element at position n - k
-     * <br>Target: time O(n log n), space O(1) extra (the sort works in place)
+     * Variant A
+     * <br>Target: time O(n log n), space O(1) extra
      */
-    public static int findKthLargestSorting(int[] nums, int k) {
+    public static int findKthLargestA(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - keep a min-heap of the k largest values seen so far
+     * Variant B
      * <br>Target: time O(n log k), space O(k)
      */
-    public static int findKthLargestHeap(int[] nums, int k) {
+    public static int findKthLargestB(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: quickselect, random pivot, keep only one side
+     * Variant C
      * <br>Target: time O(n) expected (O(n^2) worst case), space O(1)
      */
-    public static int findKthLargest(int[] nums, int k) {
+    public static int findKthLargestC(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC215KthLargestElementInAnArray::findKthLargestSorting);
-        runAll("B", LC215KthLargestElementInAnArray::findKthLargestHeap);
-        runAll("C", LC215KthLargestElementInAnArray::findKthLargest);
+        runAll("A", LC215KthLargestElementInAnArray::findKthLargestA);
+        runAll("B", LC215KthLargestElementInAnArray::findKthLargestB);
+        runAll("C", LC215KthLargestElementInAnArray::findKthLargestC);
         System.out.println(passed + "/" + total + " passed");
     }
 

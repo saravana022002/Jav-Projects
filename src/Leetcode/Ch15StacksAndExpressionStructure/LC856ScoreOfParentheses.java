@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC856ScoreOfParentheses {
 
     /**
-     * Variant A - brute force: split into top-level pieces, recurse into the inside of each
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int scoreOfParenthesesBruteForce(String s) {
+    public static int scoreOfParenthesesA(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - track the nesting depth: every "()" contributes a power of two
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static int scoreOfParenthesesDepth(String s) {
+    public static int scoreOfParenthesesB(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: stack with a running score for each open bracket
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int scoreOfParentheses(String s) {
+    public static int scoreOfParenthesesC(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC856ScoreOfParentheses::scoreOfParenthesesBruteForce);
-        runAll("B", LC856ScoreOfParentheses::scoreOfParenthesesDepth);
-        runAll("C", LC856ScoreOfParentheses::scoreOfParentheses);
+        runAll("A", LC856ScoreOfParentheses::scoreOfParenthesesA);
+        runAll("B", LC856ScoreOfParentheses::scoreOfParenthesesB);
+        runAll("C", LC856ScoreOfParentheses::scoreOfParenthesesC);
         System.out.println(passed + "/" + total + " passed");
     }
 

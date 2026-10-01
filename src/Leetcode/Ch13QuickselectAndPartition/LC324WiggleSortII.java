@@ -33,38 +33,37 @@ import java.util.function.Supplier;
 public class LC324WiggleSortII {
 
     /**
-     * Variant A - sort a copy, deal values largest-first into the odd slots, then the even slots
+     * Variant A
      * <br>Target: time O(n log n), space O(n)
      */
-    public static void wiggleSortSorting(int[] nums) {
+    public static void wiggleSortA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - quickselect the median, split around it into a copy, then interleave
+     * Variant B
      * <br>Target: time O(n) expected (O(n^2) worst case), space O(n)
      */
-    public static void wiggleSortCopy(int[] nums) {
+    public static void wiggleSortB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: quickselect the median, then one in-place
-     *             three-way partition over remapped slot indices
+     * Variant C
      * <br>Target: time O(n) expected (O(n^2) worst case), space O(1)
      */
-    public static void wiggleSort(int[] nums) {
+    public static void wiggleSortC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC324WiggleSortII::wiggleSortSorting);
-        runAll("B", LC324WiggleSortII::wiggleSortCopy);
-        runAll("C", LC324WiggleSortII::wiggleSort);
+        runAll("A", LC324WiggleSortII::wiggleSortA);
+        runAll("B", LC324WiggleSortII::wiggleSortB);
+        runAll("C", LC324WiggleSortII::wiggleSortC);
         System.out.println(passed + "/" + total + " passed");
     }
 

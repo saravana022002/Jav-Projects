@@ -32,27 +32,27 @@ import java.util.function.Supplier;
 public class LC503NextGreaterElementII {
 
     /**
-     * Variant A - brute force: for every index, walk the next n - 1 positions with wrap-around
+     * Variant A
      * <br>Target: time O(n^2), space O(1)    (besides the answer array)
      */
-    public static int[] nextGreaterElementsBruteForce(int[] nums) {
+    public static int[] nextGreaterElementsA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: monotonic stack of indices, scanning the array twice
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int[] nextGreaterElements(int[] nums) {
+    public static int[] nextGreaterElementsB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC503NextGreaterElementII::nextGreaterElementsBruteForce);
-        runAll("B", LC503NextGreaterElementII::nextGreaterElements);
+        runAll("A", LC503NextGreaterElementII::nextGreaterElementsA);
+        runAll("B", LC503NextGreaterElementII::nextGreaterElementsB);
         System.out.println(passed + "/" + total + " passed");
     }
 

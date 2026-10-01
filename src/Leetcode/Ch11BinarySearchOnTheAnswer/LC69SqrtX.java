@@ -34,37 +34,37 @@ import java.util.function.Supplier;
 public class LC69SqrtX {
 
     /**
-     * Variant A - brute force: try 0, 1, 2, ... for as long as the square still fits
+     * Variant A
      * <br>Target: time O(sqrt(x)), space O(1)
      */
-    public static int mySqrtLinearScan(int x) {
+    public static int mySqrtA(int x) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - Newton's method: keep averaging a guess r with x / r
+     * Variant B
      * <br>Target: time O(log x), space O(1)
      */
-    public static int mySqrtNewton(int x) {
+    public static int mySqrtB(int x) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: binary search on the answer, test mid * mid <= x
+     * Variant C
      * <br>Target: time O(log x), space O(1)
      */
-    public static int mySqrt(int x) {
+    public static int mySqrtC(int x) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC69SqrtX::mySqrtLinearScan);
-        runAll("B", LC69SqrtX::mySqrtNewton);
-        runAll("C", LC69SqrtX::mySqrt);
+        runAll("A", LC69SqrtX::mySqrtA);
+        runAll("B", LC69SqrtX::mySqrtB);
+        runAll("C", LC69SqrtX::mySqrtC);
         System.out.println(passed + "/" + total + " passed");
     }
 

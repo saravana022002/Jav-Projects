@@ -49,37 +49,37 @@ public class LC21MergeTwoSortedLists {
     }
 
     /**
-     * Variant A - copy all values into an array, sort it, build a fresh list
+     * Variant A
      * <br>Target: time O((m + n) log(m + n)), space O(m + n)
      */
-    public static ListNode mergeTwoListsSorting(ListNode list1, ListNode list2) {
+    public static ListNode mergeTwoListsA(ListNode list1, ListNode list2) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - recursion: the smaller head, followed by the merge of everything after it
-     * <br>Target: time O(m + n), space O(m + n) for the call stack
+     * Variant B
+     * <br>Target: time O(m + n), space O(m + n)
      */
-    public static ListNode mergeTwoListsRecursive(ListNode list1, ListNode list2) {
+    public static ListNode mergeTwoListsB(ListNode list1, ListNode list2) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: iterative merge from a dummy head, relinking the nodes
+     * Variant C
      * <br>Target: time O(m + n), space O(1)
      */
-    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    public static ListNode mergeTwoListsC(ListNode list1, ListNode list2) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC21MergeTwoSortedLists::mergeTwoListsSorting);
-        runAll("B", LC21MergeTwoSortedLists::mergeTwoListsRecursive);
-        runAll("C", LC21MergeTwoSortedLists::mergeTwoLists);
+        runAll("A", LC21MergeTwoSortedLists::mergeTwoListsA);
+        runAll("B", LC21MergeTwoSortedLists::mergeTwoListsB);
+        runAll("C", LC21MergeTwoSortedLists::mergeTwoListsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

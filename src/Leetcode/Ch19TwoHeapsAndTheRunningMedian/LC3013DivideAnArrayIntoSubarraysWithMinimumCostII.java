@@ -33,27 +33,27 @@ import java.util.function.Supplier;
 public class LC3013DivideAnArrayIntoSubarraysWithMinimumCostII {
 
     /**
-     * Variant A - brute force: for each possible 2nd start, sort its window, add the k-2 smallest
+     * Variant A
      * <br>Target: time O(n * dist * log dist), space O(dist)
      */
-    public static long minimumCostBruteForce(int[] nums, int k, int dist) {
+    public static long minimumCostA(int[] nums, int k, int dist) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: sliding window, two heaps hold the k-2 smallest
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static long minimumCost(int[] nums, int k, int dist) {
+    public static long minimumCostB(int[] nums, int k, int dist) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC3013DivideAnArrayIntoSubarraysWithMinimumCostII::minimumCostBruteForce);
-        runAll("B", LC3013DivideAnArrayIntoSubarraysWithMinimumCostII::minimumCost);
+        runAll("A", LC3013DivideAnArrayIntoSubarraysWithMinimumCostII::minimumCostA);
+        runAll("B", LC3013DivideAnArrayIntoSubarraysWithMinimumCostII::minimumCostB);
         System.out.println(passed + "/" + total + " passed");
     }
 

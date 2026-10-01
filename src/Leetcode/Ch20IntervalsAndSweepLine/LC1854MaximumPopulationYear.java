@@ -30,37 +30,37 @@ import java.util.function.Supplier;
 public class LC1854MaximumPopulationYear {
 
     /**
-     * Variant A - brute force: for every year, count the people alive in it
+     * Variant A
      * <br>Target: time O(Y * n), space O(1)     (Y = number of years, here at most 101)
      */
-    public static int maximumPopulationBruteForce(int[][] logs) {
+    public static int maximumPopulationA(int[][] logs) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sort births and deaths separately, then walk both lists with two pointers
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int maximumPopulationSortedEvents(int[][] logs) {
+    public static int maximumPopulationB(int[][] logs) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: difference array indexed by year, then prefix sums
+     * Variant C
      * <br>Target: time O(n + Y), space O(Y)
      */
-    public static int maximumPopulation(int[][] logs) {
+    public static int maximumPopulationC(int[][] logs) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1854MaximumPopulationYear::maximumPopulationBruteForce);
-        runAll("B", LC1854MaximumPopulationYear::maximumPopulationSortedEvents);
-        runAll("C", LC1854MaximumPopulationYear::maximumPopulation);
+        runAll("A", LC1854MaximumPopulationYear::maximumPopulationA);
+        runAll("B", LC1854MaximumPopulationYear::maximumPopulationB);
+        runAll("C", LC1854MaximumPopulationYear::maximumPopulationC);
         System.out.println(passed + "/" + total + " passed");
     }
 

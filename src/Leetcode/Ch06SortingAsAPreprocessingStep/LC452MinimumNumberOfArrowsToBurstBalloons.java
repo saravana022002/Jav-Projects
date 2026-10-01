@@ -35,37 +35,37 @@ import java.util.function.Supplier;
 public class LC452MinimumNumberOfArrowsToBurstBalloons {
 
     /**
-     * Variant A - brute force: repeatedly shoot at the smallest end among unburst balloons
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int findMinArrowShotsBruteForce(int[][] points) {
+    public static int findMinArrowShotsA(int[][] points) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sort by start, track the shared overlap of the current group
-     * <br>Target: time O(n log n), space O(1) besides the sort
+     * Variant B
+     * <br>Target: time O(n log n), space O(1)
      */
-    public static int findMinArrowShotsByStart(int[][] points) {
+    public static int findMinArrowShotsB(int[][] points) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sort by end, shoot at each unburst balloon's end
-     * <br>Target: time O(n log n), space O(1) besides the sort
+     * Variant C
+     * <br>Target: time O(n log n), space O(1)
      */
-    public static int findMinArrowShots(int[][] points) {
+    public static int findMinArrowShotsC(int[][] points) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC452MinimumNumberOfArrowsToBurstBalloons::findMinArrowShotsBruteForce);
-        runAll("B", LC452MinimumNumberOfArrowsToBurstBalloons::findMinArrowShotsByStart);
-        runAll("C", LC452MinimumNumberOfArrowsToBurstBalloons::findMinArrowShots);
+        runAll("A", LC452MinimumNumberOfArrowsToBurstBalloons::findMinArrowShotsA);
+        runAll("B", LC452MinimumNumberOfArrowsToBurstBalloons::findMinArrowShotsB);
+        runAll("C", LC452MinimumNumberOfArrowsToBurstBalloons::findMinArrowShotsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

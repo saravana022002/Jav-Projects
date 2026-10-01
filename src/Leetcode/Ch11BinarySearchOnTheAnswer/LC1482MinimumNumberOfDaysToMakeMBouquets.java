@@ -34,27 +34,27 @@ import java.util.function.Supplier;
 public class LC1482MinimumNumberOfDaysToMakeMBouquets {
 
     /**
-     * Variant A - brute force: try each distinct bloom day in increasing order, count bouquets
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int minDaysTryEachDay(int[] bloomDay, int m, int k) {
+    public static int minDaysA(int[] bloomDay, int m, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: binary search on the day, count runs of k open flowers
+     * Variant B
      * <br>Target: time O(n log max(bloomDay)), space O(1)
      */
-    public static int minDays(int[] bloomDay, int m, int k) {
+    public static int minDaysB(int[] bloomDay, int m, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1482MinimumNumberOfDaysToMakeMBouquets::minDaysTryEachDay);
-        runAll("B", LC1482MinimumNumberOfDaysToMakeMBouquets::minDays);
+        runAll("A", LC1482MinimumNumberOfDaysToMakeMBouquets::minDaysA);
+        runAll("B", LC1482MinimumNumberOfDaysToMakeMBouquets::minDaysB);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -34,27 +34,27 @@ import java.util.function.Supplier;
 public class LC81SearchInRotatedSortedArrayII {
 
     /**
-     * Variant A - brute force: scan every element
+     * Variant A
      * <br>Target: time O(n), space O(1)
      */
-    public static boolean searchBruteForce(int[] nums, int target) {
+    public static boolean searchA(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: LC 33's search plus a fix for ties at lo, mid, hi
+     * Variant B
      * <br>Target: time O(log n) typically but O(n) worst case (many duplicates), space O(1)
      */
-    public static boolean search(int[] nums, int target) {
+    public static boolean searchB(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC81SearchInRotatedSortedArrayII::searchBruteForce);
-        runAll("B", LC81SearchInRotatedSortedArrayII::search);
+        runAll("A", LC81SearchInRotatedSortedArrayII::searchA);
+        runAll("B", LC81SearchInRotatedSortedArrayII::searchB);
         System.out.println(passed + "/" + total + " passed");
     }
 

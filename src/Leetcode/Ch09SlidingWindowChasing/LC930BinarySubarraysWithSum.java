@@ -30,37 +30,37 @@ import java.util.function.Supplier;
 public class LC930BinarySubarraysWithSum {
 
     /**
-     * Variant A - brute force: every start with a running sum over all ends
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int numSubarraysWithSumBruteForce(int[] nums, int goal) {
+    public static int numSubarraysWithSumA(int[] nums, int goal) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - prefix sums: count earlier prefixes equal to (current prefix - goal)
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int numSubarraysWithSumPrefixCounts(int[] nums, int goal) {
+    public static int numSubarraysWithSumB(int[] nums, int goal) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: count "sum <= goal" windows minus "sum <= goal - 1"
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static int numSubarraysWithSum(int[] nums, int goal) {
+    public static int numSubarraysWithSumC(int[] nums, int goal) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC930BinarySubarraysWithSum::numSubarraysWithSumBruteForce);
-        runAll("B", LC930BinarySubarraysWithSum::numSubarraysWithSumPrefixCounts);
-        runAll("C", LC930BinarySubarraysWithSum::numSubarraysWithSum);
+        runAll("A", LC930BinarySubarraysWithSum::numSubarraysWithSumA);
+        runAll("B", LC930BinarySubarraysWithSum::numSubarraysWithSumB);
+        runAll("C", LC930BinarySubarraysWithSum::numSubarraysWithSumC);
         System.out.println(passed + "/" + total + " passed");
     }
 

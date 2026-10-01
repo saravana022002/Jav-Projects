@@ -40,11 +40,11 @@ import java.util.List;
 public class LC295FindMedianFromDataStream {
 
     /**
-     * Variant A - keep every number in a list; sort it each time the median is asked
+     * Variant A
      * <br>Target: time O(1) per addNum, O(n log n) per findMedian, space O(n)
      */
-    public static class MedianFinderSorting {
-        public MedianFinderSorting() {
+    public static class MedianFinderA {
+        public MedianFinderA() {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -61,11 +61,11 @@ public class LC295FindMedianFromDataStream {
     }
 
     /**
-     * Variant B - keep the numbers sorted at all times: binary-search the slot, then insert
-     * <br>Target: time O(n) per addNum (shifting), O(1) per findMedian, space O(n)
+     * Variant B
+     * <br>Target: time O(n) per addNum, O(1) per findMedian, space O(n)
      */
-    public static class MedianFinderSortedList {
-        public MedianFinderSortedList() {
+    public static class MedianFinderB {
+        public MedianFinderB() {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -82,11 +82,11 @@ public class LC295FindMedianFromDataStream {
     }
 
     /**
-     * Variant C - this chapter's technique: a max-heap for the lower half, a min-heap for the upper
+     * Variant C
      * <br>Target: time O(log n) per addNum, O(1) per findMedian, space O(n)
      */
-    public static class MedianFinder {
-        public MedianFinder() {
+    public static class MedianFinderC {
+        public MedianFinderC() {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -105,24 +105,24 @@ public class LC295FindMedianFromDataStream {
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
         runAll("A", () -> {
-            LC295FindMedianFromDataStream.MedianFinderSorting m =
-                    new LC295FindMedianFromDataStream.MedianFinderSorting();
+            LC295FindMedianFromDataStream.MedianFinderA m =
+                    new LC295FindMedianFromDataStream.MedianFinderA();
             return new Finder() {
                 public void add(int num) { m.addNum(num); }
                 public double median() { return m.findMedian(); }
             };
         });
         runAll("B", () -> {
-            LC295FindMedianFromDataStream.MedianFinderSortedList m =
-                    new LC295FindMedianFromDataStream.MedianFinderSortedList();
+            LC295FindMedianFromDataStream.MedianFinderB m =
+                    new LC295FindMedianFromDataStream.MedianFinderB();
             return new Finder() {
                 public void add(int num) { m.addNum(num); }
                 public double median() { return m.findMedian(); }
             };
         });
         runAll("C", () -> {
-            LC295FindMedianFromDataStream.MedianFinder m =
-                    new LC295FindMedianFromDataStream.MedianFinder();
+            LC295FindMedianFromDataStream.MedianFinderC m =
+                    new LC295FindMedianFromDataStream.MedianFinderC();
             return new Finder() {
                 public void add(int num) { m.addNum(num); }
                 public double median() { return m.findMedian(); }

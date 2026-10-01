@@ -38,27 +38,27 @@ import java.util.function.Supplier;
 public class LC1046LastStoneWeight {
 
     /**
-     * Variant A - simulate directly: sort the stones again in every turn
+     * Variant A
      * <br>Target: time O(n^2 log n), space O(1) extra
      */
-    public static int lastStoneWeightSorting(int[] stones) {
+    public static int lastStoneWeightA(int[] stones) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: a max-heap; take two out, put the difference back
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int lastStoneWeight(int[] stones) {
+    public static int lastStoneWeightB(int[] stones) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1046LastStoneWeight::lastStoneWeightSorting);
-        runAll("B", LC1046LastStoneWeight::lastStoneWeight);
+        runAll("A", LC1046LastStoneWeight::lastStoneWeightA);
+        runAll("B", LC1046LastStoneWeight::lastStoneWeightB);
         System.out.println(passed + "/" + total + " passed");
     }
 

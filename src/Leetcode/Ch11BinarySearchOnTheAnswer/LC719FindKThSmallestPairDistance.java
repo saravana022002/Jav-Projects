@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC719FindKThSmallestPairDistance {
 
     /**
-     * Variant A - brute force: list every pair distance, sort them, take the k-th
+     * Variant A
      * <br>Target: time O(n^2 log n), space O(n^2)
      */
-    public static int smallestDistancePairAllPairs(int[] nums, int k) {
+    public static int smallestDistancePairA(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - count the pairs of each distance in an array, then scan up to the k-th
+     * Variant B
      * <br>Target: time O(n^2 + M), space O(M)   (M = largest value in nums)
      */
-    public static int smallestDistancePairBuckets(int[] nums, int k) {
+    public static int smallestDistancePairB(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sort, binary search on the distance, count pairs
+     * Variant C
      * <br>Target: time O(n log n + n log M), space O(1) extra
      */
-    public static int smallestDistancePair(int[] nums, int k) {
+    public static int smallestDistancePairC(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC719FindKThSmallestPairDistance::smallestDistancePairAllPairs);
-        runAll("B", LC719FindKThSmallestPairDistance::smallestDistancePairBuckets);
-        runAll("C", LC719FindKThSmallestPairDistance::smallestDistancePair);
+        runAll("A", LC719FindKThSmallestPairDistance::smallestDistancePairA);
+        runAll("B", LC719FindKThSmallestPairDistance::smallestDistancePairB);
+        runAll("C", LC719FindKThSmallestPairDistance::smallestDistancePairC);
         System.out.println(passed + "/" + total + " passed");
     }
 

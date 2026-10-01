@@ -37,17 +37,17 @@ import java.util.function.Supplier;
 public class LC71SimplifyPath {
 
     /**
-     * Variant A - this chapter's technique: split on '/', keep a stack of directory names
+     * Variant A
      * <br>Target: time O(n), space O(n)
      */
-    public static String simplifyPath(String path) {
+    public static String simplifyPathA(String path) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC71SimplifyPath::simplifyPath);
+        runAll("A", LC71SimplifyPath::simplifyPathA);
         System.out.println(passed + "/" + total + " passed");
     }
 

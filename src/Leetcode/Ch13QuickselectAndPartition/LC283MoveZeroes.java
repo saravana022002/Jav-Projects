@@ -35,37 +35,37 @@ import java.util.function.Supplier;
 public class LC283MoveZeroes {
 
     /**
-     * Variant A - brute force: for every zero, shift the rest left and put the zero last
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static void moveZeroesBruteForce(int[] nums) {
+    public static void moveZeroesA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - two passes: pack the non-zero values to the front, then fill zeros
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static void moveZeroesTwoPass(int[] nums) {
+    public static void moveZeroesB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: one partition pass, swap each non-zero forward
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static void moveZeroes(int[] nums) {
+    public static void moveZeroesC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC283MoveZeroes::moveZeroesBruteForce);
-        runAll("B", LC283MoveZeroes::moveZeroesTwoPass);
-        runAll("C", LC283MoveZeroes::moveZeroes);
+        runAll("A", LC283MoveZeroes::moveZeroesA);
+        runAll("B", LC283MoveZeroes::moveZeroesB);
+        runAll("C", LC283MoveZeroes::moveZeroesC);
         System.out.println(passed + "/" + total + " passed");
     }
 

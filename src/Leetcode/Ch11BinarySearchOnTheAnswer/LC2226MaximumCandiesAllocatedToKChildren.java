@@ -33,27 +33,27 @@ import java.util.function.Supplier;
 public class LC2226MaximumCandiesAllocatedToKChildren {
 
     /**
-     * Variant A - brute force: try share sizes from the biggest pile downwards, count children fed
+     * Variant A
      * <br>Target: time O(n * max(candies)), space O(1)
      */
-    public static int maximumCandiesLinearScan(int[] candies, long k) {
+    public static int maximumCandiesA(int[] candies, long k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: binary search on the share size, count children fed
+     * Variant B
      * <br>Target: time O(n log max(candies)), space O(1)
      */
-    public static int maximumCandies(int[] candies, long k) {
+    public static int maximumCandiesB(int[] candies, long k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC2226MaximumCandiesAllocatedToKChildren::maximumCandiesLinearScan);
-        runAll("B", LC2226MaximumCandiesAllocatedToKChildren::maximumCandies);
+        runAll("A", LC2226MaximumCandiesAllocatedToKChildren::maximumCandiesA);
+        runAll("B", LC2226MaximumCandiesAllocatedToKChildren::maximumCandiesB);
         System.out.println(passed + "/" + total + " passed");
     }
 

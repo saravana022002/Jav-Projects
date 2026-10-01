@@ -32,19 +32,19 @@ import java.util.function.Supplier;
 public class LC2163MinimumDifferenceInSumsAfterRemovalOfElements {
 
     /**
-     * Variant A - brute force: for every split point, sort both sides to pick the best n of each
+     * Variant A
      * <br>Target: time O(n^2 log n), space O(n)
      */
-    public static long minimumDifferenceBruteForce(int[] nums) {
+    public static long minimumDifferenceA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: one heap sweeping from each end of the array
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static long minimumDifference(int[] nums) {
+    public static long minimumDifferenceB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
@@ -52,8 +52,8 @@ public class LC2163MinimumDifferenceInSumsAfterRemovalOfElements {
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
         runAll("A",
-                LC2163MinimumDifferenceInSumsAfterRemovalOfElements::minimumDifferenceBruteForce);
-        runAll("B", LC2163MinimumDifferenceInSumsAfterRemovalOfElements::minimumDifference);
+                LC2163MinimumDifferenceInSumsAfterRemovalOfElements::minimumDifferenceA);
+        runAll("B", LC2163MinimumDifferenceInSumsAfterRemovalOfElements::minimumDifferenceB);
         System.out.println(passed + "/" + total + " passed");
     }
 

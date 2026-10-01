@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC2848PointsThatIntersectWithCars {
 
     /**
-     * Variant A - brute force: mark every point of every car in a boolean array, count the marks
+     * Variant A
      * <br>Target: time O(n * R), space O(R)     (R = largest coordinate, here at most 100)
      */
-    public static int numberOfPointsMarking(List<List<Integer>> nums) {
+    public static int numberOfPointsA(List<List<Integer>> nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sort by start, merge overlapping cars, add up the lengths of the merged ranges
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int numberOfPointsMerging(List<List<Integer>> nums) {
+    public static int numberOfPointsB(List<List<Integer>> nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: difference array over the line, then a running count
+     * Variant C
      * <br>Target: time O(n + R), space O(R)
      */
-    public static int numberOfPoints(List<List<Integer>> nums) {
+    public static int numberOfPointsC(List<List<Integer>> nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC2848PointsThatIntersectWithCars::numberOfPointsMarking);
-        runAll("B", LC2848PointsThatIntersectWithCars::numberOfPointsMerging);
-        runAll("C", LC2848PointsThatIntersectWithCars::numberOfPoints);
+        runAll("A", LC2848PointsThatIntersectWithCars::numberOfPointsA);
+        runAll("B", LC2848PointsThatIntersectWithCars::numberOfPointsB);
+        runAll("C", LC2848PointsThatIntersectWithCars::numberOfPointsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -38,37 +38,37 @@ import java.util.function.Supplier;
 public class LC84LargestRectangleInHistogram {
 
     /**
-     * Variant A - brute force: for every bar, grow left and right while the bars are not shorter
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int largestRectangleAreaBruteForce(int[] heights) {
+    public static int largestRectangleAreaA(int[] heights) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - two stack passes for the nearest shorter bars, then one area per bar
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int largestRectangleAreaTwoPasses(int[] heights) {
+    public static int largestRectangleAreaB(int[] heights) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: stack of rising bars, a pop closes a rectangle
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int largestRectangleArea(int[] heights) {
+    public static int largestRectangleAreaC(int[] heights) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC84LargestRectangleInHistogram::largestRectangleAreaBruteForce);
-        runAll("B", LC84LargestRectangleInHistogram::largestRectangleAreaTwoPasses);
-        runAll("C", LC84LargestRectangleInHistogram::largestRectangleArea);
+        runAll("A", LC84LargestRectangleInHistogram::largestRectangleAreaA);
+        runAll("B", LC84LargestRectangleInHistogram::largestRectangleAreaB);
+        runAll("C", LC84LargestRectangleInHistogram::largestRectangleAreaC);
         System.out.println(passed + "/" + total + " passed");
     }
 

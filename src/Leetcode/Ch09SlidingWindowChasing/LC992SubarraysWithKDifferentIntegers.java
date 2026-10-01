@@ -36,37 +36,37 @@ import java.util.function.Supplier;
 public class LC992SubarraysWithKDifferentIntegers {
 
     /**
-     * Variant A - brute force: from every start, extend with fresh counts until more than k
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int subarraysWithKDistinctBruteForce(int[] nums, int k) {
+    public static int subarraysWithKDistinctA(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: windows counting "<= k different" minus "<= k - 1"
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int subarraysWithKDistinct(int[] nums, int k) {
+    public static int subarraysWithKDistinctB(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - one pass: a window of k values plus a count of removable leading elements
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int subarraysWithKDistinctOnePass(int[] nums, int k) {
+    public static int subarraysWithKDistinctC(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC992SubarraysWithKDifferentIntegers::subarraysWithKDistinctBruteForce);
-        runAll("B", LC992SubarraysWithKDifferentIntegers::subarraysWithKDistinct);
-        runAll("C", LC992SubarraysWithKDifferentIntegers::subarraysWithKDistinctOnePass);
+        runAll("A", LC992SubarraysWithKDifferentIntegers::subarraysWithKDistinctA);
+        runAll("B", LC992SubarraysWithKDifferentIntegers::subarraysWithKDistinctB);
+        runAll("C", LC992SubarraysWithKDifferentIntegers::subarraysWithKDistinctC);
         System.out.println(passed + "/" + total + " passed");
     }
 

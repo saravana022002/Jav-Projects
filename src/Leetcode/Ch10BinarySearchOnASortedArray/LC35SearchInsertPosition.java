@@ -33,37 +33,37 @@ import java.util.function.Supplier;
 public class LC35SearchInsertPosition {
 
     /**
-     * Variant A - brute force: scan from the left for the first element >= target
+     * Variant A
      * <br>Target: time O(n), space O(1)
      */
-    public static int searchInsertBruteForce(int[] nums, int target) {
+    public static int searchInsertA(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - classic binary search with a three-way branch (equal / smaller / larger)
+     * Variant B
      * <br>Target: time O(log n), space O(1)
      */
-    public static int searchInsertThreeWay(int[] nums, int target) {
+    public static int searchInsertB(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: lower bound, the first index with nums[i] >= target
+     * Variant C
      * <br>Target: time O(log n), space O(1)
      */
-    public static int searchInsert(int[] nums, int target) {
+    public static int searchInsertC(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC35SearchInsertPosition::searchInsertBruteForce);
-        runAll("B", LC35SearchInsertPosition::searchInsertThreeWay);
-        runAll("C", LC35SearchInsertPosition::searchInsert);
+        runAll("A", LC35SearchInsertPosition::searchInsertA);
+        runAll("B", LC35SearchInsertPosition::searchInsertB);
+        runAll("C", LC35SearchInsertPosition::searchInsertC);
         System.out.println(passed + "/" + total + " passed");
     }
 

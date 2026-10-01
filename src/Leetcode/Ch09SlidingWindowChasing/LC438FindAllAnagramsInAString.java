@@ -39,38 +39,37 @@ import java.util.function.Supplier;
 public class LC438FindAllAnagramsInAString {
 
     /**
-     * Variant A - brute force: count the letters of every window from scratch, compare with p
+     * Variant A
      * <br>Target: time O(n * m), space O(1)    (n = s.length(), m = p.length())
      */
-    public static List<Integer> findAnagramsBruteForce(String s, String p) {
+    public static List<Integer> findAnagramsA(String s, String p) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - slide a 26-slot count vector, compare it with p's vector at every step
+     * Variant B
      * <br>Target: time O(26 * n + m), space O(1)
      */
-    public static List<Integer> findAnagramsCompareCounts(String s, String p) {
+    public static List<Integer> findAnagramsB(String s, String p) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: same window, a matched-letters counter replaces
-     *             the 26-slot comparison
+     * Variant C
      * <br>Target: time O(n + m), space O(1)
      */
-    public static List<Integer> findAnagrams(String s, String p) {
+    public static List<Integer> findAnagramsC(String s, String p) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC438FindAllAnagramsInAString::findAnagramsBruteForce);
-        runAll("B", LC438FindAllAnagramsInAString::findAnagramsCompareCounts);
-        runAll("C", LC438FindAllAnagramsInAString::findAnagrams);
+        runAll("A", LC438FindAllAnagramsInAString::findAnagramsA);
+        runAll("B", LC438FindAllAnagramsInAString::findAnagramsB);
+        runAll("C", LC438FindAllAnagramsInAString::findAnagramsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

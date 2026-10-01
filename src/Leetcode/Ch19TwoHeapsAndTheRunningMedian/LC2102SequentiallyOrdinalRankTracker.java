@@ -45,11 +45,11 @@ import java.util.function.Supplier;
 public class LC2102SequentiallyOrdinalRankTracker {
 
     /**
-     * Variant A - keep all locations in a list; on every get sort it and read the i-th entry
+     * Variant A
      * <br>Target: time O(1) per add, O(n log n) per get, space O(n)
      */
-    public static class SORTrackerSorting {
-        public SORTrackerSorting() {
+    public static class SORTrackerA {
+        public SORTrackerA() {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -66,11 +66,11 @@ public class LC2102SequentiallyOrdinalRankTracker {
     }
 
     /**
-     * Variant B - keep the list sorted at all times: binary-search the slot, insert, index by i
-     * <br>Target: time O(n) per add (shifting), O(1) per get, space O(n)
+     * Variant B
+     * <br>Target: time O(n) per add, O(1) per get, space O(n)
      */
-    public static class SORTrackerSortedList {
-        public SORTrackerSortedList() {
+    public static class SORTrackerB {
+        public SORTrackerB() {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -87,11 +87,11 @@ public class LC2102SequentiallyOrdinalRankTracker {
     }
 
     /**
-     * Variant C - this chapter's technique: one heap for the i best seen, one for all the others
+     * Variant C
      * <br>Target: time O(log n) per add and per get, space O(n)
      */
-    public static class SORTracker {
-        public SORTracker() {
+    public static class SORTrackerC {
+        public SORTrackerC() {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -110,24 +110,24 @@ public class LC2102SequentiallyOrdinalRankTracker {
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
         runAll("A", () -> {
-            LC2102SequentiallyOrdinalRankTracker.SORTrackerSorting t =
-                    new LC2102SequentiallyOrdinalRankTracker.SORTrackerSorting();
+            LC2102SequentiallyOrdinalRankTracker.SORTrackerA t =
+                    new LC2102SequentiallyOrdinalRankTracker.SORTrackerA();
             return new Tracker() {
                 public void add(String name, int score) { t.add(name, score); }
                 public String get() { return t.get(); }
             };
         });
         runAll("B", () -> {
-            LC2102SequentiallyOrdinalRankTracker.SORTrackerSortedList t =
-                    new LC2102SequentiallyOrdinalRankTracker.SORTrackerSortedList();
+            LC2102SequentiallyOrdinalRankTracker.SORTrackerB t =
+                    new LC2102SequentiallyOrdinalRankTracker.SORTrackerB();
             return new Tracker() {
                 public void add(String name, int score) { t.add(name, score); }
                 public String get() { return t.get(); }
             };
         });
         runAll("C", () -> {
-            LC2102SequentiallyOrdinalRankTracker.SORTracker t =
-                    new LC2102SequentiallyOrdinalRankTracker.SORTracker();
+            LC2102SequentiallyOrdinalRankTracker.SORTrackerC t =
+                    new LC2102SequentiallyOrdinalRankTracker.SORTrackerC();
             return new Tracker() {
                 public void add(String name, int score) { t.add(name, score); }
                 public String get() { return t.get(); }

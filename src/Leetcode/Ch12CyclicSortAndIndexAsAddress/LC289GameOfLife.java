@@ -38,27 +38,27 @@ import java.util.function.Supplier;
 public class LC289GameOfLife {
 
     /**
-     * Variant A - compute the next generation into a copy of the board, then copy it back
+     * Variant A
      * <br>Target: time O(m * n), space O(m * n)
      */
-    public static void gameOfLifeCopy(int[][] board) {
+    public static void gameOfLifeA(int[][] board) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: in place, each cell encodes its old and new state
+     * Variant B
      * <br>Target: time O(m * n), space O(1)
      */
-    public static void gameOfLife(int[][] board) {
+    public static void gameOfLifeB(int[][] board) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC289GameOfLife::gameOfLifeCopy);
-        runAll("B", LC289GameOfLife::gameOfLife);
+        runAll("A", LC289GameOfLife::gameOfLifeA);
+        runAll("B", LC289GameOfLife::gameOfLifeB);
         System.out.println(passed + "/" + total + " passed");
     }
 

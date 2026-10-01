@@ -34,37 +34,37 @@ import java.util.function.Supplier;
 public class LC1649CreateSortedArrayThroughInstructions {
 
     /**
-     * Variant A - brute force: for each instruction, scan the inserted numbers, count both sides
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int createSortedArrayBruteForce(int[] instructions) {
+    public static int createSortedArrayA(int[] instructions) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - keep a sorted array; binary-search both counts, insert by shifting
-     * <br>Target: time O(n^2) worst case (only the shifting; the searches are O(log n)), space O(n)
+     * Variant B
+     * <br>Target: time O(n^2) worst case, space O(n)
      */
-    public static int createSortedArrayBinarySearch(int[] instructions) {
+    public static int createSortedArrayB(int[] instructions) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: Fenwick tree of counts indexed by value
+     * Variant C
      * <br>Target: time O(n log V), space O(V)     (V = largest value, at most 10^5)
      */
-    public static int createSortedArray(int[] instructions) {
+    public static int createSortedArrayC(int[] instructions) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1649CreateSortedArrayThroughInstructions::createSortedArrayBruteForce);
-        runAll("B", LC1649CreateSortedArrayThroughInstructions::createSortedArrayBinarySearch);
-        runAll("C", LC1649CreateSortedArrayThroughInstructions::createSortedArray);
+        runAll("A", LC1649CreateSortedArrayThroughInstructions::createSortedArrayA);
+        runAll("B", LC1649CreateSortedArrayThroughInstructions::createSortedArrayB);
+        runAll("C", LC1649CreateSortedArrayThroughInstructions::createSortedArrayC);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -39,39 +39,39 @@ import java.util.function.Supplier;
 public class LC220ContainsDuplicateIII {
 
     /**
-     * Variant A - compare every element with the next indexDiff elements
+     * Variant A
      * <br>Target: time O(n * indexDiff), space O(1)
      */
-    public static boolean containsNearbyAlmostDuplicateBruteForce(
+    public static boolean containsNearbyAlmostDuplicateA(
             int[] nums, int indexDiff, int valueDiff) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - keep the last indexDiff values in a sorted set, look up the nearest neighbours
+     * Variant B
      * <br>Target: time O(n log k), space O(k)    (k = min(n, indexDiff))
      */
-    public static boolean containsNearbyAlmostDuplicateTreeSet(
+    public static boolean containsNearbyAlmostDuplicateB(
             int[] nums, int indexDiff, int valueDiff) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sliding window over a hash map of value buckets
+     * Variant C
      * <br>Target: time O(n), space O(k)    (k = min(n, indexDiff))
      */
-    public static boolean containsNearbyAlmostDuplicate(int[] nums, int indexDiff, int valueDiff) {
+    public static boolean containsNearbyAlmostDuplicateC(int[] nums, int indexDiff, int valueDiff) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC220ContainsDuplicateIII::containsNearbyAlmostDuplicateBruteForce);
-        runAll("B", LC220ContainsDuplicateIII::containsNearbyAlmostDuplicateTreeSet);
-        runAll("C", LC220ContainsDuplicateIII::containsNearbyAlmostDuplicate);
+        runAll("A", LC220ContainsDuplicateIII::containsNearbyAlmostDuplicateA);
+        runAll("B", LC220ContainsDuplicateIII::containsNearbyAlmostDuplicateB);
+        runAll("C", LC220ContainsDuplicateIII::containsNearbyAlmostDuplicateC);
         System.out.println(passed + "/" + total + " passed");
     }
 

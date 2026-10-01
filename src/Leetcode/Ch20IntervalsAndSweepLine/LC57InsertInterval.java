@@ -35,37 +35,37 @@ import java.util.function.Supplier;
 public class LC57InsertInterval {
 
     /**
-     * Variant A - append the new interval, sort everything, then merge like LC 56
+     * Variant A
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int[][] insertSortAndMerge(int[][] intervals, int[] newInterval) {
+    public static int[][] insertA(int[][] intervals, int[] newInterval) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - binary-search the first and last overlapped intervals, then splice the answer
-     * <br>Target: time O(n) (the search itself is O(log n)), space O(n)
-     */
-    public static int[][] insertBinarySearch(int[][] intervals, int[] newInterval) {
-        // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
-    }
-
-    /**
-     * Variant C - this chapter's technique: one pass, no sort - copy, merge, copy
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int[][] insert(int[][] intervals, int[] newInterval) {
+    public static int[][] insertB(int[][] intervals, int[] newInterval) {
+        // TODO: write your solution
+        throw new UnsupportedOperationException("not solved yet");
+    }
+
+    /**
+     * Variant C
+     * <br>Target: time O(n), space O(n)
+     */
+    public static int[][] insertC(int[][] intervals, int[] newInterval) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC57InsertInterval::insertSortAndMerge);
-        runAll("B", LC57InsertInterval::insertBinarySearch);
-        runAll("C", LC57InsertInterval::insert);
+        runAll("A", LC57InsertInterval::insertA);
+        runAll("B", LC57InsertInterval::insertB);
+        runAll("C", LC57InsertInterval::insertC);
         System.out.println(passed + "/" + total + " passed");
     }
 

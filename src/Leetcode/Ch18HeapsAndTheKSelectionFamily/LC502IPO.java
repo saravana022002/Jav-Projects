@@ -40,27 +40,27 @@ import java.util.function.Supplier;
 public class LC502IPO {
 
     /**
-     * Variant A - k rounds; each round scans all projects for the best affordable unfinished one
+     * Variant A
      * <br>Target: time O(n * min(k, n)) (at most O(n^2)), space O(n)
      */
-    public static int findMaximizedCapitalBruteForce(int k, int w, int[] profits, int[] capital) {
+    public static int findMaximizedCapitalA(int k, int w, int[] profits, int[] capital) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: sort by capital; max-heap of affordable profits
+     * Variant B
      * <br>Target: time O(n log n + k log n), space O(n)
      */
-    public static int findMaximizedCapital(int k, int w, int[] profits, int[] capital) {
+    public static int findMaximizedCapitalB(int k, int w, int[] profits, int[] capital) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC502IPO::findMaximizedCapitalBruteForce);
-        runAll("B", LC502IPO::findMaximizedCapital);
+        runAll("A", LC502IPO::findMaximizedCapitalA);
+        runAll("B", LC502IPO::findMaximizedCapitalB);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -41,37 +41,37 @@ import java.util.function.Supplier;
 public class LC88MergeSortedArray {
 
     /**
-     * Variant A - copy nums2 into the padding of nums1, then sort the whole array
-     * <br>Target: time O((m + n) log(m + n)), space O(1) extra (the sort works in place)
+     * Variant A
+     * <br>Target: time O((m + n) log(m + n)), space O(1) extra
      */
-    public static void mergeSorting(int[] nums1, int m, int[] nums2, int n) {
+    public static void mergeA(int[] nums1, int m, int[] nums2, int n) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - copy the m real values of nums1 aside, then merge forwards into nums1
+     * Variant B
      * <br>Target: time O(m + n), space O(m)
      */
-    public static void mergeWithCopy(int[] nums1, int m, int[] nums2, int n) {
+    public static void mergeB(int[] nums1, int m, int[] nums2, int n) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: merge in place, filling nums1 from the back
+     * Variant C
      * <br>Target: time O(m + n), space O(1)
      */
-    public static void merge(int[] nums1, int m, int[] nums2, int n) {
+    public static void mergeC(int[] nums1, int m, int[] nums2, int n) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC88MergeSortedArray::mergeSorting);
-        runAll("B", LC88MergeSortedArray::mergeWithCopy);
-        runAll("C", LC88MergeSortedArray::merge);
+        runAll("A", LC88MergeSortedArray::mergeA);
+        runAll("B", LC88MergeSortedArray::mergeB);
+        runAll("C", LC88MergeSortedArray::mergeC);
         System.out.println(passed + "/" + total + " passed");
     }
 

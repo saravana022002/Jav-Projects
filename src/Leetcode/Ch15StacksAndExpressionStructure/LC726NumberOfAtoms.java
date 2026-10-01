@@ -36,37 +36,37 @@ import java.util.function.Supplier;
 public class LC726NumberOfAtoms {
 
     /**
-     * Variant A - brute force: for each atom, scan right to find the counts of its enclosing groups
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static String countOfAtomsBruteForce(String formula) {
+    public static String countOfAtomsA(String formula) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - scan right to left with a stack of the open groups' multipliers
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static String countOfAtomsRightToLeft(String formula) {
+    public static String countOfAtomsB(String formula) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: stack of count maps, merged down at each ')'
+     * Variant C
      * <br>Target: time O(n^2), space O(n)
      */
-    public static String countOfAtoms(String formula) {
+    public static String countOfAtomsC(String formula) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC726NumberOfAtoms::countOfAtomsBruteForce);
-        runAll("B", LC726NumberOfAtoms::countOfAtomsRightToLeft);
-        runAll("C", LC726NumberOfAtoms::countOfAtoms);
+        runAll("A", LC726NumberOfAtoms::countOfAtomsA);
+        runAll("B", LC726NumberOfAtoms::countOfAtomsB);
+        runAll("C", LC726NumberOfAtoms::countOfAtomsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -37,37 +37,37 @@ import java.util.function.Supplier;
 public class LC451SortCharactersByFrequency {
 
     /**
-     * Variant A - sort all the characters with a comparator on (frequency, character)
+     * Variant A
      * <br>Target: time O(n log n), space O(n)
      */
-    public static String frequencySortComparator(String s) {
+    public static String frequencySortA(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - count, then a max-heap of the distinct characters ordered by count
+     * Variant B
      * <br>Target: time O(n + k log k), space O(k) besides the result    (k = distinct characters)
      */
-    public static String frequencySortHeap(String s) {
+    public static String frequencySortB(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: bucket the characters by frequency, drain high to low
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static String frequencySort(String s) {
+    public static String frequencySortC(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC451SortCharactersByFrequency::frequencySortComparator);
-        runAll("B", LC451SortCharactersByFrequency::frequencySortHeap);
-        runAll("C", LC451SortCharactersByFrequency::frequencySort);
+        runAll("A", LC451SortCharactersByFrequency::frequencySortA);
+        runAll("B", LC451SortCharactersByFrequency::frequencySortB);
+        runAll("C", LC451SortCharactersByFrequency::frequencySortC);
         System.out.println(passed + "/" + total + " passed");
     }
 

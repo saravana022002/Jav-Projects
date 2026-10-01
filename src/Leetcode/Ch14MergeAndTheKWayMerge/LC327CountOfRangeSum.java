@@ -35,37 +35,37 @@ import java.util.function.Supplier;
 public class LC327CountOfRangeSum {
 
     /**
-     * Variant A - brute force: test the difference of every pair of prefix sums
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int countRangeSumBruteForce(int[] nums, int lower, int upper) {
+    public static int countRangeSumA(int[] nums, int lower, int upper) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - Fenwick tree over compressed prefix sums: count the earlier ones in a window
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int countRangeSumFenwick(int[] nums, int lower, int upper) {
+    public static int countRangeSumB(int[] nums, int lower, int upper) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: merge sort on prefix sums, count cross pairs per merge
+     * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int countRangeSum(int[] nums, int lower, int upper) {
+    public static int countRangeSumC(int[] nums, int lower, int upper) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC327CountOfRangeSum::countRangeSumBruteForce);
-        runAll("B", LC327CountOfRangeSum::countRangeSumFenwick);
-        runAll("C", LC327CountOfRangeSum::countRangeSum);
+        runAll("A", LC327CountOfRangeSum::countRangeSumA);
+        runAll("B", LC327CountOfRangeSum::countRangeSumB);
+        runAll("C", LC327CountOfRangeSum::countRangeSumC);
         System.out.println(passed + "/" + total + " passed");
     }
 

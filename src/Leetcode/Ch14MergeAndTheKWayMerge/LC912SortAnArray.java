@@ -41,37 +41,37 @@ import java.util.function.Supplier;
 public class LC912SortAnArray {
 
     /**
-     * Variant A - insertion sort: grow a sorted prefix, shifting larger values to the right
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int[] sortArrayInsertion(int[] nums) {
+    public static int[] sortArrayA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - heap sort: build a max-heap inside the array, then move the maximum to the back
+     * Variant B
      * <br>Target: time O(n log n), space O(1)
      */
-    public static int[] sortArrayHeapSort(int[] nums) {
+    public static int[] sortArrayB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: top-down merge sort merging through one scratch array
+     * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int[] sortArray(int[] nums) {
+    public static int[] sortArrayC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC912SortAnArray::sortArrayInsertion);
-        runAll("B", LC912SortAnArray::sortArrayHeapSort);
-        runAll("C", LC912SortAnArray::sortArray);
+        runAll("A", LC912SortAnArray::sortArrayA);
+        runAll("B", LC912SortAnArray::sortArrayB);
+        runAll("C", LC912SortAnArray::sortArrayC);
         System.out.println(passed + "/" + total + " passed");
     }
 

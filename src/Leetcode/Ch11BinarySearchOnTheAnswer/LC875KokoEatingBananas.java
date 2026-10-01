@@ -34,27 +34,27 @@ import java.util.function.Supplier;
 public class LC875KokoEatingBananas {
 
     /**
-     * Variant A - brute force: try speed 1, 2, 3, ... until she finishes within h hours
+     * Variant A
      * <br>Target: time O(n * max(piles)), space O(1)
      */
-    public static int minEatingSpeedLinearScan(int[] piles, int h) {
+    public static int minEatingSpeedA(int[] piles, int h) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: binary search on the speed, count hours per speed
+     * Variant B
      * <br>Target: time O(n log max(piles)), space O(1)
      */
-    public static int minEatingSpeed(int[] piles, int h) {
+    public static int minEatingSpeedB(int[] piles, int h) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC875KokoEatingBananas::minEatingSpeedLinearScan);
-        runAll("B", LC875KokoEatingBananas::minEatingSpeed);
+        runAll("A", LC875KokoEatingBananas::minEatingSpeedA);
+        runAll("B", LC875KokoEatingBananas::minEatingSpeedB);
         System.out.println(passed + "/" + total + " passed");
     }
 

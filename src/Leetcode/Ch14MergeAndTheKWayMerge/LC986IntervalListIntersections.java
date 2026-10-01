@@ -39,38 +39,37 @@ import java.util.function.Supplier;
 public class LC986IntervalListIntersections {
 
     /**
-     * Variant A - brute force: test every pair of intervals for an overlap
+     * Variant A
      * <br>Target: time O(m * n), space O(1) extra besides the answer
      */
-    public static int[][] intervalIntersectionBruteForce(int[][] firstList, int[][] secondList) {
+    public static int[][] intervalIntersectionA(int[][] firstList, int[][] secondList) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - for each interval of one list, binary-search where its overlaps begin in the
-     *             other list, then scan on while they still overlap
+     * Variant B
      * <br>Target: time O(m log n + k), space O(1) extra besides the answer   (k = intersections)
      */
-    public static int[][] intervalIntersectionBinarySearch(int[][] firstList, int[][] secondList) {
+    public static int[][] intervalIntersectionB(int[][] firstList, int[][] secondList) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: merge-style walk over both lists, one pointer each
+     * Variant C
      * <br>Target: time O(m + n), space O(1) extra besides the answer
      */
-    public static int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
+    public static int[][] intervalIntersectionC(int[][] firstList, int[][] secondList) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC986IntervalListIntersections::intervalIntersectionBruteForce);
-        runAll("B", LC986IntervalListIntersections::intervalIntersectionBinarySearch);
-        runAll("C", LC986IntervalListIntersections::intervalIntersection);
+        runAll("A", LC986IntervalListIntersections::intervalIntersectionA);
+        runAll("B", LC986IntervalListIntersections::intervalIntersectionB);
+        runAll("C", LC986IntervalListIntersections::intervalIntersectionC);
         System.out.println(passed + "/" + total + " passed");
     }
 

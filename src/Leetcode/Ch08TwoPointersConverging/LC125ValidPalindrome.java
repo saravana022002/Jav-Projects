@@ -33,27 +33,27 @@ import java.util.function.Supplier;
 public class LC125ValidPalindrome {
 
     /**
-     * Variant A - build a cleaned lower-case copy, then compare it with its reverse
+     * Variant A
      * <br>Target: time O(n), space O(n)
      */
-    public static boolean isPalindromeCleanCopy(String s) {
+    public static boolean isPalindromeA(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: two pointers moving inwards on the original string
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static boolean isPalindrome(String s) {
+    public static boolean isPalindromeB(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC125ValidPalindrome::isPalindromeCleanCopy);
-        runAll("B", LC125ValidPalindrome::isPalindrome);
+        runAll("A", LC125ValidPalindrome::isPalindromeA);
+        runAll("B", LC125ValidPalindrome::isPalindromeB);
         System.out.println(passed + "/" + total + " passed");
     }
 

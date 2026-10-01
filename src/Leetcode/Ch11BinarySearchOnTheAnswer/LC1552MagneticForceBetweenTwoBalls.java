@@ -33,37 +33,37 @@ import java.util.function.Supplier;
 public class LC1552MagneticForceBetweenTwoBalls {
 
     /**
-     * Variant A - brute force: try every choice of m baskets, keep the best smallest gap
+     * Variant A
      * <br>Target: time O(C(n, m) * m), space O(m)
      */
-    public static int maxDistanceTryAllChoices(int[] position, int m) {
+    public static int maxDistanceA(int[] position, int m) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: binary search on the force, greedy placement as check
+     * Variant B
      * <br>Target: time O(n log n + n log(max - min)), space O(1) extra
      */
-    public static int maxDistance(int[] position, int m) {
+    public static int maxDistanceB(int[] position, int m) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - the same search mirrored: find the first force that fails, answer is one less
+     * Variant C
      * <br>Target: time O(n log n + n log(max - min)), space O(1) extra
      */
-    public static int maxDistanceFirstFailure(int[] position, int m) {
+    public static int maxDistanceC(int[] position, int m) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1552MagneticForceBetweenTwoBalls::maxDistanceTryAllChoices);
-        runAll("B", LC1552MagneticForceBetweenTwoBalls::maxDistance);
-        runAll("C", LC1552MagneticForceBetweenTwoBalls::maxDistanceFirstFailure);
+        runAll("A", LC1552MagneticForceBetweenTwoBalls::maxDistanceA);
+        runAll("B", LC1552MagneticForceBetweenTwoBalls::maxDistanceB);
+        runAll("C", LC1552MagneticForceBetweenTwoBalls::maxDistanceC);
         System.out.println(passed + "/" + total + " passed");
     }
 

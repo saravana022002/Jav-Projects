@@ -31,37 +31,37 @@ import java.util.function.Supplier;
 public class LC164MaximumGap {
 
     /**
-     * Variant A - sort the array, then compare neighbours
-     * <br>Target: time O(n log n), space O(1)    (sort the input array in place)
+     * Variant A
+     * <br>Target: time O(n log n), space O(1)
      */
-    public static int maximumGapSort(int[] nums) {
+    public static int maximumGapA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - radix sort the values (one counting pass per digit), then compare neighbours
-     * <br>Target: time O(n), space O(n)    (the number of digits is fixed by the value range)
-     */
-    public static int maximumGapRadixSort(int[] nums) {
-        // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
-    }
-
-    /**
-     * Variant C - this chapter's technique: value-range buckets plus the pigeonhole principle
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int maximumGap(int[] nums) {
+    public static int maximumGapB(int[] nums) {
+        // TODO: write your solution
+        throw new UnsupportedOperationException("not solved yet");
+    }
+
+    /**
+     * Variant C
+     * <br>Target: time O(n), space O(n)
+     */
+    public static int maximumGapC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC164MaximumGap::maximumGapSort);
-        runAll("B", LC164MaximumGap::maximumGapRadixSort);
-        runAll("C", LC164MaximumGap::maximumGap);
+        runAll("A", LC164MaximumGap::maximumGapA);
+        runAll("B", LC164MaximumGap::maximumGapB);
+        runAll("C", LC164MaximumGap::maximumGapC);
         System.out.println(passed + "/" + total + " passed");
     }
 

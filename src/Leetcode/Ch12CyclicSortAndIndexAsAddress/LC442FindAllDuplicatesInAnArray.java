@@ -36,37 +36,37 @@ import java.util.function.Supplier;
 public class LC442FindAllDuplicatesInAnArray {
 
     /**
-     * Variant A - remember the values seen so far in a boolean array, a second sighting repeats
+     * Variant A
      * <br>Target: time O(n), space O(n)
      */
-    public static List<Integer> findDuplicatesSeen(int[] nums) {
+    public static List<Integer> findDuplicatesA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: cyclic sort, then a value in a wrong slot is a repeat
+     * Variant B
      * <br>Target: time O(n), space O(1) extra (the output list does not count)
      */
-    public static List<Integer> findDuplicates(int[] nums) {
+    public static List<Integer> findDuplicatesB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - index-as-address: negate slot v - 1 for each v, a slot already negated repeats
+     * Variant C
      * <br>Target: time O(n), space O(1) extra (the output list does not count)
      */
-    public static List<Integer> findDuplicatesMarking(int[] nums) {
+    public static List<Integer> findDuplicatesC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC442FindAllDuplicatesInAnArray::findDuplicatesSeen);
-        runAll("B", LC442FindAllDuplicatesInAnArray::findDuplicates);
-        runAll("C", LC442FindAllDuplicatesInAnArray::findDuplicatesMarking);
+        runAll("A", LC442FindAllDuplicatesInAnArray::findDuplicatesA);
+        runAll("B", LC442FindAllDuplicatesInAnArray::findDuplicatesB);
+        runAll("C", LC442FindAllDuplicatesInAnArray::findDuplicatesC);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -34,27 +34,27 @@ import java.util.function.Supplier;
 public class LC402RemoveKDigits {
 
     /**
-     * Variant A - brute force: k rounds, each deletes the digit that leaves the smallest string
+     * Variant A
      * <br>Target: time O(k * n^2), space O(n)
      */
-    public static String removeKdigitsBruteForce(String num, int k) {
+    public static String removeKdigitsA(String num, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: stack of kept digits, pop larger tops while k allows
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static String removeKdigits(String num, int k) {
+    public static String removeKdigitsB(String num, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC402RemoveKDigits::removeKdigitsBruteForce);
-        runAll("B", LC402RemoveKDigits::removeKdigits);
+        runAll("A", LC402RemoveKDigits::removeKdigitsA);
+        runAll("B", LC402RemoveKDigits::removeKdigitsB);
         System.out.println(passed + "/" + total + " passed");
     }
 

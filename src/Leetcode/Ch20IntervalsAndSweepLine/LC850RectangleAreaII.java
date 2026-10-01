@@ -33,37 +33,37 @@ import java.util.function.Supplier;
 public class LC850RectangleAreaII {
 
     /**
-     * Variant A - brute force: compress both axes, mark every covered cell of a grid, add them up
+     * Variant A
      * <br>Target: time O(n^3), space O(n^2)     (n = rectangles.length)
      */
-    public static int rectangleAreaGrid(int[][] rectangles) {
+    public static int rectangleAreaA(int[][] rectangles) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sweep over x; in each slab sort the active y-ranges and add up their union
+     * Variant B
      * <br>Target: time O(n^2 log n), space O(n)
      */
-    public static int rectangleAreaSlabs(int[][] rectangles) {
+    public static int rectangleAreaB(int[][] rectangles) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sweep over x, segment tree on compressed y
+     * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int rectangleArea(int[][] rectangles) {
+    public static int rectangleAreaC(int[][] rectangles) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC850RectangleAreaII::rectangleAreaGrid);
-        runAll("B", LC850RectangleAreaII::rectangleAreaSlabs);
-        runAll("C", LC850RectangleAreaII::rectangleArea);
+        runAll("A", LC850RectangleAreaII::rectangleAreaA);
+        runAll("B", LC850RectangleAreaII::rectangleAreaB);
+        runAll("C", LC850RectangleAreaII::rectangleAreaC);
         System.out.println(passed + "/" + total + " passed");
     }
 

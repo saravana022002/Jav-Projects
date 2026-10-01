@@ -42,37 +42,37 @@ import java.util.function.Supplier;
 public class LC373FindKPairsWithSmallestSums {
 
     /**
-     * Variant A - brute force: build every pair, sort them by sum, keep the first k
+     * Variant A
      * <br>Target: time O(m n log(m n)), space O(m n)
      */
-    public static List<List<Integer>> kSmallestPairsBruteForce(int[] nums1, int[] nums2, int k) {
+    public static List<List<Integer>> kSmallestPairsA(int[] nums1, int[] nums2, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - heap on the index grid: start at (0,0), expand right and down, skip seen cells
+     * Variant B
      * <br>Target: time O(k log k), space O(k)
      */
-    public static List<List<Integer>> kSmallestPairsGrid(int[] nums1, int[] nums2, int k) {
+    public static List<List<Integer>> kSmallestPairsB(int[] nums1, int[] nums2, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: k-way merge, each element of nums1 starts a stream
+     * Variant C
      * <br>Target: time O(k log min(m, k)), space O(min(m, k))
      */
-    public static List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
+    public static List<List<Integer>> kSmallestPairsC(int[] nums1, int[] nums2, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC373FindKPairsWithSmallestSums::kSmallestPairsBruteForce);
-        runAll("B", LC373FindKPairsWithSmallestSums::kSmallestPairsGrid);
-        runAll("C", LC373FindKPairsWithSmallestSums::kSmallestPairs);
+        runAll("A", LC373FindKPairsWithSmallestSums::kSmallestPairsA);
+        runAll("B", LC373FindKPairsWithSmallestSums::kSmallestPairsB);
+        runAll("C", LC373FindKPairsWithSmallestSums::kSmallestPairsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

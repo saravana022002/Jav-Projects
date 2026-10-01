@@ -34,37 +34,37 @@ import java.util.function.Supplier;
 public class LC973KClosestPointsToOrigin {
 
     /**
-     * Variant A - brute force: k rounds, each picking the closest point not taken yet
+     * Variant A
      * <br>Target: time O(n * k), space O(n)
      */
-    public static int[][] kClosestBruteForce(int[][] points, int k) {
+    public static int[][] kClosestA(int[][] points, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - max-heap of size k that holds the closest points seen so far
+     * Variant B
      * <br>Target: time O(n log k), space O(k)
      */
-    public static int[][] kClosestMaxHeap(int[][] points, int k) {
+    public static int[][] kClosestB(int[][] points, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sort the points by squared distance, take the first k
+     * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int[][] kClosest(int[][] points, int k) {
+    public static int[][] kClosestC(int[][] points, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC973KClosestPointsToOrigin::kClosestBruteForce);
-        runAll("B", LC973KClosestPointsToOrigin::kClosestMaxHeap);
-        runAll("C", LC973KClosestPointsToOrigin::kClosest);
+        runAll("A", LC973KClosestPointsToOrigin::kClosestA);
+        runAll("B", LC973KClosestPointsToOrigin::kClosestB);
+        runAll("C", LC973KClosestPointsToOrigin::kClosestC);
         System.out.println(passed + "/" + total + " passed");
     }
 

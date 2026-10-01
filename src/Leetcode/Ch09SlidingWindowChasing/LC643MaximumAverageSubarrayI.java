@@ -29,37 +29,37 @@ import java.util.function.Supplier;
 public class LC643MaximumAverageSubarrayI {
 
     /**
-     * Variant A - brute force: add up every window of k elements from scratch
+     * Variant A
      * <br>Target: time O(n * k), space O(1)
      */
-    public static double findMaxAverageBruteForce(int[] nums, int k) {
+    public static double findMaxAverageA(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - prefix sums: every window sum is one subtraction
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static double findMaxAveragePrefixSums(int[] nums, int k) {
+    public static double findMaxAverageB(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: fixed-size window, update the sum as it slides
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static double findMaxAverage(int[] nums, int k) {
+    public static double findMaxAverageC(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC643MaximumAverageSubarrayI::findMaxAverageBruteForce);
-        runAll("B", LC643MaximumAverageSubarrayI::findMaxAveragePrefixSums);
-        runAll("C", LC643MaximumAverageSubarrayI::findMaxAverage);
+        runAll("A", LC643MaximumAverageSubarrayI::findMaxAverageA);
+        runAll("B", LC643MaximumAverageSubarrayI::findMaxAverageB);
+        runAll("C", LC643MaximumAverageSubarrayI::findMaxAverageC);
         System.out.println(passed + "/" + total + " passed");
     }
 

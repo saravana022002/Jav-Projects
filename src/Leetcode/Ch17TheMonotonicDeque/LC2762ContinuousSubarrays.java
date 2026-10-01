@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC2762ContinuousSubarrays {
 
     /**
-     * Variant A - brute force: from every start, extend while max - min stays within 2
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static long continuousSubarraysBruteForce(int[] nums) {
+    public static long continuousSubarraysA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sliding window; min and max read from a TreeMap used as a multiset
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static long continuousSubarraysTreeMap(int[] nums) {
+    public static long continuousSubarraysB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sliding window with two monotonic deques (max and min)
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static long continuousSubarrays(int[] nums) {
+    public static long continuousSubarraysC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC2762ContinuousSubarrays::continuousSubarraysBruteForce, false);
-        runAll("B", LC2762ContinuousSubarrays::continuousSubarraysTreeMap, true);
-        runAll("C", LC2762ContinuousSubarrays::continuousSubarrays, true);
+        runAll("A", LC2762ContinuousSubarrays::continuousSubarraysA, false);
+        runAll("B", LC2762ContinuousSubarrays::continuousSubarraysB, true);
+        runAll("C", LC2762ContinuousSubarrays::continuousSubarraysC, true);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -33,27 +33,27 @@ import java.util.function.Supplier;
 public class LC1011CapacityToShipPackagesWithinDDays {
 
     /**
-     * Variant A - brute force: try capacities upward from the heaviest package, simulate loading
+     * Variant A
      * <br>Target: time O(n * sum(weights)), space O(1)
      */
-    public static int shipWithinDaysLinearScan(int[] weights, int days) {
+    public static int shipWithinDaysA(int[] weights, int days) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: binary search on the capacity, count days needed
+     * Variant B
      * <br>Target: time O(n log sum(weights)), space O(1)
      */
-    public static int shipWithinDays(int[] weights, int days) {
+    public static int shipWithinDaysB(int[] weights, int days) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1011CapacityToShipPackagesWithinDDays::shipWithinDaysLinearScan);
-        runAll("B", LC1011CapacityToShipPackagesWithinDDays::shipWithinDays);
+        runAll("A", LC1011CapacityToShipPackagesWithinDDays::shipWithinDaysA);
+        runAll("B", LC1011CapacityToShipPackagesWithinDDays::shipWithinDaysB);
         System.out.println(passed + "/" + total + " passed");
     }
 

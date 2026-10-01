@@ -31,27 +31,27 @@ import java.util.function.Supplier;
 public class LC344ReverseString {
 
     /**
-     * Variant A - write the characters into a second array in reverse, then copy them back
+     * Variant A
      * <br>Target: time O(n), space O(n)
      */
-    public static void reverseStringExtraArray(char[] s) {
+    public static void reverseStringA(char[] s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: two pointers at the ends, swapping towards the middle
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static void reverseString(char[] s) {
+    public static void reverseStringB(char[] s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC344ReverseString::reverseStringExtraArray);
-        runAll("B", LC344ReverseString::reverseString);
+        runAll("A", LC344ReverseString::reverseStringA);
+        runAll("B", LC344ReverseString::reverseStringB);
         System.out.println(passed + "/" + total + " passed");
     }
 

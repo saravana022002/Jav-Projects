@@ -37,37 +37,37 @@ import java.util.function.Supplier;
 public class LC1642FurthestBuildingYouCanReach {
 
     /**
-     * Variant A - for each target building, sort the climbs so far; ladders take the biggest ones
+     * Variant A
      * <br>Target: time O(n^2 log n), space O(n)
      */
-    public static int furthestBuildingBruteForce(int[] heights, int bricks, int ladders) {
+    public static int furthestBuildingA(int[] heights, int bricks, int ladders) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - binary search on the target building, each test is the check of Variant A
+     * Variant B
      * <br>Target: time O(n log^2 n), space O(n)
      */
-    public static int furthestBuildingBinarySearch(int[] heights, int bricks, int ladders) {
+    public static int furthestBuildingB(int[] heights, int bricks, int ladders) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: min-heap of the climbs that currently hold a ladder
+     * Variant C
      * <br>Target: time O(n log L), space O(L)     (L = ladders)
      */
-    public static int furthestBuilding(int[] heights, int bricks, int ladders) {
+    public static int furthestBuildingC(int[] heights, int bricks, int ladders) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1642FurthestBuildingYouCanReach::furthestBuildingBruteForce);
-        runAll("B", LC1642FurthestBuildingYouCanReach::furthestBuildingBinarySearch);
-        runAll("C", LC1642FurthestBuildingYouCanReach::furthestBuilding);
+        runAll("A", LC1642FurthestBuildingYouCanReach::furthestBuildingA);
+        runAll("B", LC1642FurthestBuildingYouCanReach::furthestBuildingB);
+        runAll("C", LC1642FurthestBuildingYouCanReach::furthestBuildingC);
         System.out.println(passed + "/" + total + " passed");
     }
 

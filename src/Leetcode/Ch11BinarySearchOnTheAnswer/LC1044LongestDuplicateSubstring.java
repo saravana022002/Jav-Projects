@@ -35,37 +35,37 @@ import java.util.function.Supplier;
 public class LC1044LongestDuplicateSubstring {
 
     /**
-     * Variant A - brute force: for each length from long to short, put all pieces in a HashSet
+     * Variant A
      * <br>Target: time O(n^3), space O(n^2)
      */
-    public static String longestDupSubstringLengthScan(String s) {
+    public static String longestDupSubstringA(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - binary search on the length, exact pieces in a HashSet as the check
+     * Variant B
      * <br>Target: time O(n^2 log n), space O(n^2)
      */
-    public static String longestDupSubstringSetSearch(String s) {
+    public static String longestDupSubstringB(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: binary search on the length, rolling hash as check
+     * Variant C
      * <br>Target: time O(n log n) expected, space O(n)
      */
-    public static String longestDupSubstring(String s) {
+    public static String longestDupSubstringC(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1044LongestDuplicateSubstring::longestDupSubstringLengthScan);
-        runAll("B", LC1044LongestDuplicateSubstring::longestDupSubstringSetSearch);
-        runAll("C", LC1044LongestDuplicateSubstring::longestDupSubstring);
+        runAll("A", LC1044LongestDuplicateSubstring::longestDupSubstringA);
+        runAll("B", LC1044LongestDuplicateSubstring::longestDupSubstringB);
+        runAll("C", LC1044LongestDuplicateSubstring::longestDupSubstringC);
         System.out.println(passed + "/" + total + " passed");
     }
 

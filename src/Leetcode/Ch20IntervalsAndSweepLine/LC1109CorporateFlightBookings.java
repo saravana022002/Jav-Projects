@@ -38,37 +38,37 @@ import java.util.function.Supplier;
 public class LC1109CorporateFlightBookings {
 
     /**
-     * Variant A - brute force: add each booking's seats to every flight in its range
+     * Variant A
      * <br>Target: time O(m * n), space O(1) besides the answer     (m = bookings.length)
      */
-    public static int[] corpFlightBookingsBruteForce(int[][] bookings, int n) {
+    public static int[] corpFlightBookingsA(int[][] bookings, int n) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - difference array: +seats at first, -seats after last, then prefix sums
+     * Variant B
      * <br>Target: time O(m + n), space O(n)
      */
-    public static int[] corpFlightBookingsDifferenceArray(int[][] bookings, int n) {
+    public static int[] corpFlightBookingsB(int[][] bookings, int n) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sort the +seats / -seats events, sweep the flights
+     * Variant C
      * <br>Target: time O(m log m + n), space O(m + n)
      */
-    public static int[] corpFlightBookings(int[][] bookings, int n) {
+    public static int[] corpFlightBookingsC(int[][] bookings, int n) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1109CorporateFlightBookings::corpFlightBookingsBruteForce);
-        runAll("B", LC1109CorporateFlightBookings::corpFlightBookingsDifferenceArray);
-        runAll("C", LC1109CorporateFlightBookings::corpFlightBookings);
+        runAll("A", LC1109CorporateFlightBookings::corpFlightBookingsA);
+        runAll("B", LC1109CorporateFlightBookings::corpFlightBookingsB);
+        runAll("C", LC1109CorporateFlightBookings::corpFlightBookingsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

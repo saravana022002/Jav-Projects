@@ -39,27 +39,27 @@ import java.util.function.Supplier;
 public class LC871MinimumNumberOfRefuelingStops {
 
     /**
-     * Variant A - dp: the furthest distance reachable with exactly i stops, station by station
+     * Variant A
      * <br>Target: time O(n^2), space O(n)     (n = number of stations)
      */
-    public static int minRefuelStopsDP(int target, int startFuel, int[][] stations) {
+    public static int minRefuelStopsA(int target, int startFuel, int[][] stations) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: drive on; when stuck, take the largest passed station
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int minRefuelStops(int target, int startFuel, int[][] stations) {
+    public static int minRefuelStopsB(int target, int startFuel, int[][] stations) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC871MinimumNumberOfRefuelingStops::minRefuelStopsDP);
-        runAll("B", LC871MinimumNumberOfRefuelingStops::minRefuelStops);
+        runAll("A", LC871MinimumNumberOfRefuelingStops::minRefuelStopsA);
+        runAll("B", LC871MinimumNumberOfRefuelingStops::minRefuelStopsB);
         System.out.println(passed + "/" + total + " passed");
     }
 

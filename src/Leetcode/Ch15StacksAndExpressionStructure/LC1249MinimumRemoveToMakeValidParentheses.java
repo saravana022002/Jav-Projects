@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC1249MinimumRemoveToMakeValidParentheses {
 
     /**
-     * Variant A - brute force: find one parenthesis that cannot be matched, delete it, rescan
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static String minRemoveToMakeValidBruteForce(String s) {
+    public static String minRemoveToMakeValidA(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - two passes with a counter: drop surplus ')' going right, surplus '(' going left
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static String minRemoveToMakeValidTwoPass(String s) {
+    public static String minRemoveToMakeValidB(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: stack of the indices of '('; unmatched ones are deleted
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static String minRemoveToMakeValid(String s) {
+    public static String minRemoveToMakeValidC(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1249MinimumRemoveToMakeValidParentheses::minRemoveToMakeValidBruteForce);
-        runAll("B", LC1249MinimumRemoveToMakeValidParentheses::minRemoveToMakeValidTwoPass);
-        runAll("C", LC1249MinimumRemoveToMakeValidParentheses::minRemoveToMakeValid);
+        runAll("A", LC1249MinimumRemoveToMakeValidParentheses::minRemoveToMakeValidA);
+        runAll("B", LC1249MinimumRemoveToMakeValidParentheses::minRemoveToMakeValidB);
+        runAll("C", LC1249MinimumRemoveToMakeValidParentheses::minRemoveToMakeValidC);
         System.out.println(passed + "/" + total + " passed");
     }
 

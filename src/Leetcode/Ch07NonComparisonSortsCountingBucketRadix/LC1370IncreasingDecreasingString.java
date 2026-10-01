@@ -37,27 +37,27 @@ import java.util.function.Supplier;
 public class LC1370IncreasingDecreasingString {
 
     /**
-     * Variant A - simulate the steps literally, scanning the remaining characters for each pick
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static String sortStringSimulation(String s) {
+    public static String sortStringA(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: count the letters, drain them in alternating sweeps
+     * Variant B
      * <br>Target: time O(26 * n), space O(1) besides the result string
      */
-    public static String sortString(String s) {
+    public static String sortStringB(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1370IncreasingDecreasingString::sortStringSimulation);
-        runAll("B", LC1370IncreasingDecreasingString::sortString);
+        runAll("A", LC1370IncreasingDecreasingString::sortStringA);
+        runAll("B", LC1370IncreasingDecreasingString::sortStringB);
         System.out.println(passed + "/" + total + " passed");
     }
 

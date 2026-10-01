@@ -34,37 +34,37 @@ import java.util.function.Supplier;
 public class LC1985FindTheKthLargestIntegerInTheArray {
 
     /**
-     * Variant A - sort the strings with a numeric comparator, read position n - k
-     * <br>Target: time O(n log n * L) with L = longest string, space O(n) for the sort
+     * Variant A
+     * <br>Target: time O(n log n * L) with L = longest string, space O(n)
      */
-    public static String kthLargestNumberSorting(String[] nums, int k) {
+    public static String kthLargestNumberA(String[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - keep a min-heap of the k largest strings seen so far
+     * Variant B
      * <br>Target: time O(n log k * L) with L = longest string, space O(k)
      */
-    public static String kthLargestNumberHeap(String[] nums, int k) {
+    public static String kthLargestNumberB(String[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: quickselect on the strings with a numeric comparator
+     * Variant C
      * <br>Target: time O(n * L) expected (O(n^2 * L) worst case), space O(1) extra
      */
-    public static String kthLargestNumber(String[] nums, int k) {
+    public static String kthLargestNumberC(String[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1985FindTheKthLargestIntegerInTheArray::kthLargestNumberSorting);
-        runAll("B", LC1985FindTheKthLargestIntegerInTheArray::kthLargestNumberHeap);
-        runAll("C", LC1985FindTheKthLargestIntegerInTheArray::kthLargestNumber);
+        runAll("A", LC1985FindTheKthLargestIntegerInTheArray::kthLargestNumberA);
+        runAll("B", LC1985FindTheKthLargestIntegerInTheArray::kthLargestNumberB);
+        runAll("C", LC1985FindTheKthLargestIntegerInTheArray::kthLargestNumberC);
         System.out.println(passed + "/" + total + " passed");
     }
 

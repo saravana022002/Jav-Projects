@@ -31,37 +31,37 @@ import java.util.function.Supplier;
 public class LC907SumOfSubarrayMinimums {
 
     /**
-     * Variant A - brute force: for every start, extend the end while tracking the running minimum
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int sumSubarrayMinsBruteForce(int[] arr) {
+    public static int sumSubarrayMinsA(int[] arr) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - stack plus DP: the total of the minimums of subarrays ending at each index
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int sumSubarrayMinsDp(int[] arr) {
+    public static int sumSubarrayMinsB(int[] arr) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: count the subarrays where each element is the minimum
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int sumSubarrayMins(int[] arr) {
+    public static int sumSubarrayMinsC(int[] arr) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC907SumOfSubarrayMinimums::sumSubarrayMinsBruteForce);
-        runAll("B", LC907SumOfSubarrayMinimums::sumSubarrayMinsDp);
-        runAll("C", LC907SumOfSubarrayMinimums::sumSubarrayMins);
+        runAll("A", LC907SumOfSubarrayMinimums::sumSubarrayMinsA);
+        runAll("B", LC907SumOfSubarrayMinimums::sumSubarrayMinsB);
+        runAll("C", LC907SumOfSubarrayMinimums::sumSubarrayMinsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

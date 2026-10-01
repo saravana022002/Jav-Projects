@@ -33,37 +33,37 @@ import java.util.function.Supplier;
 public class LC406QueueReconstructionByHeight {
 
     /**
-     * Variant A - sort short to tall (ties: larger k first); take the (k+1)-th empty slot
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int[][] reconstructQueueFreeSlots(int[][] people) {
+    public static int[][] reconstructQueueA(int[][] people) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - slot idea of A, with a Fenwick tree finding the (k+1)-th empty slot
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int[][] reconstructQueueFenwick(int[][] people) {
+    public static int[][] reconstructQueueB(int[][] people) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sort tall to short (ties: smaller k first), insert at k
+     * Variant C
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int[][] reconstructQueue(int[][] people) {
+    public static int[][] reconstructQueueC(int[][] people) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC406QueueReconstructionByHeight::reconstructQueueFreeSlots);
-        runAll("B", LC406QueueReconstructionByHeight::reconstructQueueFenwick);
-        runAll("C", LC406QueueReconstructionByHeight::reconstructQueue);
+        runAll("A", LC406QueueReconstructionByHeight::reconstructQueueA);
+        runAll("B", LC406QueueReconstructionByHeight::reconstructQueueB);
+        runAll("C", LC406QueueReconstructionByHeight::reconstructQueueC);
         System.out.println(passed + "/" + total + " passed");
     }
 

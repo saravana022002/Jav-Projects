@@ -34,37 +34,37 @@ import java.util.function.Supplier;
 public class LC153FindMinimumInRotatedSortedArray {
 
     /**
-     * Variant A - brute force: scan every element and keep the smallest
+     * Variant A
      * <br>Target: time O(n), space O(1)
      */
-    public static int findMinBruteForce(int[] nums) {
+    public static int findMinA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - binary search for the inflection point where a value is smaller than its left
+     * Variant B
      * <br>Target: time O(log n), space O(1)
      */
-    public static int findMinInflectionPoint(int[] nums) {
+    public static int findMinB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: boundary search against the last element
+     * Variant C
      * <br>Target: time O(log n), space O(1)
      */
-    public static int findMin(int[] nums) {
+    public static int findMinC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC153FindMinimumInRotatedSortedArray::findMinBruteForce);
-        runAll("B", LC153FindMinimumInRotatedSortedArray::findMinInflectionPoint);
-        runAll("C", LC153FindMinimumInRotatedSortedArray::findMin);
+        runAll("A", LC153FindMinimumInRotatedSortedArray::findMinA);
+        runAll("B", LC153FindMinimumInRotatedSortedArray::findMinB);
+        runAll("C", LC153FindMinimumInRotatedSortedArray::findMinC);
         System.out.println(passed + "/" + total + " passed");
     }
 

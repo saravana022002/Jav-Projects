@@ -34,27 +34,27 @@ import java.util.function.Supplier;
 public class LC1856MaximumSubarrayMinProduct {
 
     /**
-     * Variant A - brute force: for every start, extend the end while tracking the min and the sum
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int maxSumMinProductBruteForce(int[] nums) {
+    public static int maxSumMinProductA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: prefix sums plus the nearest smaller value on each side
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int maxSumMinProduct(int[] nums) {
+    public static int maxSumMinProductB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1856MaximumSubarrayMinProduct::maxSumMinProductBruteForce);
-        runAll("B", LC1856MaximumSubarrayMinProduct::maxSumMinProduct);
+        runAll("A", LC1856MaximumSubarrayMinProduct::maxSumMinProductA);
+        runAll("B", LC1856MaximumSubarrayMinProduct::maxSumMinProductB);
         System.out.println(passed + "/" + total + " passed");
     }
 

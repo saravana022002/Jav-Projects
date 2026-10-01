@@ -30,27 +30,27 @@ import java.util.function.Supplier;
 public class LC410SplitArrayLargestSum {
 
     /**
-     * Variant A - dynamic programming over (prefix length, number of pieces) with prefix sums
+     * Variant A
      * <br>Target: time O(k * n^2), space O(k * n)
      */
-    public static int splitArrayDP(int[] nums, int k) {
+    public static int splitArrayA(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: binary search on the largest sum, count pieces needed
+     * Variant B
      * <br>Target: time O(n log sum(nums)), space O(1)
      */
-    public static int splitArray(int[] nums, int k) {
+    public static int splitArrayB(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC410SplitArrayLargestSum::splitArrayDP);
-        runAll("B", LC410SplitArrayLargestSum::splitArray);
+        runAll("A", LC410SplitArrayLargestSum::splitArrayA);
+        runAll("B", LC410SplitArrayLargestSum::splitArrayB);
         System.out.println(passed + "/" + total + " passed");
     }
 

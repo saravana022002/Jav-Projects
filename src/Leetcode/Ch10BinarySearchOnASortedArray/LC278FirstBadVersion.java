@@ -43,19 +43,19 @@ public class LC278FirstBadVersion {
     public static class Solution extends VersionControl {
 
         /**
-         * Variant A - brute force: ask about version 1, 2, 3, ... until one is bad
+         * Variant A
          * <br>Target: time O(n), space O(1)    (up to n API calls)
          */
-        public int firstBadVersionBruteForce(int n) {
+        public int firstBadVersionA(int n) {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
 
         /**
-         * Variant B - this chapter's technique: binary search for the good/bad boundary
+         * Variant B
          * <br>Target: time O(log n), space O(1)    (O(log n) API calls)
          */
-        public int firstBadVersion(int n) {
+        public int firstBadVersionB(int n) {
             // TODO: write your solution
             throw new UnsupportedOperationException("not solved yet");
         }
@@ -63,8 +63,8 @@ public class LC278FirstBadVersion {
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", (api, n) -> api.firstBadVersionBruteForce(n), false);
-        runAll("B", (api, n) -> api.firstBadVersion(n), true);
+        runAll("A", (api, n) -> api.firstBadVersionA(n), false);
+        runAll("B", (api, n) -> api.firstBadVersionB(n), true);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC765CouplesHoldingHands {
 
     /**
-     * Variant A - greedy, seat pair by seat pair: scan the rest of the row for the partner
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int minSwapsCouplesLinearSearch(int[] row) {
+    public static int minSwapsCouplesA(int[] row) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: same greedy, an inverse array finds the partner's seat
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static int minSwapsCouples(int[] row) {
+    public static int minSwapsCouplesB(int[] row) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - union-find over the seat pairs linked by a couple; answer is n - groups
+     * Variant C
      * <br>Target: time O(n * alpha(n)), space O(n)
      */
-    public static int minSwapsCouplesUnionFind(int[] row) {
+    public static int minSwapsCouplesC(int[] row) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC765CouplesHoldingHands::minSwapsCouplesLinearSearch);
-        runAll("B", LC765CouplesHoldingHands::minSwapsCouples);
-        runAll("C", LC765CouplesHoldingHands::minSwapsCouplesUnionFind);
+        runAll("A", LC765CouplesHoldingHands::minSwapsCouplesA);
+        runAll("B", LC765CouplesHoldingHands::minSwapsCouplesB);
+        runAll("C", LC765CouplesHoldingHands::minSwapsCouplesC);
         System.out.println(passed + "/" + total + " passed");
     }
 

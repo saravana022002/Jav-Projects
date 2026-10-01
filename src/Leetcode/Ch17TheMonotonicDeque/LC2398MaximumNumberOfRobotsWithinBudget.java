@@ -37,38 +37,38 @@ import java.util.function.Supplier;
 public class LC2398MaximumNumberOfRobotsWithinBudget {
 
     /**
-     * Variant A - brute force: from every start, extend the group while its cost fits the budget
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int maximumRobotsBruteForce(int[] chargeTimes, int[] runningCosts, long budget) {
+    public static int maximumRobotsA(int[] chargeTimes, int[] runningCosts, long budget) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - binary search on the group size; test one size with a sliding window
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int maximumRobotsBinarySearch(int[] chargeTimes, int[] runningCosts,
+    public static int maximumRobotsB(int[] chargeTimes, int[] runningCosts,
                                                 long budget) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: two pointers plus a monotonic deque of charge times
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int maximumRobots(int[] chargeTimes, int[] runningCosts, long budget) {
+    public static int maximumRobotsC(int[] chargeTimes, int[] runningCosts, long budget) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC2398MaximumNumberOfRobotsWithinBudget::maximumRobotsBruteForce);
-        runAll("B", LC2398MaximumNumberOfRobotsWithinBudget::maximumRobotsBinarySearch);
-        runAll("C", LC2398MaximumNumberOfRobotsWithinBudget::maximumRobots);
+        runAll("A", LC2398MaximumNumberOfRobotsWithinBudget::maximumRobotsA);
+        runAll("B", LC2398MaximumNumberOfRobotsWithinBudget::maximumRobotsB);
+        runAll("C", LC2398MaximumNumberOfRobotsWithinBudget::maximumRobotsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

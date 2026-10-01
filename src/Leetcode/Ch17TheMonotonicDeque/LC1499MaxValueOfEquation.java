@@ -36,37 +36,37 @@ import java.util.function.Supplier;
 public class LC1499MaxValueOfEquation {
 
     /**
-     * Variant A - brute force: for every point, try every later point within x-distance k
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int findMaxValueOfEquationBruteForce(int[][] points, int k) {
+    public static int findMaxValueOfEquationA(int[][] points, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - max-heap of earlier points ordered by a key you derive; stale ones dropped lazily
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int findMaxValueOfEquationHeap(int[][] points, int k) {
+    public static int findMaxValueOfEquationB(int[][] points, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: monotonic deque of the earlier points still in the game
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int findMaxValueOfEquation(int[][] points, int k) {
+    public static int findMaxValueOfEquationC(int[][] points, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1499MaxValueOfEquation::findMaxValueOfEquationBruteForce);
-        runAll("B", LC1499MaxValueOfEquation::findMaxValueOfEquationHeap);
-        runAll("C", LC1499MaxValueOfEquation::findMaxValueOfEquation);
+        runAll("A", LC1499MaxValueOfEquation::findMaxValueOfEquationA);
+        runAll("B", LC1499MaxValueOfEquation::findMaxValueOfEquationB);
+        runAll("C", LC1499MaxValueOfEquation::findMaxValueOfEquationC);
         System.out.println(passed + "/" + total + " passed");
     }
 

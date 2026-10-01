@@ -34,37 +34,37 @@ import java.util.function.Supplier;
 public class LC918MaximumSumCircularSubarray {
 
     /**
-     * Variant A - brute force: every start position and every length up to n, wrapping around
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int maxSubarraySumCircularBruteForce(int[] nums) {
+    public static int maxSubarraySumCircularA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - Kadane: best plain subarray versus the total minus the worst subarray
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static int maxSubarraySumCircularKadane(int[] nums) {
+    public static int maxSubarraySumCircularB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: prefix sums of the doubled array, monotonic deque
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int maxSubarraySumCircular(int[] nums) {
+    public static int maxSubarraySumCircularC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC918MaximumSumCircularSubarray::maxSubarraySumCircularBruteForce);
-        runAll("B", LC918MaximumSumCircularSubarray::maxSubarraySumCircularKadane);
-        runAll("C", LC918MaximumSumCircularSubarray::maxSubarraySumCircular);
+        runAll("A", LC918MaximumSumCircularSubarray::maxSubarraySumCircularA);
+        runAll("B", LC918MaximumSumCircularSubarray::maxSubarraySumCircularB);
+        runAll("C", LC918MaximumSumCircularSubarray::maxSubarraySumCircularC);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -38,27 +38,27 @@ import java.util.function.Supplier;
 public class LC1047RemoveAllAdjacentDuplicatesInString {
 
     /**
-     * Variant A - brute force: find a neighbouring equal pair, delete it, start scanning again
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static String removeDuplicatesBruteForce(String s) {
+    public static String removeDuplicatesA(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: stack of kept letters, compare each letter to the top
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static String removeDuplicates(String s) {
+    public static String removeDuplicatesB(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1047RemoveAllAdjacentDuplicatesInString::removeDuplicatesBruteForce);
-        runAll("B", LC1047RemoveAllAdjacentDuplicatesInString::removeDuplicates);
+        runAll("A", LC1047RemoveAllAdjacentDuplicatesInString::removeDuplicatesA);
+        runAll("B", LC1047RemoveAllAdjacentDuplicatesInString::removeDuplicatesB);
         System.out.println(passed + "/" + total + " passed");
     }
 

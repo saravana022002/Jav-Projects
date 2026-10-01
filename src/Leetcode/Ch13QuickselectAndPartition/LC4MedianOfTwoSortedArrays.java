@@ -36,38 +36,37 @@ import java.util.function.Supplier;
 public class LC4MedianOfTwoSortedArrays {
 
     /**
-     * Variant A - merge both arrays into one sorted array, read the middle value(s)
+     * Variant A
      * <br>Target: time O(m + n), space O(m + n)
      */
-    public static double findMedianSortedArraysMerge(int[] nums1, int[] nums2) {
+    public static double findMedianSortedArraysA(int[] nums1, int[] nums2) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - walk both arrays with two pointers, only as far as the middle (no merged array)
+     * Variant B
      * <br>Target: time O(m + n), space O(1)
      */
-    public static double findMedianSortedArraysTwoPointers(int[] nums1, int[] nums2) {
+    public static double findMedianSortedArraysB(int[] nums1, int[] nums2) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: select the k-th smallest of the two arrays,
-     *             discarding about k/2 candidates per step
+     * Variant C
      * <br>Target: time O(log(m + n)), space O(1)
      */
-    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    public static double findMedianSortedArraysC(int[] nums1, int[] nums2) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC4MedianOfTwoSortedArrays::findMedianSortedArraysMerge);
-        runAll("B", LC4MedianOfTwoSortedArrays::findMedianSortedArraysTwoPointers);
-        runAll("C", LC4MedianOfTwoSortedArrays::findMedianSortedArrays);
+        runAll("A", LC4MedianOfTwoSortedArrays::findMedianSortedArraysA);
+        runAll("B", LC4MedianOfTwoSortedArrays::findMedianSortedArraysB);
+        runAll("C", LC4MedianOfTwoSortedArrays::findMedianSortedArraysC);
         System.out.println(passed + "/" + total + " passed");
     }
 

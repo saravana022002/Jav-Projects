@@ -35,37 +35,37 @@ import java.util.function.Supplier;
 public class LC378KthSmallestElementInASortedMatrix {
 
     /**
-     * Variant A - brute force: copy every entry into one array, sort it (over the memory limit)
+     * Variant A
      * <br>Target: time O(n^2 log n), space O(n^2)
      */
-    public static int kthSmallestSort(int[][] matrix, int k) {
+    public static int kthSmallestA(int[][] matrix, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - min-heap holding the next unread entry of each row, pop k times
+     * Variant B
      * <br>Target: time O(n + k log n), space O(n)
      */
-    public static int kthSmallestHeap(int[][] matrix, int k) {
+    public static int kthSmallestB(int[][] matrix, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: binary search on the value, count entries <= mid
+     * Variant C
      * <br>Target: time O(n log(max - min)), space O(1)
      */
-    public static int kthSmallest(int[][] matrix, int k) {
+    public static int kthSmallestC(int[][] matrix, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC378KthSmallestElementInASortedMatrix::kthSmallestSort);
-        runAll("B", LC378KthSmallestElementInASortedMatrix::kthSmallestHeap);
-        runAll("C", LC378KthSmallestElementInASortedMatrix::kthSmallest);
+        runAll("A", LC378KthSmallestElementInASortedMatrix::kthSmallestA);
+        runAll("B", LC378KthSmallestElementInASortedMatrix::kthSmallestB);
+        runAll("C", LC378KthSmallestElementInASortedMatrix::kthSmallestC);
         System.out.println(passed + "/" + total + " passed");
     }
 

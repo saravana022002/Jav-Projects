@@ -37,37 +37,37 @@ import java.util.function.Supplier;
 public class LC692TopKFrequentWords {
 
     /**
-     * Variant A - count the words, sort the distinct words by (count, word), take the first k
+     * Variant A
      * <br>Target: time O(n log n), space O(n)
      */
-    public static List<String> topKFrequentSort(String[] words, int k) {
+    public static List<String> topKFrequentA(String[] words, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - count the words, keep a heap of at most k words with the right tie-break
+     * Variant B
      * <br>Target: time O(n log k), space O(n)
      */
-    public static List<String> topKFrequentHeap(String[] words, int k) {
+    public static List<String> topKFrequentB(String[] words, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: bucket the words by count, order each bucket by word
+     * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
-    public static List<String> topKFrequent(String[] words, int k) {
+    public static List<String> topKFrequentC(String[] words, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC692TopKFrequentWords::topKFrequentSort);
-        runAll("B", LC692TopKFrequentWords::topKFrequentHeap);
-        runAll("C", LC692TopKFrequentWords::topKFrequent);
+        runAll("A", LC692TopKFrequentWords::topKFrequentA);
+        runAll("B", LC692TopKFrequentWords::topKFrequentB);
+        runAll("C", LC692TopKFrequentWords::topKFrequentC);
         System.out.println(passed + "/" + total + " passed");
     }
 

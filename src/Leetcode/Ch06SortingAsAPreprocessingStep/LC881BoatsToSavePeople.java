@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC881BoatsToSavePeople {
 
     /**
-     * Variant A - sort, then give each heaviest unplaced person the heaviest partner who fits
+     * Variant A
      * <br>Target: time O(n^2), space O(n)
      */
-    public static int numRescueBoatsBruteForce(int[] people, int limit) {
+    public static int numRescueBoatsA(int[] people, int limit) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - counting sort on the weights, then two pointers over the weight values
+     * Variant B
      * <br>Target: time O(n + limit), space O(limit)
      */
-    public static int numRescueBoatsCounting(int[] people, int limit) {
+    public static int numRescueBoatsB(int[] people, int limit) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sort, then two pointers pair the lightest with heaviest
-     * <br>Target: time O(n log n), space O(1) besides the sort
+     * Variant C
+     * <br>Target: time O(n log n), space O(1)
      */
-    public static int numRescueBoats(int[] people, int limit) {
+    public static int numRescueBoatsC(int[] people, int limit) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC881BoatsToSavePeople::numRescueBoatsBruteForce);
-        runAll("B", LC881BoatsToSavePeople::numRescueBoatsCounting);
-        runAll("C", LC881BoatsToSavePeople::numRescueBoats);
+        runAll("A", LC881BoatsToSavePeople::numRescueBoatsA);
+        runAll("B", LC881BoatsToSavePeople::numRescueBoatsB);
+        runAll("C", LC881BoatsToSavePeople::numRescueBoatsC);
         System.out.println(passed + "/" + total + " passed");
     }
 

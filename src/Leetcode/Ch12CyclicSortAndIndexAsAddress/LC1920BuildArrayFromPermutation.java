@@ -31,27 +31,27 @@ import java.util.function.Supplier;
 public class LC1920BuildArrayFromPermutation {
 
     /**
-     * Variant A - fill a fresh array of the same length with the values nums[nums[i]]
+     * Variant A
      * <br>Target: time O(n), space O(n)
      */
-    public static int[] buildArrayNewArray(int[] nums) {
+    public static int[] buildArrayA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: in place, pack old and new value into each cell
+     * Variant B
      * <br>Target: time O(n), space O(1) extra (the answer is nums itself)
      */
-    public static int[] buildArray(int[] nums) {
+    public static int[] buildArrayB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1920BuildArrayFromPermutation::buildArrayNewArray);
-        runAll("B", LC1920BuildArrayFromPermutation::buildArray);
+        runAll("A", LC1920BuildArrayFromPermutation::buildArrayA);
+        runAll("B", LC1920BuildArrayFromPermutation::buildArrayB);
         System.out.println(passed + "/" + total + " passed");
     }
 

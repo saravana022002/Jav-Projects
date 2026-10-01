@@ -33,27 +33,27 @@ import java.util.function.Supplier;
 public class LC2104SumOfSubarrayRanges {
 
     /**
-     * Variant A - brute force: for every start, extend the end while tracking running min and max
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static long subArrayRangesBruteForce(int[] nums) {
+    public static long subArrayRangesA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: sum of subarray maximums minus sum of minimums
+     * Variant B
      * <br>Target: time O(n), space O(n)
      */
-    public static long subArrayRanges(int[] nums) {
+    public static long subArrayRangesB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC2104SumOfSubarrayRanges::subArrayRangesBruteForce);
-        runAll("B", LC2104SumOfSubarrayRanges::subArrayRanges);
+        runAll("A", LC2104SumOfSubarrayRanges::subArrayRangesA);
+        runAll("B", LC2104SumOfSubarrayRanges::subArrayRangesB);
         System.out.println(passed + "/" + total + " passed");
     }
 

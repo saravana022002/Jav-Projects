@@ -34,37 +34,37 @@ import java.util.function.Supplier;
 public class LC1167MinimumCostToConnectSticks {
 
     /**
-     * Variant A - repeat: sort the sticks, join the two shortest, put the result back
+     * Variant A
      * <br>Target: time O(n^2 log n), space O(n)
      */
-    public static int connectSticksSorting(int[] sticks) {
+    public static int connectSticksA(int[] sticks) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sort once; two queues (original sticks, joined ones), take the smaller front
+     * Variant B
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int connectSticksTwoQueues(int[] sticks) {
+    public static int connectSticksB(int[] sticks) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: a min-heap; pop two, push their sum, add up the costs
+     * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int connectSticks(int[] sticks) {
+    public static int connectSticksC(int[] sticks) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1167MinimumCostToConnectSticks::connectSticksSorting);
-        runAll("B", LC1167MinimumCostToConnectSticks::connectSticksTwoQueues);
-        runAll("C", LC1167MinimumCostToConnectSticks::connectSticks);
+        runAll("A", LC1167MinimumCostToConnectSticks::connectSticksA);
+        runAll("B", LC1167MinimumCostToConnectSticks::connectSticksB);
+        runAll("C", LC1167MinimumCostToConnectSticks::connectSticksC);
         System.out.println(passed + "/" + total + " passed");
     }
 

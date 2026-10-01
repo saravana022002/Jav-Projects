@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC41FirstMissingPositive {
 
     /**
-     * Variant A - put all values in a HashSet, count up from 1 until one is absent
+     * Variant A
      * <br>Target: time O(n), space O(n)
      */
-    public static int firstMissingPositiveHashSet(int[] nums) {
+    public static int firstMissingPositiveA(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: cyclic sort that ignores values outside 1..n
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static int firstMissingPositive(int[] nums) {
+    public static int firstMissingPositiveB(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - index-as-address: neutralise useless values, negate slot v - 1 for each v
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static int firstMissingPositiveMarking(int[] nums) {
+    public static int firstMissingPositiveC(int[] nums) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC41FirstMissingPositive::firstMissingPositiveHashSet);
-        runAll("B", LC41FirstMissingPositive::firstMissingPositive);
-        runAll("C", LC41FirstMissingPositive::firstMissingPositiveMarking);
+        runAll("A", LC41FirstMissingPositive::firstMissingPositiveA);
+        runAll("B", LC41FirstMissingPositive::firstMissingPositiveB);
+        runAll("C", LC41FirstMissingPositive::firstMissingPositiveC);
         System.out.println(passed + "/" + total + " passed");
     }
 

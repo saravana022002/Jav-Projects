@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC32LongestValidParentheses {
 
     /**
-     * Variant A - brute force: from every start index extend to the right, tracking the balance
+     * Variant A
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int longestValidParenthesesBruteForce(String s) {
+    public static int longestValidParenthesesA(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - two counters, no stack: one pass in each direction
+     * Variant B
      * <br>Target: time O(n), space O(1)
      */
-    public static int longestValidParenthesesTwoCounters(String s) {
+    public static int longestValidParenthesesB(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: stack of the indices of the unmatched characters
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int longestValidParentheses(String s) {
+    public static int longestValidParenthesesC(String s) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC32LongestValidParentheses::longestValidParenthesesBruteForce);
-        runAll("B", LC32LongestValidParentheses::longestValidParenthesesTwoCounters);
-        runAll("C", LC32LongestValidParentheses::longestValidParentheses);
+        runAll("A", LC32LongestValidParentheses::longestValidParenthesesA);
+        runAll("B", LC32LongestValidParentheses::longestValidParenthesesB);
+        runAll("C", LC32LongestValidParentheses::longestValidParenthesesC);
         System.out.println(passed + "/" + total + " passed");
     }
 

@@ -32,37 +32,37 @@ import java.util.function.Supplier;
 public class LC16ThreeSumClosest {
 
     /**
-     * Variant A - brute force: try every triple of positions, keep the sum nearest to target
+     * Variant A
      * <br>Target: time O(n^3), space O(1)
      */
-    public static int threeSumClosestBruteForce(int[] nums, int target) {
+    public static int threeSumClosestA(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - sort, fix two numbers, binary-search the third
+     * Variant B
      * <br>Target: time O(n^2 log n), space O(1)
      */
-    public static int threeSumClosestBinarySearch(int[] nums, int target) {
+    public static int threeSumClosestB(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: sort, fix one number, two converging pointers
+     * Variant C
      * <br>Target: time O(n^2), space O(1)
      */
-    public static int threeSumClosest(int[] nums, int target) {
+    public static int threeSumClosestC(int[] nums, int target) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC16ThreeSumClosest::threeSumClosestBruteForce);
-        runAll("B", LC16ThreeSumClosest::threeSumClosestBinarySearch);
-        runAll("C", LC16ThreeSumClosest::threeSumClosest);
+        runAll("A", LC16ThreeSumClosest::threeSumClosestA);
+        runAll("B", LC16ThreeSumClosest::threeSumClosestB);
+        runAll("C", LC16ThreeSumClosest::threeSumClosestC);
         System.out.println(passed + "/" + total + " passed");
     }
 

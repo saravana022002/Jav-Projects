@@ -42,37 +42,37 @@ import java.util.function.Supplier;
 public class LC347TopKFrequentElements {
 
     /**
-     * Variant A - count the values, sort the distinct values by count, take the first k
+     * Variant A
      * <br>Target: time O(n log n), space O(n)
      */
-    public static int[] topKFrequentSort(int[] nums, int k) {
+    public static int[] topKFrequentA(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - count the values, keep a min-heap of at most k distinct values
+     * Variant B
      * <br>Target: time O(n log k), space O(n)
      */
-    public static int[] topKFrequentHeap(int[] nums, int k) {
+    public static int[] topKFrequentB(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: bucket the values by count, read buckets from the top
+     * Variant C
      * <br>Target: time O(n), space O(n)
      */
-    public static int[] topKFrequent(int[] nums, int k) {
+    public static int[] topKFrequentC(int[] nums, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC347TopKFrequentElements::topKFrequentSort);
-        runAll("B", LC347TopKFrequentElements::topKFrequentHeap);
-        runAll("C", LC347TopKFrequentElements::topKFrequent);
+        runAll("A", LC347TopKFrequentElements::topKFrequentA);
+        runAll("B", LC347TopKFrequentElements::topKFrequentB);
+        runAll("C", LC347TopKFrequentElements::topKFrequentC);
         System.out.println(passed + "/" + total + " passed");
     }
 

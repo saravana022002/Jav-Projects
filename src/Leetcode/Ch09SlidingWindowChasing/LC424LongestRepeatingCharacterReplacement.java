@@ -31,37 +31,37 @@ import java.util.function.Supplier;
 public class LC424LongestRepeatingCharacterReplacement {
 
     /**
-     * Variant A - brute force: from every start, extend while the overwrites needed stay <= k
-     * <br>Target: time O(n^2), space O(1)    (26 letter counts)
+     * Variant A
+     * <br>Target: time O(n^2), space O(1)
      */
-    public static int characterReplacementBruteForce(String s, int k) {
+    public static int characterReplacementA(String s, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - this chapter's technique: letter counts, shrink while length - max count > k
+     * Variant B
      * <br>Target: time O(26 * n), space O(1)
      */
-    public static int characterReplacement(String s, int k) {
+    public static int characterReplacementB(String s, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - same window, but the max count is never lowered, so the window only slides
+     * Variant C
      * <br>Target: time O(n), space O(1)
      */
-    public static int characterReplacementNeverShrink(String s, int k) {
+    public static int characterReplacementC(String s, int k) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC424LongestRepeatingCharacterReplacement::characterReplacementBruteForce);
-        runAll("B", LC424LongestRepeatingCharacterReplacement::characterReplacement);
-        runAll("C", LC424LongestRepeatingCharacterReplacement::characterReplacementNeverShrink);
+        runAll("A", LC424LongestRepeatingCharacterReplacement::characterReplacementA);
+        runAll("B", LC424LongestRepeatingCharacterReplacement::characterReplacementB);
+        runAll("C", LC424LongestRepeatingCharacterReplacement::characterReplacementC);
         System.out.println(passed + "/" + total + " passed");
     }
 

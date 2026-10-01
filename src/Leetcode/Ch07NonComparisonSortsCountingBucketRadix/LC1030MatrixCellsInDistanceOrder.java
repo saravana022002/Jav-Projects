@@ -35,37 +35,37 @@ import java.util.function.Supplier;
 public class LC1030MatrixCellsInDistanceOrder {
 
     /**
-     * Variant A - list every cell, then sort the cells by their distance from the centre
+     * Variant A
      * <br>Target: time O(N log N), space O(N)    (N = rows * cols)
      */
-    public static int[][] allCellsDistOrderSort(int rows, int cols, int rCenter, int cCenter) {
+    public static int[][] allCellsDistOrderA(int rows, int cols, int rCenter, int cCenter) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant B - breadth-first search outwards from the centre cell
+     * Variant B
      * <br>Target: time O(N), space O(N)
      */
-    public static int[][] allCellsDistOrderBfs(int rows, int cols, int rCenter, int cCenter) {
+    public static int[][] allCellsDistOrderB(int rows, int cols, int rCenter, int cCenter) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     /**
-     * Variant C - this chapter's technique: bucket the cells by distance, then read the buckets
+     * Variant C
      * <br>Target: time O(N), space O(N)
      */
-    public static int[][] allCellsDistOrder(int rows, int cols, int rCenter, int cCenter) {
+    public static int[][] allCellsDistOrderC(int rows, int cols, int rCenter, int cCenter) {
         // TODO: write your solution
         throw new UnsupportedOperationException("not solved yet");
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1030MatrixCellsInDistanceOrder::allCellsDistOrderSort);
-        runAll("B", LC1030MatrixCellsInDistanceOrder::allCellsDistOrderBfs);
-        runAll("C", LC1030MatrixCellsInDistanceOrder::allCellsDistOrder);
+        runAll("A", LC1030MatrixCellsInDistanceOrder::allCellsDistOrderA);
+        runAll("B", LC1030MatrixCellsInDistanceOrder::allCellsDistOrderB);
+        runAll("C", LC1030MatrixCellsInDistanceOrder::allCellsDistOrderC);
         System.out.println(passed + "/" + total + " passed");
     }
 
