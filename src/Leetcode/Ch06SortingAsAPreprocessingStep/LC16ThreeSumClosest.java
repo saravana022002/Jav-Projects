@@ -37,7 +37,21 @@ public class LC16ThreeSumClosest {
      */
     public static int threeSumClosestA(int[] nums, int target) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int min = Integer.MAX_VALUE;
+        int ans = 0;
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                for (int k = j + 1; k < nums.length; k++) {
+                    int sums = nums[i] + nums[j] + nums[k];
+                    int factor = sums > target ? sums - target : target - sums;
+                    if(factor < min){
+                        min = factor;
+                        ans = sums;
+                    }
+                }
+            }
+        }
+        return ans;
     }
 
     /**
@@ -46,7 +60,36 @@ public class LC16ThreeSumClosest {
      */
     public static int threeSumClosestB(int[] nums, int target) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int min = Integer.MAX_VALUE;
+        int n = nums.length;
+        int ans = 0;
+        int sums = 0;
+        Arrays.sort(nums);
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                int need = target - (nums[i] + nums[j]);
+                int pos = Arrays.binarySearch(nums, j + 1, n, need);
+                if(pos >= 0) return target;
+                pos = - pos - 1;
+                if(pos - 1 >= j + 1) {
+                    sums = nums[i] + nums[j] + nums[pos - 1];
+                    int low = Math.abs(sums - target);
+                    if (low < min) {
+                        min = low;
+                        ans = sums;
+                    }
+                }
+                if(pos < nums.length) {
+                    sums = nums[i] + nums[j] + nums[pos];
+                    int high = Math.abs(sums - target);
+                    if (high < min) {
+                        min = high;
+                        ans = sums;
+                    }
+                }
+            }
+        }
+        return ans;
     }
 
     /**
@@ -60,9 +103,12 @@ public class LC16ThreeSumClosest {
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC16ThreeSumClosest::threeSumClosestA);
-        runAll("B", LC16ThreeSumClosest::threeSumClosestB);
-        runAll("C", LC16ThreeSumClosest::threeSumClosestC);
+
+        int[] nums = {-1, 2, 1, -4};
+        threeSumClosestB(nums, 1);
+//        runAll("A", LC16ThreeSumClosest::threeSumClosestA);
+//        runAll("B", LC16ThreeSumClosest::threeSumClosestB);
+//        runAll("C", LC16ThreeSumClosest::threeSumClosestC);
         System.out.println(passed + "/" + total + " passed");
     }
 
