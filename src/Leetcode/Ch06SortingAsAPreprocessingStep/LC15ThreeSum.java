@@ -40,6 +40,29 @@ public class LC15ThreeSum {
      * <br>Target: time O(n^3), space O(1) besides the result
      */
     public static List<List<Integer>> threeSumA(int[] nums) {
+        List<List<Integer>> ans = new ArrayList<>();
+        Arrays.sort(nums);
+        for (int i = 0; i < nums.length; i++) {
+            if (i > 0 && nums[i] == nums[i - 1]) continue;
+            for (int j = i + 1; j < nums.length; j++) {
+                if (j > i + 1 && nums[j] == nums[j - 1]) continue;
+                for (int k = j + 1; k < nums.length; k++) {
+                    if (k > j + 1 && nums[k] == nums[k - 1]) continue;
+                    if ((nums[i]+ nums[j] + nums[k] == 0)){
+                        ans.add(Arrays.asList(nums[i], nums[j], nums[k]));
+                    }
+                }
+            }
+        }
+        return ans;
+    }
+
+    /**
+     * Variant B
+     * <br>Target: time O(n^2 log n), space O(1) besides the result
+     */
+    public static List<List<Integer>> threeSumB(int[] nums) {
+        // TODO: write your solution
         Arrays.sort(nums);
         List<List<Integer>> ans = new ArrayList<>();
         int n = nums.length;
@@ -67,15 +90,6 @@ public class LC15ThreeSum {
     }
 
     /**
-     * Variant B
-     * <br>Target: time O(n^2 log n), space O(1) besides the result
-     */
-    public static List<List<Integer>> threeSumB(int[] nums) {
-        // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
-    }
-
-    /**
      * Variant C
      * <br>Target: time O(n^2), space O(1) besides the result
      */
@@ -87,8 +101,8 @@ public class LC15ThreeSum {
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
         int[] nums = {1,2,0,1,0,0,0,0};
-        threeSumA(nums);
-//        runAll("A", LC15ThreeSum::threeSumA);
+//        threeSumA(nums);
+        runAll("A", LC15ThreeSum::threeSumA);
 //        runAll("B", LC15ThreeSum::threeSumB);
 //        runAll("C", LC15ThreeSum::threeSumC);
         System.out.println(passed + "/" + total + " passed");
