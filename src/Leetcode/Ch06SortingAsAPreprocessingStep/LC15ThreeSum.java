@@ -1,9 +1,6 @@
 package Leetcode.Ch06SortingAsAPreprocessingStep;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Objects;
+import java.util.*;
 import java.util.function.Supplier;
 
 /**
@@ -43,8 +40,30 @@ public class LC15ThreeSum {
      * <br>Target: time O(n^3), space O(1) besides the result
      */
     public static List<List<Integer>> threeSumA(int[] nums) {
-        // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        Arrays.sort(nums);
+        List<List<Integer>> ans = new ArrayList<>();
+        int n = nums.length;
+        for (int i = 0; i < n - 2 && nums[i] <= 0 ; i++) {
+            if (i > 0 && nums[i] == nums[i - 1]) continue;
+            if((nums[i] + nums[i + 1] + nums[i + 2]) > 0) break;
+            if((nums[i] + nums[n - 1] + nums[n - 2]) < 0) continue;
+            int inv = -nums[i];
+            int l = i + 1;
+            int r = nums.length - 1;
+            while(l < r){
+                if(inv < nums[l] + nums[r]){
+                    r--;
+                }else if(inv > nums[l] + nums[r]){
+                    l++;
+                }else {
+                    ans.add(Arrays.asList(nums[i], nums[l], nums[r]));
+                    l++;
+                    r--;
+                    while(l < r && nums[l] == nums[l - 1]) l++;
+                }
+            }
+        }
+        return ans;
     }
 
     /**
@@ -67,9 +86,11 @@ public class LC15ThreeSum {
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC15ThreeSum::threeSumA);
-        runAll("B", LC15ThreeSum::threeSumB);
-        runAll("C", LC15ThreeSum::threeSumC);
+        int[] nums = {1,2,0,1,0,0,0,0};
+        threeSumA(nums);
+//        runAll("A", LC15ThreeSum::threeSumA);
+//        runAll("B", LC15ThreeSum::threeSumB);
+//        runAll("C", LC15ThreeSum::threeSumC);
         System.out.println(passed + "/" + total + " passed");
     }
 
