@@ -1,7 +1,6 @@
 package Leetcode.Ch06SortingAsAPreprocessingStep;
 
-import java.util.Arrays;
-import java.util.Objects;
+import java.util.*;
 import java.util.function.Supplier;
 
 /**
@@ -37,7 +36,28 @@ public class LC2418SortThePeople {
      */
     public static String[] sortPeopleA(String[] names, int[] heights) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int max;
+        int index = 0;
+        int temp = 0;
+        String tempStr;
+        for (int i = 0; i < heights.length; i++) {
+            max = Integer.MIN_VALUE;
+            for (int j = i; j < heights.length; j++) {
+                if(max < heights[j]) {
+                    max = heights[j];
+                    index = j;
+                }
+            }
+            temp = heights[index];
+            heights[index] = heights[i];
+            heights[i] = temp;
+
+            //String Mapper
+            tempStr = names[index];
+            names[index] = names[i];
+            names[i] = tempStr;
+        }
+        return names;
     }
 
     /**
@@ -46,17 +66,61 @@ public class LC2418SortThePeople {
      */
     public static String[] sortPeopleB(String[] names, int[] heights) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        PriorityQueue<Person> peoples = new PriorityQueue<>((a, b) -> Integer.compare(b.height, a.height));
+
+        for (int i = 0; i < heights.length; i++) {
+            peoples.add(new Person(heights[i], names[i]));
+        }
+
+        String[] result = new String[names.length];
+        for (int i = 0; i < names.length; i++) result[i] = peoples.poll().name;
+        return result;
     }
 
+    static class Person{
+        int height;
+        String name;
+
+        Person(int height, String name) {
+            this.height = height;
+            this.name = name;
+        }
+    }
     /**
      * Variant C
      * <br>Target: time O(n log n), space O(n)
      */
     public static String[] sortPeopleC(String[] names, int[] heights) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        ArrayList<Person> peoples = new ArrayList<>();
+        for (int i = 0; i < heights.length; i++) {
+            peoples.add(new Person(heights[i], names[i]));
+        }
+        peoples.sort((a, b) -> Integer.compare(b.height, a.height));
+
+        String[] result = new String[names.length];
+        for (int i = 0; i < names.length; i++) result[i] = peoples.get(i).name;
+        return result;
     }
+
+
+
+    public static String[] sortPeopleD(String[] names, int[] heights) {
+        // TODO: write your solution
+        int n = heights.length;
+        Integer[] idx = new Integer[n];
+        for (int i = 0; i < n; i++) {
+            idx[i] = i;
+        }
+        Arrays.sort(idx, (a, b) -> Integer.compare(heights[b], heights[a]));
+
+        String[] nameArr = new String[n];
+        for (int i = 0; i < idx.length; i++) {
+            nameArr[i] = names[idx[i]];
+        }
+        return nameArr;
+    }
+
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods

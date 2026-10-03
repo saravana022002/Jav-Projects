@@ -1,7 +1,6 @@
 package Leetcode.Ch06SortingAsAPreprocessingStep;
 
-import java.util.Arrays;
-import java.util.Objects;
+import java.util.*;
 import java.util.function.Supplier;
 
 /**
@@ -38,8 +37,25 @@ public class LC973KClosestPointsToOrigin {
      * <br>Target: time O(n * k), space O(n)
      */
     public static int[][] kClosestA(int[][] points, int k) {
-        // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int x = 0;
+        int y = 0;
+        double[] distances = new double[points.length];
+        int n = points.length;
+        for (int i = 0; i < n; i++) {
+            x = points[i][0];
+            y = points[i][1];
+            distances[i] = Math.pow(x, 2) + Math.pow(y, 2);
+        }
+        Integer[] idx = new Integer[n];
+        for (int i = 0; i < n; i++) {
+            idx[i] = i;
+        }
+        Arrays.sort(idx, Comparator.comparingDouble(a -> distances[a]));
+        int[][] ans = new int[k][2];
+        for (int i = 0; i < k; i++) {
+            ans[i] = points[idx[i]];
+        }
+        return ans;
     }
 
     /**
@@ -48,7 +64,32 @@ public class LC973KClosestPointsToOrigin {
      */
     public static int[][] kClosestB(int[][] points, int k) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int x = 0;
+        int y = 0;
+        double[] distances = new double[points.length];
+        int n = points.length;
+        for (int i = 0; i < n; i++) {
+            x = points[i][0];
+            y = points[i][1];
+            distances[i] = Math.pow(x, 2) + Math.pow(y, 2);
+        }
+        Integer[] idx = new Integer[n];
+        for (int i = 0; i < n; i++) {
+            idx[i] = i;
+        }
+
+        PriorityQueue<Integer> queue = new PriorityQueue<>(Comparator.comparingDouble(a -> distances[a]));
+
+        queue.addAll(Arrays.asList(idx).subList(0, n));
+
+        int[][] ans = new int[k][2];
+        for (int i = 0; i < k; i++) {
+            int idxTemp = queue.poll();
+            ans[i][0] = points[idxTemp][0];
+            ans[i][1] = points[idxTemp][1];
+        }
+        return ans;
+
     }
 
     /**
@@ -57,7 +98,32 @@ public class LC973KClosestPointsToOrigin {
      */
     public static int[][] kClosestC(int[][] points, int k) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        PriorityQueue<int[]> queue = new PriorityQueue<>(Comparator.comparingInt(a -> a[0] * a[0] + a[1] * a[1]));
+        int pointBare = points.length - k;
+        int[][] ans = new int[k][2];
+        int m = 0;
+        for (int[] point : points) {
+            queue.offer(point);
+            if (pointBare < queue.size()) {
+                ans[m++] = queue.poll();
+            }
+        }
+        return ans;
+    }
+
+
+    public static int[][] kClosestD(int[][] points, int k) {
+        PriorityQueue<int[]> queue = new PriorityQueue<>((a, b) -> Integer.compare(b[0] * b[0] + b[1] * b[1], a[0] * a[0] + a[1] * a[1]));
+        int[][] ans = new int[k][2];
+        for (int[] point : points) {
+            queue.offer(point);
+            if (k < queue.size())
+                queue.poll();
+        }
+        for (int i = 0; i < k; i++) {
+            ans[i] = queue.poll();
+        }
+        return ans;
     }
 
     public static void main(String[] args) {

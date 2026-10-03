@@ -1,7 +1,6 @@
 package Leetcode.Ch06SortingAsAPreprocessingStep;
 
-import java.util.Arrays;
-import java.util.Objects;
+import java.util.*;
 import java.util.function.Supplier;
 
 /**
@@ -42,7 +41,14 @@ public class LC217ContainsDuplicate {
      */
     public static boolean containsDuplicateA(int[] nums) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if(nums[i] == nums[j]){
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     /**
@@ -51,7 +57,13 @@ public class LC217ContainsDuplicate {
      */
     public static boolean containsDuplicateB(int[] nums) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        Set<Integer> nu = new HashSet<>();
+        for (int num : nums) {
+            if (!nu.add(num)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
@@ -59,8 +71,15 @@ public class LC217ContainsDuplicate {
      * <br>Target: time O(n log n), space O(1) extra
      */
     public static boolean containsDuplicateC(int[] nums) {
-        // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        Arrays.sort(nums);
+        int temp = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            if(temp == nums[i]){
+                return true;
+            }
+            temp = nums[i];
+        }
+        return false;
     }
 
     public static void main(String[] args) {

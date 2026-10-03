@@ -43,7 +43,22 @@ public class LC912SortAnArray {
      */
     public static int[] sortArrayA(int[] nums) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int min;
+        int index = 0;
+        int temp = 0;
+        for (int i = 0; i < nums.length; i++) {
+            min = Integer.MAX_VALUE;
+            for (int j = i; j < nums.length; j++) {
+                if(min > nums[j]) {
+                    min = nums[j];
+                    index = j;
+                }
+            }
+            temp = nums[index];
+            nums[index] = nums[i];
+            nums[i] = temp;
+        }
+        return nums;
     }
 
     /**
