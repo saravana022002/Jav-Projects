@@ -37,7 +37,29 @@ public class LC881BoatsToSavePeople {
      */
     public static int numRescueBoatsA(int[] people, int limit) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        boolean[] took = new boolean[people.length];
+        int max;
+        int needIdx = -1;
+        int boat = 0;
+        for (int i = 0; i < people.length; i++) {
+            if(took[i]) continue;
+            max = Integer.MIN_VALUE;
+            needIdx = -1;
+            for (int j = 0; j < people.length; j++) {
+                if(took[j] || i == j) continue;
+                int needs = limit - people[i] ;
+                if (needs >= people[j] && max < people[j]) {
+                    max = people[j];
+                    needIdx = j;
+                }
+            }
+            took[i] = true;
+            if(needIdx >= 0) {
+                took[needIdx] = true;
+            }
+            boat++;
+        }
+        return boat;
     }
 
     /**
@@ -55,11 +77,21 @@ public class LC881BoatsToSavePeople {
      */
     public static int numRescueBoatsC(int[] people, int limit) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        Arrays.sort(people);
+        int i = 0;
+        int j = people.length - 1;
+        int boats = 0;
+        while (i <= j){
+            if((people[i] + people[j]) <= limit) i++;
+            j--;
+            boats++;
+        }
+        return boats;
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
+        numRescueBoatsC(new int[]{5}, 5);
         runAll("A", LC881BoatsToSavePeople::numRescueBoatsA);
         runAll("B", LC881BoatsToSavePeople::numRescueBoatsB);
         runAll("C", LC881BoatsToSavePeople::numRescueBoatsC);

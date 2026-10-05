@@ -60,11 +60,10 @@ public class LC16ThreeSumClosest {
      */
     public static int threeSumClosestB(int[] nums, int target) {
         // TODO: write your solution
-        int min = Integer.MAX_VALUE;
-        int n = nums.length;
-        int ans = 0;
-        int sums = 0;
         Arrays.sort(nums);
+        int best = nums[0] + nums[1] + nums[2];
+        int n = nums.length;
+        int sums = 0;
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
                 int need = target - (nums[i] + nums[j]);
@@ -73,23 +72,19 @@ public class LC16ThreeSumClosest {
                 pos = - pos - 1;
                 if(pos - 1 >= j + 1) {
                     sums = nums[i] + nums[j] + nums[pos - 1];
-                    int low = Math.abs(sums - target);
-                    if (low < min) {
-                        min = low;
-                        ans = sums;
+                    if (Math.abs(sums - target) < Math.abs(sums - best)) {
+                        best = sums;
                     }
                 }
                 if(pos < nums.length) {
                     sums = nums[i] + nums[j] + nums[pos];
-                    int high = Math.abs(sums - target);
-                    if (high < min) {
-                        min = high;
-                        ans = sums;
+                    if (Math.abs(sums - target) < Math.abs(sums - best)) {
+                        best = sums;
                     }
                 }
             }
         }
-        return ans;
+        return best;
     }
 
     /**
@@ -98,14 +93,41 @@ public class LC16ThreeSumClosest {
      */
     public static int threeSumClosestC(int[] nums, int target) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+
+        Arrays.sort(nums);
+        int best = nums[0] + nums[1] + nums[2];
+        int n = nums.length;
+        int factor = Math.abs(best - target);
+        int sums = 0;
+        for (int i = 0; i < n - 2; i++) {
+             int needs = target - nums[i];
+             int l = i + 1;
+             int r = n - 1;
+             int diff = 0;
+             while (l < r){
+                 sums = nums[i] + nums[l] + nums[r];
+                 diff = Math.abs(target - sums);
+                 if(factor > diff){
+                     best = sums;
+                     factor = diff;
+                 }
+                 if(needs < (nums[l] + nums[r])){
+                     r--;
+                 }else if(needs > (nums[l] + nums[r])){
+                     l++;
+                 }else {
+                     return target;
+                 }
+             }
+        }
+        return best;
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
 
         int[] nums = {-1, 2, 1, -4};
-        threeSumClosestB(nums, 1);
+        threeSumClosestC(nums, 1);
 //        runAll("A", LC16ThreeSumClosest::threeSumClosestA);
 //        runAll("B", LC16ThreeSumClosest::threeSumClosestB);
 //        runAll("C", LC16ThreeSumClosest::threeSumClosestC);
