@@ -36,6 +36,7 @@ public class LC862ShortestSubarrayWithSumAtLeastK {
     /**
      * Variant A - brute force: from every start, extend until the running sum reaches k
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int shortestSubarrayBruteForce(int[] nums, int k) {
         // TODO: write your solution
@@ -45,6 +46,8 @@ public class LC862ShortestSubarrayWithSumAtLeastK {
     /**
      * Variant B - prefix sums, with a min-heap of the earlier (prefix value, index) pairs
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static int shortestSubarrayHeap(int[] nums, int k) {
         // TODO: write your solution
@@ -54,6 +57,8 @@ public class LC862ShortestSubarrayWithSumAtLeastK {
     /**
      * Variant C - this chapter's technique: prefix sums plus a monotonic deque of indices
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 17 The monotonic deque (this chapter)
      */
     public static int shortestSubarray(int[] nums, int k) {
         // TODO: write your solution

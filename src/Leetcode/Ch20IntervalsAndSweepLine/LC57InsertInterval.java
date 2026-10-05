@@ -37,6 +37,8 @@ public class LC57InsertInterval {
     /**
      * Variant A - append the new interval, sort everything, then merge like LC 56
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static int[][] insertSortAndMerge(int[][] intervals, int[] newInterval) {
         // TODO: write your solution
@@ -46,6 +48,8 @@ public class LC57InsertInterval {
     /**
      * Variant B - binary-search the first and last overlapped intervals, then splice the answer
      * <br>Target: time O(n) (the search itself is O(log n)), space O(n)
+     * <br>Complete first: ch. 10 Binary search on a sorted array
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static int[][] insertBinarySearch(int[][] intervals, int[] newInterval) {
         // TODO: write your solution
@@ -55,6 +59,7 @@ public class LC57InsertInterval {
     /**
      * Variant C - this chapter's technique: one pass, no sort - copy, merge, copy
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 20 Intervals and sweep line (this chapter)
      */
     public static int[][] insert(int[][] intervals, int[] newInterval) {
         // TODO: write your solution

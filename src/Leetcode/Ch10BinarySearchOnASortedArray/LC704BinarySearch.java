@@ -36,6 +36,7 @@ public class LC704BinarySearch {
     /**
      * Variant A - brute force: scan from the left until the value appears
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int searchBruteForce(int[] nums, int target) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC704BinarySearch {
     /**
      * Variant B - classic binary search: compare the middle, then branch three ways
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int searchThreeWay(int[] nums, int target) {
         // TODO: write your solution
@@ -55,6 +57,7 @@ public class LC704BinarySearch {
      * Variant C - this chapter's technique: find the first index with nums[i] >= target,
      *             then check it really holds target
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int search(int[] nums, int target) {
         // TODO: write your solution

@@ -34,6 +34,7 @@ public class LC179LargestNumber {
     /**
      * Variant A - brute force: build every ordering of the numbers and keep the largest result
      * <br>Target: time O(n! * n), space O(n)
+     * <br>Complete first: ch. 57 Backtracking (later chapter; needs ch. 56 first)
      */
     public static String largestNumberBruteForce(int[] nums) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC179LargestNumber {
     /**
      * Variant B - this chapter's technique: sort the numbers with a custom comparator, join them
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static String largestNumber(int[] nums) {
         // TODO: write your solution

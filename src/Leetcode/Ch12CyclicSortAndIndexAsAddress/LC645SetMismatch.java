@@ -36,6 +36,7 @@ public class LC645SetMismatch {
     /**
      * Variant A - count every value in an array, the repeat has count 2, the gap has count 0
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
      */
     public static int[] findErrorNumsCounting(int[] nums) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC645SetMismatch {
     /**
      * Variant B - arithmetic: compare the sum and the sum of squares with those of 1..n
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[] findErrorNumsMath(int[] nums) {
         // TODO: write your solution
@@ -54,6 +56,7 @@ public class LC645SetMismatch {
     /**
      * Variant C - this chapter's technique: cyclic sort, the one misplaced slot shows both numbers
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static int[] findErrorNums(int[] nums) {
         // TODO: write your solution

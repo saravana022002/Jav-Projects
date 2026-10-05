@@ -40,6 +40,7 @@ public class LC56MergeIntervals {
     /**
      * Variant A - brute force: link every overlapping pair, merge each connected group
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 47 Union-find and dynamic connectivity (later chapter)
      */
     public static int[][] mergeOverlapGraph(int[][] intervals) {
         // TODO: write your solution
@@ -49,6 +50,8 @@ public class LC56MergeIntervals {
     /**
      * Variant B - sort the starts and the ends separately, sweep them counting open intervals
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
+     *     + ch. 20 Intervals and sweep line (later chapter)
      */
     public static int[][] mergeStartsAndEnds(int[][] intervals) {
         // TODO: write your solution
@@ -58,6 +61,7 @@ public class LC56MergeIntervals {
     /**
      * Variant C - this chapter's technique: sort the intervals by start, then one merging pass
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int[][] merge(int[][] intervals) {
         // TODO: write your solution

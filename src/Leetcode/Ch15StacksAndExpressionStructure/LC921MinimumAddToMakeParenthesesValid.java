@@ -34,6 +34,7 @@ public class LC921MinimumAddToMakeParenthesesValid {
     /**
      * Variant A - brute force: delete adjacent "()" pairs again and again, count what is left
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int minAddToMakeValidBruteForce(String s) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC921MinimumAddToMakeParenthesesValid {
     /**
      * Variant B - stack: push every '(', a ')' pops one or counts as unmatched
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int minAddToMakeValidStack(String s) {
         // TODO: write your solution
@@ -52,6 +54,7 @@ public class LC921MinimumAddToMakeParenthesesValid {
     /**
      * Variant C - this chapter's technique: only one kind of symbol, so the stack is just a counter
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int minAddToMakeValid(String s) {
         // TODO: write your solution

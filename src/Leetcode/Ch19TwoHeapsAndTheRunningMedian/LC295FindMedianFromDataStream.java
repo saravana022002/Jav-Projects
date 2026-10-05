@@ -42,6 +42,7 @@ public class LC295FindMedianFromDataStream {
     /**
      * Variant A - keep every number in a list; sort it each time the median is asked
      * <br>Target: time O(1) per addNum, O(n log n) per findMedian, space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static class MedianFinderSorting {
         public MedianFinderSorting() {
@@ -63,6 +64,7 @@ public class LC295FindMedianFromDataStream {
     /**
      * Variant B - keep the numbers sorted at all times: binary-search the slot, then insert
      * <br>Target: time O(n) per addNum (shifting), O(1) per findMedian, space O(n)
+     * <br>Complete first: ch. 10 Binary search on a sorted array
      */
     public static class MedianFinderSortedList {
         public MedianFinderSortedList() {
@@ -84,6 +86,7 @@ public class LC295FindMedianFromDataStream {
     /**
      * Variant C - this chapter's technique: a max-heap for the lower half, a min-heap for the upper
      * <br>Target: time O(log n) per addNum, O(1) per findMedian, space O(n)
+     * <br>Complete first: ch. 19 Two heaps and the running median (this chapter)
      */
     public static class MedianFinder {
         public MedianFinder() {

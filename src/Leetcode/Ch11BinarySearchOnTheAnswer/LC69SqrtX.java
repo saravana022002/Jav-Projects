@@ -36,6 +36,7 @@ public class LC69SqrtX {
     /**
      * Variant A - brute force: try 0, 1, 2, ... for as long as the square still fits
      * <br>Target: time O(sqrt(x)), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int mySqrtLinearScan(int x) {
         // TODO: write your solution
@@ -45,6 +46,8 @@ public class LC69SqrtX {
     /**
      * Variant B - Newton's method: keep averaging a guess r with x / r
      * <br>Target: time O(log x), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
+     *     (Newton's method itself is school maths; the book does not teach it)
      */
     public static int mySqrtNewton(int x) {
         // TODO: write your solution
@@ -54,6 +57,7 @@ public class LC69SqrtX {
     /**
      * Variant C - this chapter's technique: binary search on the answer, test mid * mid <= x
      * <br>Target: time O(log x), space O(1)
+     * <br>Complete first: ch. 11 Binary search on the answer (this chapter)
      */
     public static int mySqrt(int x) {
         // TODO: write your solution

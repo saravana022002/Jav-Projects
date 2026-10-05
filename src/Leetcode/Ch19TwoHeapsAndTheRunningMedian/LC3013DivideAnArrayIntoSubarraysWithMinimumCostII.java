@@ -35,6 +35,7 @@ public class LC3013DivideAnArrayIntoSubarraysWithMinimumCostII {
     /**
      * Variant A - brute force: for each possible 2nd start, sort its window, add the k-2 smallest
      * <br>Target: time O(n * dist * log dist), space O(dist)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static long minimumCostBruteForce(int[] nums, int k, int dist) {
         // TODO: write your solution
@@ -44,6 +45,8 @@ public class LC3013DivideAnArrayIntoSubarraysWithMinimumCostII {
     /**
      * Variant B - this chapter's technique: sliding window, two heaps hold the k-2 smallest
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 9 Sliding window, chasing
+     *     + ch. 19 Two heaps and the running median (this chapter)
      */
     public static long minimumCost(int[] nums, int k, int dist) {
         // TODO: write your solution

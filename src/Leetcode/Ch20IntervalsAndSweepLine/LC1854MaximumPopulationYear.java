@@ -32,6 +32,7 @@ public class LC1854MaximumPopulationYear {
     /**
      * Variant A - brute force: for every year, count the people alive in it
      * <br>Target: time O(Y * n), space O(1)     (Y = number of years, here at most 101)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int maximumPopulationBruteForce(int[][] logs) {
         // TODO: write your solution
@@ -41,6 +42,8 @@ public class LC1854MaximumPopulationYear {
     /**
      * Variant B - sort births and deaths separately, then walk both lists with two pointers
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 8 Two pointers, converging
      */
     public static int maximumPopulationSortedEvents(int[][] logs) {
         // TODO: write your solution
@@ -50,6 +53,8 @@ public class LC1854MaximumPopulationYear {
     /**
      * Variant C - this chapter's technique: difference array indexed by year, then prefix sums
      * <br>Target: time O(n + Y), space O(Y)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static int maximumPopulation(int[][] logs) {
         // TODO: write your solution

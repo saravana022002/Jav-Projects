@@ -34,6 +34,7 @@ public class LC2161PartitionArrayAccordingToGivenPivot {
     /**
      * Variant A - brute force: stable insertion sort of the elements by band (< , = , >)
      * <br>Target: time O(n^2), space O(1) besides the returned array
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int[] pivotArrayBruteForce(int[] nums, int pivot) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC2161PartitionArrayAccordingToGivenPivot {
     /**
      * Variant B - three lists (smaller, equal, bigger) filled in order, then concatenated
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[] pivotArrayThreeLists(int[] nums, int pivot) {
         // TODO: write your solution
@@ -52,6 +54,7 @@ public class LC2161PartitionArrayAccordingToGivenPivot {
     /**
      * Variant C - this chapter's technique: stable partition into one result buffer
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static int[] pivotArray(int[] nums, int pivot) {
         // TODO: write your solution

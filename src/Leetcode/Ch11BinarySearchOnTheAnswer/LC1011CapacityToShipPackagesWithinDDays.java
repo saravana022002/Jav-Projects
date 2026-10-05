@@ -35,6 +35,7 @@ public class LC1011CapacityToShipPackagesWithinDDays {
     /**
      * Variant A - brute force: try capacities upward from the heaviest package, simulate loading
      * <br>Target: time O(n * sum(weights)), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int shipWithinDaysLinearScan(int[] weights, int days) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC1011CapacityToShipPackagesWithinDDays {
     /**
      * Variant B - this chapter's technique: binary search on the capacity, count days needed
      * <br>Target: time O(n log sum(weights)), space O(1)
+     * <br>Complete first: ch. 11 Binary search on the answer (this chapter)
      */
     public static int shipWithinDays(int[] weights, int days) {
         // TODO: write your solution

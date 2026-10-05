@@ -33,6 +33,7 @@ public class LC680ValidPalindromeII {
     /**
      * Variant A - try deleting every single character and test whether the rest is a palindrome
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static boolean validPalindromeBruteForce(String s) {
         // TODO: write your solution
@@ -42,6 +43,7 @@ public class LC680ValidPalindromeII {
     /**
      * Variant B - this chapter's technique: two pointers moving inwards, one allowed skip
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 8 Two pointers, converging (this chapter)
      */
     public static boolean validPalindrome(String s) {
         // TODO: write your solution

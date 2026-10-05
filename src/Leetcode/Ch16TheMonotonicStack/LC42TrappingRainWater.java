@@ -39,6 +39,7 @@ public class LC42TrappingRainWater {
     /**
      * Variant A - brute force: for every bar, find the tallest bar on its left and on its right
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int trapBruteForce(int[] height) {
         // TODO: write your solution
@@ -48,6 +49,7 @@ public class LC42TrappingRainWater {
     /**
      * Variant B - two pointers moving inwards, always advancing the side with the lower wall
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 8 Two pointers, converging
      */
     public static int trapTwoPointers(int[] height) {
         // TODO: write your solution
@@ -57,6 +59,7 @@ public class LC42TrappingRainWater {
     /**
      * Variant C - this chapter's technique: stack of falling bars, a taller bar pops and fills
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (this chapter)
      */
     public static int trap(int[] height) {
         // TODO: write your solution

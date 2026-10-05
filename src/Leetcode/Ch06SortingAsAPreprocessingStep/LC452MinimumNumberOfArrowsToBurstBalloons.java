@@ -37,6 +37,7 @@ public class LC452MinimumNumberOfArrowsToBurstBalloons {
     /**
      * Variant A - brute force: repeatedly shoot at the smallest end among unburst balloons
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int findMinArrowShotsBruteForce(int[][] points) {
         // TODO: write your solution
@@ -46,6 +47,7 @@ public class LC452MinimumNumberOfArrowsToBurstBalloons {
     /**
      * Variant B - sort by start, track the shared overlap of the current group
      * <br>Target: time O(n log n), space O(1) besides the sort
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int findMinArrowShotsByStart(int[][] points) {
         // TODO: write your solution
@@ -55,6 +57,7 @@ public class LC452MinimumNumberOfArrowsToBurstBalloons {
     /**
      * Variant C - this chapter's technique: sort by end, shoot at each unburst balloon's end
      * <br>Target: time O(n log n), space O(1) besides the sort
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int findMinArrowShots(int[][] points) {
         // TODO: write your solution

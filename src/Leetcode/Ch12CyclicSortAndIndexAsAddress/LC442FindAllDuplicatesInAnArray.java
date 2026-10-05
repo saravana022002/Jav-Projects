@@ -38,6 +38,7 @@ public class LC442FindAllDuplicatesInAnArray {
     /**
      * Variant A - remember the values seen so far in a boolean array, a second sighting repeats
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static List<Integer> findDuplicatesSeen(int[] nums) {
         // TODO: write your solution
@@ -47,6 +48,7 @@ public class LC442FindAllDuplicatesInAnArray {
     /**
      * Variant B - this chapter's technique: cyclic sort, then a value in a wrong slot is a repeat
      * <br>Target: time O(n), space O(1) extra (the output list does not count)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static List<Integer> findDuplicates(int[] nums) {
         // TODO: write your solution
@@ -56,6 +58,7 @@ public class LC442FindAllDuplicatesInAnArray {
     /**
      * Variant C - index-as-address: negate slot v - 1 for each v, a slot already negated repeats
      * <br>Target: time O(n), space O(1) extra (the output list does not count)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static List<Integer> findDuplicatesMarking(int[] nums) {
         // TODO: write your solution

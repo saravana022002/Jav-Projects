@@ -40,6 +40,7 @@ public class LC84LargestRectangleInHistogram {
     /**
      * Variant A - brute force: for every left edge, extend right while tracking the lowest bar
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting (this chapter)
      */
     public static int largestRectangleAreaBruteForce(int[] heights) {
         // TODO: write your solution
@@ -49,6 +50,7 @@ public class LC84LargestRectangleInHistogram {
     /**
      * Variant B - two passes: nearest shorter bar on each side of every bar
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (later chapter; needs ch. 15 first)
      */
     public static int largestRectangleAreaTwoPasses(int[] heights) {
         // TODO: write your solution
@@ -58,6 +60,8 @@ public class LC84LargestRectangleInHistogram {
     /**
      * Variant C - this chapter's technique: one pass with a monotonic stack of bar indices
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting (this chapter)
+     *     + ch. 16 The monotonic stack (later chapter; needs ch. 15 first)
      */
     public static int largestRectangleArea(int[] heights) {
         // TODO: write your solution

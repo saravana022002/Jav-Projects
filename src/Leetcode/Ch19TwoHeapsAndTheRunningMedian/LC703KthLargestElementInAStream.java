@@ -42,6 +42,7 @@ public class LC703KthLargestElementInAStream {
     /**
      * Variant A - keep every score in a list; sort it on each add and read the k-th largest
      * <br>Target: time O(n log n) per add, space O(n)     (n = scores seen so far)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static class KthLargestSorting {
         public KthLargestSorting(int k, int[] nums) {
@@ -58,6 +59,7 @@ public class LC703KthLargestElementInAStream {
     /**
      * Variant B - keep only the k largest scores in a sorted array; insert by shifting
      * <br>Target: time O(k) per add, space O(k)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static class KthLargestSortedTopK {
         public KthLargestSortedTopK(int k, int[] nums) {
@@ -74,6 +76,8 @@ public class LC703KthLargestElementInAStream {
     /**
      * Variant C - this chapter's technique: min-heap capped at k scores, its root is the answer
      * <br>Target: time O(log k) per add (O(n log k) to build), space O(k)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family
+     *     + ch. 19 Two heaps and the running median (this chapter)
      */
     public static class KthLargest {
         public KthLargest(int k, int[] nums) {

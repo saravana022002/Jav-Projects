@@ -37,6 +37,7 @@ public class LC378KthSmallestElementInASortedMatrix {
     /**
      * Variant A - brute force: copy every entry into one array, sort it (over the memory limit)
      * <br>Target: time O(n^2 log n), space O(n^2)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int kthSmallestSort(int[][] matrix, int k) {
         // TODO: write your solution
@@ -46,6 +47,8 @@ public class LC378KthSmallestElementInASortedMatrix {
     /**
      * Variant B - min-heap holding the next unread entry of each row, pop k times
      * <br>Target: time O(n + k log n), space O(n)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (later chapter)
+     *     + ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static int kthSmallestHeap(int[][] matrix, int k) {
         // TODO: write your solution
@@ -55,6 +58,7 @@ public class LC378KthSmallestElementInASortedMatrix {
     /**
      * Variant C - this chapter's technique: binary search on the value, count entries <= mid
      * <br>Target: time O(n log(max - min)), space O(1)
+     * <br>Complete first: ch. 11 Binary search on the answer (this chapter)
      */
     public static int kthSmallest(int[][] matrix, int k) {
         // TODO: write your solution

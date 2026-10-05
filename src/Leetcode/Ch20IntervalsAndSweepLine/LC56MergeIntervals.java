@@ -41,6 +41,7 @@ public class LC56MergeIntervals {
     /**
      * Variant A - brute force: repeatedly merge any two overlapping intervals until none overlap
      * <br>Target: time O(n^3), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[][] mergeBruteForce(int[][] intervals) {
         // TODO: write your solution
@@ -50,6 +51,8 @@ public class LC56MergeIntervals {
     /**
      * Variant B - events: +1 at every start, -1 at every end; a merged interval ends at count 0
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static int[][] mergeEventSweep(int[][] intervals) {
         // TODO: write your solution
@@ -59,6 +62,8 @@ public class LC56MergeIntervals {
     /**
      * Variant C - this chapter's technique: order the intervals by start, then sweep and extend
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static int[][] merge(int[][] intervals) {
         // TODO: write your solution

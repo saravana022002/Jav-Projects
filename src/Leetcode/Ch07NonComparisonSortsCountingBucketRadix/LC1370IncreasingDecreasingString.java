@@ -39,6 +39,7 @@ public class LC1370IncreasingDecreasingString {
     /**
      * Variant A - simulate the steps literally, scanning the remaining characters for each pick
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static String sortStringSimulation(String s) {
         // TODO: write your solution
@@ -48,6 +49,7 @@ public class LC1370IncreasingDecreasingString {
     /**
      * Variant B - this chapter's technique: count the letters, drain them in alternating sweeps
      * <br>Target: time O(26 * n), space O(1) besides the result string
+     * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
      */
     public static String sortString(String s) {
         // TODO: write your solution

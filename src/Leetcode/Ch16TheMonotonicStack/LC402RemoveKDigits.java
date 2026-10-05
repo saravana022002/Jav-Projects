@@ -36,6 +36,7 @@ public class LC402RemoveKDigits {
     /**
      * Variant A - brute force: k rounds, each deletes the digit that leaves the smallest string
      * <br>Target: time O(k * n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static String removeKdigitsBruteForce(String num, int k) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC402RemoveKDigits {
     /**
      * Variant B - this chapter's technique: stack of kept digits, pop larger tops while k allows
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (this chapter)
      */
     public static String removeKdigits(String num, int k) {
         // TODO: write your solution

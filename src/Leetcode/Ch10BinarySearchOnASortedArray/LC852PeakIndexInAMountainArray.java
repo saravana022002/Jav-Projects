@@ -33,6 +33,7 @@ public class LC852PeakIndexInAMountainArray {
     /**
      * Variant A - brute force: scan for the first element that is larger than its successor
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int peakIndexInMountainArrayBruteForce(int[] arr) {
         // TODO: write your solution
@@ -42,6 +43,7 @@ public class LC852PeakIndexInAMountainArray {
     /**
      * Variant B - binary search that looks at both neighbours of mid and stops on the peak
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int peakIndexInMountainArrayThreeWay(int[] arr) {
         // TODO: write your solution
@@ -51,6 +53,7 @@ public class LC852PeakIndexInAMountainArray {
     /**
      * Variant C - this chapter's technique: boundary search on "arr[i] > arr[i + 1]"
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int peakIndexInMountainArray(int[] arr) {
         // TODO: write your solution

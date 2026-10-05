@@ -36,6 +36,7 @@ public class LC875KokoEatingBananas {
     /**
      * Variant A - brute force: try speed 1, 2, 3, ... until she finishes within h hours
      * <br>Target: time O(n * max(piles)), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int minEatingSpeedLinearScan(int[] piles, int h) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC875KokoEatingBananas {
     /**
      * Variant B - this chapter's technique: binary search on the speed, count hours per speed
      * <br>Target: time O(n log max(piles)), space O(1)
+     * <br>Complete first: ch. 11 Binary search on the answer (this chapter)
      */
     public static int minEatingSpeed(int[] piles, int h) {
         // TODO: write your solution

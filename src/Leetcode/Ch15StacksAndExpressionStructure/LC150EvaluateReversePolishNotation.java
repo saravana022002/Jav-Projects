@@ -40,6 +40,7 @@ public class LC150EvaluateReversePolishNotation {
     /**
      * Variant A - brute force: find the first operator, replace "a b op" by its value, repeat
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int evalRPNBruteForce(String[] tokens) {
         // TODO: write your solution
@@ -49,6 +50,7 @@ public class LC150EvaluateReversePolishNotation {
     /**
      * Variant B - this chapter's technique: stack of operands, an operator combines the top two
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int evalRPN(String[] tokens) {
         // TODO: write your solution

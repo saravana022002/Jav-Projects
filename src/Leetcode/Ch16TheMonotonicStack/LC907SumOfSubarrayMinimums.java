@@ -33,6 +33,7 @@ public class LC907SumOfSubarrayMinimums {
     /**
      * Variant A - brute force: for every start, extend the end while tracking the running minimum
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int sumSubarrayMinsBruteForce(int[] arr) {
         // TODO: write your solution
@@ -42,6 +43,8 @@ public class LC907SumOfSubarrayMinimums {
     /**
      * Variant B - stack plus DP: the total of the minimums of subarrays ending at each index
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (this chapter)
+     *     + ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int sumSubarrayMinsDp(int[] arr) {
         // TODO: write your solution
@@ -51,6 +54,7 @@ public class LC907SumOfSubarrayMinimums {
     /**
      * Variant C - this chapter's technique: count the subarrays where each element is the minimum
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (this chapter)
      */
     public static int sumSubarrayMins(int[] arr) {
         // TODO: write your solution

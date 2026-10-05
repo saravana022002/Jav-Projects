@@ -39,6 +39,7 @@ public class LC502IPO {
     /**
      * Variant A - brute force: k times, scan for the affordable unfinished project of top profit
      * <br>Target: time O(k * n), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int findMaximizedCapitalBruteForce(int k, int w, int[] profits, int[] capital) {
         // TODO: write your solution
@@ -48,6 +49,7 @@ public class LC502IPO {
     /**
      * Variant B - this chapter's technique: heap keyed on capital feeds a heap keyed on profit
      * <br>Target: time O((n + k) log n), space O(n)
+     * <br>Complete first: ch. 19 Two heaps and the running median (this chapter)
      */
     public static int findMaximizedCapital(int k, int w, int[] profits, int[] capital) {
         // TODO: write your solution

@@ -37,6 +37,7 @@ public class LC227BasicCalculatorII {
     /**
      * Variant A - brute force: split into tokens, collapse every * and / first, then fold + and -
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int calculateBruteForce(String s) {
         // TODO: write your solution
@@ -46,6 +47,7 @@ public class LC227BasicCalculatorII {
     /**
      * Variant B - no stack: keep only the running sum and the term being built
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int calculateTwoVariables(String s) {
         // TODO: write your solution
@@ -55,6 +57,7 @@ public class LC227BasicCalculatorII {
     /**
      * Variant C - this chapter's technique: stack of signed terms, * and / fire on the top at once
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int calculate(String s) {
         // TODO: write your solution

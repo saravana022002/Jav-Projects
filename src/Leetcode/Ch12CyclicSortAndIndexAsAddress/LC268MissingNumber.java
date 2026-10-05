@@ -35,6 +35,7 @@ public class LC268MissingNumber {
     /**
      * Variant A - brute force: sort, then find the first index whose value differs from it
      * <br>Target: time O(n log n), space O(1) (sorting in place)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int missingNumberSort(int[] nums) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC268MissingNumber {
     /**
      * Variant B - arithmetic: the sum of 0..n minus the sum of the array
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int missingNumberSum(int[] nums) {
         // TODO: write your solution
@@ -53,6 +55,7 @@ public class LC268MissingNumber {
     /**
      * Variant C - this chapter's technique: cyclic sort into slots 0..n-1, skipping the value n
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static int missingNumber(int[] nums) {
         // TODO: write your solution

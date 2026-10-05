@@ -36,6 +36,7 @@ public class LC4MedianOfTwoSortedArrays {
     /**
      * Variant A - brute force: merge both arrays into one sorted array, read off the middle
      * <br>Target: time O(m + n), space O(m + n)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (later chapter)
      */
     public static double findMedianSortedArraysBruteForce(int[] nums1, int[] nums2) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC4MedianOfTwoSortedArrays {
     /**
      * Variant B - two pointers walk the merge only as far as the middle, nothing is stored
      * <br>Target: time O(m + n), space O(1)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (later chapter)
      */
     public static double findMedianSortedArraysTwoPointers(int[] nums1, int[] nums2) {
         // TODO: write your solution
@@ -54,6 +56,7 @@ public class LC4MedianOfTwoSortedArrays {
     /**
      * Variant C - this chapter's technique: binary search the split point in the shorter array
      * <br>Target: time O(log(min(m, n))), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         // TODO: write your solution

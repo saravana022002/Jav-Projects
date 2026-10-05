@@ -32,6 +32,8 @@ public class LC410SplitArrayLargestSum {
     /**
      * Variant A - dynamic programming over (prefix length, number of pieces) with prefix sums
      * <br>Target: time O(k * n^2), space O(k * n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int splitArrayDP(int[] nums, int k) {
         // TODO: write your solution
@@ -41,6 +43,7 @@ public class LC410SplitArrayLargestSum {
     /**
      * Variant B - this chapter's technique: binary search on the largest sum, count pieces needed
      * <br>Target: time O(n log sum(nums)), space O(1)
+     * <br>Complete first: ch. 11 Binary search on the answer (this chapter)
      */
     public static int splitArray(int[] nums, int k) {
         // TODO: write your solution

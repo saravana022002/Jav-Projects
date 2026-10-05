@@ -44,6 +44,7 @@ public class LC218TheSkylineProblem {
     /**
      * Variant A - brute force: at each building edge take the tallest building covering it
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static List<List<Integer>> getSkylineBruteForce(int[][] buildings) {
         // TODO: write your solution
@@ -53,6 +54,8 @@ public class LC218TheSkylineProblem {
     /**
      * Variant B - divide and conquer: skyline of each half, then merge the two like merge sort
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 14 Merge and the k-way merge
+     *     + ch. 59 Divide and conquer (later chapter; needs ch. 56 first)
      */
     public static List<List<Integer>> getSkylineDivideAndConquer(int[][] buildings) {
         // TODO: write your solution
@@ -62,6 +65,8 @@ public class LC218TheSkylineProblem {
     /**
      * Variant C - this chapter's technique: sweep over sorted edges, one max-heap, lazy deletion
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 19 Two heaps and the running median (this chapter)
+     *     + ch. 20 Intervals and sweep line (later chapter)
      */
     public static List<List<Integer>> getSkyline(int[][] buildings) {
         // TODO: write your solution

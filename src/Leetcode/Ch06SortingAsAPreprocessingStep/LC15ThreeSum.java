@@ -41,6 +41,7 @@ public class LC15ThreeSum {
     /**
      * Variant A - brute force: try every triple of positions, keep each distinct triple once
      * <br>Target: time O(n^3), space O(1) besides the result
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static List<List<Integer>> threeSumBruteForce(int[] nums) {
         // TODO: write your solution
@@ -50,6 +51,8 @@ public class LC15ThreeSum {
     /**
      * Variant B - sort, fix two numbers, binary-search the sorted rest for the third
      * <br>Target: time O(n^2 log n), space O(1) besides the result and the sort
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
+     *     + ch. 10 Binary search on a sorted array (later chapter)
      */
     public static List<List<Integer>> threeSumBinarySearch(int[] nums) {
         // TODO: write your solution
@@ -59,6 +62,8 @@ public class LC15ThreeSum {
     /**
      * Variant C - this chapter's technique: sort, fix the first number, two pointers do the rest
      * <br>Target: time O(n^2), space O(1) besides the result and the sort
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
+     *     + ch. 8 Two pointers, converging (later chapter)
      */
     public static List<List<Integer>> threeSum(int[] nums) {
         // TODO: write your solution

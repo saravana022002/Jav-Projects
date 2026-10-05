@@ -34,6 +34,7 @@ public class LC1249MinimumRemoveToMakeValidParentheses {
     /**
      * Variant A - brute force: find one parenthesis that cannot be matched, delete it, rescan
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static String minRemoveToMakeValidBruteForce(String s) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC1249MinimumRemoveToMakeValidParentheses {
     /**
      * Variant B - two passes with a counter: drop surplus ')' going right, surplus '(' going left
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static String minRemoveToMakeValidTwoPass(String s) {
         // TODO: write your solution
@@ -52,6 +54,7 @@ public class LC1249MinimumRemoveToMakeValidParentheses {
     /**
      * Variant C - this chapter's technique: stack of the indices of '('; unmatched ones are deleted
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static String minRemoveToMakeValid(String s) {
         // TODO: write your solution

@@ -40,6 +40,7 @@ public class LC289GameOfLife {
     /**
      * Variant A - compute the next generation into a copy of the board, then copy it back
      * <br>Target: time O(m * n), space O(m * n)
+     * <br>Complete first: ch. 22 Matrix traversal and in-place simulation (later chapter)
      */
     public static void gameOfLifeCopy(int[][] board) {
         // TODO: write your solution
@@ -49,6 +50,8 @@ public class LC289GameOfLife {
     /**
      * Variant B - this chapter's technique: in place, each cell encodes its old and new state
      * <br>Target: time O(m * n), space O(1)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
+     *     + ch. 22 Matrix traversal and in-place simulation (later chapter)
      */
     public static void gameOfLife(int[][] board) {
         // TODO: write your solution

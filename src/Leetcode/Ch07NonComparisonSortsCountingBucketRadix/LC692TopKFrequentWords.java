@@ -39,6 +39,8 @@ public class LC692TopKFrequentWords {
     /**
      * Variant A - count the words, sort the distinct words by (count, word), take the first k
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 6 Sorting as a preprocessing step
      */
     public static List<String> topKFrequentSort(String[] words, int k) {
         // TODO: write your solution
@@ -48,6 +50,8 @@ public class LC692TopKFrequentWords {
     /**
      * Variant B - count the words, keep a heap of at most k words with the right tie-break
      * <br>Target: time O(n log k), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static List<String> topKFrequentHeap(String[] words, int k) {
         // TODO: write your solution
@@ -57,6 +61,8 @@ public class LC692TopKFrequentWords {
     /**
      * Variant C - this chapter's technique: bucket the words by count, order each bucket by word
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
      */
     public static List<String> topKFrequent(String[] words, int k) {
         // TODO: write your solution

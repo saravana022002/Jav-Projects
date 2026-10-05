@@ -37,6 +37,7 @@ public class LC315CountOfSmallerNumbersAfterSelf {
     /**
      * Variant A - brute force: for every position, scan everything to its right
      * <br>Target: time O(n^2), space O(1) extra besides the answer
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static List<Integer> countSmallerBruteForce(int[] nums) {
         // TODO: write your solution
@@ -46,6 +47,7 @@ public class LC315CountOfSmallerNumbersAfterSelf {
     /**
      * Variant B - Fenwick tree over the values: scan from the right, count the smaller ones seen
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 39 Fenwick trees (later chapter)
      */
     public static List<Integer> countSmallerFenwick(int[] nums) {
         // TODO: write your solution
@@ -55,6 +57,7 @@ public class LC315CountOfSmallerNumbersAfterSelf {
     /**
      * Variant C - this chapter's technique: merge sort that carries the indices, counting in merges
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
      */
     public static List<Integer> countSmaller(int[] nums) {
         // TODO: write your solution

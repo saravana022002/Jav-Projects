@@ -36,6 +36,7 @@ public class LC153FindMinimumInRotatedSortedArray {
     /**
      * Variant A - brute force: scan every element and keep the smallest
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int findMinBruteForce(int[] nums) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC153FindMinimumInRotatedSortedArray {
     /**
      * Variant B - binary search for the inflection point where a value is smaller than its left
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int findMinInflectionPoint(int[] nums) {
         // TODO: write your solution
@@ -54,6 +56,7 @@ public class LC153FindMinimumInRotatedSortedArray {
     /**
      * Variant C - this chapter's technique: boundary search against the last element
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int findMin(int[] nums) {
         // TODO: write your solution

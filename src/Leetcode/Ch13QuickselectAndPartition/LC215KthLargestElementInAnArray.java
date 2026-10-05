@@ -40,6 +40,7 @@ public class LC215KthLargestElementInAnArray {
     /**
      * Variant A - sort the array, then read the element at position n - k
      * <br>Target: time O(n log n), space O(1) extra (the sort works in place)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int findKthLargestSorting(int[] nums, int k) {
         // TODO: write your solution
@@ -49,6 +50,7 @@ public class LC215KthLargestElementInAnArray {
     /**
      * Variant B - keep a min-heap of the k largest values seen so far
      * <br>Target: time O(n log k), space O(k)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static int findKthLargestHeap(int[] nums, int k) {
         // TODO: write your solution
@@ -58,6 +60,7 @@ public class LC215KthLargestElementInAnArray {
     /**
      * Variant C - this chapter's technique: quickselect, random pivot, keep only one side
      * <br>Target: time O(n) expected (O(n^2) worst case), space O(1)
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static int findKthLargest(int[] nums, int k) {
         // TODO: write your solution

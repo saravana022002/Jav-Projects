@@ -35,6 +35,7 @@ public class LC189RotateArray {
     /**
      * Variant A - extra array: put element i at index (i + k) % n of a new array, copy it back
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static void rotateExtraArray(int[] nums, int k) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC189RotateArray {
     /**
      * Variant B - three reversals: the whole array, then the first k elements, then the rest
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 8 Two pointers, converging
      */
     public static void rotateReverse(int[] nums, int k) {
         // TODO: write your solution
@@ -53,6 +55,7 @@ public class LC189RotateArray {
     /**
      * Variant C - this chapter's technique: cyclic replacement, carry values along i -> (i + k) % n
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static void rotate(int[] nums, int k) {
         // TODO: write your solution

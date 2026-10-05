@@ -38,6 +38,7 @@ public class LC378KthSmallestElementInASortedMatrix {
     /**
      * Variant A - copy all entries into one array and sort it (O(n^2) memory, the baseline to beat)
      * <br>Target: time O(n^2 log n), space O(n^2)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int kthSmallestSorting(int[][] matrix, int k) {
         // TODO: write your solution
@@ -47,6 +48,7 @@ public class LC378KthSmallestElementInASortedMatrix {
     /**
      * Variant B - binary search on the value: count the entries <= mid with a staircase walk
      * <br>Target: time O(n log(max - min)), space O(1)
+     * <br>Complete first: ch. 11 Binary search on the answer
      */
     public static int kthSmallestBinarySearch(int[][] matrix, int k) {
         // TODO: write your solution
@@ -56,6 +58,8 @@ public class LC378KthSmallestElementInASortedMatrix {
     /**
      * Variant C - this chapter's technique: k-way merge of the rows with a min-heap, stop at k
      * <br>Target: time O(k log min(n, k)), space O(min(n, k))
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
+     *     + ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static int kthSmallest(int[][] matrix, int k) {
         // TODO: write your solution

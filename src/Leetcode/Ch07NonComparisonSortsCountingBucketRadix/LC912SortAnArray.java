@@ -39,6 +39,7 @@ public class LC912SortAnArray {
     /**
      * Variant A - hand-written quadratic sort (e.g. insertion sort)
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int[] sortArrayInsertionSort(int[] nums) {
         // TODO: write your solution
@@ -48,6 +49,7 @@ public class LC912SortAnArray {
     /**
      * Variant B - hand-written O(n log n) comparison sort (merge sort or heap sort)
      * <br>Target: time O(n log n), space O(n)    (heap sort gets away with O(1))
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int[] sortArrayComparisonSort(int[] nums) {
         // TODO: write your solution
@@ -57,6 +59,7 @@ public class LC912SortAnArray {
     /**
      * Variant C - this chapter's technique: LSD radix sort, one stable counting pass per digit
      * <br>Target: time O(d * (n + b)), space O(n + b)    (d digits in base b: fixed here, so O(n))
+     * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
      */
     public static int[] sortArray(int[] nums) {
         // TODO: write your solution

@@ -38,6 +38,7 @@ public class LC726NumberOfAtoms {
     /**
      * Variant A - brute force: for each atom, scan right to find the counts of its enclosing groups
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static String countOfAtomsBruteForce(String formula) {
         // TODO: write your solution
@@ -47,6 +48,8 @@ public class LC726NumberOfAtoms {
     /**
      * Variant B - scan right to left with a stack of the open groups' multipliers
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 15 Stacks and expression structure (this chapter)
      */
     public static String countOfAtomsRightToLeft(String formula) {
         // TODO: write your solution
@@ -56,6 +59,8 @@ public class LC726NumberOfAtoms {
     /**
      * Variant C - this chapter's technique: stack of count maps, merged down at each ')'
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 15 Stacks and expression structure (this chapter)
      */
     public static String countOfAtoms(String formula) {
         // TODO: write your solution

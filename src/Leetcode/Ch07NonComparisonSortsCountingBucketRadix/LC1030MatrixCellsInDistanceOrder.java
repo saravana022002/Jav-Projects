@@ -37,6 +37,7 @@ public class LC1030MatrixCellsInDistanceOrder {
     /**
      * Variant A - list every cell, then sort the cells by their distance from the centre
      * <br>Target: time O(N log N), space O(N)    (N = rows * cols)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int[][] allCellsDistOrderSort(int rows, int cols, int rCenter, int cCenter) {
         // TODO: write your solution
@@ -46,6 +47,8 @@ public class LC1030MatrixCellsInDistanceOrder {
     /**
      * Variant B - breadth-first search outwards from the centre cell
      * <br>Target: time O(N), space O(N)
+     * <br>Complete first: ch. 44 Grids as graphs (later chapter;
+     *       needs ch. 15, 34, 35, 42, 43 first)
      */
     public static int[][] allCellsDistOrderBfs(int rows, int cols, int rCenter, int cCenter) {
         // TODO: write your solution
@@ -55,6 +58,7 @@ public class LC1030MatrixCellsInDistanceOrder {
     /**
      * Variant C - this chapter's technique: bucket the cells by distance, then read the buckets
      * <br>Target: time O(N), space O(N)
+     * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
      */
     public static int[][] allCellsDistOrder(int rows, int cols, int rCenter, int cCenter) {
         // TODO: write your solution

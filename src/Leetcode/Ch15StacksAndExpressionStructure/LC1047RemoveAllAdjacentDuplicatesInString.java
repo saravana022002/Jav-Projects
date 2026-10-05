@@ -40,6 +40,7 @@ public class LC1047RemoveAllAdjacentDuplicatesInString {
     /**
      * Variant A - brute force: find a neighbouring equal pair, delete it, start scanning again
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static String removeDuplicatesBruteForce(String s) {
         // TODO: write your solution
@@ -49,6 +50,7 @@ public class LC1047RemoveAllAdjacentDuplicatesInString {
     /**
      * Variant B - this chapter's technique: stack of kept letters, compare each letter to the top
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static String removeDuplicates(String s) {
         // TODO: write your solution

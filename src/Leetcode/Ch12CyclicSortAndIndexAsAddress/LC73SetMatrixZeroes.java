@@ -38,6 +38,7 @@ public class LC73SetMatrixZeroes {
     /**
      * Variant A - read the zeros from a copy of the matrix, write the changes into the original
      * <br>Target: time O(m * n), space O(m * n)
+     * <br>Complete first: ch. 22 Matrix traversal and in-place simulation (later chapter)
      */
     public static void setZeroesCopy(int[][] matrix) {
         // TODO: write your solution
@@ -47,6 +48,7 @@ public class LC73SetMatrixZeroes {
     /**
      * Variant B - two boolean arrays remember which rows and which columns hold a zero
      * <br>Target: time O(m * n), space O(m + n)
+     * <br>Complete first: ch. 22 Matrix traversal and in-place simulation (later chapter)
      */
     public static void setZeroesFlags(int[][] matrix) {
         // TODO: write your solution
@@ -56,6 +58,8 @@ public class LC73SetMatrixZeroes {
     /**
      * Variant C - this chapter's technique: the matrix's own first row and column hold the flags
      * <br>Target: time O(m * n), space O(1)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
+     *     + ch. 22 Matrix traversal and in-place simulation (later chapter)
      */
     public static void setZeroes(int[][] matrix) {
         // TODO: write your solution

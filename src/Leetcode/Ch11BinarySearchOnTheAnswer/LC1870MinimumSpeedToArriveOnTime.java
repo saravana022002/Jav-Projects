@@ -39,6 +39,7 @@ public class LC1870MinimumSpeedToArriveOnTime {
     /**
      * Variant A - brute force: try speeds 1, 2, 3, ... up to 10^7 and simulate the journey
      * <br>Target: time O(n * 10^7), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int minSpeedOnTimeLinearScan(int[] dist, double hour) {
         // TODO: write your solution
@@ -48,6 +49,7 @@ public class LC1870MinimumSpeedToArriveOnTime {
     /**
      * Variant B - this chapter's technique: binary search on the integer speed, test the journey
      * <br>Target: time O(n log 10^7), space O(1)
+     * <br>Complete first: ch. 11 Binary search on the answer (this chapter)
      */
     public static int minSpeedOnTime(int[] dist, double hour) {
         // TODO: write your solution

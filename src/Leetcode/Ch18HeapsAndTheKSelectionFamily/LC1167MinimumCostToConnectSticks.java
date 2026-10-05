@@ -36,6 +36,7 @@ public class LC1167MinimumCostToConnectSticks {
     /**
      * Variant A - repeat: sort the sticks, join the two shortest, put the result back
      * <br>Target: time O(n^2 log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int connectSticksSorting(int[] sticks) {
         // TODO: write your solution
@@ -45,6 +46,8 @@ public class LC1167MinimumCostToConnectSticks {
     /**
      * Variant B - sort once; two queues (original sticks, joined ones), take the smaller front
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 78 Huffman and the merge-cost family (later chapter; needs ch. 76 first)
      */
     public static int connectSticksTwoQueues(int[] sticks) {
         // TODO: write your solution
@@ -54,6 +57,7 @@ public class LC1167MinimumCostToConnectSticks {
     /**
      * Variant C - this chapter's technique: a min-heap; pop two, push their sum, add up the costs
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (this chapter)
      */
     public static int connectSticks(int[] sticks) {
         // TODO: write your solution

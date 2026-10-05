@@ -42,6 +42,7 @@ public class LC703KthLargestElementInAStream {
     /**
      * Variant A - list of all scores, sorted again on each add; read the k-th largest
      * <br>Target: time O(n log n) per add, space O(n)     (n = scores seen so far)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static class KthLargestSorting {
         public KthLargestSorting(int k, int[] nums) {
@@ -58,6 +59,7 @@ public class LC703KthLargestElementInAStream {
     /**
      * Variant B - sorted list of all scores; binary-search the slot, insert, read the k-th
      * <br>Target: time O(n) per add (the shifting), space O(n)
+     * <br>Complete first: ch. 10 Binary search on a sorted array
      */
     public static class KthLargestSortedList {
         public KthLargestSortedList(int k, int[] nums) {
@@ -74,6 +76,7 @@ public class LC703KthLargestElementInAStream {
     /**
      * Variant C - this chapter's technique: a min-heap that never holds more than k scores
      * <br>Target: time O(log k) per add (O(n log k) to build), space O(k)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (this chapter)
      */
     public static class KthLargest {
         public KthLargest(int k, int[] nums) {

@@ -45,6 +45,7 @@ public class LC146LRUCache {
     /**
      * Variant A - brute force: keep keys in a recency list, scan it on every operation
      * <br>Target: time O(capacity) per get and per put, space O(capacity)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting (this chapter)
      */
     public static class LRUCacheBruteForce {
         public LRUCacheBruteForce(int capacity) {
@@ -66,6 +67,7 @@ public class LC146LRUCache {
     /**
      * Variant B - let java.util.LinkedHashMap keep the keys in access order
      * <br>Target: time O(1) per get and per put, space O(capacity)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform (later chapter)
      */
     public static class LRUCacheLinkedHashMap {
         public LRUCacheLinkedHashMap(int capacity) {
@@ -87,6 +89,8 @@ public class LC146LRUCache {
     /**
      * Variant C - this chapter's technique: hash map into a hand-built doubly linked list
      * <br>Target: time O(1) per get and per put, space O(capacity)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting (this chapter)
+     *     + ch. 33 Designing data structures (later chapter; needs ch. 3, 31 first)
      */
     public static class LRUCache {
         public LRUCache(int capacity) {

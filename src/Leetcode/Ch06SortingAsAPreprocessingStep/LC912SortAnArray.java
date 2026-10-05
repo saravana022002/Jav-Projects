@@ -40,6 +40,7 @@ public class LC912SortAnArray {
     /**
      * Variant A - insertion sort: grow a sorted prefix, sliding each new value into place
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int[] sortArrayInsertionSort(int[] nums) {
         // TODO: write your solution
@@ -49,6 +50,8 @@ public class LC912SortAnArray {
     /**
      * Variant B - quicksort: random pivot, partition in place, recurse on both sides
      * <br>Target: time O(n log n) expected (O(n^2) worst case), space O(log n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
+     *     + ch. 13 Quickselect and partition (later chapter)
      */
     public static int[] sortArrayQuickSort(int[] nums) {
         // TODO: write your solution
@@ -58,6 +61,7 @@ public class LC912SortAnArray {
     /**
      * Variant C - this chapter's technique: merge sort, sort both halves then merge them
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int[] sortArray(int[] nums) {
         // TODO: write your solution

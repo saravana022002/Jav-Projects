@@ -36,6 +36,7 @@ public class LC540SingleElementInASortedArray {
     /**
      * Variant A - brute force: XOR all the numbers, the equal pairs cancel out
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 5 Bit manipulation as a set encoding
      */
     public static int singleNonDuplicateBruteForce(int[] nums) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC540SingleElementInASortedArray {
     /**
      * Variant B - binary search on mid and its twin, using the parity of the left part's size
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int singleNonDuplicateThreeWay(int[] nums) {
         // TODO: write your solution
@@ -55,6 +57,7 @@ public class LC540SingleElementInASortedArray {
      * Variant C - this chapter's technique: boundary search on "does the pair at i, i + 1 match"
      *             over the even indices
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int singleNonDuplicate(int[] nums) {
         // TODO: write your solution

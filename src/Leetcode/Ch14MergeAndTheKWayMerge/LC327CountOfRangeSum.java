@@ -37,6 +37,7 @@ public class LC327CountOfRangeSum {
     /**
      * Variant A - brute force: test the difference of every pair of prefix sums
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
      */
     public static int countRangeSumBruteForce(int[] nums, int lower, int upper) {
         // TODO: write your solution
@@ -46,6 +47,8 @@ public class LC327CountOfRangeSum {
     /**
      * Variant B - Fenwick tree over compressed prefix sums: count the earlier ones in a window
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 39 Fenwick trees (later chapter)
      */
     public static int countRangeSumFenwick(int[] nums, int lower, int upper) {
         // TODO: write your solution
@@ -55,6 +58,8 @@ public class LC327CountOfRangeSum {
     /**
      * Variant C - this chapter's technique: merge sort on prefix sums, count cross pairs per merge
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 14 Merge and the k-way merge (this chapter)
      */
     public static int countRangeSum(int[] nums, int lower, int upper) {
         // TODO: write your solution

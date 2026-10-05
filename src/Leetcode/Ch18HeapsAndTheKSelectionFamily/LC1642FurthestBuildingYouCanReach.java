@@ -39,6 +39,7 @@ public class LC1642FurthestBuildingYouCanReach {
     /**
      * Variant A - for each target building, sort the climbs so far; ladders take the biggest ones
      * <br>Target: time O(n^2 log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int furthestBuildingBruteForce(int[] heights, int bricks, int ladders) {
         // TODO: write your solution
@@ -48,6 +49,8 @@ public class LC1642FurthestBuildingYouCanReach {
     /**
      * Variant B - binary search on the target building, each test is the check of Variant A
      * <br>Target: time O(n log^2 n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 11 Binary search on the answer
      */
     public static int furthestBuildingBinarySearch(int[] heights, int bricks, int ladders) {
         // TODO: write your solution
@@ -57,6 +60,7 @@ public class LC1642FurthestBuildingYouCanReach {
     /**
      * Variant C - this chapter's technique: min-heap of the climbs that currently hold a ladder
      * <br>Target: time O(n log L), space O(L)     (L = ladders)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (this chapter)
      */
     public static int furthestBuilding(int[] heights, int bricks, int ladders) {
         // TODO: write your solution

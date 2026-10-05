@@ -33,6 +33,7 @@ public class LC905SortArrayByParity {
     /**
      * Variant A - extra array: copy all evens first, then all odds
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[] sortArrayByParityExtraArray(int[] nums) {
         // TODO: write your solution
@@ -42,6 +43,7 @@ public class LC905SortArrayByParity {
     /**
      * Variant B - two pointers from both ends: swap an odd on the left with an even on the right
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 8 Two pointers, converging
      */
     public static int[] sortArrayByParityTwoEnds(int[] nums) {
         // TODO: write your solution
@@ -51,6 +53,7 @@ public class LC905SortArrayByParity {
     /**
      * Variant C - this chapter's technique: one partition pass, swap each even into the front
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static int[] sortArrayByParity(int[] nums) {
         // TODO: write your solution

@@ -33,6 +33,7 @@ public class LC1920BuildArrayFromPermutation {
     /**
      * Variant A - fill a fresh array of the same length with the values nums[nums[i]]
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[] buildArrayNewArray(int[] nums) {
         // TODO: write your solution
@@ -42,6 +43,7 @@ public class LC1920BuildArrayFromPermutation {
     /**
      * Variant B - this chapter's technique: in place, pack old and new value into each cell
      * <br>Target: time O(n), space O(1) extra (the answer is nums itself)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static int[] buildArray(int[] nums) {
         // TODO: write your solution

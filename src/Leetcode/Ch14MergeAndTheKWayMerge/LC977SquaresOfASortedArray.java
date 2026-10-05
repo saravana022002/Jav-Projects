@@ -36,6 +36,7 @@ public class LC977SquaresOfASortedArray {
     /**
      * Variant A - square every element, then sort the result
      * <br>Target: time O(n log n), space O(1) extra besides the answer
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int[] sortedSquaresSorting(int[] nums) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC977SquaresOfASortedArray {
     /**
      * Variant B - two pointers at both ends: the larger square goes to the back of the answer
      * <br>Target: time O(n), space O(1) extra besides the answer
+     * <br>Complete first: ch. 8 Two pointers, converging
      */
     public static int[] sortedSquaresTwoPointers(int[] nums) {
         // TODO: write your solution
@@ -54,6 +56,7 @@ public class LC977SquaresOfASortedArray {
     /**
      * Variant C - this chapter's technique: split at the sign change, merge the two sorted runs
      * <br>Target: time O(n), space O(1) extra besides the answer
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
      */
     public static int[] sortedSquares(int[] nums) {
         // TODO: write your solution

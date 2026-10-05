@@ -34,6 +34,7 @@ public class LC856ScoreOfParentheses {
     /**
      * Variant A - brute force: split into top-level pieces, recurse into the inside of each
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 56 Recursion and the shape of a subproblem (later chapter)
      */
     public static int scoreOfParenthesesBruteForce(String s) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC856ScoreOfParentheses {
     /**
      * Variant B - track the nesting depth: every "()" contributes a power of two
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int scoreOfParenthesesDepth(String s) {
         // TODO: write your solution
@@ -52,6 +54,7 @@ public class LC856ScoreOfParentheses {
     /**
      * Variant C - this chapter's technique: stack with a running score for each open bracket
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int scoreOfParentheses(String s) {
         // TODO: write your solution

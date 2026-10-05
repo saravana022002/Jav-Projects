@@ -40,6 +40,8 @@ public class LC547NumberOfProvinces {
     /**
      * Variant A - depth-first search: start a new search at every city not reached yet
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 42 Graph representation and DFS (later chapter;
+     *       needs ch. 15, 34, 35 first)
      */
     public static int findCircleNumDfs(int[][] isConnected) {
         // TODO: write your solution
@@ -49,6 +51,8 @@ public class LC547NumberOfProvinces {
     /**
      * Variant B - breadth-first search with a queue, one search per province
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 43 BFS and unweighted shortest paths (later chapter;
+     *       needs ch. 15, 34, 35, 42 first)
      */
     public static int findCircleNumBfs(int[][] isConnected) {
         // TODO: write your solution
@@ -58,6 +62,8 @@ public class LC547NumberOfProvinces {
     /**
      * Variant C - this chapter's technique: union-find with union by rank and path compression
      * <br>Target: time O(n^2 * alpha(n)), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting (this chapter)
+     *     + ch. 47 Union-find and dynamic connectivity (later chapter)
      */
     public static int findCircleNum(int[][] isConnected) {
         // TODO: write your solution

@@ -39,6 +39,7 @@ public class LC448FindAllNumbersDisappearedInAnArray {
     /**
      * Variant A - mark every value in a boolean array, then collect the unmarked numbers
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static List<Integer> findDisappearedNumbersSeen(int[] nums) {
         // TODO: write your solution
@@ -48,6 +49,7 @@ public class LC448FindAllNumbersDisappearedInAnArray {
     /**
      * Variant B - this chapter's technique: cyclic sort, then every misplaced slot is a gap
      * <br>Target: time O(n), space O(1) extra (the output list does not count)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static List<Integer> findDisappearedNumbers(int[] nums) {
         // TODO: write your solution
@@ -57,6 +59,7 @@ public class LC448FindAllNumbersDisappearedInAnArray {
     /**
      * Variant C - index-as-address: mark slot v - 1 for every value v, collect unmarked slots
      * <br>Target: time O(n), space O(1) extra (the output list does not count)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static List<Integer> findDisappearedNumbersMarking(int[] nums) {
         // TODO: write your solution

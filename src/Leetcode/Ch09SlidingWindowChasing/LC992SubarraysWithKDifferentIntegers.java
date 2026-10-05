@@ -38,6 +38,7 @@ public class LC992SubarraysWithKDifferentIntegers {
     /**
      * Variant A - brute force: from every start, extend with fresh counts until more than k
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
      */
     public static int subarraysWithKDistinctBruteForce(int[] nums, int k) {
         // TODO: write your solution
@@ -47,6 +48,8 @@ public class LC992SubarraysWithKDifferentIntegers {
     /**
      * Variant B - this chapter's technique: windows counting "<= k different" minus "<= k - 1"
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static int subarraysWithKDistinct(int[] nums, int k) {
         // TODO: write your solution
@@ -56,6 +59,8 @@ public class LC992SubarraysWithKDifferentIntegers {
     /**
      * Variant C - one pass: a window of k values plus a count of removable leading elements
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static int subarraysWithKDistinctOnePass(int[] nums, int k) {
         // TODO: write your solution

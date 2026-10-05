@@ -39,6 +39,7 @@ public class LC2398MaximumNumberOfRobotsWithinBudget {
     /**
      * Variant A - brute force: from every start, extend the group while its cost fits the budget
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int maximumRobotsBruteForce(int[] chargeTimes, int[] runningCosts, long budget) {
         // TODO: write your solution
@@ -48,6 +49,8 @@ public class LC2398MaximumNumberOfRobotsWithinBudget {
     /**
      * Variant B - binary search on the group size; test one size with a sliding window
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 11 Binary search on the answer
+     *     + ch. 17 The monotonic deque (this chapter)
      */
     public static int maximumRobotsBinarySearch(int[] chargeTimes, int[] runningCosts,
                                                 long budget) {
@@ -58,6 +61,8 @@ public class LC2398MaximumNumberOfRobotsWithinBudget {
     /**
      * Variant C - this chapter's technique: two pointers plus a monotonic deque of charge times
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 9 Sliding window, chasing
+     *     + ch. 17 The monotonic deque (this chapter)
      */
     public static int maximumRobots(int[] chargeTimes, int[] runningCosts, long budget) {
         // TODO: write your solution

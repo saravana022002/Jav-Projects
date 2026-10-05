@@ -33,6 +33,7 @@ public class LC713SubarrayProductLessThanK {
     /**
      * Variant A - brute force: from every start, extend while the product stays below k
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int numSubarrayProductLessThanKBruteForce(int[] nums, int k) {
         // TODO: write your solution
@@ -42,6 +43,8 @@ public class LC713SubarrayProductLessThanK {
     /**
      * Variant B - prefix sums of logarithms, binary-search the farthest legal end per start
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 10 Binary search on a sorted array (later chapter)
      */
     public static int numSubarrayProductLessThanKLogBinarySearch(int[] nums, int k) {
         // TODO: write your solution
@@ -51,6 +54,7 @@ public class LC713SubarrayProductLessThanK {
     /**
      * Variant C - this chapter's technique: sliding window, shrink while the product >= k
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 9 Sliding window, chasing (this chapter)
      */
     public static int numSubarrayProductLessThanK(int[] nums, int k) {
         // TODO: write your solution

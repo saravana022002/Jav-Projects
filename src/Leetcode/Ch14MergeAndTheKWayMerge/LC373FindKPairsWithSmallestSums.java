@@ -44,6 +44,7 @@ public class LC373FindKPairsWithSmallestSums {
     /**
      * Variant A - brute force: build every pair, sort them by sum, keep the first k
      * <br>Target: time O(m n log(m n)), space O(m n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static List<List<Integer>> kSmallestPairsBruteForce(int[] nums1, int[] nums2, int k) {
         // TODO: write your solution
@@ -53,6 +54,8 @@ public class LC373FindKPairsWithSmallestSums {
     /**
      * Variant B - heap on the index grid: start at (0,0), expand right and down, skip seen cells
      * <br>Target: time O(k log k), space O(k)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static List<List<Integer>> kSmallestPairsGrid(int[] nums1, int[] nums2, int k) {
         // TODO: write your solution
@@ -62,6 +65,8 @@ public class LC373FindKPairsWithSmallestSums {
     /**
      * Variant C - this chapter's technique: k-way merge, each element of nums1 starts a stream
      * <br>Target: time O(k log min(m, k)), space O(min(m, k))
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
+     *     + ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
         // TODO: write your solution

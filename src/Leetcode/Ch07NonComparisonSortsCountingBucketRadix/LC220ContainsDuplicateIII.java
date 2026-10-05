@@ -41,6 +41,7 @@ public class LC220ContainsDuplicateIII {
     /**
      * Variant A - compare every element with the next indexDiff elements
      * <br>Target: time O(n * indexDiff), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static boolean containsNearbyAlmostDuplicateBruteForce(
             int[] nums, int indexDiff, int valueDiff) {
@@ -51,6 +52,8 @@ public class LC220ContainsDuplicateIII {
     /**
      * Variant B - keep the last indexDiff values in a sorted set, look up the nearest neighbours
      * <br>Target: time O(n log k), space O(k)    (k = min(n, indexDiff))
+     * <br>Complete first: ch. 9 Sliding window, chasing (later chapter; needs ch. 8 first)
+     *     + ch. 41 Ordered maps in practice (later chapter; needs ch. 10 first)
      */
     public static boolean containsNearbyAlmostDuplicateTreeSet(
             int[] nums, int indexDiff, int valueDiff) {
@@ -61,6 +64,9 @@ public class LC220ContainsDuplicateIII {
     /**
      * Variant C - this chapter's technique: sliding window over a hash map of value buckets
      * <br>Target: time O(n), space O(k)    (k = min(n, indexDiff))
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
+     *     + ch. 9 Sliding window, chasing (later chapter; needs ch. 8 first)
      */
     public static boolean containsNearbyAlmostDuplicate(int[] nums, int indexDiff, int valueDiff) {
         // TODO: write your solution

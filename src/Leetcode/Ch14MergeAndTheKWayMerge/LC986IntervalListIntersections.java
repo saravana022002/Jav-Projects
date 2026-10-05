@@ -41,6 +41,7 @@ public class LC986IntervalListIntersections {
     /**
      * Variant A - brute force: test every pair of intervals for an overlap
      * <br>Target: time O(m * n), space O(1) extra besides the answer
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[][] intervalIntersectionBruteForce(int[][] firstList, int[][] secondList) {
         // TODO: write your solution
@@ -51,6 +52,7 @@ public class LC986IntervalListIntersections {
      * Variant B - for each interval of one list, binary-search where its overlaps begin in the
      *             other list, then scan on while they still overlap
      * <br>Target: time O(m log n + k), space O(1) extra besides the answer   (k = intersections)
+     * <br>Complete first: ch. 10 Binary search on a sorted array
      */
     public static int[][] intervalIntersectionBinarySearch(int[][] firstList, int[][] secondList) {
         // TODO: write your solution
@@ -60,6 +62,7 @@ public class LC986IntervalListIntersections {
     /**
      * Variant C - this chapter's technique: merge-style walk over both lists, one pointer each
      * <br>Target: time O(m + n), space O(1) extra besides the answer
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
      */
     public static int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
         // TODO: write your solution

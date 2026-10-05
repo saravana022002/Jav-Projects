@@ -44,6 +44,8 @@ public class LC347TopKFrequentElements {
     /**
      * Variant A - count the values, sort the distinct values by count, take the first k
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 6 Sorting as a preprocessing step
      */
     public static int[] topKFrequentSort(int[] nums, int k) {
         // TODO: write your solution
@@ -53,6 +55,8 @@ public class LC347TopKFrequentElements {
     /**
      * Variant B - count the values, keep a min-heap of at most k distinct values
      * <br>Target: time O(n log k), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static int[] topKFrequentHeap(int[] nums, int k) {
         // TODO: write your solution
@@ -62,6 +66,8 @@ public class LC347TopKFrequentElements {
     /**
      * Variant C - this chapter's technique: bucket the values by count, read buckets from the top
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
      */
     public static int[] topKFrequent(int[] nums, int k) {
         // TODO: write your solution

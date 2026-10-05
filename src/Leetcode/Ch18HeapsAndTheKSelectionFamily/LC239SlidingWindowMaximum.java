@@ -41,6 +41,7 @@ public class LC239SlidingWindowMaximum {
     /**
      * Variant A - brute force: scan every window for its maximum
      * <br>Target: time O(n * k), space O(1) extra (the answer array not counted)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[] maxSlidingWindowBruteForce(int[] nums, int k) {
         // TODO: write your solution
@@ -50,6 +51,7 @@ public class LC239SlidingWindowMaximum {
     /**
      * Variant B - monotonic deque of indices (the other way to do it; see chapter 17)
      * <br>Target: time O(n), space O(k)
+     * <br>Complete first: ch. 17 The monotonic deque
      */
     public static int[] maxSlidingWindowDeque(int[] nums, int k) {
         // TODO: write your solution
@@ -59,6 +61,7 @@ public class LC239SlidingWindowMaximum {
     /**
      * Variant C - this chapter's technique: max-heap of (value, index), stale tops dropped lazily
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (this chapter)
      */
     public static int[] maxSlidingWindow(int[] nums, int k) {
         // TODO: write your solution

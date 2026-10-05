@@ -40,6 +40,7 @@ public class LC1109CorporateFlightBookings {
     /**
      * Variant A - brute force: add each booking's seats to every flight in its range
      * <br>Target: time O(m * n), space O(1) besides the answer     (m = bookings.length)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[] corpFlightBookingsBruteForce(int[][] bookings, int n) {
         // TODO: write your solution
@@ -49,6 +50,7 @@ public class LC1109CorporateFlightBookings {
     /**
      * Variant B - difference array: +seats at first, -seats after last, then prefix sums
      * <br>Target: time O(m + n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
      */
     public static int[] corpFlightBookingsDifferenceArray(int[][] bookings, int n) {
         // TODO: write your solution
@@ -58,6 +60,8 @@ public class LC1109CorporateFlightBookings {
     /**
      * Variant C - this chapter's technique: sort the +seats / -seats events, sweep the flights
      * <br>Target: time O(m log m + n), space O(m + n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static int[] corpFlightBookings(int[][] bookings, int n) {
         // TODO: write your solution

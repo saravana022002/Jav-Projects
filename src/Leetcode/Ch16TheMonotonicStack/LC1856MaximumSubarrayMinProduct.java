@@ -36,6 +36,7 @@ public class LC1856MaximumSubarrayMinProduct {
     /**
      * Variant A - brute force: for every start, extend the end while tracking the min and the sum
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int maxSumMinProductBruteForce(int[] nums) {
         // TODO: write your solution
@@ -45,6 +46,8 @@ public class LC1856MaximumSubarrayMinProduct {
     /**
      * Variant B - this chapter's technique: prefix sums plus the nearest smaller value on each side
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 16 The monotonic stack (this chapter)
      */
     public static int maxSumMinProduct(int[] nums) {
         // TODO: write your solution

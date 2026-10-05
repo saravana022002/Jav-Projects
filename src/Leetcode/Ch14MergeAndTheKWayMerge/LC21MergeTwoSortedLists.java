@@ -51,6 +51,8 @@ public class LC21MergeTwoSortedLists {
     /**
      * Variant A - copy all values into an array, sort it, build a fresh list
      * <br>Target: time O((m + n) log(m + n)), space O(m + n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 31 Linked lists and the dummy head (later chapter)
      */
     public static ListNode mergeTwoListsSorting(ListNode list1, ListNode list2) {
         // TODO: write your solution
@@ -60,6 +62,8 @@ public class LC21MergeTwoSortedLists {
     /**
      * Variant B - recursion: the smaller head, followed by the merge of everything after it
      * <br>Target: time O(m + n), space O(m + n) for the call stack
+     * <br>Complete first: ch. 31 Linked lists and the dummy head (later chapter)
+     *     + ch. 56 Recursion and the shape of a subproblem (later chapter)
      */
     public static ListNode mergeTwoListsRecursive(ListNode list1, ListNode list2) {
         // TODO: write your solution
@@ -69,6 +73,8 @@ public class LC21MergeTwoSortedLists {
     /**
      * Variant C - this chapter's technique: iterative merge from a dummy head, relinking the nodes
      * <br>Target: time O(m + n), space O(1)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
+     *     + ch. 31 Linked lists and the dummy head (later chapter)
      */
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         // TODO: write your solution

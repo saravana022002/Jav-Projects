@@ -40,6 +40,7 @@ public class LC739DailyTemperatures {
     /**
      * Variant A - brute force: for every day, scan the following days for a warmer one
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting (this chapter)
      */
     public static int[] dailyTemperaturesBruteForce(int[] temperatures) {
         // TODO: write your solution
@@ -49,6 +50,7 @@ public class LC739DailyTemperatures {
     /**
      * Variant B - right to left, remembering the nearest index of every temperature value
      * <br>Target: time O(n * R), space O(R)   (R = 71, the number of possible temperatures)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform (later chapter)
      */
     public static int[] dailyTemperaturesByValue(int[] temperatures) {
         // TODO: write your solution
@@ -58,6 +60,8 @@ public class LC739DailyTemperatures {
     /**
      * Variant C - this chapter's technique: a stack of day indices still waiting for a warmer day
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting (this chapter)
+     *     + ch. 16 The monotonic stack (later chapter; needs ch. 15 first)
      */
     public static int[] dailyTemperatures(int[] temperatures) {
         // TODO: write your solution

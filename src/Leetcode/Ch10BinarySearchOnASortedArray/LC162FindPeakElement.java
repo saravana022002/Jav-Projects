@@ -35,6 +35,7 @@ public class LC162FindPeakElement {
     /**
      * Variant A - brute force: scan for the first element that is larger than its successor
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int findPeakElementBruteForce(int[] nums) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC162FindPeakElement {
     /**
      * Variant B - binary search: stop if mid beats both neighbours, else move to the larger one
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int findPeakElementThreeWay(int[] nums) {
         // TODO: write your solution
@@ -53,6 +55,7 @@ public class LC162FindPeakElement {
     /**
      * Variant C - this chapter's technique: boundary search on "nums[i] > nums[i + 1]"
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int findPeakElement(int[] nums) {
         // TODO: write your solution

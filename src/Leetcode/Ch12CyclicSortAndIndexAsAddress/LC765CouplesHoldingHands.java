@@ -34,6 +34,7 @@ public class LC765CouplesHoldingHands {
     /**
      * Variant A - greedy, seat pair by seat pair: scan the rest of the row for the partner
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int minSwapsCouplesLinearSearch(int[] row) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC765CouplesHoldingHands {
     /**
      * Variant B - this chapter's technique: same greedy, an inverse array finds the partner's seat
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static int minSwapsCouples(int[] row) {
         // TODO: write your solution
@@ -52,6 +54,7 @@ public class LC765CouplesHoldingHands {
     /**
      * Variant C - union-find over the seat pairs linked by a couple; answer is n - groups
      * <br>Target: time O(n * alpha(n)), space O(n)
+     * <br>Complete first: ch. 47 Union-find and dynamic connectivity (later chapter)
      */
     public static int minSwapsCouplesUnionFind(int[] row) {
         // TODO: write your solution

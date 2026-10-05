@@ -35,6 +35,7 @@ public class LC167TwoSumIIInputArrayIsSorted {
     /**
      * Variant A - brute force: check every pair of positions
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[] twoSumBruteForce(int[] numbers, int target) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC167TwoSumIIInputArrayIsSorted {
     /**
      * Variant B - for each element, binary-search the rest for its partner
      * <br>Target: time O(n log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (later chapter)
      */
     public static int[] twoSumBinarySearch(int[] numbers, int target) {
         // TODO: write your solution
@@ -53,6 +55,7 @@ public class LC167TwoSumIIInputArrayIsSorted {
     /**
      * Variant C - this chapter's technique: two pointers moving towards each other
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 8 Two pointers, converging (this chapter)
      */
     public static int[] twoSum(int[] numbers, int target) {
         // TODO: write your solution

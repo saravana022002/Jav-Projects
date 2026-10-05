@@ -39,6 +39,7 @@ public class LC75SortColors {
     /**
      * Variant A - hand-written comparison sort done in place (e.g. insertion sort)
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static void sortColorsInsertionSort(int[] nums) {
         // TODO: write your solution
@@ -48,6 +49,7 @@ public class LC75SortColors {
     /**
      * Variant B - this chapter's technique: count each colour, then overwrite nums
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
      */
     public static void sortColors(int[] nums) {
         // TODO: write your solution
@@ -57,6 +59,7 @@ public class LC75SortColors {
     /**
      * Variant C - single pass with two boundary pointers, swapping elements into place
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 13 Quickselect and partition (later chapter)
      */
     public static void sortColorsOnePass(int[] nums) {
         // TODO: write your solution

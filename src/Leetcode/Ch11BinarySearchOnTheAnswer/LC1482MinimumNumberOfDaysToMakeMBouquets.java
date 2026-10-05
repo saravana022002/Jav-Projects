@@ -36,6 +36,7 @@ public class LC1482MinimumNumberOfDaysToMakeMBouquets {
     /**
      * Variant A - brute force: try each distinct bloom day in increasing order, count bouquets
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int minDaysTryEachDay(int[] bloomDay, int m, int k) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC1482MinimumNumberOfDaysToMakeMBouquets {
     /**
      * Variant B - this chapter's technique: binary search on the day, count runs of k open flowers
      * <br>Target: time O(n log max(bloomDay)), space O(1)
+     * <br>Complete first: ch. 11 Binary search on the answer (this chapter)
      */
     public static int minDays(int[] bloomDay, int m, int k) {
         // TODO: write your solution

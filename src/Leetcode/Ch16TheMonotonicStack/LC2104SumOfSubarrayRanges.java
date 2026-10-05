@@ -35,6 +35,7 @@ public class LC2104SumOfSubarrayRanges {
     /**
      * Variant A - brute force: for every start, extend the end while tracking running min and max
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static long subArrayRangesBruteForce(int[] nums) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC2104SumOfSubarrayRanges {
     /**
      * Variant B - this chapter's technique: sum of subarray maximums minus sum of minimums
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (this chapter)
      */
     public static long subArrayRanges(int[] nums) {
         // TODO: write your solution

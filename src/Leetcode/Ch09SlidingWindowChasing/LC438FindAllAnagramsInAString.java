@@ -41,6 +41,7 @@ public class LC438FindAllAnagramsInAString {
     /**
      * Variant A - brute force: count the letters of every window from scratch, compare with p
      * <br>Target: time O(n * m), space O(1)    (n = s.length(), m = p.length())
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
      */
     public static List<Integer> findAnagramsBruteForce(String s, String p) {
         // TODO: write your solution
@@ -50,6 +51,8 @@ public class LC438FindAllAnagramsInAString {
     /**
      * Variant B - slide a 26-slot count vector, compare it with p's vector at every step
      * <br>Target: time O(26 * n + m), space O(1)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static List<Integer> findAnagramsCompareCounts(String s, String p) {
         // TODO: write your solution
@@ -60,6 +63,8 @@ public class LC438FindAllAnagramsInAString {
      * Variant C - this chapter's technique: same window, a matched-letters counter replaces
      *             the 26-slot comparison
      * <br>Target: time O(n + m), space O(1)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static List<Integer> findAnagrams(String s, String p) {
         // TODO: write your solution

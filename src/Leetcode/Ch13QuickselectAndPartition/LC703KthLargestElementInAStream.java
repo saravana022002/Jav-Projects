@@ -43,6 +43,7 @@ public class LC703KthLargestElementInAStream {
     /**
      * Variant A - keep every score in a list; sort it on each add and read the k-th largest
      * <br>Target: time O(n log n) per add, space O(n)     (n = scores seen so far)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static class KthLargestSorting {
         public KthLargestSorting(int k, int[] nums) {
@@ -59,6 +60,7 @@ public class LC703KthLargestElementInAStream {
     /**
      * Variant B - keep every score in a list; quickselect the k-th largest on each add
      * <br>Target: time O(n) expected per add, space O(n)
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static class KthLargestQuickselect {
         public KthLargestQuickselect(int k, int[] nums) {
@@ -75,6 +77,7 @@ public class LC703KthLargestElementInAStream {
     /**
      * Variant C - where partition stops helping (scores keep arriving): min-heap capped at k
      * <br>Target: time O(log k) per add (O(n log k) to build), space O(k)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static class KthLargest {
         public KthLargest(int k, int[] nums) {

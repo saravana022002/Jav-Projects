@@ -35,6 +35,7 @@ public class LC268MissingNumber {
     /**
      * Variant A - hash set of the numbers, then test each value of 0..n
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static int missingNumberHashSet(int[] nums) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC268MissingNumber {
     /**
      * Variant B - arithmetic: the expected total of 0..n minus the actual total
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int missingNumberSum(int[] nums) {
         // TODO: write your solution
@@ -53,6 +55,7 @@ public class LC268MissingNumber {
     /**
      * Variant C - this chapter's technique: XOR all array values together with all of 0..n
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 5 Bit manipulation as a set encoding (this chapter)
      */
     public static int missingNumber(int[] nums) {
         // TODO: write your solution

@@ -33,6 +33,7 @@ public class LC164MaximumGap {
     /**
      * Variant A - sort the array, then compare neighbours
      * <br>Target: time O(n log n), space O(1)    (sort the input array in place)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int maximumGapSort(int[] nums) {
         // TODO: write your solution
@@ -42,6 +43,7 @@ public class LC164MaximumGap {
     /**
      * Variant B - radix sort the values (one counting pass per digit), then compare neighbours
      * <br>Target: time O(n), space O(n)    (the number of digits is fixed by the value range)
+     * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
      */
     public static int maximumGapRadixSort(int[] nums) {
         // TODO: write your solution
@@ -51,6 +53,7 @@ public class LC164MaximumGap {
     /**
      * Variant C - this chapter's technique: value-range buckets plus the pigeonhole principle
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
      */
     public static int maximumGap(int[] nums) {
         // TODO: write your solution

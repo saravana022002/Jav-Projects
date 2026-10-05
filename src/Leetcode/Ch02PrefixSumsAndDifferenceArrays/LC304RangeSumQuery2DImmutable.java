@@ -42,6 +42,7 @@ public class LC304RangeSumQuery2DImmutable {
     /**
      * Variant A - brute force: add up every cell of the rectangle on each query
      * <br>Target: time O(1) to build, O(m * n) per sumRegion, space O(1) extra
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static class NumMatrixBruteForce {
         public NumMatrixBruteForce(int[][] matrix) {
@@ -58,6 +59,7 @@ public class LC304RangeSumQuery2DImmutable {
     /**
      * Variant B - a prefix-sum array per row; each query adds one slice per row
      * <br>Target: time O(m * n) to build, O(m) per sumRegion, space O(m * n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays (this chapter)
      */
     public static class NumMatrixRowPrefix {
         public NumMatrixRowPrefix(int[][] matrix) {
@@ -74,6 +76,7 @@ public class LC304RangeSumQuery2DImmutable {
     /**
      * Variant C - this chapter's technique: 2D prefix sums, each query reads four table entries
      * <br>Target: time O(m * n) to build, O(1) per sumRegion, space O(m * n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays (this chapter)
      */
     public static class NumMatrix {
         public NumMatrix(int[][] matrix) {

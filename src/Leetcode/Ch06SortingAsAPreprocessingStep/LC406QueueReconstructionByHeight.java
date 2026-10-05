@@ -35,6 +35,7 @@ public class LC406QueueReconstructionByHeight {
     /**
      * Variant A - sort short to tall (ties: larger k first); take the (k+1)-th empty slot
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int[][] reconstructQueueFreeSlots(int[][] people) {
         // TODO: write your solution
@@ -44,6 +45,8 @@ public class LC406QueueReconstructionByHeight {
     /**
      * Variant B - slot idea of A, with a Fenwick tree finding the (k+1)-th empty slot
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
+     *     + ch. 39 Fenwick trees (later chapter)
      */
     public static int[][] reconstructQueueFenwick(int[][] people) {
         // TODO: write your solution
@@ -53,6 +56,7 @@ public class LC406QueueReconstructionByHeight {
     /**
      * Variant C - this chapter's technique: sort tall to short (ties: smaller k first), insert at k
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int[][] reconstructQueue(int[][] people) {
         // TODO: write your solution

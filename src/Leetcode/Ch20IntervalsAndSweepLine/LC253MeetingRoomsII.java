@@ -34,6 +34,7 @@ public class LC253MeetingRoomsII {
     /**
      * Variant A - brute force: at every start time, count the meetings that are running
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int minMeetingRoomsBruteForce(int[][] intervals) {
         // TODO: write your solution
@@ -43,6 +44,8 @@ public class LC253MeetingRoomsII {
     /**
      * Variant B - sort by start; a min-heap of end times tells which room frees up first
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 18 Heaps and the k-selection family
      */
     public static int minMeetingRoomsHeap(int[][] intervals) {
         // TODO: write your solution
@@ -52,6 +55,8 @@ public class LC253MeetingRoomsII {
     /**
      * Variant C - this chapter's technique: sweep over sorted start and end events with a counter
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static int minMeetingRooms(int[][] intervals) {
         // TODO: write your solution

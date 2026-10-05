@@ -45,6 +45,7 @@ public class LC278FirstBadVersion {
         /**
          * Variant A - brute force: ask about version 1, 2, 3, ... until one is bad
          * <br>Target: time O(n), space O(1)    (up to n API calls)
+         * <br>Complete first: ch. 1 Complexity, amortisation, and counting
          */
         public int firstBadVersionBruteForce(int n) {
             // TODO: write your solution
@@ -54,6 +55,7 @@ public class LC278FirstBadVersion {
         /**
          * Variant B - this chapter's technique: binary search for the good/bad boundary
          * <br>Target: time O(log n), space O(1)    (O(log n) API calls)
+         * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
          */
         public int firstBadVersion(int n) {
             // TODO: write your solution

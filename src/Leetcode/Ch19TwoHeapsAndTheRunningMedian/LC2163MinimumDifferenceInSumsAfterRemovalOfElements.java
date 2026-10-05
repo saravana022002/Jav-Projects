@@ -34,6 +34,7 @@ public class LC2163MinimumDifferenceInSumsAfterRemovalOfElements {
     /**
      * Variant A - brute force: for every split point, sort both sides to pick the best n of each
      * <br>Target: time O(n^2 log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static long minimumDifferenceBruteForce(int[] nums) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC2163MinimumDifferenceInSumsAfterRemovalOfElements {
     /**
      * Variant B - this chapter's technique: one heap sweeping from each end of the array
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 19 Two heaps and the running median (this chapter)
      */
     public static long minimumDifference(int[] nums) {
         // TODO: write your solution

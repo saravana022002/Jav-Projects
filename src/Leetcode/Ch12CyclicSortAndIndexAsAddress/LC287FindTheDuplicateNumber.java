@@ -41,6 +41,7 @@ public class LC287FindTheDuplicateNumber {
     /**
      * Variant A - brute force: compare every pair of positions
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int findDuplicateAllPairs(int[] nums) {
         // TODO: write your solution
@@ -50,6 +51,7 @@ public class LC287FindTheDuplicateNumber {
     /**
      * Variant B - binary search on the value, count the entries <= mid (pigeonhole principle)
      * <br>Target: time O(n log n), space O(1)
+     * <br>Complete first: ch. 11 Binary search on the answer
      */
     public static int findDuplicateBinarySearch(int[] nums) {
         // TODO: write your solution
@@ -59,6 +61,8 @@ public class LC287FindTheDuplicateNumber {
     /**
      * Variant C - this chapter's technique: follow i -> nums[i] as pointers, Floyd's cycle finding
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
+     *     + ch. 32 Fast and slow pointers (later chapter; needs ch. 31 first)
      */
     public static int findDuplicate(int[] nums) {
         // TODO: write your solution

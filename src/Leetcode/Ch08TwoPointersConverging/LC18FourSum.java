@@ -42,6 +42,7 @@ public class LC18FourSum {
     /**
      * Variant A - brute force: four nested loops, never reporting a quadruplet twice
      * <br>Target: time O(n^4), space O(1) besides the result
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static List<List<Integer>> fourSumBruteForce(int[] nums, int target) {
         // TODO: write your solution
@@ -51,6 +52,8 @@ public class LC18FourSum {
     /**
      * Variant B - sort, fix three numbers, binary-search the fourth
      * <br>Target: time O(n^3 log n), space O(1) besides the result
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 10 Binary search on a sorted array (later chapter)
      */
     public static List<List<Integer>> fourSumBinarySearch(int[] nums, int target) {
         // TODO: write your solution
@@ -60,6 +63,8 @@ public class LC18FourSum {
     /**
      * Variant C - this chapter's technique: sort, fix two numbers, two converging pointers
      * <br>Target: time O(n^3), space O(1) besides the result
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 8 Two pointers, converging (this chapter)
      */
     public static List<List<Integer>> fourSum(int[] nums, int target) {
         // TODO: write your solution

@@ -34,6 +34,7 @@ public class LC41FirstMissingPositive {
     /**
      * Variant A - put all values in a HashSet, count up from 1 until one is absent
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static int firstMissingPositiveHashSet(int[] nums) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC41FirstMissingPositive {
     /**
      * Variant B - this chapter's technique: cyclic sort that ignores values outside 1..n
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static int firstMissingPositive(int[] nums) {
         // TODO: write your solution
@@ -52,6 +54,7 @@ public class LC41FirstMissingPositive {
     /**
      * Variant C - index-as-address: neutralise useless values, negate slot v - 1 for each v
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static int firstMissingPositiveMarking(int[] nums) {
         // TODO: write your solution

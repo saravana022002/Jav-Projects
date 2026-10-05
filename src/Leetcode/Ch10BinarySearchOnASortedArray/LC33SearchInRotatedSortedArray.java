@@ -40,6 +40,7 @@ public class LC33SearchInRotatedSortedArray {
     /**
      * Variant A - brute force: scan from the left until the value appears
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int searchBruteForce(int[] nums, int target) {
         // TODO: write your solution
@@ -49,6 +50,7 @@ public class LC33SearchInRotatedSortedArray {
     /**
      * Variant B - two phases: binary-search the rotation point, then search the right part
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int searchTwoPhase(int[] nums, int target) {
         // TODO: write your solution
@@ -58,6 +60,7 @@ public class LC33SearchInRotatedSortedArray {
     /**
      * Variant C - this chapter's technique: one binary search, work out which half is sorted
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int search(int[] nums, int target) {
         // TODO: write your solution

@@ -39,6 +39,8 @@ public class LC451SortCharactersByFrequency {
     /**
      * Variant A - sort all the characters with a comparator on (frequency, character)
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 6 Sorting as a preprocessing step
      */
     public static String frequencySortComparator(String s) {
         // TODO: write your solution
@@ -48,6 +50,8 @@ public class LC451SortCharactersByFrequency {
     /**
      * Variant B - count, then a max-heap of the distinct characters ordered by count
      * <br>Target: time O(n + k log k), space O(k) besides the result    (k = distinct characters)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static String frequencySortHeap(String s) {
         // TODO: write your solution
@@ -57,6 +61,8 @@ public class LC451SortCharactersByFrequency {
     /**
      * Variant C - this chapter's technique: bucket the characters by frequency, drain high to low
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
      */
     public static String frequencySort(String s) {
         // TODO: write your solution

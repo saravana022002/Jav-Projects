@@ -43,6 +43,7 @@ public class LC1825FindingMKAverage {
     /**
      * Variant A - queue of the last m numbers; on every query sort a copy, add up the middle
      * <br>Target: time O(1) per addElement, O(m log m) per calculateMKAverage, space O(m)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static class MKAverageSorting {
         public MKAverageSorting(int m, int k) {
@@ -64,6 +65,8 @@ public class LC1825FindingMKAverage {
     /**
      * Variant B - also keep the window sorted (binary search + shifting); sum the middle on query
      * <br>Target: time O(m) per addElement (shifting), O(m) per calculateMKAverage, space O(m)
+     * <br>Complete first: ch. 9 Sliding window, chasing
+     *     + ch. 10 Binary search on a sorted array
      */
     public static class MKAverageSortedWindow {
         public MKAverageSortedWindow(int m, int k) {
@@ -85,6 +88,7 @@ public class LC1825FindingMKAverage {
     /**
      * Variant C - this chapter's technique: three groups (k smallest, middle, k largest)
      * <br>Target: time O(log m) per addElement, O(1) per calculateMKAverage, space O(m)
+     * <br>Complete first: ch. 19 Two heaps and the running median (this chapter)
      */
     public static class MKAverage {
         public MKAverage(int m, int k) {

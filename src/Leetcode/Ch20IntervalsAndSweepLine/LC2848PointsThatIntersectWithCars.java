@@ -34,6 +34,7 @@ public class LC2848PointsThatIntersectWithCars {
     /**
      * Variant A - brute force: mark every point of every car in a boolean array, count the marks
      * <br>Target: time O(n * R), space O(R)     (R = largest coordinate, here at most 100)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int numberOfPointsMarking(List<List<Integer>> nums) {
         // TODO: write your solution
@@ -43,6 +44,8 @@ public class LC2848PointsThatIntersectWithCars {
     /**
      * Variant B - sort by start, merge overlapping cars, add up the lengths of the merged ranges
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static int numberOfPointsMerging(List<List<Integer>> nums) {
         // TODO: write your solution
@@ -52,6 +55,8 @@ public class LC2848PointsThatIntersectWithCars {
     /**
      * Variant C - this chapter's technique: difference array over the line, then a running count
      * <br>Target: time O(n + R), space O(R)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static int numberOfPoints(List<List<Integer>> nums) {
         // TODO: write your solution

@@ -40,6 +40,7 @@ public class LC76MinimumWindowSubstring {
     /**
      * Variant A - brute force: from every start, extend right until the window covers t
      * <br>Target: time O(m^2 + n), space O(1)    (52 letter counts)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
      */
     public static String minWindowBruteForce(String s, String t) {
         // TODO: write your solution
@@ -49,6 +50,8 @@ public class LC76MinimumWindowSubstring {
     /**
      * Variant B - slide a window, compare its 52 letter counts with t's after every step
      * <br>Target: time O(52 * m + n), space O(1)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static String minWindowCompareCounts(String s, String t) {
         // TODO: write your solution
@@ -59,6 +62,8 @@ public class LC76MinimumWindowSubstring {
      * Variant C - this chapter's technique: same window, a counter of still-missing letters
      *             replaces the 52-slot comparison
      * <br>Target: time O(m + n), space O(1)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static String minWindow(String s, String t) {
         // TODO: write your solution

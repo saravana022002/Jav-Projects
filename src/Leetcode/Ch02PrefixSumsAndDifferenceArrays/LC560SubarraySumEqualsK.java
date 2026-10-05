@@ -39,6 +39,7 @@ public class LC560SubarraySumEqualsK {
     /**
      * Variant A - brute force: for every start and end, add up that subarray from scratch
      * <br>Target: time O(n^3), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int subarraySumBruteForce(int[] nums, int k) {
         // TODO: write your solution
@@ -48,6 +49,7 @@ public class LC560SubarraySumEqualsK {
     /**
      * Variant B - build the prefix-sum array, then compare every pair of prefix positions
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays (this chapter)
      */
     public static int subarraySumPrefixPairs(int[] nums, int k) {
         // TODO: write your solution
@@ -57,6 +59,8 @@ public class LC560SubarraySumEqualsK {
     /**
      * Variant C - this chapter's technique: prefix sums plus a hash map of earlier prefix values
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays (this chapter)
+     *     + ch. 3 Hashing as a search-to-lookup transform (later chapter)
      */
     public static int subarraySum(int[] nums, int k) {
         // TODO: write your solution

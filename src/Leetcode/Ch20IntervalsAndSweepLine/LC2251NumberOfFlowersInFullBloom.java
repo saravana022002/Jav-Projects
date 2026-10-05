@@ -34,6 +34,7 @@ public class LC2251NumberOfFlowersInFullBloom {
     /**
      * Variant A - brute force: for each person, scan all flowers
      * <br>Target: time O(n * m), space O(1) besides the answer     (n flowers, m people)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[] fullBloomFlowersBruteForce(int[][] flowers, int[] people) {
         // TODO: write your solution
@@ -43,6 +44,8 @@ public class LC2251NumberOfFlowersInFullBloom {
     /**
      * Variant B - sort starts and ends separately; per person binary-search started minus ended
      * <br>Target: time O((n + m) log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 10 Binary search on a sorted array
      */
     public static int[] fullBloomFlowersBinarySearch(int[][] flowers, int[] people) {
         // TODO: write your solution
@@ -52,6 +55,8 @@ public class LC2251NumberOfFlowersInFullBloom {
     /**
      * Variant C - this chapter's technique: merge the people into the sorted events, sweep once
      * <br>Target: time O((n + m) log (n + m)), space O(n + m)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static int[] fullBloomFlowers(int[][] flowers, int[] people) {
         // TODO: write your solution

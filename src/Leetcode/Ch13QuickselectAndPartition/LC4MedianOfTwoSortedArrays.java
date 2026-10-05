@@ -38,6 +38,7 @@ public class LC4MedianOfTwoSortedArrays {
     /**
      * Variant A - merge both arrays into one sorted array, read the middle value(s)
      * <br>Target: time O(m + n), space O(m + n)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (later chapter)
      */
     public static double findMedianSortedArraysMerge(int[] nums1, int[] nums2) {
         // TODO: write your solution
@@ -47,6 +48,7 @@ public class LC4MedianOfTwoSortedArrays {
     /**
      * Variant B - walk both arrays with two pointers, only as far as the middle (no merged array)
      * <br>Target: time O(m + n), space O(1)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (later chapter)
      */
     public static double findMedianSortedArraysTwoPointers(int[] nums1, int[] nums2) {
         // TODO: write your solution
@@ -57,6 +59,7 @@ public class LC4MedianOfTwoSortedArrays {
      * Variant C - this chapter's technique: select the k-th smallest of the two arrays,
      *             discarding about k/2 candidates per step
      * <br>Target: time O(log(m + n)), space O(1)
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         // TODO: write your solution

@@ -42,6 +42,7 @@ public class LC88MergeSortedArray {
     /**
      * Variant A - copy nums2 into the padding of nums1, then sort all of nums1
      * <br>Target: time O((m + n) log(m + n)), space O(1) besides the sort
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static void mergeSortAll(int[] nums1, int m, int[] nums2, int n) {
         // TODO: write your solution
@@ -51,6 +52,7 @@ public class LC88MergeSortedArray {
     /**
      * Variant B - merge from the front into a temporary array, then copy it back
      * <br>Target: time O(m + n), space O(m + n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static void mergeWithCopy(int[] nums1, int m, int[] nums2, int n) {
         // TODO: write your solution
@@ -60,6 +62,7 @@ public class LC88MergeSortedArray {
     /**
      * Variant C - this chapter's technique: merge backwards, biggest value into the last free slot
      * <br>Target: time O(m + n), space O(1)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
         // TODO: write your solution

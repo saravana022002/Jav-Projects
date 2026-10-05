@@ -35,6 +35,7 @@ public class LC1552MagneticForceBetweenTwoBalls {
     /**
      * Variant A - brute force: try every choice of m baskets, keep the best smallest gap
      * <br>Target: time O(C(n, m) * m), space O(m)
+     * <br>Complete first: ch. 57 Backtracking (later chapter; needs ch. 56 first)
      */
     public static int maxDistanceTryAllChoices(int[] position, int m) {
         // TODO: write your solution
@@ -44,6 +45,8 @@ public class LC1552MagneticForceBetweenTwoBalls {
     /**
      * Variant B - this chapter's technique: binary search on the force, greedy placement as check
      * <br>Target: time O(n log n + n log(max - min)), space O(1) extra
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 11 Binary search on the answer (this chapter)
      */
     public static int maxDistance(int[] position, int m) {
         // TODO: write your solution
@@ -53,6 +56,8 @@ public class LC1552MagneticForceBetweenTwoBalls {
     /**
      * Variant C - the same search mirrored: find the first force that fails, answer is one less
      * <br>Target: time O(n log n + n log(max - min)), space O(1) extra
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 11 Binary search on the answer (this chapter)
      */
     public static int maxDistanceFirstFailure(int[] position, int m) {
         // TODO: write your solution

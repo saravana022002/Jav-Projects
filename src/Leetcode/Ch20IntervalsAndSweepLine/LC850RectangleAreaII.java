@@ -35,6 +35,7 @@ public class LC850RectangleAreaII {
     /**
      * Variant A - brute force: compress both axes, mark every covered cell of a grid, add them up
      * <br>Target: time O(n^3), space O(n^2)     (n = rectangles.length)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int rectangleAreaGrid(int[][] rectangles) {
         // TODO: write your solution
@@ -44,6 +45,8 @@ public class LC850RectangleAreaII {
     /**
      * Variant B - sweep over x; in each slab sort the active y-ranges and add up their union
      * <br>Target: time O(n^2 log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static int rectangleAreaSlabs(int[][] rectangles) {
         // TODO: write your solution
@@ -53,6 +56,8 @@ public class LC850RectangleAreaII {
     /**
      * Variant C - this chapter's technique: sweep over x, segment tree on compressed y
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 20 Intervals and sweep line (this chapter)
+     *     + ch. 40 Segment trees (later chapter; needs ch. 39 first)
      */
     public static int rectangleArea(int[][] rectangles) {
         // TODO: write your solution

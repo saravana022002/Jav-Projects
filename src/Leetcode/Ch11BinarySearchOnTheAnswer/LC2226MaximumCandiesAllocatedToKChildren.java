@@ -35,6 +35,7 @@ public class LC2226MaximumCandiesAllocatedToKChildren {
     /**
      * Variant A - brute force: try share sizes from the biggest pile downwards, count children fed
      * <br>Target: time O(n * max(candies)), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int maximumCandiesLinearScan(int[] candies, long k) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC2226MaximumCandiesAllocatedToKChildren {
     /**
      * Variant B - this chapter's technique: binary search on the share size, count children fed
      * <br>Target: time O(n log max(candies)), space O(1)
+     * <br>Complete first: ch. 11 Binary search on the answer (this chapter)
      */
     public static int maximumCandies(int[] candies, long k) {
         // TODO: write your solution

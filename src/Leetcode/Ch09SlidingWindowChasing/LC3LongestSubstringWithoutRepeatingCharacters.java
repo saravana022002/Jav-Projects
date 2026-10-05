@@ -40,6 +40,7 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
     /**
      * Variant A - brute force: from every start, extend until a character repeats
      * <br>Target: time O(n^2), space O(min(n, a))    (a = alphabet size)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static int lengthOfLongestSubstringBruteForce(String s) {
         // TODO: write your solution
@@ -49,6 +50,8 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
     /**
      * Variant B - this chapter's technique: grow the window, shrink it from the left on a repeat
      * <br>Target: time O(n), space O(min(n, a))
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static int lengthOfLongestSubstring(String s) {
         // TODO: write your solution
@@ -58,6 +61,8 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
     /**
      * Variant C - same window, but jump the left edge using each character's last position
      * <br>Target: time O(n), space O(min(n, a))
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static int lengthOfLongestSubstringLastSeen(String s) {
         // TODO: write your solution

@@ -42,6 +42,8 @@ public class LC1687DeliveringBoxesFromStorageToPorts {
     /**
      * Variant A - dp over prefixes; for each end, try every allowed start of the last load
      * <br>Target: time O(n * maxBoxes) (at most O(n^2)), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int boxDeliveringBruteForce(int[][] boxes, int portsCount, int maxBoxes,
                                               int maxWeight) {
@@ -52,6 +54,9 @@ public class LC1687DeliveringBoxesFromStorageToPorts {
     /**
      * Variant B - the same dp; the best state in the allowed window read from a min-heap
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 18 Heaps and the k-selection family (later chapter)
+     *     + ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int boxDeliveringHeap(int[][] boxes, int portsCount, int maxBoxes,
                                         int maxWeight) {
@@ -62,6 +67,9 @@ public class LC1687DeliveringBoxesFromStorageToPorts {
     /**
      * Variant C - this chapter's technique: the same dp, the allowed window in a monotonic deque
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 17 The monotonic deque (this chapter)
+     *     + ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int boxDelivering(int[][] boxes, int portsCount, int maxBoxes, int maxWeight) {
         // TODO: write your solution

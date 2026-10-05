@@ -42,6 +42,7 @@ public class LC1801NumberOfOrdersInTheBacklog {
     /**
      * Variant A - brute force: backlog as a list of batches, scan it all for the best match
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int getNumberOfBacklogOrdersBruteForce(int[][] orders) {
         // TODO: write your solution
@@ -51,6 +52,7 @@ public class LC1801NumberOfOrdersInTheBacklog {
     /**
      * Variant B - this chapter's technique: a max-heap of buys and a min-heap of sells
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 19 Two heaps and the running median (this chapter)
      */
     public static int getNumberOfBacklogOrders(int[][] orders) {
         // TODO: write your solution

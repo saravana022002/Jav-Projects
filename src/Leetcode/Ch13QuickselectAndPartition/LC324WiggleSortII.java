@@ -35,6 +35,7 @@ public class LC324WiggleSortII {
     /**
      * Variant A - sort a copy, deal values largest-first into the odd slots, then the even slots
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static void wiggleSortSorting(int[] nums) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC324WiggleSortII {
     /**
      * Variant B - quickselect the median, split around it into a copy, then interleave
      * <br>Target: time O(n) expected (O(n^2) worst case), space O(n)
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static void wiggleSortCopy(int[] nums) {
         // TODO: write your solution
@@ -54,6 +56,7 @@ public class LC324WiggleSortII {
      * Variant C - this chapter's technique: quickselect the median, then one in-place
      *             three-way partition over remapped slot indices
      * <br>Target: time O(n) expected (O(n^2) worst case), space O(1)
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static void wiggleSort(int[] nums) {
         // TODO: write your solution

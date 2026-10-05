@@ -39,6 +39,7 @@ public class LC71SimplifyPath {
     /**
      * Variant A - this chapter's technique: split on '/', keep a stack of directory names
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static String simplifyPath(String path) {
         // TODO: write your solution

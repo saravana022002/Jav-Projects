@@ -36,6 +36,7 @@ public class LC973KClosestPointsToOrigin {
     /**
      * Variant A - brute force: k rounds, each picking the closest point not taken yet
      * <br>Target: time O(n * k), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[][] kClosestBruteForce(int[][] points, int k) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC973KClosestPointsToOrigin {
     /**
      * Variant B - max-heap of size k that holds the closest points seen so far
      * <br>Target: time O(n log k), space O(k)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static int[][] kClosestMaxHeap(int[][] points, int k) {
         // TODO: write your solution
@@ -54,6 +56,7 @@ public class LC973KClosestPointsToOrigin {
     /**
      * Variant C - this chapter's technique: sort the points by squared distance, take the first k
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int[][] kClosest(int[][] points, int k) {
         // TODO: write your solution

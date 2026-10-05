@@ -43,6 +43,7 @@ public class LC912SortAnArray {
     /**
      * Variant A - insertion sort: grow a sorted prefix, shifting larger values to the right
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int[] sortArrayInsertion(int[] nums) {
         // TODO: write your solution
@@ -52,6 +53,7 @@ public class LC912SortAnArray {
     /**
      * Variant B - heap sort: build a max-heap inside the array, then move the maximum to the back
      * <br>Target: time O(n log n), space O(1)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static int[] sortArrayHeapSort(int[] nums) {
         // TODO: write your solution
@@ -61,6 +63,7 @@ public class LC912SortAnArray {
     /**
      * Variant C - this chapter's technique: top-down merge sort merging through one scratch array
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
      */
     public static int[] sortArray(int[] nums) {
         // TODO: write your solution

@@ -35,6 +35,7 @@ public class LC1539KthMissingPositiveNumber {
     /**
      * Variant A - count up from 1, skipping the values found in a HashSet, until k gaps are seen
      * <br>Target: time O(n + k), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static int findKthPositiveSet(int[] arr, int k) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC1539KthMissingPositiveNumber {
     /**
      * Variant B - one pass over arr: every element not beyond the answer pushes it one further
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int findKthPositiveLinear(int[] arr, int k) {
         // TODO: write your solution
@@ -53,6 +55,8 @@ public class LC1539KthMissingPositiveNumber {
     /**
      * Variant C - this chapter's technique: binary search on how many numbers are missing so far
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array
+     *     + ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static int findKthPositive(int[] arr, int k) {
         // TODO: write your solution

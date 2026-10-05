@@ -34,6 +34,7 @@ public class LC462MinimumMovesToEqualArrayElementsII {
     /**
      * Variant A - brute force: try every array value as the common target, add up the distances
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int minMoves2BruteForce(int[] nums) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC462MinimumMovesToEqualArrayElementsII {
     /**
      * Variant B - sort the array, then read the best common target off the sorted order
      * <br>Target: time O(n log n), space O(1) extra (the sort works in place)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int minMoves2Sorting(int[] nums) {
         // TODO: write your solution
@@ -52,6 +54,7 @@ public class LC462MinimumMovesToEqualArrayElementsII {
     /**
      * Variant C - this chapter's technique: quickselect finds that target without a full sort
      * <br>Target: time O(n) expected (O(n^2) worst case), space O(1)
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static int minMoves2(int[] nums) {
         // TODO: write your solution

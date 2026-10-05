@@ -34,6 +34,7 @@ public class LC1004MaxConsecutiveOnesIII {
     /**
      * Variant A - brute force: from every start, extend until more than k zeros are inside
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int longestOnesBruteForce(int[] nums, int k) {
         // TODO: write your solution
@@ -43,6 +44,8 @@ public class LC1004MaxConsecutiveOnesIII {
     /**
      * Variant B - prefix counts of zeros, binary-search the farthest legal end for each start
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 10 Binary search on a sorted array (later chapter)
      */
     public static int longestOnesPrefixBinarySearch(int[] nums, int k) {
         // TODO: write your solution
@@ -52,6 +55,7 @@ public class LC1004MaxConsecutiveOnesIII {
     /**
      * Variant C - this chapter's technique: sliding window holding at most k zeros
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 9 Sliding window, chasing (this chapter)
      */
     public static int longestOnes(int[] nums, int k) {
         // TODO: write your solution

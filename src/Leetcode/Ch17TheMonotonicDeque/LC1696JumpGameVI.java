@@ -36,6 +36,7 @@ public class LC1696JumpGameVI {
     /**
      * Variant A - dp over positions; best of the previous k states found by scanning them
      * <br>Target: time O(n * k), space O(n)
+     * <br>Complete first: ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int maxResultBruteForce(int[] nums, int k) {
         // TODO: write your solution
@@ -45,6 +46,8 @@ public class LC1696JumpGameVI {
     /**
      * Variant B - the same dp; best of the last k states from a lazy max-heap
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (later chapter)
+     *     + ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int maxResultHeap(int[] nums, int k) {
         // TODO: write your solution
@@ -54,6 +57,8 @@ public class LC1696JumpGameVI {
     /**
      * Variant C - this chapter's technique: the same dp, window of states in a monotonic deque
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 17 The monotonic deque (this chapter)
+     *     + ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int maxResult(int[] nums, int k) {
         // TODO: write your solution

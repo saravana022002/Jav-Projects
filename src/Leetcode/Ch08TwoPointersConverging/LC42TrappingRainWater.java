@@ -38,6 +38,7 @@ public class LC42TrappingRainWater {
     /**
      * Variant A - for every bar, scan both sides for the tallest bar and compute its water
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int trapBruteForce(int[] height) {
         // TODO: write your solution
@@ -47,6 +48,7 @@ public class LC42TrappingRainWater {
     /**
      * Variant B - precompute the tallest bar to the left and to the right of every position
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
      */
     public static int trapPrefixSuffixMax(int[] height) {
         // TODO: write your solution
@@ -56,6 +58,7 @@ public class LC42TrappingRainWater {
     /**
      * Variant C - this chapter's technique: two converging pointers that carry running maxima
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 8 Two pointers, converging (this chapter)
      */
     public static int trap(int[] height) {
         // TODO: write your solution

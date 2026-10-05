@@ -36,6 +36,7 @@ public class LC1944NumberOfVisiblePeopleInAQueue {
     /**
      * Variant A - brute force: for each person, scan right until someone taller blocks the view
      * <br>Target: time O(n^2), space O(1)    (besides the answer array)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[] canSeePersonsCountBruteForce(int[] heights) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC1944NumberOfVisiblePeopleInAQueue {
     /**
      * Variant B - this chapter's technique: monotonic stack of heights, scanning right to left
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (this chapter)
      */
     public static int[] canSeePersonsCount(int[] heights) {
         // TODO: write your solution

@@ -38,6 +38,7 @@ public class LC74SearchA2DMatrix {
     /**
      * Variant A - brute force: check every cell
      * <br>Target: time O(m * n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static boolean searchMatrixBruteForce(int[][] matrix, int target) {
         // TODO: write your solution
@@ -47,6 +48,7 @@ public class LC74SearchA2DMatrix {
     /**
      * Variant B - two binary searches: first find the row, then search inside that row
      * <br>Target: time O(log m + log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static boolean searchMatrixTwoSearches(int[][] matrix, int target) {
         // TODO: write your solution
@@ -56,6 +58,7 @@ public class LC74SearchA2DMatrix {
     /**
      * Variant C - this chapter's technique: one binary search over the m * n cells read as a list
      * <br>Target: time O(log(m * n)), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static boolean searchMatrix(int[][] matrix, int target) {
         // TODO: write your solution

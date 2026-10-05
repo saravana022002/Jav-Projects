@@ -40,6 +40,7 @@ public class LC84LargestRectangleInHistogram {
     /**
      * Variant A - brute force: for every bar, widen the rectangle left and right while it fits
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int largestRectangleAreaBruteForce(int[] heights) {
         // TODO: write your solution
@@ -49,6 +50,7 @@ public class LC84LargestRectangleInHistogram {
     /**
      * Variant B - nearest lower bar on each side by two passes, then the best area
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack
      */
     public static int largestRectangleAreaNearestLower(int[] heights) {
         // TODO: write your solution
@@ -58,6 +60,7 @@ public class LC84LargestRectangleInHistogram {
     /**
      * Variant C - this chapter's technique: one pass, monotonic deque of increasing bars
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 17 The monotonic deque (this chapter)
      */
     public static int largestRectangleArea(int[] heights) {
         // TODO: write your solution

@@ -33,6 +33,7 @@ public class LC424LongestRepeatingCharacterReplacement {
     /**
      * Variant A - brute force: from every start, extend while the overwrites needed stay <= k
      * <br>Target: time O(n^2), space O(1)    (26 letter counts)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
      */
     public static int characterReplacementBruteForce(String s, int k) {
         // TODO: write your solution
@@ -42,6 +43,8 @@ public class LC424LongestRepeatingCharacterReplacement {
     /**
      * Variant B - this chapter's technique: letter counts, shrink while length - max count > k
      * <br>Target: time O(26 * n), space O(1)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static int characterReplacement(String s, int k) {
         // TODO: write your solution
@@ -51,6 +54,8 @@ public class LC424LongestRepeatingCharacterReplacement {
     /**
      * Variant C - same window, but the max count is never lowered, so the window only slides
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static int characterReplacementNeverShrink(String s, int k) {
         // TODO: write your solution

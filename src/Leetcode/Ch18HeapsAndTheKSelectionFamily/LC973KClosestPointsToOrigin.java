@@ -37,6 +37,7 @@ public class LC973KClosestPointsToOrigin {
     /**
      * Variant A - sort all points by their distance to the origin, take the first k
      * <br>Target: time O(n log n), space O(n) for the sort (besides the answer)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int[][] kClosestSorting(int[][] points, int k) {
         // TODO: write your solution
@@ -46,6 +47,7 @@ public class LC973KClosestPointsToOrigin {
     /**
      * Variant B - quickselect on the distance until the k closest points sit in front
      * <br>Target: time O(n) expected (O(n^2) worst case), space O(1) extra besides the answer
+     * <br>Complete first: ch. 13 Quickselect and partition
      */
     public static int[][] kClosestQuickselect(int[][] points, int k) {
         // TODO: write your solution
@@ -55,6 +57,7 @@ public class LC973KClosestPointsToOrigin {
     /**
      * Variant C - this chapter's technique: a max-heap holding the k closest points seen so far
      * <br>Target: time O(n log k), space O(k)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (this chapter)
      */
     public static int[][] kClosest(int[][] points, int k) {
         // TODO: write your solution

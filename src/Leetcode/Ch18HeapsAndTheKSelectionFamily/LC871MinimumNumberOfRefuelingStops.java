@@ -41,6 +41,7 @@ public class LC871MinimumNumberOfRefuelingStops {
     /**
      * Variant A - dp: the furthest distance reachable with exactly i stops, station by station
      * <br>Target: time O(n^2), space O(n)     (n = number of stations)
+     * <br>Complete first: ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int minRefuelStopsDP(int target, int startFuel, int[][] stations) {
         // TODO: write your solution
@@ -50,6 +51,7 @@ public class LC871MinimumNumberOfRefuelingStops {
     /**
      * Variant B - this chapter's technique: drive on; when stuck, take the largest passed station
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (this chapter)
      */
     public static int minRefuelStops(int target, int startFuel, int[][] stations) {
         // TODO: write your solution

@@ -36,6 +36,7 @@ public class LC1649CreateSortedArrayThroughInstructions {
     /**
      * Variant A - brute force: for each instruction, scan the inserted numbers, count both sides
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int createSortedArrayBruteForce(int[] instructions) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC1649CreateSortedArrayThroughInstructions {
     /**
      * Variant B - keep a sorted array; binary-search both counts, insert by shifting
      * <br>Target: time O(n^2) worst case (only the shifting; the searches are O(log n)), space O(n)
+     * <br>Complete first: ch. 10 Binary search on a sorted array
      */
     public static int createSortedArrayBinarySearch(int[] instructions) {
         // TODO: write your solution
@@ -54,6 +56,8 @@ public class LC1649CreateSortedArrayThroughInstructions {
     /**
      * Variant C - this chapter's technique: Fenwick tree of counts indexed by value
      * <br>Target: time O(n log V), space O(V)     (V = largest value, at most 10^5)
+     * <br>Complete first: ch. 19 Two heaps and the running median (this chapter)
+     *     + ch. 39 Fenwick trees (later chapter)
      */
     public static int createSortedArray(int[] instructions) {
         // TODO: write your solution

@@ -40,6 +40,7 @@ public class LC1094CarPooling {
     /**
      * Variant A - brute force: at every pick-up, add up the passengers of all trips on board
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static boolean carPoolingBruteForce(int[][] trips, int capacity) {
         // TODO: write your solution
@@ -49,6 +50,7 @@ public class LC1094CarPooling {
     /**
      * Variant B - difference array over the kilometres, then a running sum
      * <br>Target: time O(n + L), space O(L)     (L = largest kilometre, at most 1000)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
      */
     public static boolean carPoolingDifferenceArray(int[][] trips, int capacity) {
         // TODO: write your solution
@@ -58,6 +60,8 @@ public class LC1094CarPooling {
     /**
      * Variant C - this chapter's technique: sweep over sorted events carrying passenger counts
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static boolean carPooling(int[][] trips, int capacity) {
         // TODO: write your solution

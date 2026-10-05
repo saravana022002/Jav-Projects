@@ -39,6 +39,8 @@ public class LC732MyCalendarIII {
     /**
      * Variant A - keep every event; on each book sort all starts and ends and sweep
      * <br>Target: time O(n log n) per book, space O(n)     (n = events booked so far)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static class MyCalendarThreeRecompute {
         public MyCalendarThreeRecompute() {
@@ -55,6 +57,8 @@ public class LC732MyCalendarIII {
     /**
      * Variant B - this chapter's technique: ordered map of +1/-1 changes per coordinate, then sweep
      * <br>Target: time O(n) per book (O(log n) to update, O(n) to sweep), space O(n)
+     * <br>Complete first: ch. 20 Intervals and sweep line (this chapter)
+     *     + ch. 41 Ordered maps in practice (later chapter)
      */
     public static class MyCalendarThree {
         public MyCalendarThree() {
@@ -71,6 +75,7 @@ public class LC732MyCalendarIII {
     /**
      * Variant C - dynamic segment tree over the time range: range add, global maximum
      * <br>Target: time O(log C) per book, space O(n log C)     (C = 10^9, the range of times)
+     * <br>Complete first: ch. 40 Segment trees (later chapter; needs ch. 39 first)
      */
     public static class MyCalendarThreeSegmentTree {
         public MyCalendarThreeSegmentTree() {

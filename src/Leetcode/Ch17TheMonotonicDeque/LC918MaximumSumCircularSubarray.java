@@ -36,6 +36,7 @@ public class LC918MaximumSumCircularSubarray {
     /**
      * Variant A - brute force: every start position and every length up to n, wrapping around
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int maxSubarraySumCircularBruteForce(int[] nums) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC918MaximumSumCircularSubarray {
     /**
      * Variant B - Kadane: best plain subarray versus the total minus the worst subarray
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 21 Kadane and the running optimum (later chapter)
      */
     public static int maxSubarraySumCircularKadane(int[] nums) {
         // TODO: write your solution
@@ -54,6 +56,8 @@ public class LC918MaximumSumCircularSubarray {
     /**
      * Variant C - this chapter's technique: prefix sums of the doubled array, monotonic deque
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 17 The monotonic deque (this chapter)
      */
     public static int maxSubarraySumCircular(int[] nums) {
         // TODO: write your solution

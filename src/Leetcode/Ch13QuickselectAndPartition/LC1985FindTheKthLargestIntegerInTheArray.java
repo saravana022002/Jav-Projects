@@ -36,6 +36,7 @@ public class LC1985FindTheKthLargestIntegerInTheArray {
     /**
      * Variant A - sort the strings with a numeric comparator, read position n - k
      * <br>Target: time O(n log n * L) with L = longest string, space O(n) for the sort
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static String kthLargestNumberSorting(String[] nums, int k) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC1985FindTheKthLargestIntegerInTheArray {
     /**
      * Variant B - keep a min-heap of the k largest strings seen so far
      * <br>Target: time O(n log k * L) with L = longest string, space O(k)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static String kthLargestNumberHeap(String[] nums, int k) {
         // TODO: write your solution
@@ -54,6 +56,7 @@ public class LC1985FindTheKthLargestIntegerInTheArray {
     /**
      * Variant C - this chapter's technique: quickselect on the strings with a numeric comparator
      * <br>Target: time O(n * L) expected (O(n^2 * L) worst case), space O(1) extra
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static String kthLargestNumber(String[] nums, int k) {
         // TODO: write your solution

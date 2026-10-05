@@ -32,6 +32,7 @@ public class LC1456MaximumNumberOfVowelsInASubstringOfGivenLength {
     /**
      * Variant A - brute force: count the vowels of every window of k characters from scratch
      * <br>Target: time O(n * k), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int maxVowelsBruteForce(String s, int k) {
         // TODO: write your solution
@@ -41,6 +42,7 @@ public class LC1456MaximumNumberOfVowelsInASubstringOfGivenLength {
     /**
      * Variant B - prefix counts of vowels: every window count is one subtraction
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
      */
     public static int maxVowelsPrefixCounts(String s, int k) {
         // TODO: write your solution
@@ -50,6 +52,7 @@ public class LC1456MaximumNumberOfVowelsInASubstringOfGivenLength {
     /**
      * Variant C - this chapter's technique: fixed-size window, update the vowel count as it slides
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 9 Sliding window, chasing (this chapter)
      */
     public static int maxVowels(String s, int k) {
         // TODO: write your solution

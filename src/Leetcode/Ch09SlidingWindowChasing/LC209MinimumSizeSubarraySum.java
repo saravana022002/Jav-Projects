@@ -35,6 +35,7 @@ public class LC209MinimumSizeSubarraySum {
     /**
      * Variant A - brute force: from every start, extend until the sum reaches target
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int minSubArrayLenBruteForce(int target, int[] nums) {
         // TODO: write your solution
@@ -44,6 +45,8 @@ public class LC209MinimumSizeSubarraySum {
     /**
      * Variant B - prefix sums, binary-search the nearest end reaching target for each start
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 10 Binary search on a sorted array (later chapter)
      */
     public static int minSubArrayLenBinarySearch(int target, int[] nums) {
         // TODO: write your solution
@@ -53,6 +56,7 @@ public class LC209MinimumSizeSubarraySum {
     /**
      * Variant C - this chapter's technique: sliding window, shrink while sum >= target
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 9 Sliding window, chasing (this chapter)
      */
     public static int minSubArrayLen(int target, int[] nums) {
         // TODO: write your solution

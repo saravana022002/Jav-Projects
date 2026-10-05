@@ -33,6 +33,7 @@ public class LC344ReverseString {
     /**
      * Variant A - write the characters into a second array in reverse, then copy them back
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static void reverseStringExtraArray(char[] s) {
         // TODO: write your solution
@@ -42,6 +43,7 @@ public class LC344ReverseString {
     /**
      * Variant B - this chapter's technique: two pointers at the ends, swapping towards the middle
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 8 Two pointers, converging (this chapter)
      */
     public static void reverseString(char[] s) {
         // TODO: write your solution

@@ -40,6 +40,7 @@ public class LC84LargestRectangleInHistogram {
     /**
      * Variant A - brute force: for every bar, grow left and right while the bars are not shorter
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int largestRectangleAreaBruteForce(int[] heights) {
         // TODO: write your solution
@@ -49,6 +50,7 @@ public class LC84LargestRectangleInHistogram {
     /**
      * Variant B - two stack passes for the nearest shorter bars, then one area per bar
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (this chapter)
      */
     public static int largestRectangleAreaTwoPasses(int[] heights) {
         // TODO: write your solution
@@ -58,6 +60,7 @@ public class LC84LargestRectangleInHistogram {
     /**
      * Variant C - this chapter's technique: stack of rising bars, a pop closes a rectangle
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (this chapter)
      */
     public static int largestRectangleArea(int[] heights) {
         // TODO: write your solution

@@ -35,6 +35,7 @@ public class LC1051HeightChecker {
     /**
      * Variant A - sort a copy of the array, then compare it with the original
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int heightCheckerSort(int[] heights) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC1051HeightChecker {
     /**
      * Variant B - this chapter's technique: count each height, read the counts back in order
      * <br>Target: time O(n + R), space O(R)    (R = largest possible height = 100)
+     * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
      */
     public static int heightChecker(int[] heights) {
         // TODO: write your solution

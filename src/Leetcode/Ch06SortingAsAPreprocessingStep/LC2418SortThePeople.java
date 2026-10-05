@@ -34,6 +34,7 @@ public class LC2418SortThePeople {
     /**
      * Variant A - selection sort on the heights, swapping the names along with them
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static String[] sortPeopleSelectionSort(String[] names, int[] heights) {
         // TODO: write your solution
@@ -43,6 +44,8 @@ public class LC2418SortThePeople {
     /**
      * Variant B - map each height to its name, read the names off the sorted heights
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static String[] sortPeopleHeightMap(String[] names, int[] heights) {
         // TODO: write your solution
@@ -52,6 +55,7 @@ public class LC2418SortThePeople {
     /**
      * Variant C - this chapter's technique: sort the indices 0..n-1 using height as the key
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static String[] sortPeople(String[] names, int[] heights) {
         // TODO: write your solution

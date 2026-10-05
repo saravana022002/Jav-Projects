@@ -31,6 +31,7 @@ public class LC643MaximumAverageSubarrayI {
     /**
      * Variant A - brute force: add up every window of k elements from scratch
      * <br>Target: time O(n * k), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static double findMaxAverageBruteForce(int[] nums, int k) {
         // TODO: write your solution
@@ -40,6 +41,7 @@ public class LC643MaximumAverageSubarrayI {
     /**
      * Variant B - prefix sums: every window sum is one subtraction
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
      */
     public static double findMaxAveragePrefixSums(int[] nums, int k) {
         // TODO: write your solution
@@ -49,6 +51,7 @@ public class LC643MaximumAverageSubarrayI {
     /**
      * Variant C - this chapter's technique: fixed-size window, update the sum as it slides
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 9 Sliding window, chasing (this chapter)
      */
     public static double findMaxAverage(int[] nums, int k) {
         // TODO: write your solution

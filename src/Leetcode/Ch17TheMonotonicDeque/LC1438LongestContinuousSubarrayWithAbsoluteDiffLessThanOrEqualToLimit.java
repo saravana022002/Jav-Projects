@@ -36,6 +36,7 @@ public class LC1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLim
     /**
      * Variant A - brute force: from every start, extend while max - min stays within limit
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int longestSubarrayBruteForce(int[] nums, int limit) {
         // TODO: write your solution
@@ -45,6 +46,8 @@ public class LC1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLim
     /**
      * Variant B - sliding window; min and max read from a TreeMap used as a multiset
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 9 Sliding window, chasing
+     *     + ch. 41 Ordered maps in practice (later chapter)
      */
     public static int longestSubarrayTreeMap(int[] nums, int limit) {
         // TODO: write your solution
@@ -54,6 +57,8 @@ public class LC1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLim
     /**
      * Variant C - this chapter's technique: sliding window with two monotonic deques (max and min)
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 9 Sliding window, chasing
+     *     + ch. 17 The monotonic deque (this chapter)
      */
     public static int longestSubarray(int[] nums, int limit) {
         // TODO: write your solution

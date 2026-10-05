@@ -35,6 +35,7 @@ public class LC125ValidPalindrome {
     /**
      * Variant A - build a cleaned lower-case copy, then compare it with its reverse
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static boolean isPalindromeCleanCopy(String s) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC125ValidPalindrome {
     /**
      * Variant B - this chapter's technique: two pointers moving inwards on the original string
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 8 Two pointers, converging (this chapter)
      */
     public static boolean isPalindrome(String s) {
         // TODO: write your solution

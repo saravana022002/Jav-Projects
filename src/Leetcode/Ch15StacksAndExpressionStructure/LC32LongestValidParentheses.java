@@ -34,6 +34,7 @@ public class LC32LongestValidParentheses {
     /**
      * Variant A - brute force: from every start index extend to the right, tracking the balance
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int longestValidParenthesesBruteForce(String s) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC32LongestValidParentheses {
     /**
      * Variant B - two counters, no stack: one pass in each direction
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int longestValidParenthesesTwoCounters(String s) {
         // TODO: write your solution
@@ -52,6 +54,7 @@ public class LC32LongestValidParentheses {
     /**
      * Variant C - this chapter's technique: stack of the indices of the unmatched characters
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int longestValidParentheses(String s) {
         // TODO: write your solution

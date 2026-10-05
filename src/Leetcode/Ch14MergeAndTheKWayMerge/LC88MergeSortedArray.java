@@ -43,6 +43,7 @@ public class LC88MergeSortedArray {
     /**
      * Variant A - copy nums2 into the padding of nums1, then sort the whole array
      * <br>Target: time O((m + n) log(m + n)), space O(1) extra (the sort works in place)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static void mergeSorting(int[] nums1, int m, int[] nums2, int n) {
         // TODO: write your solution
@@ -52,6 +53,7 @@ public class LC88MergeSortedArray {
     /**
      * Variant B - copy the m real values of nums1 aside, then merge forwards into nums1
      * <br>Target: time O(m + n), space O(m)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
      */
     public static void mergeWithCopy(int[] nums1, int m, int[] nums2, int n) {
         // TODO: write your solution
@@ -61,6 +63,7 @@ public class LC88MergeSortedArray {
     /**
      * Variant C - this chapter's technique: merge in place, filling nums1 from the back
      * <br>Target: time O(m + n), space O(1)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
      */
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
         // TODO: write your solution

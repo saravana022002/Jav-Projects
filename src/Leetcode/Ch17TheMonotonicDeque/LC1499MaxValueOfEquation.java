@@ -38,6 +38,7 @@ public class LC1499MaxValueOfEquation {
     /**
      * Variant A - brute force: for every point, try every later point within x-distance k
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int findMaxValueOfEquationBruteForce(int[][] points, int k) {
         // TODO: write your solution
@@ -47,6 +48,7 @@ public class LC1499MaxValueOfEquation {
     /**
      * Variant B - max-heap of earlier points ordered by a key you derive; stale ones dropped lazily
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static int findMaxValueOfEquationHeap(int[][] points, int k) {
         // TODO: write your solution
@@ -56,6 +58,7 @@ public class LC1499MaxValueOfEquation {
     /**
      * Variant C - this chapter's technique: monotonic deque of the earlier points still in the game
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 17 The monotonic deque (this chapter)
      */
     public static int findMaxValueOfEquation(int[][] points, int k) {
         // TODO: write your solution

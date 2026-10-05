@@ -35,6 +35,7 @@ public class LC35SearchInsertPosition {
     /**
      * Variant A - brute force: scan from the left for the first element >= target
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int searchInsertBruteForce(int[] nums, int target) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC35SearchInsertPosition {
     /**
      * Variant B - classic binary search with a three-way branch (equal / smaller / larger)
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int searchInsertThreeWay(int[] nums, int target) {
         // TODO: write your solution
@@ -53,6 +55,7 @@ public class LC35SearchInsertPosition {
     /**
      * Variant C - this chapter's technique: lower bound, the first index with nums[i] >= target
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int searchInsert(int[] nums, int target) {
         // TODO: write your solution

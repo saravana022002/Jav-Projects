@@ -38,6 +38,7 @@ public class LC1475FinalPricesWithASpecialDiscountInAShop {
     /**
      * Variant A - brute force: for every item, scan to its right for the first price not higher
      * <br>Target: time O(n^2), space O(1)    (besides the answer array)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[] finalPricesBruteForce(int[] prices) {
         // TODO: write your solution
@@ -47,6 +48,7 @@ public class LC1475FinalPricesWithASpecialDiscountInAShop {
     /**
      * Variant B - this chapter's technique: stack of the items that still wait for a discount
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (this chapter)
      */
     public static int[] finalPrices(int[] prices) {
         // TODO: write your solution

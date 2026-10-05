@@ -42,6 +42,7 @@ public class LC901OnlineStockSpan {
     /**
      * Variant A - brute force: keep the whole price history, walk back over it on every call
      * <br>Target: time O(n) per next() call (n = calls so far), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static class StockSpannerBruteForce {
 
@@ -59,6 +60,7 @@ public class LC901OnlineStockSpan {
     /**
      * Variant B - this chapter's technique: stack of (price, span) pairs, popped spans merge
      * <br>Target: time O(1) amortised per next() call, space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (this chapter)
      */
     public static class StockSpanner {
 

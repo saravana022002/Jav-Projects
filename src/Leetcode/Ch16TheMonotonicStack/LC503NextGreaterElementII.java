@@ -34,6 +34,7 @@ public class LC503NextGreaterElementII {
     /**
      * Variant A - brute force: for every index, walk the next n - 1 positions with wrap-around
      * <br>Target: time O(n^2), space O(1)    (besides the answer array)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[] nextGreaterElementsBruteForce(int[] nums) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC503NextGreaterElementII {
     /**
      * Variant B - this chapter's technique: monotonic stack of indices, scanning the array twice
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (this chapter)
      */
     public static int[] nextGreaterElements(int[] nums) {
         // TODO: write your solution

@@ -47,6 +47,7 @@ public class LC1670DesignFrontMiddleBackQueue {
     /**
      * Variant A - keep one list; insert and remove at an index
      * <br>Target: time O(n) per operation (O(1) at the back), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static class FrontMiddleBackQueueList {
         public FrontMiddleBackQueueList() {
@@ -88,6 +89,7 @@ public class LC1670DesignFrontMiddleBackQueue {
     /**
      * Variant B - this chapter's technique: two deques (front half, back half), kept balanced
      * <br>Target: time O(1) per operation, space O(n)
+     * <br>Complete first: ch. 19 Two heaps and the running median (this chapter)
      */
     public static class FrontMiddleBackQueue {
         public FrontMiddleBackQueue() {

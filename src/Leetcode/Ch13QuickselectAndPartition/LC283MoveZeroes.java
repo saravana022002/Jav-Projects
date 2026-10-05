@@ -37,6 +37,7 @@ public class LC283MoveZeroes {
     /**
      * Variant A - brute force: for every zero, shift the rest left and put the zero last
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static void moveZeroesBruteForce(int[] nums) {
         // TODO: write your solution
@@ -46,6 +47,7 @@ public class LC283MoveZeroes {
     /**
      * Variant B - two passes: pack the non-zero values to the front, then fill zeros
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static void moveZeroesTwoPass(int[] nums) {
         // TODO: write your solution
@@ -55,6 +57,7 @@ public class LC283MoveZeroes {
     /**
      * Variant C - this chapter's technique: one partition pass, swap each non-zero forward
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static void moveZeroes(int[] nums) {
         // TODO: write your solution
