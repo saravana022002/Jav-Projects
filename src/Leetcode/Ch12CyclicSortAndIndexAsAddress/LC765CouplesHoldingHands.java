@@ -34,6 +34,7 @@ public class LC765CouplesHoldingHands {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int minSwapsCouplesA(int[] row) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC765CouplesHoldingHands {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static int minSwapsCouplesB(int[] row) {
         // TODO: write your solution
@@ -52,6 +54,7 @@ public class LC765CouplesHoldingHands {
     /**
      * Variant C
      * <br>Target: time O(n * alpha(n)), space O(n)
+     * <br>Complete first: ch. 47 Union-find and dynamic connectivity (later chapter)
      */
     public static int minSwapsCouplesC(int[] row) {
         // TODO: write your solution

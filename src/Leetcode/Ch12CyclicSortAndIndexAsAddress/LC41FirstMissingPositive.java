@@ -34,6 +34,7 @@ public class LC41FirstMissingPositive {
     /**
      * Variant A
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static int firstMissingPositiveA(int[] nums) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC41FirstMissingPositive {
     /**
      * Variant B
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static int firstMissingPositiveB(int[] nums) {
         // TODO: write your solution
@@ -52,6 +54,7 @@ public class LC41FirstMissingPositive {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static int firstMissingPositiveC(int[] nums) {
         // TODO: write your solution

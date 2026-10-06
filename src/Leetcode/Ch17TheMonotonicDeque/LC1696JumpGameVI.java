@@ -36,6 +36,7 @@ public class LC1696JumpGameVI {
     /**
      * Variant A
      * <br>Target: time O(n * k), space O(n)
+     * <br>Complete first: ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int maxResultA(int[] nums, int k) {
         // TODO: write your solution
@@ -45,6 +46,8 @@ public class LC1696JumpGameVI {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (later chapter)
+     *     + ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int maxResultB(int[] nums, int k) {
         // TODO: write your solution
@@ -54,6 +57,8 @@ public class LC1696JumpGameVI {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 17 The monotonic deque (this chapter)
+     *     + ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int maxResultC(int[] nums, int k) {
         // TODO: write your solution

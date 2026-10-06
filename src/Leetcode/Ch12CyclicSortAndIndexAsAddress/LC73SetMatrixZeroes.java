@@ -38,6 +38,7 @@ public class LC73SetMatrixZeroes {
     /**
      * Variant A
      * <br>Target: time O(m * n), space O(m * n)
+     * <br>Complete first: ch. 22 Matrix traversal and in-place simulation (later chapter)
      */
     public static void setZeroesA(int[][] matrix) {
         // TODO: write your solution
@@ -47,6 +48,7 @@ public class LC73SetMatrixZeroes {
     /**
      * Variant B
      * <br>Target: time O(m * n), space O(m + n)
+     * <br>Complete first: ch. 22 Matrix traversal and in-place simulation (later chapter)
      */
     public static void setZeroesB(int[][] matrix) {
         // TODO: write your solution
@@ -56,6 +58,8 @@ public class LC73SetMatrixZeroes {
     /**
      * Variant C
      * <br>Target: time O(m * n), space O(1)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
+     *     + ch. 22 Matrix traversal and in-place simulation (later chapter)
      */
     public static void setZeroesC(int[][] matrix) {
         // TODO: write your solution

@@ -47,6 +47,7 @@ public class LC1670DesignFrontMiddleBackQueue {
     /**
      * Variant A
      * <br>Target: time O(n) per operation (O(1) at the back), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static class FrontMiddleBackQueueA {
         public FrontMiddleBackQueueA() {
@@ -88,6 +89,7 @@ public class LC1670DesignFrontMiddleBackQueue {
     /**
      * Variant B
      * <br>Target: time O(1) per operation, space O(n)
+     * <br>Complete first: ch. 19 Two heaps and the running median (this chapter)
      */
     public static class FrontMiddleBackQueueB {
         public FrontMiddleBackQueueB() {

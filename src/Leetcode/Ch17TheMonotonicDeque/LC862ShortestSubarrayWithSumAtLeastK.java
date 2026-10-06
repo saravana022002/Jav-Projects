@@ -36,6 +36,7 @@ public class LC862ShortestSubarrayWithSumAtLeastK {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int shortestSubarrayA(int[] nums, int k) {
         // TODO: write your solution
@@ -45,6 +46,8 @@ public class LC862ShortestSubarrayWithSumAtLeastK {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static int shortestSubarrayB(int[] nums, int k) {
         // TODO: write your solution
@@ -54,6 +57,8 @@ public class LC862ShortestSubarrayWithSumAtLeastK {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 17 The monotonic deque (this chapter)
      */
     public static int shortestSubarrayC(int[] nums, int k) {
         // TODO: write your solution

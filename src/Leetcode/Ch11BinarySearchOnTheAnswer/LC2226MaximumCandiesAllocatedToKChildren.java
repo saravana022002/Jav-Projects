@@ -35,6 +35,7 @@ public class LC2226MaximumCandiesAllocatedToKChildren {
     /**
      * Variant A
      * <br>Target: time O(n * max(candies)), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int maximumCandiesA(int[] candies, long k) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC2226MaximumCandiesAllocatedToKChildren {
     /**
      * Variant B
      * <br>Target: time O(n log max(candies)), space O(1)
+     * <br>Complete first: ch. 11 Binary search on the answer (this chapter)
      */
     public static int maximumCandiesB(int[] candies, long k) {
         // TODO: write your solution

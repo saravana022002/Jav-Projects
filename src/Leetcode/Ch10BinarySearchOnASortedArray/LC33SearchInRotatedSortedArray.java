@@ -40,6 +40,7 @@ public class LC33SearchInRotatedSortedArray {
     /**
      * Variant A
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int searchA(int[] nums, int target) {
         // TODO: write your solution
@@ -49,6 +50,7 @@ public class LC33SearchInRotatedSortedArray {
     /**
      * Variant B
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int searchB(int[] nums, int target) {
         // TODO: write your solution
@@ -58,6 +60,7 @@ public class LC33SearchInRotatedSortedArray {
     /**
      * Variant C
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int searchC(int[] nums, int target) {
         // TODO: write your solution

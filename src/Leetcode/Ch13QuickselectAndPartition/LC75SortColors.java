@@ -40,6 +40,7 @@ public class LC75SortColors {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static void sortColorsA(int[] nums) {
         // TODO: write your solution
@@ -47,8 +48,9 @@ public class LC75SortColors {
     }
 
     /**
-     * Variant B
-     * <br>Target: time O(n), space O(1)
+     * Variant B - count the 0s, 1s and 2s, then overwrite the array
+     * <br>Target: time O(n), space O(1)   (two passes)
+     * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix
      */
     public static void sortColorsB(int[] nums) {
         // TODO: write your solution
@@ -56,8 +58,9 @@ public class LC75SortColors {
     }
 
     /**
-     * Variant C
-     * <br>Target: time O(n), space O(1)
+     * Variant C - this chapter's technique: a single pass that partitions into three bands
+     * <br>Target: time O(n), space O(1)   (one pass)
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static void sortColorsC(int[] nums) {
         // TODO: write your solution

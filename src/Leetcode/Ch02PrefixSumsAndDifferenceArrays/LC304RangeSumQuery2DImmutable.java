@@ -42,6 +42,7 @@ public class LC304RangeSumQuery2DImmutable {
     /**
      * Variant A
      * <br>Target: time O(1) to build, O(m * n) per sumRegion, space O(1) extra
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static class NumMatrixA {
         public NumMatrixA(int[][] matrix) {
@@ -58,6 +59,7 @@ public class LC304RangeSumQuery2DImmutable {
     /**
      * Variant B
      * <br>Target: time O(m * n) to build, O(m) per sumRegion, space O(m * n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays (this chapter)
      */
     public static class NumMatrixB {
         public NumMatrixB(int[][] matrix) {
@@ -74,6 +76,7 @@ public class LC304RangeSumQuery2DImmutable {
     /**
      * Variant C
      * <br>Target: time O(m * n) to build, O(1) per sumRegion, space O(m * n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays (this chapter)
      */
     public static class NumMatrixC {
         public NumMatrixC(int[][] matrix) {

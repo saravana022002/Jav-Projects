@@ -34,6 +34,7 @@ public class LC11ContainerWithMostWater {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int maxAreaA(int[] height) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC11ContainerWithMostWater {
     /**
      * Variant B
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 8 Two pointers, converging (this chapter)
      */
     public static int maxAreaB(int[] height) {
         // TODO: write your solution

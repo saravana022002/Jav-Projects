@@ -37,6 +37,7 @@ public class LC1044LongestDuplicateSubstring {
     /**
      * Variant A
      * <br>Target: time O(n^3), space O(n^2)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static String longestDupSubstringA(String s) {
         // TODO: write your solution
@@ -46,6 +47,8 @@ public class LC1044LongestDuplicateSubstring {
     /**
      * Variant B
      * <br>Target: time O(n^2 log n), space O(n^2)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 11 Binary search on the answer (this chapter)
      */
     public static String longestDupSubstringB(String s) {
         // TODO: write your solution
@@ -55,6 +58,8 @@ public class LC1044LongestDuplicateSubstring {
     /**
      * Variant C
      * <br>Target: time O(n log n) expected, space O(n)
+     * <br>Complete first: ch. 11 Binary search on the answer (this chapter)
+     *     + ch. 28 Rolling hash and Rabin-Karp (later chapter)
      */
     public static String longestDupSubstringC(String s) {
         // TODO: write your solution

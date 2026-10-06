@@ -42,6 +42,7 @@ public class LC18FourSum {
     /**
      * Variant A
      * <br>Target: time O(n^4), space O(1) besides the result
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static List<List<Integer>> fourSumA(int[] nums, int target) {
         // TODO: write your solution
@@ -51,6 +52,8 @@ public class LC18FourSum {
     /**
      * Variant B
      * <br>Target: time O(n^3 log n), space O(1) besides the result
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 10 Binary search on a sorted array (later chapter)
      */
     public static List<List<Integer>> fourSumB(int[] nums, int target) {
         // TODO: write your solution
@@ -60,6 +63,8 @@ public class LC18FourSum {
     /**
      * Variant C
      * <br>Target: time O(n^3), space O(1) besides the result
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 8 Two pointers, converging (this chapter)
      */
     public static List<List<Integer>> fourSumC(int[] nums, int target) {
         // TODO: write your solution

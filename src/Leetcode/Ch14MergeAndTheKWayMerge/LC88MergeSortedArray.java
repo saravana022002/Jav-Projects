@@ -41,8 +41,9 @@ import java.util.function.Supplier;
 public class LC88MergeSortedArray {
 
     /**
-     * Variant A
-     * <br>Target: time O((m + n) log(m + n)), space O(1) extra
+     * Variant A - copy nums2 into the padding of nums1, then sort the whole array
+     * <br>Target: time O((m + n) log(m + n)), space O(1) extra (the sort works in place)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static void mergeA(int[] nums1, int m, int[] nums2, int n) {
         // TODO: write your solution
@@ -52,6 +53,7 @@ public class LC88MergeSortedArray {
     /**
      * Variant B
      * <br>Target: time O(m + n), space O(m)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
      */
     public static void mergeB(int[] nums1, int m, int[] nums2, int n) {
         // TODO: write your solution
@@ -61,6 +63,7 @@ public class LC88MergeSortedArray {
     /**
      * Variant C
      * <br>Target: time O(m + n), space O(1)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
      */
     public static void mergeC(int[] nums1, int m, int[] nums2, int n) {
         // TODO: write your solution

@@ -36,6 +36,7 @@ public class LC4MedianOfTwoSortedArrays {
     /**
      * Variant A
      * <br>Target: time O(m + n), space O(m + n)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (later chapter)
      */
     public static double findMedianSortedArraysA(int[] nums1, int[] nums2) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC4MedianOfTwoSortedArrays {
     /**
      * Variant B
      * <br>Target: time O(m + n), space O(1)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (later chapter)
      */
     public static double findMedianSortedArraysB(int[] nums1, int[] nums2) {
         // TODO: write your solution
@@ -54,6 +56,7 @@ public class LC4MedianOfTwoSortedArrays {
     /**
      * Variant C
      * <br>Target: time O(log(min(m, n))), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static double findMedianSortedArraysC(int[] nums1, int[] nums2) {
         // TODO: write your solution

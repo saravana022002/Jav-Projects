@@ -34,6 +34,7 @@ public class LC1249MinimumRemoveToMakeValidParentheses {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static String minRemoveToMakeValidA(String s) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC1249MinimumRemoveToMakeValidParentheses {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static String minRemoveToMakeValidB(String s) {
         // TODO: write your solution
@@ -52,6 +54,7 @@ public class LC1249MinimumRemoveToMakeValidParentheses {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static String minRemoveToMakeValidC(String s) {
         // TODO: write your solution

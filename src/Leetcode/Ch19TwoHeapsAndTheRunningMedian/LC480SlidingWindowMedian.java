@@ -36,6 +36,7 @@ public class LC480SlidingWindowMedian {
     /**
      * Variant A
      * <br>Target: time O(n * k log k), space O(k)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static double[] medianSlidingWindowA(int[] nums, int k) {
         // TODO: write your solution
@@ -43,8 +44,13 @@ public class LC480SlidingWindowMedian {
     }
 
     /**
-     * Variant B
-     * <br>Target: time O(n * k), space O(k)
+     * Variant B - keep the window as a sorted array: binary-search the leaver and the newcomer
+     * <br>Target: time O(n * k) (shifting), space O(k)
+     * <br>Complete first: ch. 9 Sliding window, chasing
+     *     + ch. 10 Binary search on a sorted array
+     */
+    public static double[] medianSlidingWindowB(int[] nums, int k) {
+        // TODO: write your solution
      */
     public static double[] medianSlidingWindowB(int[] nums, int k) {
         // TODO: write your solution
@@ -54,6 +60,8 @@ public class LC480SlidingWindowMedian {
     /**
      * Variant C
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 9 Sliding window, chasing
+     *     + ch. 19 Two heaps and the running median (this chapter)
      */
     public static double[] medianSlidingWindowC(int[] nums, int k) {
         // TODO: write your solution

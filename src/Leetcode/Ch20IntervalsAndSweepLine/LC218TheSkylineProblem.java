@@ -44,6 +44,7 @@ public class LC218TheSkylineProblem {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static List<List<Integer>> getSkylineA(int[][] buildings) {
         // TODO: write your solution
@@ -53,6 +54,8 @@ public class LC218TheSkylineProblem {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static List<List<Integer>> getSkylineB(int[][] buildings) {
         // TODO: write your solution
@@ -62,6 +65,8 @@ public class LC218TheSkylineProblem {
     /**
      * Variant C
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 20 Intervals and sweep line (this chapter)
+     *     + ch. 41 Ordered maps in practice (later chapter)
      */
     public static List<List<Integer>> getSkylineC(int[][] buildings) {
         // TODO: write your solution

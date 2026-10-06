@@ -41,6 +41,7 @@ public class LC496NextGreaterElementI {
     /**
      * Variant A
      * <br>Target: time O(m * n), space O(1)    (m = nums1.length, n = nums2.length)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[] nextGreaterElementA(int[] nums1, int[] nums2) {
         // TODO: write your solution
@@ -50,6 +51,8 @@ public class LC496NextGreaterElementI {
     /**
      * Variant B
      * <br>Target: time O(m + n), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 16 The monotonic stack (this chapter)
      */
     public static int[] nextGreaterElementB(int[] nums1, int[] nums2) {
         // TODO: write your solution

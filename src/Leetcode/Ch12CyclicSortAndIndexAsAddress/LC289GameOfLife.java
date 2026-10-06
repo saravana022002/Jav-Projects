@@ -40,6 +40,7 @@ public class LC289GameOfLife {
     /**
      * Variant A
      * <br>Target: time O(m * n), space O(m * n)
+     * <br>Complete first: ch. 22 Matrix traversal and in-place simulation (later chapter)
      */
     public static void gameOfLifeA(int[][] board) {
         // TODO: write your solution
@@ -49,6 +50,8 @@ public class LC289GameOfLife {
     /**
      * Variant B
      * <br>Target: time O(m * n), space O(1)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
+     *     + ch. 22 Matrix traversal and in-place simulation (later chapter)
      */
     public static void gameOfLifeB(int[][] board) {
         // TODO: write your solution

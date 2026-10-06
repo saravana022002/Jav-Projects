@@ -45,6 +45,8 @@ public class LC347TopKFrequentElements {
     /**
      * Variant A
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 6 Sorting as a preprocessing step
      */
     public static int[] topKFrequentA(int[] nums, int k) {
         // TODO: write your solution
@@ -54,6 +56,8 @@ public class LC347TopKFrequentElements {
     /**
      * Variant B
      * <br>Target: time O(n log k), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static int[] topKFrequentB(int[] nums, int k) {
         // TODO: write your solution
@@ -63,6 +67,8 @@ public class LC347TopKFrequentElements {
     /**
      * Variant C
      * <br>Target: time O(n) expected (O(n^2) worst case), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 13 Quickselect and partition (this chapter)
      */
     public static int[] topKFrequentC(int[] nums, int k) {
         // TODO: write your solution

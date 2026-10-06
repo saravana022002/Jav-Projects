@@ -35,6 +35,7 @@ public class LC1552MagneticForceBetweenTwoBalls {
     /**
      * Variant A
      * <br>Target: time O(C(n, m) * m), space O(m)
+     * <br>Complete first: ch. 57 Backtracking (later chapter; needs ch. 56 first)
      */
     public static int maxDistanceA(int[] position, int m) {
         // TODO: write your solution
@@ -44,6 +45,8 @@ public class LC1552MagneticForceBetweenTwoBalls {
     /**
      * Variant B
      * <br>Target: time O(n log n + n log(max - min)), space O(1) extra
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 11 Binary search on the answer (this chapter)
      */
     public static int maxDistanceB(int[] position, int m) {
         // TODO: write your solution
@@ -53,6 +56,8 @@ public class LC1552MagneticForceBetweenTwoBalls {
     /**
      * Variant C
      * <br>Target: time O(n log n + n log(max - min)), space O(1) extra
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 11 Binary search on the answer (this chapter)
      */
     public static int maxDistanceC(int[] position, int m) {
         // TODO: write your solution

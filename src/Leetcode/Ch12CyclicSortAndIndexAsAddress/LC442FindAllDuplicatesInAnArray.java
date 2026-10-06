@@ -38,6 +38,7 @@ public class LC442FindAllDuplicatesInAnArray {
     /**
      * Variant A
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static List<Integer> findDuplicatesA(int[] nums) {
         // TODO: write your solution
@@ -47,6 +48,7 @@ public class LC442FindAllDuplicatesInAnArray {
     /**
      * Variant B
      * <br>Target: time O(n), space O(1) extra (the output list does not count)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static List<Integer> findDuplicatesB(int[] nums) {
         // TODO: write your solution
@@ -56,6 +58,7 @@ public class LC442FindAllDuplicatesInAnArray {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1) extra (the output list does not count)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static List<Integer> findDuplicatesC(int[] nums) {
         // TODO: write your solution

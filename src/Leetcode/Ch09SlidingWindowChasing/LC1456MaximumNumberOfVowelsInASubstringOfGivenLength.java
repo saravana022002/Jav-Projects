@@ -32,6 +32,7 @@ public class LC1456MaximumNumberOfVowelsInASubstringOfGivenLength {
     /**
      * Variant A
      * <br>Target: time O(n * k), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int maxVowelsA(String s, int k) {
         // TODO: write your solution
@@ -41,6 +42,7 @@ public class LC1456MaximumNumberOfVowelsInASubstringOfGivenLength {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
      */
     public static int maxVowelsB(String s, int k) {
         // TODO: write your solution
@@ -50,6 +52,7 @@ public class LC1456MaximumNumberOfVowelsInASubstringOfGivenLength {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 9 Sliding window, chasing (this chapter)
      */
     public static int maxVowelsC(String s, int k) {
         // TODO: write your solution

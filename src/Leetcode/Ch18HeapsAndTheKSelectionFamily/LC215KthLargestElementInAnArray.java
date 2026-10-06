@@ -38,8 +38,12 @@ import java.util.function.Supplier;
 public class LC215KthLargestElementInAnArray {
 
     /**
-     * Variant A
-     * <br>Target: time O(n log n), space O(1) extra
+     * Variant A - sort the array, then read the element at position n - k
+     * <br>Target: time O(n log n), space O(1) extra (the sort works in place)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     */
+    public static int findKthLargestA(int[] nums, int k) {
+        // TODO: write your solution
      */
     public static int findKthLargestA(int[] nums, int k) {
         // TODO: write your solution
@@ -49,6 +53,7 @@ public class LC215KthLargestElementInAnArray {
     /**
      * Variant B
      * <br>Target: time O(n) expected (O(n^2) worst case), space O(1)
+     * <br>Complete first: ch. 13 Quickselect and partition
      */
     public static int findKthLargestB(int[] nums, int k) {
         // TODO: write your solution
@@ -58,6 +63,7 @@ public class LC215KthLargestElementInAnArray {
     /**
      * Variant C
      * <br>Target: time O(n log k), space O(k)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (this chapter)
      */
     public static int findKthLargestC(int[] nums, int k) {
         // TODO: write your solution

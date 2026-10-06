@@ -33,6 +33,7 @@ public class LC852PeakIndexInAMountainArray {
     /**
      * Variant A
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int peakIndexInMountainArrayA(int[] arr) {
         // TODO: write your solution
@@ -42,6 +43,7 @@ public class LC852PeakIndexInAMountainArray {
     /**
      * Variant B
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int peakIndexInMountainArrayB(int[] arr) {
         // TODO: write your solution
@@ -51,6 +53,7 @@ public class LC852PeakIndexInAMountainArray {
     /**
      * Variant C
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int peakIndexInMountainArrayC(int[] arr) {
         // TODO: write your solution

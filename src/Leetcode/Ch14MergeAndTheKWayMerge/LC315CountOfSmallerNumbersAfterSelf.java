@@ -37,6 +37,7 @@ public class LC315CountOfSmallerNumbersAfterSelf {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1) extra besides the answer
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static List<Integer> countSmallerA(int[] nums) {
         // TODO: write your solution
@@ -46,6 +47,7 @@ public class LC315CountOfSmallerNumbersAfterSelf {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 39 Fenwick trees (later chapter)
      */
     public static List<Integer> countSmallerB(int[] nums) {
         // TODO: write your solution
@@ -55,6 +57,7 @@ public class LC315CountOfSmallerNumbersAfterSelf {
     /**
      * Variant C
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
      */
     public static List<Integer> countSmallerC(int[] nums) {
         // TODO: write your solution

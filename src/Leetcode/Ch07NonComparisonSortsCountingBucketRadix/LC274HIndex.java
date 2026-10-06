@@ -33,6 +33,7 @@ public class LC274HIndex {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int hIndexA(int[] citations) {
         // TODO: write your solution
@@ -40,8 +41,9 @@ public class LC274HIndex {
     }
 
     /**
-     * Variant B
-     * <br>Target: time O(n log n), space O(1)
+     * Variant B - sort the citations, then scan the sorted array once
+     * <br>Target: time O(n log n), space O(1)    (sort the input array in place)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int hIndexB(int[] citations) {
         // TODO: write your solution
@@ -51,6 +53,7 @@ public class LC274HIndex {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
      */
     public static int hIndexC(int[] citations) {
         // TODO: write your solution

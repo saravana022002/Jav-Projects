@@ -33,6 +33,7 @@ public class LC713SubarrayProductLessThanK {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int numSubarrayProductLessThanKA(int[] nums, int k) {
         // TODO: write your solution
@@ -42,6 +43,8 @@ public class LC713SubarrayProductLessThanK {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 10 Binary search on a sorted array (later chapter)
      */
     public static int numSubarrayProductLessThanKB(int[] nums, int k) {
         // TODO: write your solution
@@ -51,6 +54,7 @@ public class LC713SubarrayProductLessThanK {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 9 Sliding window, chasing (this chapter)
      */
     public static int numSubarrayProductLessThanKC(int[] nums, int k) {
         // TODO: write your solution

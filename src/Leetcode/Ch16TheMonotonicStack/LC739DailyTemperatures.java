@@ -40,6 +40,7 @@ public class LC739DailyTemperatures {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)    (besides the answer array)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[] dailyTemperaturesA(int[] temperatures) {
         // TODO: write your solution
@@ -49,6 +50,7 @@ public class LC739DailyTemperatures {
     /**
      * Variant B
      * <br>Target: time O(n * R), space O(R)    (R = 71 possible temperatures)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static int[] dailyTemperaturesB(int[] temperatures) {
         // TODO: write your solution
@@ -58,6 +60,7 @@ public class LC739DailyTemperatures {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (this chapter)
      */
     public static int[] dailyTemperaturesC(int[] temperatures) {
         // TODO: write your solution

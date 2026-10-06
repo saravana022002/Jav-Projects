@@ -35,6 +35,7 @@ public class LC850RectangleAreaII {
     /**
      * Variant A
      * <br>Target: time O(n^3), space O(n^2)     (n = rectangles.length)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int rectangleAreaA(int[][] rectangles) {
         // TODO: write your solution
@@ -44,6 +45,8 @@ public class LC850RectangleAreaII {
     /**
      * Variant B
      * <br>Target: time O(n^2 log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static int rectangleAreaB(int[][] rectangles) {
         // TODO: write your solution
@@ -53,6 +56,8 @@ public class LC850RectangleAreaII {
     /**
      * Variant C
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 20 Intervals and sweep line (this chapter)
+     *     + ch. 40 Segment trees (later chapter; needs ch. 39 first)
      */
     public static int rectangleAreaC(int[][] rectangles) {
         // TODO: write your solution

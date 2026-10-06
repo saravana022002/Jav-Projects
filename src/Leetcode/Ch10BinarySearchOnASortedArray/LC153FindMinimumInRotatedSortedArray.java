@@ -36,6 +36,7 @@ public class LC153FindMinimumInRotatedSortedArray {
     /**
      * Variant A
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int findMinA(int[] nums) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC153FindMinimumInRotatedSortedArray {
     /**
      * Variant B
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int findMinB(int[] nums) {
         // TODO: write your solution
@@ -54,6 +56,7 @@ public class LC153FindMinimumInRotatedSortedArray {
     /**
      * Variant C
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int findMinC(int[] nums) {
         // TODO: write your solution

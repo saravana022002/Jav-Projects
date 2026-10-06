@@ -39,6 +39,8 @@ public class LC692TopKFrequentWords {
     /**
      * Variant A
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 6 Sorting as a preprocessing step
      */
     public static List<String> topKFrequentA(String[] words, int k) {
         // TODO: write your solution
@@ -48,6 +50,8 @@ public class LC692TopKFrequentWords {
     /**
      * Variant B
      * <br>Target: time O(n log k), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 18 Heaps and the k-selection family (this chapter)
      */
     public static List<String> topKFrequentB(String[] words, int k) {
         // TODO: write your solution

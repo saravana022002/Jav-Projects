@@ -47,6 +47,7 @@ public class LC2102SequentiallyOrdinalRankTracker {
     /**
      * Variant A
      * <br>Target: time O(1) per add, O(n log n) per get, space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static class SORTrackerA {
         public SORTrackerA() {
@@ -66,8 +67,12 @@ public class LC2102SequentiallyOrdinalRankTracker {
     }
 
     /**
-     * Variant B
-     * <br>Target: time O(n) per add, O(1) per get, space O(n)
+     * Variant B - keep the list sorted at all times: binary-search the slot, insert, index by i
+     * <br>Target: time O(n) per add (shifting), O(1) per get, space O(n)
+     * <br>Complete first: ch. 10 Binary search on a sorted array
+     */
+    public static class SORTrackerB {
+        public SORTrackerB() {
      */
     public static class SORTrackerB {
         public SORTrackerB() {
@@ -89,6 +94,7 @@ public class LC2102SequentiallyOrdinalRankTracker {
     /**
      * Variant C
      * <br>Target: time O(log n) per add and per get, space O(n)
+     * <br>Complete first: ch. 19 Two heaps and the running median (this chapter)
      */
     public static class SORTrackerC {
         public SORTrackerC() {

@@ -34,6 +34,7 @@ public class LC2762ContinuousSubarrays {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static long continuousSubarraysA(int[] nums) {
         // TODO: write your solution
@@ -43,6 +44,8 @@ public class LC2762ContinuousSubarrays {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 9 Sliding window, chasing
+     *     + ch. 41 Ordered maps in practice (later chapter)
      */
     public static long continuousSubarraysB(int[] nums) {
         // TODO: write your solution
@@ -52,6 +55,8 @@ public class LC2762ContinuousSubarrays {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 9 Sliding window, chasing
+     *     + ch. 17 The monotonic deque (this chapter)
      */
     public static long continuousSubarraysC(int[] nums) {
         // TODO: write your solution

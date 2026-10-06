@@ -36,6 +36,7 @@ public class LC973KClosestPointsToOrigin {
     /**
      * Variant A
      * <br>Target: time O(n log n), space O(1) extra besides the answer
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int[][] kClosestA(int[][] points, int k) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC973KClosestPointsToOrigin {
     /**
      * Variant B
      * <br>Target: time O(n log k), space O(k)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static int[][] kClosestB(int[][] points, int k) {
         // TODO: write your solution
@@ -54,6 +56,7 @@ public class LC973KClosestPointsToOrigin {
     /**
      * Variant C
      * <br>Target: time O(n) expected (O(n^2) worst case), space O(1) extra besides the answer
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static int[][] kClosestC(int[][] points, int k) {
         // TODO: write your solution

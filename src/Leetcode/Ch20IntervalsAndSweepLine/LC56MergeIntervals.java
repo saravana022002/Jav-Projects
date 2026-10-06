@@ -41,6 +41,7 @@ public class LC56MergeIntervals {
     /**
      * Variant A
      * <br>Target: time O(n^3), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[][] mergeA(int[][] intervals) {
         // TODO: write your solution
@@ -50,6 +51,8 @@ public class LC56MergeIntervals {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static int[][] mergeB(int[][] intervals) {
         // TODO: write your solution
@@ -59,6 +62,8 @@ public class LC56MergeIntervals {
     /**
      * Variant C
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static int[][] mergeC(int[][] intervals) {
         // TODO: write your solution

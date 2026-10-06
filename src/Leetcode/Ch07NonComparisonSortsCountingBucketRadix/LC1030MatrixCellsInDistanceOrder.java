@@ -37,6 +37,7 @@ public class LC1030MatrixCellsInDistanceOrder {
     /**
      * Variant A
      * <br>Target: time O(N log N), space O(N)    (N = rows * cols)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int[][] allCellsDistOrderA(int rows, int cols, int rCenter, int cCenter) {
         // TODO: write your solution
@@ -46,6 +47,8 @@ public class LC1030MatrixCellsInDistanceOrder {
     /**
      * Variant B
      * <br>Target: time O(N), space O(N)
+     * <br>Complete first: ch. 44 Grids as graphs (later chapter;
+     *       needs ch. 15, 34, 35, 42, 43 first)
      */
     public static int[][] allCellsDistOrderB(int rows, int cols, int rCenter, int cCenter) {
         // TODO: write your solution
@@ -55,6 +58,7 @@ public class LC1030MatrixCellsInDistanceOrder {
     /**
      * Variant C
      * <br>Target: time O(N), space O(N)
+     * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
      */
     public static int[][] allCellsDistOrderC(int rows, int cols, int rCenter, int cCenter) {
         // TODO: write your solution

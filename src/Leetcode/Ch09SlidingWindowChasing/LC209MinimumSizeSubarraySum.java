@@ -35,6 +35,7 @@ public class LC209MinimumSizeSubarraySum {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int minSubArrayLenA(int target, int[] nums) {
         // TODO: write your solution
@@ -44,6 +45,8 @@ public class LC209MinimumSizeSubarraySum {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 10 Binary search on a sorted array (later chapter)
      */
     public static int minSubArrayLenB(int target, int[] nums) {
         // TODO: write your solution
@@ -53,6 +56,7 @@ public class LC209MinimumSizeSubarraySum {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 9 Sliding window, chasing (this chapter)
      */
     public static int minSubArrayLenC(int target, int[] nums) {
         // TODO: write your solution

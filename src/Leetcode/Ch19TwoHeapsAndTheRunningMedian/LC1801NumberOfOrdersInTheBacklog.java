@@ -42,6 +42,7 @@ public class LC1801NumberOfOrdersInTheBacklog {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int getNumberOfBacklogOrdersA(int[][] orders) {
         // TODO: write your solution
@@ -51,6 +52,7 @@ public class LC1801NumberOfOrdersInTheBacklog {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 19 Two heaps and the running median (this chapter)
      */
     public static int getNumberOfBacklogOrdersB(int[][] orders) {
         // TODO: write your solution

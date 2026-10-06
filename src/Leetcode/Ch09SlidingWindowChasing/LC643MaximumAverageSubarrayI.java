@@ -31,6 +31,7 @@ public class LC643MaximumAverageSubarrayI {
     /**
      * Variant A
      * <br>Target: time O(n * k), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static double findMaxAverageA(int[] nums, int k) {
         // TODO: write your solution
@@ -40,6 +41,7 @@ public class LC643MaximumAverageSubarrayI {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
      */
     public static double findMaxAverageB(int[] nums, int k) {
         // TODO: write your solution
@@ -49,6 +51,7 @@ public class LC643MaximumAverageSubarrayI {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 9 Sliding window, chasing (this chapter)
      */
     public static double findMaxAverageC(int[] nums, int k) {
         // TODO: write your solution

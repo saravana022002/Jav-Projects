@@ -33,6 +33,7 @@ public class LC907SumOfSubarrayMinimums {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int sumSubarrayMinsA(int[] arr) {
         // TODO: write your solution
@@ -42,6 +43,8 @@ public class LC907SumOfSubarrayMinimums {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (this chapter)
+     *     + ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int sumSubarrayMinsB(int[] arr) {
         // TODO: write your solution
@@ -51,6 +54,7 @@ public class LC907SumOfSubarrayMinimums {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (this chapter)
      */
     public static int sumSubarrayMinsC(int[] arr) {
         // TODO: write your solution

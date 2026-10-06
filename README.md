@@ -29,7 +29,7 @@ Every file in `src/Leetcode/` carries its own test cases (the official examples 
 
 File names: `LC<number><Title>.java` for LeetCode, `GFG<Title>.java` for GeeksforGeeks, `Interview<Title>.java` for interview questions. When a problem is solved more than once, a suffix tells the versions apart: `LC1TwoSumHashMap.java`, `LC1TwoSumThreeApproaches.java`, or `V1` / `V2` when both use the same idea.
 
-Status marks: :warning: known bug - :construction: unfinished (details in the file's STATUS section) - :white_large_square: not solved yet (an empty practice skeleton: description, variant stubs with time/space targets, and tests in `main()` that pass once your solution is right).
+Status marks: :warning: known bug - :construction: unfinished (details in the file's STATUS section) - :white_large_square: not solved yet (an empty practice skeleton: description, variant stubs with time/space targets and the book chapters each variant needs, and tests in `main()` that pass once your solution is right).
 
 ## Topics
 

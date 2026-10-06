@@ -34,6 +34,7 @@ public class LC1004MaxConsecutiveOnesIII {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int longestOnesA(int[] nums, int k) {
         // TODO: write your solution
@@ -43,6 +44,8 @@ public class LC1004MaxConsecutiveOnesIII {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 10 Binary search on a sorted array (later chapter)
      */
     public static int longestOnesB(int[] nums, int k) {
         // TODO: write your solution
@@ -52,6 +55,7 @@ public class LC1004MaxConsecutiveOnesIII {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 9 Sliding window, chasing (this chapter)
      */
     public static int longestOnesC(int[] nums, int k) {
         // TODO: write your solution

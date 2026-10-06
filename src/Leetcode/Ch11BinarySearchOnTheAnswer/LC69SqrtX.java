@@ -36,6 +36,7 @@ public class LC69SqrtX {
     /**
      * Variant A
      * <br>Target: time O(sqrt(x)), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int mySqrtA(int x) {
         // TODO: write your solution
@@ -45,6 +46,8 @@ public class LC69SqrtX {
     /**
      * Variant B
      * <br>Target: time O(log x), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
+     *     (Newton's method itself is school maths; the book does not teach it)
      */
     public static int mySqrtB(int x) {
         // TODO: write your solution
@@ -54,6 +57,7 @@ public class LC69SqrtX {
     /**
      * Variant C
      * <br>Target: time O(log x), space O(1)
+     * <br>Complete first: ch. 11 Binary search on the answer (this chapter)
      */
     public static int mySqrtC(int x) {
         // TODO: write your solution

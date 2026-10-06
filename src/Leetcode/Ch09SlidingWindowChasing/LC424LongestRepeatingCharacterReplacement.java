@@ -31,8 +31,9 @@ import java.util.function.Supplier;
 public class LC424LongestRepeatingCharacterReplacement {
 
     /**
-     * Variant A
-     * <br>Target: time O(n^2), space O(1)
+     * Variant A - brute force: from every start, extend while the overwrites needed stay <= k
+     * <br>Target: time O(n^2), space O(1)    (26 letter counts)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
      */
     public static int characterReplacementA(String s, int k) {
         // TODO: write your solution
@@ -42,6 +43,8 @@ public class LC424LongestRepeatingCharacterReplacement {
     /**
      * Variant B
      * <br>Target: time O(26 * n), space O(1)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static int characterReplacementB(String s, int k) {
         // TODO: write your solution
@@ -51,6 +54,8 @@ public class LC424LongestRepeatingCharacterReplacement {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static int characterReplacementC(String s, int k) {
         // TODO: write your solution

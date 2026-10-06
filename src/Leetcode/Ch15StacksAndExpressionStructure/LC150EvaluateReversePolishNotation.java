@@ -40,6 +40,7 @@ public class LC150EvaluateReversePolishNotation {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int evalRPNA(String[] tokens) {
         // TODO: write your solution
@@ -49,6 +50,7 @@ public class LC150EvaluateReversePolishNotation {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int evalRPNB(String[] tokens) {
         // TODO: write your solution

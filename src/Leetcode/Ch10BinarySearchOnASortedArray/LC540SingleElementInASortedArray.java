@@ -36,6 +36,7 @@ public class LC540SingleElementInASortedArray {
     /**
      * Variant A
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 5 Bit manipulation as a set encoding
      */
     public static int singleNonDuplicateA(int[] nums) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC540SingleElementInASortedArray {
     /**
      * Variant B
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int singleNonDuplicateB(int[] nums) {
         // TODO: write your solution
@@ -54,6 +56,7 @@ public class LC540SingleElementInASortedArray {
     /**
      * Variant C
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int singleNonDuplicateC(int[] nums) {
         // TODO: write your solution

@@ -35,6 +35,7 @@ public class LC406QueueReconstructionByHeight {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int[][] reconstructQueueA(int[][] people) {
         // TODO: write your solution
@@ -44,6 +45,8 @@ public class LC406QueueReconstructionByHeight {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
+     *     + ch. 39 Fenwick trees (later chapter)
      */
     public static int[][] reconstructQueueB(int[][] people) {
         // TODO: write your solution
@@ -53,6 +56,7 @@ public class LC406QueueReconstructionByHeight {
     /**
      * Variant C
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int[][] reconstructQueueC(int[][] people) {
         // TODO: write your solution

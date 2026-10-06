@@ -39,6 +39,7 @@ public class LC502IPO {
     /**
      * Variant A
      * <br>Target: time O(k * n), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int findMaximizedCapitalA(int k, int w, int[] profits, int[] capital) {
         // TODO: write your solution
@@ -48,6 +49,7 @@ public class LC502IPO {
     /**
      * Variant B
      * <br>Target: time O((n + k) log n), space O(n)
+     * <br>Complete first: ch. 19 Two heaps and the running median (this chapter)
      */
     public static int findMaximizedCapitalB(int k, int w, int[] profits, int[] capital) {
         // TODO: write your solution

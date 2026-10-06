@@ -36,6 +36,7 @@ public class LC81SearchInRotatedSortedArrayII {
     /**
      * Variant A
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static boolean searchA(int[] nums, int target) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC81SearchInRotatedSortedArrayII {
     /**
      * Variant B
      * <br>Target: time O(log n) typically but O(n) worst case (many duplicates), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static boolean searchB(int[] nums, int target) {
         // TODO: write your solution

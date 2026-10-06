@@ -34,6 +34,7 @@ public class LC719FindKThSmallestPairDistance {
     /**
      * Variant A
      * <br>Target: time O(n^2 log n), space O(n^2)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int smallestDistancePairA(int[] nums, int k) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC719FindKThSmallestPairDistance {
     /**
      * Variant B
      * <br>Target: time O(n^2 + M), space O(M)   (M = largest value in nums)
+     * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix
      */
     public static int smallestDistancePairB(int[] nums, int k) {
         // TODO: write your solution
@@ -52,6 +54,8 @@ public class LC719FindKThSmallestPairDistance {
     /**
      * Variant C
      * <br>Target: time O(n log n + n log M), space O(1) extra
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 11 Binary search on the answer (this chapter)
      */
     public static int smallestDistancePairC(int[] nums, int k) {
         // TODO: write your solution

@@ -35,6 +35,7 @@ public class LC35SearchInsertPosition {
     /**
      * Variant A
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int searchInsertA(int[] nums, int target) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC35SearchInsertPosition {
     /**
      * Variant B
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int searchInsertB(int[] nums, int target) {
         // TODO: write your solution
@@ -53,6 +55,7 @@ public class LC35SearchInsertPosition {
     /**
      * Variant C
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static int searchInsertC(int[] nums, int target) {
         // TODO: write your solution

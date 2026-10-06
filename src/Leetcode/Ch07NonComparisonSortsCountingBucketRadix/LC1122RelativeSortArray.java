@@ -35,6 +35,7 @@ public class LC1122RelativeSortArray {
     /**
      * Variant A
      * <br>Target: time O(n * m + n log n), space O(n)    (n = arr1.length, m = arr2.length)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int[] relativeSortArrayA(int[] arr1, int[] arr2) {
         // TODO: write your solution
@@ -44,6 +45,8 @@ public class LC1122RelativeSortArray {
     /**
      * Variant B
      * <br>Target: time O(n log n + m), space O(n + m)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 6 Sorting as a preprocessing step
      */
     public static int[] relativeSortArrayB(int[] arr1, int[] arr2) {
         // TODO: write your solution
@@ -53,6 +56,7 @@ public class LC1122RelativeSortArray {
     /**
      * Variant C
      * <br>Target: time O(n + m + R), space O(R)    (R = largest possible value = 1000)
+     * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
      */
     public static int[] relativeSortArrayC(int[] arr1, int[] arr2) {
         // TODO: write your solution

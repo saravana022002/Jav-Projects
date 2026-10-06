@@ -45,6 +45,7 @@ public class LC278FirstBadVersion {
         /**
          * Variant A
          * <br>Target: time O(n), space O(1)    (up to n API calls)
+         * <br>Complete first: ch. 1 Complexity, amortisation, and counting
          */
         public int firstBadVersionA(int n) {
             // TODO: write your solution
@@ -54,6 +55,7 @@ public class LC278FirstBadVersion {
         /**
          * Variant B
          * <br>Target: time O(log n), space O(1)    (O(log n) API calls)
+         * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
          */
         public int firstBadVersionB(int n) {
             // TODO: write your solution

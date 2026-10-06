@@ -39,6 +39,7 @@ public class LC986IntervalListIntersections {
     /**
      * Variant A
      * <br>Target: time O(m * n), space O(1) besides the result    (m, n = the two list lengths)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[][] intervalIntersectionA(int[][] firstList, int[][] secondList) {
         // TODO: write your solution
@@ -48,6 +49,7 @@ public class LC986IntervalListIntersections {
     /**
      * Variant B
      * <br>Target: time O(m log n + m + n), space O(1) besides the result
+     * <br>Complete first: ch. 10 Binary search on a sorted array (later chapter)
      */
     public static int[][] intervalIntersectionB(int[][] firstList, int[][] secondList) {
         // TODO: write your solution
@@ -57,6 +59,7 @@ public class LC986IntervalListIntersections {
     /**
      * Variant C
      * <br>Target: time O(m + n), space O(1) besides the result
+     * <br>Complete first: ch. 8 Two pointers, converging (this chapter)
      */
     public static int[][] intervalIntersectionC(int[][] firstList, int[][] secondList) {
         // TODO: write your solution

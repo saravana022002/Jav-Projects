@@ -34,6 +34,7 @@ public class LC921MinimumAddToMakeParenthesesValid {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int minAddToMakeValidA(String s) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC921MinimumAddToMakeParenthesesValid {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int minAddToMakeValidB(String s) {
         // TODO: write your solution
@@ -52,6 +54,7 @@ public class LC921MinimumAddToMakeParenthesesValid {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int minAddToMakeValidC(String s) {
         // TODO: write your solution

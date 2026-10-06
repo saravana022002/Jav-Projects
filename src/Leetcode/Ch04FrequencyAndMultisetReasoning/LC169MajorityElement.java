@@ -39,6 +39,7 @@ public class LC169MajorityElement {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int majorityElementA(int[] nums) {
         // TODO: write your solution
@@ -48,6 +49,8 @@ public class LC169MajorityElement {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 4 Frequency and multiset reasoning (this chapter)
      */
     public static int majorityElementB(int[] nums) {
         // TODO: write your solution
@@ -57,6 +60,7 @@ public class LC169MajorityElement {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning (this chapter)
      */
     public static int majorityElementC(int[] nums) {
         // TODO: write your solution

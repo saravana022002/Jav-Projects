@@ -36,6 +36,7 @@ public class LC1425ConstrainedSubsequenceSum {
     /**
      * Variant A
      * <br>Target: time O(n * k), space O(n)
+     * <br>Complete first: ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int constrainedSubsetSumA(int[] nums, int k) {
         // TODO: write your solution
@@ -45,6 +46,8 @@ public class LC1425ConstrainedSubsequenceSum {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (later chapter)
+     *     + ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int constrainedSubsetSumB(int[] nums, int k) {
         // TODO: write your solution
@@ -54,6 +57,8 @@ public class LC1425ConstrainedSubsequenceSum {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 17 The monotonic deque (this chapter)
+     *     + ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int constrainedSubsetSumC(int[] nums, int k) {
         // TODO: write your solution

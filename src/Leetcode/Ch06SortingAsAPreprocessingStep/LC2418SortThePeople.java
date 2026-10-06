@@ -33,6 +33,7 @@ public class LC2418SortThePeople {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static String[] sortPeopleA(String[] names, int[] heights) {
         // TODO: write your solution
@@ -63,6 +64,8 @@ public class LC2418SortThePeople {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static String[] sortPeopleB(String[] names, int[] heights) {
         // TODO: write your solution
@@ -89,6 +92,7 @@ public class LC2418SortThePeople {
     /**
      * Variant C
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static String[] sortPeopleC(String[] names, int[] heights) {
         // TODO: write your solution

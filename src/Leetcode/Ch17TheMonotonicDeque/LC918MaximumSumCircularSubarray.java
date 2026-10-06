@@ -36,6 +36,7 @@ public class LC918MaximumSumCircularSubarray {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int maxSubarraySumCircularA(int[] nums) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC918MaximumSumCircularSubarray {
     /**
      * Variant B
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 21 Kadane and the running optimum (later chapter)
      */
     public static int maxSubarraySumCircularB(int[] nums) {
         // TODO: write your solution
@@ -54,6 +56,8 @@ public class LC918MaximumSumCircularSubarray {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 17 The monotonic deque (this chapter)
      */
     public static int maxSubarraySumCircularC(int[] nums) {
         // TODO: write your solution

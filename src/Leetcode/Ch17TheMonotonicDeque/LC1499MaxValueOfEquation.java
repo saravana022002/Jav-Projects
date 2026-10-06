@@ -38,6 +38,7 @@ public class LC1499MaxValueOfEquation {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int findMaxValueOfEquationA(int[][] points, int k) {
         // TODO: write your solution
@@ -47,6 +48,7 @@ public class LC1499MaxValueOfEquation {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static int findMaxValueOfEquationB(int[][] points, int k) {
         // TODO: write your solution
@@ -56,6 +58,7 @@ public class LC1499MaxValueOfEquation {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 17 The monotonic deque (this chapter)
      */
     public static int findMaxValueOfEquationC(int[][] points, int k) {
         // TODO: write your solution

@@ -39,6 +39,7 @@ public class LC560SubarraySumEqualsK {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int subarraySumA(int[] nums, int k) {
         // TODO: write your solution
@@ -48,6 +49,7 @@ public class LC560SubarraySumEqualsK {
     /**
      * Variant B
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
      */
     public static int subarraySumB(int[] nums, int k) {
         // TODO: write your solution
@@ -57,6 +59,8 @@ public class LC560SubarraySumEqualsK {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 3 Hashing as a search-to-lookup transform (this chapter)
      */
     public static int subarraySumC(int[] nums, int k) {
         // TODO: write your solution

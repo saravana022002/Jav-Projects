@@ -34,6 +34,7 @@ public class LC856ScoreOfParentheses {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 56 Recursion and the shape of a subproblem (later chapter)
      */
     public static int scoreOfParenthesesA(String s) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC856ScoreOfParentheses {
     /**
      * Variant B
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int scoreOfParenthesesB(String s) {
         // TODO: write your solution
@@ -52,6 +54,7 @@ public class LC856ScoreOfParentheses {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int scoreOfParenthesesC(String s) {
         // TODO: write your solution

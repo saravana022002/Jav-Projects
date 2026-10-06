@@ -44,6 +44,7 @@ public class LC218TheSkylineProblem {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static List<List<Integer>> getSkylineA(int[][] buildings) {
         // TODO: write your solution
@@ -53,6 +54,8 @@ public class LC218TheSkylineProblem {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 14 Merge and the k-way merge
+     *     + ch. 59 Divide and conquer (later chapter; needs ch. 56 first)
      */
     public static List<List<Integer>> getSkylineB(int[][] buildings) {
         // TODO: write your solution
@@ -62,6 +65,8 @@ public class LC218TheSkylineProblem {
     /**
      * Variant C
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 19 Two heaps and the running median (this chapter)
+     *     + ch. 20 Intervals and sweep line (later chapter)
      */
     public static List<List<Integer>> getSkylineC(int[][] buildings) {
         // TODO: write your solution

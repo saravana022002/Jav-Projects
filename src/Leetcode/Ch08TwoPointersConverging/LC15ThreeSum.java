@@ -42,6 +42,7 @@ public class LC15ThreeSum {
     /**
      * Variant A
      * <br>Target: time O(n^3), space O(1) besides the result
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static List<List<Integer>> threeSumA(int[] nums) {
         // TODO: write your solution
@@ -51,6 +52,8 @@ public class LC15ThreeSum {
     /**
      * Variant B
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 6 Sorting as a preprocessing step
      */
     public static List<List<Integer>> threeSumB(int[] nums) {
         // TODO: write your solution
@@ -60,6 +63,8 @@ public class LC15ThreeSum {
     /**
      * Variant C
      * <br>Target: time O(n^2), space O(1) besides the result
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 8 Two pointers, converging (this chapter)
      */
     public static List<List<Integer>> threeSumC(int[] nums) {
         // TODO: write your solution

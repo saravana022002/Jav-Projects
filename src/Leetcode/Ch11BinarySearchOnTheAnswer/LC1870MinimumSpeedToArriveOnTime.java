@@ -39,6 +39,7 @@ public class LC1870MinimumSpeedToArriveOnTime {
     /**
      * Variant A
      * <br>Target: time O(n * 10^7), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int minSpeedOnTimeA(int[] dist, double hour) {
         // TODO: write your solution
@@ -48,6 +49,7 @@ public class LC1870MinimumSpeedToArriveOnTime {
     /**
      * Variant B
      * <br>Target: time O(n log 10^7), space O(1)
+     * <br>Complete first: ch. 11 Binary search on the answer (this chapter)
      */
     public static int minSpeedOnTimeB(int[] dist, double hour) {
         // TODO: write your solution

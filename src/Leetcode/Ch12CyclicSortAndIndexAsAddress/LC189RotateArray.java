@@ -35,6 +35,7 @@ public class LC189RotateArray {
     /**
      * Variant A
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static void rotateA(int[] nums, int k) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC189RotateArray {
     /**
      * Variant B
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 8 Two pointers, converging
      */
     public static void rotateB(int[] nums, int k) {
         // TODO: write your solution
@@ -53,6 +55,7 @@ public class LC189RotateArray {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static void rotateC(int[] nums, int k) {
         // TODO: write your solution

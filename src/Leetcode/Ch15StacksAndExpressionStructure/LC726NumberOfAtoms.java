@@ -38,6 +38,7 @@ public class LC726NumberOfAtoms {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static String countOfAtomsA(String formula) {
         // TODO: write your solution
@@ -47,6 +48,8 @@ public class LC726NumberOfAtoms {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 15 Stacks and expression structure (this chapter)
      */
     public static String countOfAtomsB(String formula) {
         // TODO: write your solution
@@ -56,6 +59,8 @@ public class LC726NumberOfAtoms {
     /**
      * Variant C
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 15 Stacks and expression structure (this chapter)
      */
     public static String countOfAtomsC(String formula) {
         // TODO: write your solution

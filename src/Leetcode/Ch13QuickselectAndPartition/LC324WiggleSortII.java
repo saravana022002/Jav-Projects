@@ -35,6 +35,7 @@ public class LC324WiggleSortII {
     /**
      * Variant A
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static void wiggleSortA(int[] nums) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC324WiggleSortII {
     /**
      * Variant B
      * <br>Target: time O(n) expected (O(n^2) worst case), space O(n)
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static void wiggleSortB(int[] nums) {
         // TODO: write your solution
@@ -53,6 +55,7 @@ public class LC324WiggleSortII {
     /**
      * Variant C
      * <br>Target: time O(n) expected (O(n^2) worst case), space O(1)
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static void wiggleSortC(int[] nums) {
         // TODO: write your solution

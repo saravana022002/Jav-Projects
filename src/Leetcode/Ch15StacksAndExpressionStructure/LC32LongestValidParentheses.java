@@ -34,6 +34,7 @@ public class LC32LongestValidParentheses {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int longestValidParenthesesA(String s) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC32LongestValidParentheses {
     /**
      * Variant B
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int longestValidParenthesesB(String s) {
         // TODO: write your solution
@@ -52,6 +54,7 @@ public class LC32LongestValidParentheses {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int longestValidParenthesesC(String s) {
         // TODO: write your solution

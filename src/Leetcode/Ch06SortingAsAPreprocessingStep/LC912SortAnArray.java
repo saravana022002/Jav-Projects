@@ -40,6 +40,7 @@ public class LC912SortAnArray {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int[] sortArrayA(int[] nums) {
         // TODO: write your solution
@@ -64,6 +65,8 @@ public class LC912SortAnArray {
     /**
      * Variant B
      * <br>Target: time O(n log n) expected (O(n^2) worst case), space O(log n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
+     *     + ch. 13 Quickselect and partition (later chapter)
      */
     public static int[] sortArrayB(int[] nums) {
         // TODO: write your solution
@@ -73,6 +76,7 @@ public class LC912SortAnArray {
     /**
      * Variant C
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int[] sortArrayC(int[] nums) {
         // TODO: write your solution

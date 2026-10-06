@@ -50,6 +50,8 @@ public class LC23MergeKSortedLists {
     /**
      * Variant A
      * <br>Target: time O(N log N), space O(N)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 31 Linked lists and the dummy head (later chapter)
      */
     public static ListNode mergeKListsA(ListNode[] lists) {
         // TODO: write your solution
@@ -59,6 +61,9 @@ public class LC23MergeKSortedLists {
     /**
      * Variant B
      * <br>Target: time O(N log k), space O(k)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
+     *     + ch. 18 Heaps and the k-selection family (later chapter)
+     *     + ch. 31 Linked lists and the dummy head (later chapter)
      */
     public static ListNode mergeKListsB(ListNode[] lists) {
         // TODO: write your solution
@@ -66,8 +71,10 @@ public class LC23MergeKSortedLists {
     }
 
     /**
-     * Variant C
-     * <br>Target: time O(N log k), space O(1) extra
+     * Variant C - merge the lists in pairs, round after round, until one list is left
+     * <br>Target: time O(N log k), space O(1) extra (O(log k) if you use recursion)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
+     *     + ch. 31 Linked lists and the dummy head (later chapter)
      */
     public static ListNode mergeKListsC(ListNode[] lists) {
         // TODO: write your solution

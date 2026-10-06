@@ -37,6 +37,7 @@ public class LC394DecodeString {
     /**
      * Variant A
      * <br>Target: time O(n * (n + L)), space O(n + L)    (L = length of the decoded string)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static String decodeStringA(String s) {
         // TODO: write your solution
@@ -46,6 +47,7 @@ public class LC394DecodeString {
     /**
      * Variant B
      * <br>Target: time O(n + L * d), space O(L + d)    (d = nesting depth)
+     * <br>Complete first: ch. 56 Recursion and the shape of a subproblem (later chapter)
      */
     public static String decodeStringB(String s) {
         // TODO: write your solution
@@ -55,6 +57,7 @@ public class LC394DecodeString {
     /**
      * Variant C
      * <br>Target: time O(n + L * d), space O(L + d)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static String decodeStringC(String s) {
         // TODO: write your solution

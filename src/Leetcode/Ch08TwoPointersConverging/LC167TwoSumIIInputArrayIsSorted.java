@@ -35,6 +35,7 @@ public class LC167TwoSumIIInputArrayIsSorted {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[] twoSumA(int[] numbers, int target) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC167TwoSumIIInputArrayIsSorted {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (later chapter)
      */
     public static int[] twoSumB(int[] numbers, int target) {
         // TODO: write your solution
@@ -53,6 +55,7 @@ public class LC167TwoSumIIInputArrayIsSorted {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 8 Two pointers, converging (this chapter)
      */
     public static int[] twoSumC(int[] numbers, int target) {
         // TODO: write your solution

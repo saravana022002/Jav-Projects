@@ -34,6 +34,7 @@ public class LC462MinimumMovesToEqualArrayElementsII {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int minMoves2A(int[] nums) {
         // TODO: write your solution
@@ -41,8 +42,9 @@ public class LC462MinimumMovesToEqualArrayElementsII {
     }
 
     /**
-     * Variant B
-     * <br>Target: time O(n log n), space O(1) extra
+     * Variant B - sort the array, then read the best common target off the sorted order
+     * <br>Target: time O(n log n), space O(1) extra (the sort works in place)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int minMoves2B(int[] nums) {
         // TODO: write your solution
@@ -52,6 +54,7 @@ public class LC462MinimumMovesToEqualArrayElementsII {
     /**
      * Variant C
      * <br>Target: time O(n) expected (O(n^2) worst case), space O(1)
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static int minMoves2C(int[] nums) {
         // TODO: write your solution

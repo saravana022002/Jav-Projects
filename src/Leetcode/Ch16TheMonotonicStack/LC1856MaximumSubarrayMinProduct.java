@@ -36,6 +36,7 @@ public class LC1856MaximumSubarrayMinProduct {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int maxSumMinProductA(int[] nums) {
         // TODO: write your solution
@@ -45,6 +46,8 @@ public class LC1856MaximumSubarrayMinProduct {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 16 The monotonic stack (this chapter)
      */
     public static int maxSumMinProductB(int[] nums) {
         // TODO: write your solution

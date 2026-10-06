@@ -34,6 +34,7 @@ public class LC881BoatsToSavePeople {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int numRescueBoatsA(int[] people, int limit) {
         // TODO: write your solution
@@ -65,6 +66,8 @@ public class LC881BoatsToSavePeople {
     /**
      * Variant B
      * <br>Target: time O(n + limit), space O(limit)
+     * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix (later chapter)
+     *     + ch. 8 Two pointers, converging (later chapter)
      */
     public static int numRescueBoatsB(int[] people, int limit) {
         // TODO: write your solution
@@ -72,8 +75,10 @@ public class LC881BoatsToSavePeople {
     }
 
     /**
-     * Variant C
-     * <br>Target: time O(n log n), space O(1)
+     * Variant C - this chapter's technique: sort, then two pointers pair the lightest with heaviest
+     * <br>Target: time O(n log n), space O(1) besides the sort
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
+     *     + ch. 8 Two pointers, converging (later chapter)
      */
     public static int numRescueBoatsC(int[] people, int limit) {
         // TODO: write your solution

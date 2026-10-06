@@ -35,6 +35,7 @@ public class LC1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLim
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int longestSubarrayA(int[] nums, int limit) {
         // TODO: write your solution
@@ -44,6 +45,8 @@ public class LC1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLim
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 9 Sliding window, chasing (this chapter)
+     *     + ch. 41 Ordered maps in practice (later chapter; needs ch. 10 first)
      */
     public static int longestSubarrayB(int[] nums, int limit) {
         // TODO: write your solution
@@ -53,6 +56,8 @@ public class LC1438LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLim
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 9 Sliding window, chasing (this chapter)
+     *     + ch. 17 The monotonic deque (later chapter; needs ch. 15, 16 first)
      */
     public static int longestSubarrayC(int[] nums, int limit) {
         // TODO: write your solution

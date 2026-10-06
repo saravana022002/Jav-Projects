@@ -32,6 +32,7 @@ public class LC930BinarySubarraysWithSum {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int numSubarraysWithSumA(int[] nums, int goal) {
         // TODO: write your solution
@@ -41,6 +42,8 @@ public class LC930BinarySubarraysWithSum {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 3 Hashing as a search-to-lookup transform
      */
     public static int numSubarraysWithSumB(int[] nums, int goal) {
         // TODO: write your solution
@@ -50,6 +53,7 @@ public class LC930BinarySubarraysWithSum {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 9 Sliding window, chasing (this chapter)
      */
     public static int numSubarraysWithSumC(int[] nums, int goal) {
         // TODO: write your solution

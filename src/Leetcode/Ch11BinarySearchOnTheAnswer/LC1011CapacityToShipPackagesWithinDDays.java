@@ -35,6 +35,7 @@ public class LC1011CapacityToShipPackagesWithinDDays {
     /**
      * Variant A
      * <br>Target: time O(n * sum(weights)), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int shipWithinDaysA(int[] weights, int days) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC1011CapacityToShipPackagesWithinDDays {
     /**
      * Variant B
      * <br>Target: time O(n log sum(weights)), space O(1)
+     * <br>Complete first: ch. 11 Binary search on the answer (this chapter)
      */
     public static int shipWithinDaysB(int[] weights, int days) {
         // TODO: write your solution

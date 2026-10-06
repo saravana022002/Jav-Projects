@@ -33,6 +33,7 @@ public class LC344ReverseString {
     /**
      * Variant A
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static void reverseStringA(char[] s) {
         // TODO: write your solution
@@ -42,6 +43,7 @@ public class LC344ReverseString {
     /**
      * Variant B
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 8 Two pointers, converging (this chapter)
      */
     public static void reverseStringB(char[] s) {
         // TODO: write your solution

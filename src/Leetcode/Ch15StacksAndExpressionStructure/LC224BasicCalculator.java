@@ -36,6 +36,7 @@ public class LC224BasicCalculator {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int calculateA(String s) {
         // TODO: write your solution
@@ -43,8 +44,22 @@ public class LC224BasicCalculator {
     }
 
     /**
-     * Variant B
+     * Variant B - recursion: a '(' starts a nested call that returns at the matching ')'
+     * <br>Target: time O(n), space O(n)    (the call stack can get n / 2 deep)
+     * <br>Complete first: ch. 56 Recursion and the shape of a subproblem (later chapter)
+     */
+    public static int calculateRecursive(String s) {
+        // TODO: write your solution
+        throw new UnsupportedOperationException("not solved yet");
+    }
+
+    /**
+     * Variant C - this chapter's technique: stack saving the result and sign so far at each '('
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
+     */
+     * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int calculateB(String s) {
         // TODO: write your solution

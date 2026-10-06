@@ -37,6 +37,7 @@ public class LC283MoveZeroes {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static void moveZeroesA(int[] nums) {
         // TODO: write your solution
@@ -46,6 +47,7 @@ public class LC283MoveZeroes {
     /**
      * Variant B
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static void moveZeroesB(int[] nums) {
         // TODO: write your solution
@@ -55,6 +57,7 @@ public class LC283MoveZeroes {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static void moveZeroesC(int[] nums) {
         // TODO: write your solution

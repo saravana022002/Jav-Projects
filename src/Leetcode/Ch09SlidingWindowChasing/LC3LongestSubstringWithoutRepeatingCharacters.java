@@ -40,6 +40,7 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(min(n, a))    (a = alphabet size)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static int lengthOfLongestSubstringA(String s) {
         // TODO: write your solution
@@ -49,6 +50,8 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
     /**
      * Variant B
      * <br>Target: time O(n), space O(min(n, a))
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static int lengthOfLongestSubstringB(String s) {
         // TODO: write your solution
@@ -58,6 +61,8 @@ public class LC3LongestSubstringWithoutRepeatingCharacters {
     /**
      * Variant C
      * <br>Target: time O(n), space O(min(n, a))
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static int lengthOfLongestSubstringC(String s) {
         // TODO: write your solution

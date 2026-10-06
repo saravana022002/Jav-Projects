@@ -36,6 +36,7 @@ public class LC645SetMismatch {
     /**
      * Variant A
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
      */
     public static int[] findErrorNumsA(int[] nums) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC645SetMismatch {
     /**
      * Variant B
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[] findErrorNumsB(int[] nums) {
         // TODO: write your solution
@@ -54,6 +56,7 @@ public class LC645SetMismatch {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static int[] findErrorNumsC(int[] nums) {
         // TODO: write your solution

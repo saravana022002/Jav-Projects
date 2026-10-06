@@ -41,6 +41,7 @@ public class LC871MinimumNumberOfRefuelingStops {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)     (n = number of stations)
+     * <br>Complete first: ch. 64 Linear DP (later chapter; needs ch. 56, 62, 63 first)
      */
     public static int minRefuelStopsA(int target, int startFuel, int[][] stations) {
         // TODO: write your solution
@@ -50,6 +51,7 @@ public class LC871MinimumNumberOfRefuelingStops {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (this chapter)
      */
     public static int minRefuelStopsB(int target, int startFuel, int[][] stations) {
         // TODO: write your solution

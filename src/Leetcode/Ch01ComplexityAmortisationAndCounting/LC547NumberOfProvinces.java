@@ -40,6 +40,8 @@ public class LC547NumberOfProvinces {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 42 Graph representation and DFS (later chapter;
+     *       needs ch. 15, 34, 35 first)
      */
     public static int findCircleNumA(int[][] isConnected) {
         // TODO: write your solution
@@ -49,6 +51,8 @@ public class LC547NumberOfProvinces {
     /**
      * Variant B
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 43 BFS and unweighted shortest paths (later chapter;
+     *       needs ch. 15, 34, 35, 42 first)
      */
     public static int findCircleNumB(int[][] isConnected) {
         // TODO: write your solution
@@ -58,6 +62,8 @@ public class LC547NumberOfProvinces {
     /**
      * Variant C
      * <br>Target: time O(n^2 * alpha(n)), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting (this chapter)
+     *     + ch. 47 Union-find and dynamic connectivity (later chapter)
      */
     public static int findCircleNumC(int[][] isConnected) {
         // TODO: write your solution

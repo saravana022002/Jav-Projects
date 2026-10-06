@@ -40,6 +40,7 @@ public class LC1046LastStoneWeight {
     /**
      * Variant A
      * <br>Target: time O(n^2 log n), space O(1) extra
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int lastStoneWeightA(int[] stones) {
         // TODO: write your solution
@@ -49,6 +50,7 @@ public class LC1046LastStoneWeight {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (this chapter)
      */
     public static int lastStoneWeightB(int[] stones) {
         // TODO: write your solution

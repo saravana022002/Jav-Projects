@@ -33,6 +33,7 @@ public class LC905SortArrayByParity {
     /**
      * Variant A
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int[] sortArrayByParityA(int[] nums) {
         // TODO: write your solution
@@ -42,6 +43,7 @@ public class LC905SortArrayByParity {
     /**
      * Variant B
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 8 Two pointers, converging
      */
     public static int[] sortArrayByParityB(int[] nums) {
         // TODO: write your solution
@@ -51,6 +53,7 @@ public class LC905SortArrayByParity {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static int[] sortArrayByParityC(int[] nums) {
         // TODO: write your solution

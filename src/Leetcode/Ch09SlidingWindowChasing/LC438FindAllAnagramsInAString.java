@@ -41,6 +41,7 @@ public class LC438FindAllAnagramsInAString {
     /**
      * Variant A
      * <br>Target: time O(n * m), space O(1)    (n = s.length(), m = p.length())
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
      */
     public static List<Integer> findAnagramsA(String s, String p) {
         // TODO: write your solution
@@ -50,6 +51,8 @@ public class LC438FindAllAnagramsInAString {
     /**
      * Variant B
      * <br>Target: time O(26 * n + m), space O(1)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static List<Integer> findAnagramsB(String s, String p) {
         // TODO: write your solution
@@ -59,6 +62,8 @@ public class LC438FindAllAnagramsInAString {
     /**
      * Variant C
      * <br>Target: time O(n + m), space O(1)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static List<Integer> findAnagramsC(String s, String p) {
         // TODO: write your solution

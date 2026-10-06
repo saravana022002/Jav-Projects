@@ -35,6 +35,7 @@ public class LC1539KthMissingPositiveNumber {
     /**
      * Variant A
      * <br>Target: time O(n + k), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static int findKthPositiveA(int[] arr, int k) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC1539KthMissingPositiveNumber {
     /**
      * Variant B
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int findKthPositiveB(int[] arr, int k) {
         // TODO: write your solution
@@ -53,6 +55,8 @@ public class LC1539KthMissingPositiveNumber {
     /**
      * Variant C
      * <br>Target: time O(log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array
+     *     + ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static int findKthPositiveC(int[] arr, int k) {
         // TODO: write your solution

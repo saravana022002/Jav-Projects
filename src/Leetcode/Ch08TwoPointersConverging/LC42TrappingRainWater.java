@@ -38,6 +38,7 @@ public class LC42TrappingRainWater {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int trapA(int[] height) {
         // TODO: write your solution
@@ -47,6 +48,7 @@ public class LC42TrappingRainWater {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
      */
     public static int trapB(int[] height) {
         // TODO: write your solution
@@ -56,6 +58,7 @@ public class LC42TrappingRainWater {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 8 Two pointers, converging (this chapter)
      */
     public static int trapC(int[] height) {
         // TODO: write your solution

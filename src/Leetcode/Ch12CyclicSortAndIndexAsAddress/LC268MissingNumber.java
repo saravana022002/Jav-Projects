@@ -33,8 +33,9 @@ import java.util.function.Supplier;
 public class LC268MissingNumber {
 
     /**
-     * Variant A
-     * <br>Target: time O(n log n), space O(1)
+     * Variant A - brute force: sort, then find the first index whose value differs from it
+     * <br>Target: time O(n log n), space O(1) (sorting in place)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int missingNumberA(int[] nums) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC268MissingNumber {
     /**
      * Variant B
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int missingNumberB(int[] nums) {
         // TODO: write your solution
@@ -53,6 +55,7 @@ public class LC268MissingNumber {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static int missingNumberC(int[] nums) {
         // TODO: write your solution

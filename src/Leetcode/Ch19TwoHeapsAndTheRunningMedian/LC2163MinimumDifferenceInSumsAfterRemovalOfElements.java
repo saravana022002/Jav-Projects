@@ -34,6 +34,7 @@ public class LC2163MinimumDifferenceInSumsAfterRemovalOfElements {
     /**
      * Variant A
      * <br>Target: time O(n^2 log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static long minimumDifferenceA(int[] nums) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC2163MinimumDifferenceInSumsAfterRemovalOfElements {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 19 Two heaps and the running median (this chapter)
      */
     public static long minimumDifferenceB(int[] nums) {
         // TODO: write your solution

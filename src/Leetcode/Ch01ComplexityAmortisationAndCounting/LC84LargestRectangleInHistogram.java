@@ -40,6 +40,7 @@ public class LC84LargestRectangleInHistogram {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting (this chapter)
      */
     public static int largestRectangleAreaA(int[] heights) {
         // TODO: write your solution
@@ -49,6 +50,7 @@ public class LC84LargestRectangleInHistogram {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (later chapter; needs ch. 15 first)
      */
     public static int largestRectangleAreaB(int[] heights) {
         // TODO: write your solution
@@ -58,6 +60,8 @@ public class LC84LargestRectangleInHistogram {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting (this chapter)
+     *     + ch. 16 The monotonic stack (later chapter; needs ch. 15 first)
      */
     public static int largestRectangleAreaC(int[] heights) {
         // TODO: write your solution

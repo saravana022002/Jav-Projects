@@ -44,6 +44,8 @@ public class LC148SortList {
     /**
      * Variant A
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 31 Linked lists and the dummy head (later chapter)
      */
     public static ListNode sortListA(ListNode head) {
         // TODO: write your solution
@@ -51,8 +53,10 @@ public class LC148SortList {
     }
 
     /**
-     * Variant B
-     * <br>Target: time O(n log n), space O(log n)
+     * Variant B - top-down merge sort: cut the list in the middle, sort both halves, merge
+     * <br>Target: time O(n log n), space O(log n) for the recursion
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
+     *     + ch. 32 Fast and slow pointers (later chapter; needs ch. 31 first)
      */
     public static ListNode sortListB(ListNode head) {
         // TODO: write your solution
@@ -62,6 +66,8 @@ public class LC148SortList {
     /**
      * Variant C
      * <br>Target: time O(n log n), space O(1)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
+     *     + ch. 31 Linked lists and the dummy head (later chapter)
      */
     public static ListNode sortListC(ListNode head) {
         // TODO: write your solution

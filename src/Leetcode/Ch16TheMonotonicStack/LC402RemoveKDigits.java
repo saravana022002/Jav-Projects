@@ -36,6 +36,7 @@ public class LC402RemoveKDigits {
     /**
      * Variant A
      * <br>Target: time O(k * n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static String removeKdigitsA(String num, int k) {
         // TODO: write your solution
@@ -45,6 +46,7 @@ public class LC402RemoveKDigits {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (this chapter)
      */
     public static String removeKdigitsB(String num, int k) {
         // TODO: write your solution

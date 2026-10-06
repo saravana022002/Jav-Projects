@@ -36,6 +36,7 @@ public class LC1288RemoveCoveredIntervals {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int removeCoveredIntervalsA(int[][] intervals) {
         // TODO: write your solution
@@ -43,8 +44,13 @@ public class LC1288RemoveCoveredIntervals {
     }
 
     /**
-     * Variant B
-     * <br>Target: time O(n log n), space O(1)
+     * Variant B - this chapter's technique: sort the intervals, then sweep with the furthest end
+     * <br>Target: time O(n log n), space O(1) besides the sort
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 20 Intervals and sweep line (this chapter)
+     */
+    public static int removeCoveredIntervalsB(int[][] intervals) {
+        // TODO: write your solution
      */
     public static int removeCoveredIntervalsB(int[][] intervals) {
         // TODO: write your solution

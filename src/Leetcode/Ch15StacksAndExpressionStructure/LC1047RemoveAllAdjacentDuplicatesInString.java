@@ -40,6 +40,7 @@ public class LC1047RemoveAllAdjacentDuplicatesInString {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static String removeDuplicatesA(String s) {
         // TODO: write your solution
@@ -49,6 +50,7 @@ public class LC1047RemoveAllAdjacentDuplicatesInString {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static String removeDuplicatesB(String s) {
         // TODO: write your solution

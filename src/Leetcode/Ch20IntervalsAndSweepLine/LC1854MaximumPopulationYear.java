@@ -32,6 +32,7 @@ public class LC1854MaximumPopulationYear {
     /**
      * Variant A
      * <br>Target: time O(Y * n), space O(1)     (Y = number of years, here at most 101)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int maximumPopulationA(int[][] logs) {
         // TODO: write your solution
@@ -41,6 +42,8 @@ public class LC1854MaximumPopulationYear {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 8 Two pointers, converging
      */
     public static int maximumPopulationB(int[][] logs) {
         // TODO: write your solution
@@ -50,6 +53,8 @@ public class LC1854MaximumPopulationYear {
     /**
      * Variant C
      * <br>Target: time O(n + Y), space O(Y)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 20 Intervals and sweep line (this chapter)
      */
     public static int maximumPopulationC(int[][] logs) {
         // TODO: write your solution

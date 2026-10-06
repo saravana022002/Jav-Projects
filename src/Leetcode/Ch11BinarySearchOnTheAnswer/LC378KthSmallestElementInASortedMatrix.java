@@ -37,6 +37,7 @@ public class LC378KthSmallestElementInASortedMatrix {
     /**
      * Variant A
      * <br>Target: time O(n^2 log n), space O(n^2)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int kthSmallestA(int[][] matrix, int k) {
         // TODO: write your solution
@@ -46,6 +47,8 @@ public class LC378KthSmallestElementInASortedMatrix {
     /**
      * Variant B
      * <br>Target: time O(n + k log n), space O(n)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (later chapter)
+     *     + ch. 18 Heaps and the k-selection family (later chapter)
      */
     public static int kthSmallestB(int[][] matrix, int k) {
         // TODO: write your solution
@@ -55,6 +58,7 @@ public class LC378KthSmallestElementInASortedMatrix {
     /**
      * Variant C
      * <br>Target: time O(n log(max - min)), space O(1)
+     * <br>Complete first: ch. 11 Binary search on the answer (this chapter)
      */
     public static int kthSmallestC(int[][] matrix, int k) {
         // TODO: write your solution

@@ -35,6 +35,7 @@ public class LC268MissingNumber {
     /**
      * Variant A
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static int missingNumberA(int[] nums) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC268MissingNumber {
     /**
      * Variant B
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int missingNumberB(int[] nums) {
         // TODO: write your solution
@@ -53,6 +55,7 @@ public class LC268MissingNumber {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1)
+     * <br>Complete first: ch. 5 Bit manipulation as a set encoding (this chapter)
      */
     public static int missingNumberC(int[] nums) {
         // TODO: write your solution

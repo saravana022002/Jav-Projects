@@ -42,6 +42,7 @@ public class LC502IPO {
     /**
      * Variant A
      * <br>Target: time O(n * min(k, n)) (at most O(n^2)), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int findMaximizedCapitalA(int k, int w, int[] profits, int[] capital) {
         // TODO: write your solution
@@ -51,6 +52,8 @@ public class LC502IPO {
     /**
      * Variant B
      * <br>Target: time O(n log n + k log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 18 Heaps and the k-selection family (this chapter)
      */
     public static int findMaximizedCapitalB(int k, int w, int[] profits, int[] capital) {
         // TODO: write your solution

@@ -41,6 +41,7 @@ public class LC20ValidParentheses {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static boolean isValidA(String s) {
         // TODO: write your solution
@@ -50,6 +51,7 @@ public class LC20ValidParentheses {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static boolean isValidB(String s) {
         // TODO: write your solution

@@ -37,6 +37,7 @@ public class LC452MinimumNumberOfArrowsToBurstBalloons {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int findMinArrowShotsA(int[][] points) {
         // TODO: write your solution
@@ -44,8 +45,9 @@ public class LC452MinimumNumberOfArrowsToBurstBalloons {
     }
 
     /**
-     * Variant B
-     * <br>Target: time O(n log n), space O(1)
+     * Variant B - sort by start, track the shared overlap of the current group
+     * <br>Target: time O(n log n), space O(1) besides the sort
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int findMinArrowShotsB(int[][] points) {
         // TODO: write your solution
@@ -53,8 +55,9 @@ public class LC452MinimumNumberOfArrowsToBurstBalloons {
     }
 
     /**
-     * Variant C
-     * <br>Target: time O(n log n), space O(1)
+     * Variant C - this chapter's technique: sort by end, shoot at each unburst balloon's end
+     * <br>Target: time O(n log n), space O(1) besides the sort
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int findMinArrowShotsC(int[][] points) {
         // TODO: write your solution

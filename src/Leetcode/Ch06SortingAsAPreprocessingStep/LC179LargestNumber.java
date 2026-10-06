@@ -34,6 +34,7 @@ public class LC179LargestNumber {
     /**
      * Variant A
      * <br>Target: time O(n! * n), space O(n)
+     * <br>Complete first: ch. 57 Backtracking (later chapter; needs ch. 56 first)
      */
     public static String largestNumberA(int[] nums) {
         // TODO: write your solution
@@ -43,6 +44,7 @@ public class LC179LargestNumber {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static String largestNumberB(int[] nums) {
         // TODO: write your solution

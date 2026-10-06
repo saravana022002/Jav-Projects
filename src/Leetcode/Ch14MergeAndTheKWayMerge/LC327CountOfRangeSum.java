@@ -37,6 +37,7 @@ public class LC327CountOfRangeSum {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
      */
     public static int countRangeSumA(int[] nums, int lower, int upper) {
         // TODO: write your solution
@@ -46,6 +47,8 @@ public class LC327CountOfRangeSum {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 39 Fenwick trees (later chapter)
      */
     public static int countRangeSumB(int[] nums, int lower, int upper) {
         // TODO: write your solution
@@ -55,6 +58,8 @@ public class LC327CountOfRangeSum {
     /**
      * Variant C
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 2 Prefix sums and difference arrays
+     *     + ch. 14 Merge and the k-way merge (this chapter)
      */
     public static int countRangeSumC(int[] nums, int lower, int upper) {
         // TODO: write your solution

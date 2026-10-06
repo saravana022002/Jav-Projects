@@ -38,6 +38,7 @@ public class LC74SearchA2DMatrix {
     /**
      * Variant A
      * <br>Target: time O(m * n), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static boolean searchMatrixA(int[][] matrix, int target) {
         // TODO: write your solution
@@ -47,6 +48,7 @@ public class LC74SearchA2DMatrix {
     /**
      * Variant B
      * <br>Target: time O(log m + log n), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static boolean searchMatrixB(int[][] matrix, int target) {
         // TODO: write your solution
@@ -56,6 +58,7 @@ public class LC74SearchA2DMatrix {
     /**
      * Variant C
      * <br>Target: time O(log(m * n)), space O(1)
+     * <br>Complete first: ch. 10 Binary search on a sorted array (this chapter)
      */
     public static boolean searchMatrixC(int[][] matrix, int target) {
         // TODO: write your solution

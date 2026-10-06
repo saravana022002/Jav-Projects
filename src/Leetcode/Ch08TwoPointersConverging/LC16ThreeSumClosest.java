@@ -34,6 +34,7 @@ public class LC16ThreeSumClosest {
     /**
      * Variant A
      * <br>Target: time O(n^3), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int threeSumClosestA(int[] nums, int target) {
         // TODO: write your solution
@@ -43,6 +44,8 @@ public class LC16ThreeSumClosest {
     /**
      * Variant B
      * <br>Target: time O(n^2 log n), space O(1)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 10 Binary search on a sorted array (later chapter)
      */
     public static int threeSumClosestB(int[] nums, int target) {
         // TODO: write your solution
@@ -52,6 +55,8 @@ public class LC16ThreeSumClosest {
     /**
      * Variant C
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 8 Two pointers, converging (this chapter)
      */
     public static int threeSumClosestC(int[] nums, int target) {
         // TODO: write your solution

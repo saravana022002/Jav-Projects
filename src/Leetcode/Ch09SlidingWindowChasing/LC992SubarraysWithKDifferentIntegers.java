@@ -38,6 +38,7 @@ public class LC992SubarraysWithKDifferentIntegers {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
      */
     public static int subarraysWithKDistinctA(int[] nums, int k) {
         // TODO: write your solution
@@ -47,6 +48,8 @@ public class LC992SubarraysWithKDifferentIntegers {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static int subarraysWithKDistinctB(int[] nums, int k) {
         // TODO: write your solution
@@ -56,6 +59,8 @@ public class LC992SubarraysWithKDifferentIntegers {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static int subarraysWithKDistinctC(int[] nums, int k) {
         // TODO: write your solution

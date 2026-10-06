@@ -33,6 +33,7 @@ public class LC611ValidTriangleNumber {
     /**
      * Variant A
      * <br>Target: time O(n^3), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int triangleNumberA(int[] nums) {
         // TODO: write your solution
@@ -42,6 +43,8 @@ public class LC611ValidTriangleNumber {
     /**
      * Variant B
      * <br>Target: time O(n^2 log n), space O(1)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 10 Binary search on a sorted array (later chapter)
      */
     public static int triangleNumberB(int[] nums) {
         // TODO: write your solution
@@ -51,6 +54,8 @@ public class LC611ValidTriangleNumber {
     /**
      * Variant C
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 8 Two pointers, converging (this chapter)
      */
     public static int triangleNumberC(int[] nums) {
         // TODO: write your solution

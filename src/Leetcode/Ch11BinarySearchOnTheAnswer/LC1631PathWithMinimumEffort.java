@@ -41,6 +41,8 @@ public class LC1631PathWithMinimumEffort {
     /**
      * Variant A
      * <br>Target: time O(R * C * H), space O(R * C)   (R rows, C columns, H = largest height)
+     * <br>Complete first: ch. 44 Grids as graphs (later chapter;
+     *       needs ch. 15, 34, 35, 42, 43 first)
      */
     public static int minimumEffortPathA(int[][] heights) {
         // TODO: write your solution
@@ -50,6 +52,9 @@ public class LC1631PathWithMinimumEffort {
     /**
      * Variant B
      * <br>Target: time O(R * C * log(R * C)), space O(R * C)
+     * <br>Complete first: ch. 44 Grids as graphs (later chapter;
+     *       needs ch. 15, 34, 35, 42, 43 first)
+     *     + ch. 48 Dijkstra (later chapter; needs ch. 18 first)
      */
     public static int minimumEffortPathB(int[][] heights) {
         // TODO: write your solution
@@ -59,6 +64,8 @@ public class LC1631PathWithMinimumEffort {
     /**
      * Variant C
      * <br>Target: time O(R * C * log H), space O(R * C)
+     * <br>Complete first: ch. 11 Binary search on the answer (this chapter)
+     *     + ch. 44 Grids as graphs (later chapter; needs ch. 15, 34, 35, 42, 43 first)
      */
     public static int minimumEffortPathC(int[][] heights) {
         // TODO: write your solution

@@ -38,6 +38,7 @@ public class LC15ThreeSum {
     /**
      * Variant A
      * <br>Target: time O(n^3), space O(1) besides the result
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static List<List<Integer>> threeSumA(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
@@ -58,8 +59,10 @@ public class LC15ThreeSum {
     }
 
     /**
-     * Variant B
-     * <br>Target: time O(n^2 log n), space O(1) besides the result
+     * Variant B - sort, fix two numbers, binary-search the sorted rest for the third
+     * <br>Target: time O(n^2 log n), space O(1) besides the result and the sort
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
+     *     + ch. 10 Binary search on a sorted array (later chapter)
      */
     public static List<List<Integer>> threeSumB(int[] nums) {
         // TODO: write your solution
@@ -82,8 +85,10 @@ public class LC15ThreeSum {
 
 
     /**
-     * Variant C
-     * <br>Target: time O(n^2), space O(1) besides the result
+     * Variant C - this chapter's technique: sort, fix the first number, two pointers do the rest
+     * <br>Target: time O(n^2), space O(1) besides the result and the sort
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
+     *     + ch. 8 Two pointers, converging (later chapter)
      */
     public static List<List<Integer>> threeSumC(int[] nums) {
         // TODO: write your solution

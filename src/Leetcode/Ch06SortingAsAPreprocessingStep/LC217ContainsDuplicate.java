@@ -38,6 +38,7 @@ public class LC217ContainsDuplicate {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static boolean containsDuplicateA(int[] nums) {
         // TODO: write your solution
@@ -54,6 +55,7 @@ public class LC217ContainsDuplicate {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static boolean containsDuplicateB(int[] nums) {
         // TODO: write your solution
@@ -67,8 +69,9 @@ public class LC217ContainsDuplicate {
     }
 
     /**
-     * Variant C
-     * <br>Target: time O(n log n), space O(1) extra
+     * Variant C - this chapter's technique: sort nums, then look for two equal values side by side
+     * <br>Target: time O(n log n), space O(1) extra (nums is sorted in place)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static boolean containsDuplicateC(int[] nums) {
         Arrays.sort(nums);

@@ -35,6 +35,7 @@ public class LC2104SumOfSubarrayRanges {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static long subArrayRangesA(int[] nums) {
         // TODO: write your solution
@@ -44,6 +45,7 @@ public class LC2104SumOfSubarrayRanges {
     /**
      * Variant B
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 16 The monotonic stack (this chapter)
      */
     public static long subArrayRangesB(int[] nums) {
         // TODO: write your solution

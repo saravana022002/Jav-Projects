@@ -38,6 +38,7 @@ public class LC493ReversePairs {
     /**
      * Variant A
      * <br>Target: time O(n^2), space O(1)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static int reversePairsA(int[] nums) {
         // TODO: write your solution
@@ -47,6 +48,7 @@ public class LC493ReversePairs {
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 39 Fenwick trees (later chapter)
      */
     public static int reversePairsB(int[] nums) {
         // TODO: write your solution
@@ -56,6 +58,7 @@ public class LC493ReversePairs {
     /**
      * Variant C
      * <br>Target: time O(n log n), space O(n)
+     * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
      */
     public static int reversePairsC(int[] nums) {
         // TODO: write your solution

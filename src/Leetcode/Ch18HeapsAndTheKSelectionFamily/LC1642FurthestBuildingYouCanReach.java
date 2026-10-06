@@ -39,6 +39,7 @@ public class LC1642FurthestBuildingYouCanReach {
     /**
      * Variant A
      * <br>Target: time O(n^2 log n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int furthestBuildingA(int[] heights, int bricks, int ladders) {
         // TODO: write your solution
@@ -48,6 +49,8 @@ public class LC1642FurthestBuildingYouCanReach {
     /**
      * Variant B
      * <br>Target: time O(n log^2 n), space O(n)
+     * <br>Complete first: ch. 6 Sorting as a preprocessing step
+     *     + ch. 11 Binary search on the answer
      */
     public static int furthestBuildingB(int[] heights, int bricks, int ladders) {
         // TODO: write your solution
@@ -57,6 +60,7 @@ public class LC1642FurthestBuildingYouCanReach {
     /**
      * Variant C
      * <br>Target: time O(n log L), space O(L)     (L = ladders)
+     * <br>Complete first: ch. 18 Heaps and the k-selection family (this chapter)
      */
     public static int furthestBuildingC(int[] heights, int bricks, int ladders) {
         // TODO: write your solution

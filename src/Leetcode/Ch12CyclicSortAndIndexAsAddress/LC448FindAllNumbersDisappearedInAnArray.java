@@ -39,6 +39,7 @@ public class LC448FindAllNumbersDisappearedInAnArray {
     /**
      * Variant A
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform
      */
     public static List<Integer> findDisappearedNumbersA(int[] nums) {
         // TODO: write your solution
@@ -48,6 +49,7 @@ public class LC448FindAllNumbersDisappearedInAnArray {
     /**
      * Variant B
      * <br>Target: time O(n), space O(1) extra (the output list does not count)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static List<Integer> findDisappearedNumbersB(int[] nums) {
         // TODO: write your solution
@@ -57,6 +59,7 @@ public class LC448FindAllNumbersDisappearedInAnArray {
     /**
      * Variant C
      * <br>Target: time O(n), space O(1) extra (the output list does not count)
+     * <br>Complete first: ch. 12 Cyclic sort and index-as-address (this chapter)
      */
     public static List<Integer> findDisappearedNumbersC(int[] nums) {
         // TODO: write your solution

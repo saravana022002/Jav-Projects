@@ -38,8 +38,9 @@ import java.util.function.Supplier;
 public class LC76MinimumWindowSubstring {
 
     /**
-     * Variant A
-     * <br>Target: time O(m^2 + n), space O(1)
+     * Variant A - brute force: from every start, extend right until the window covers t
+     * <br>Target: time O(m^2 + n), space O(1)    (52 letter counts)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
      */
     public static String minWindowA(String s, String t) {
         // TODO: write your solution
@@ -49,6 +50,8 @@ public class LC76MinimumWindowSubstring {
     /**
      * Variant B
      * <br>Target: time O(52 * m + n), space O(1)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static String minWindowB(String s, String t) {
         // TODO: write your solution
@@ -58,6 +61,8 @@ public class LC76MinimumWindowSubstring {
     /**
      * Variant C
      * <br>Target: time O(m + n), space O(1)
+     * <br>Complete first: ch. 4 Frequency and multiset reasoning
+     *     + ch. 9 Sliding window, chasing (this chapter)
      */
     public static String minWindowC(String s, String t) {
         // TODO: write your solution

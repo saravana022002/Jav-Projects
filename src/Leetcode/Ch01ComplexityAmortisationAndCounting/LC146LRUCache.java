@@ -45,6 +45,7 @@ public class LC146LRUCache {
     /**
      * Variant A
      * <br>Target: time O(capacity) per get and per put, space O(capacity)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting (this chapter)
      */
     public static class LRUCacheA {
         public LRUCacheA(int capacity) {
@@ -66,6 +67,7 @@ public class LC146LRUCache {
     /**
      * Variant B
      * <br>Target: time O(1) per get and per put, space O(capacity)
+     * <br>Complete first: ch. 3 Hashing as a search-to-lookup transform (later chapter)
      */
     public static class LRUCacheB {
         public LRUCacheB(int capacity) {
@@ -87,6 +89,8 @@ public class LC146LRUCache {
     /**
      * Variant C
      * <br>Target: time O(1) per get and per put, space O(capacity)
+     * <br>Complete first: ch. 1 Complexity, amortisation, and counting (this chapter)
+     *     + ch. 33 Designing data structures (later chapter; needs ch. 3, 31 first)
      */
     public static class LRUCacheC {
         public LRUCacheC(int capacity) {
