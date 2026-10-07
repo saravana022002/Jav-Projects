@@ -57,12 +57,9 @@ public class LC703KthLargestElementInAStream {
     }
 
     /**
-     * Variant B - sorted list of all scores; binary-search the slot, insert, read the k-th
-     * <br>Target: time O(n) per add (the shifting), space O(n)
+     * Variant B
+     * <br>Target: time O(n) per add, space O(n)
      * <br>Complete first: ch. 10 Binary search on a sorted array
-     */
-    public static class KthLargestB {
-        public KthLargestB(int k, int[] nums) {
      */
     public static class KthLargestB {
         public KthLargestB(int k, int[] nums) {

@@ -69,8 +69,8 @@ public class LC217ContainsDuplicate {
     }
 
     /**
-     * Variant C - this chapter's technique: sort nums, then look for two equal values side by side
-     * <br>Target: time O(n log n), space O(1) extra (nums is sorted in place)
+     * Variant C
+     * <br>Target: time O(n log n), space O(1) extra
      * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static boolean containsDuplicateC(int[] nums) {

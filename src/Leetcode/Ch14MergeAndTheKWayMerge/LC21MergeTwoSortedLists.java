@@ -60,8 +60,8 @@ public class LC21MergeTwoSortedLists {
     }
 
     /**
-     * Variant B - recursion: the smaller head, followed by the merge of everything after it
-     * <br>Target: time O(m + n), space O(m + n) for the call stack
+     * Variant B
+     * <br>Target: time O(m + n), space O(m + n)
      * <br>Complete first: ch. 31 Linked lists and the dummy head (later chapter)
      *     + ch. 56 Recursion and the shape of a subproblem (later chapter)
      */

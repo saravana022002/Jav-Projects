@@ -41,8 +41,8 @@ public class LC274HIndex {
     }
 
     /**
-     * Variant B - sort the citations, then scan the sorted array once
-     * <br>Target: time O(n log n), space O(1)    (sort the input array in place)
+     * Variant B
+     * <br>Target: time O(n log n), space O(1)
      * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int hIndexB(int[] citations) {

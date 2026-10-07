@@ -53,8 +53,8 @@ public class LC148SortList {
     }
 
     /**
-     * Variant B - top-down merge sort: cut the list in the middle, sort both halves, merge
-     * <br>Target: time O(n log n), space O(log n) for the recursion
+     * Variant B
+     * <br>Target: time O(n log n), space O(log n)
      * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
      *     + ch. 32 Fast and slow pointers (later chapter; needs ch. 31 first)
      */

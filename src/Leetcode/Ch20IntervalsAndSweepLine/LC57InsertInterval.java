@@ -46,23 +46,10 @@ public class LC57InsertInterval {
     }
 
     /**
-     * Variant B - binary-search the first and last overlapped intervals, then splice the answer
-     * <br>Target: time O(n) (the search itself is O(log n)), space O(n)
+     * Variant B
+     * <br>Target: time O(n), space O(n)
      * <br>Complete first: ch. 10 Binary search on a sorted array
      *     + ch. 20 Intervals and sweep line (this chapter)
-     */
-    public static int[][] insertBinarySearch(int[][] intervals, int[] newInterval) {
-        // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
-    }
-
-    /**
-     * Variant C - this chapter's technique: one pass, no sort - copy, merge, copy
-     * <br>Target: time O(n), space O(n)
-     * <br>Complete first: ch. 20 Intervals and sweep line (this chapter)
-     */
-     * <br>Target: time O(n), space O(n)
-     * <br>Complete first: ch. 20 Intervals and sweep line (this chapter)
      */
     public static int[][] insertB(int[][] intervals, int[] newInterval) {
         // TODO: write your solution
@@ -72,6 +59,7 @@ public class LC57InsertInterval {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 20 Intervals and sweep line (this chapter)
      */
     public static int[][] insertC(int[][] intervals, int[] newInterval) {
         // TODO: write your solution

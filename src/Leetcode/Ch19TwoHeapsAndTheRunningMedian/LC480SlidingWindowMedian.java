@@ -44,13 +44,10 @@ public class LC480SlidingWindowMedian {
     }
 
     /**
-     * Variant B - keep the window as a sorted array: binary-search the leaver and the newcomer
-     * <br>Target: time O(n * k) (shifting), space O(k)
+     * Variant B
+     * <br>Target: time O(n * k), space O(k)
      * <br>Complete first: ch. 9 Sliding window, chasing
      *     + ch. 10 Binary search on a sorted array
-     */
-    public static double[] medianSlidingWindowB(int[] nums, int k) {
-        // TODO: write your solution
      */
     public static double[] medianSlidingWindowB(int[] nums, int k) {
         // TODO: write your solution

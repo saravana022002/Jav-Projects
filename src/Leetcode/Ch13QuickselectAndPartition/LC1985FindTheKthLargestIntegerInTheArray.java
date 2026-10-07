@@ -34,8 +34,8 @@ import java.util.function.Supplier;
 public class LC1985FindTheKthLargestIntegerInTheArray {
 
     /**
-     * Variant A - sort the strings with a numeric comparator, read position n - k
-     * <br>Target: time O(n log n * L) with L = longest string, space O(n) for the sort
+     * Variant A
+     * <br>Target: time O(n log n * L) with L = longest string, space O(n)
      * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static String kthLargestNumberA(String[] nums, int k) {

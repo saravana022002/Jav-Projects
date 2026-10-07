@@ -44,13 +44,10 @@ public class LC1288RemoveCoveredIntervals {
     }
 
     /**
-     * Variant B - this chapter's technique: sort the intervals, then sweep with the furthest end
-     * <br>Target: time O(n log n), space O(1) besides the sort
+     * Variant B
+     * <br>Target: time O(n log n), space O(1)
      * <br>Complete first: ch. 6 Sorting as a preprocessing step
      *     + ch. 20 Intervals and sweep line (this chapter)
-     */
-    public static int removeCoveredIntervalsB(int[][] intervals) {
-        // TODO: write your solution
      */
     public static int removeCoveredIntervalsB(int[][] intervals) {
         // TODO: write your solution

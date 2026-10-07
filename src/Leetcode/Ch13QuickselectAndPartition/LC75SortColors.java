@@ -48,8 +48,8 @@ public class LC75SortColors {
     }
 
     /**
-     * Variant B - count the 0s, 1s and 2s, then overwrite the array
-     * <br>Target: time O(n), space O(1)   (two passes)
+     * Variant B
+     * <br>Target: time O(n), space O(1)
      * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix
      */
     public static void sortColorsB(int[] nums) {
@@ -58,8 +58,8 @@ public class LC75SortColors {
     }
 
     /**
-     * Variant C - this chapter's technique: a single pass that partitions into three bands
-     * <br>Target: time O(n), space O(1)   (one pass)
+     * Variant C
+     * <br>Target: time O(n), space O(1)
      * <br>Complete first: ch. 13 Quickselect and partition (this chapter)
      */
     public static void sortColorsC(int[] nums) {

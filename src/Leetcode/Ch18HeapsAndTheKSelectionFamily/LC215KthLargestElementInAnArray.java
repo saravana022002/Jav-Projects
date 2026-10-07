@@ -38,12 +38,9 @@ import java.util.function.Supplier;
 public class LC215KthLargestElementInAnArray {
 
     /**
-     * Variant A - sort the array, then read the element at position n - k
-     * <br>Target: time O(n log n), space O(1) extra (the sort works in place)
+     * Variant A
+     * <br>Target: time O(n log n), space O(1) extra
      * <br>Complete first: ch. 6 Sorting as a preprocessing step
-     */
-    public static int findKthLargestA(int[] nums, int k) {
-        // TODO: write your solution
      */
     public static int findKthLargestA(int[] nums, int k) {
         // TODO: write your solution

@@ -1,6 +1,7 @@
 package Leetcode.Ch06SortingAsAPreprocessingStep;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Objects;
 import java.util.function.Supplier;
 
@@ -41,22 +42,52 @@ public class LC452MinimumNumberOfArrowsToBurstBalloons {
      */
     public static int findMinArrowShotsA(int[][] points) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        boolean[] took = new boolean[points.length];
+        int bursts = 0;
+        int left = points.length;
+        while(left > 0){
+            int i = -1;
+            for (int j = 0; j < points.length; j++) {
+                if(took[j]) continue;
+                if(i == -1 || points[i][1] > points[j][1]) i = j;
+            }
+            took[i] = true;
+            left--;
+            int idx2 = points[i][1];
+            bursts++;
+            for (int j = 0; j < points.length; j++) {
+                int jdx1 = points[j][0];
+                if (!took[j] && jdx1 <= idx2) {
+                    took[j] = true;
+                    left--;
+                }
+            }
+        }
+        return bursts;
     }
 
     /**
-     * Variant B - sort by start, track the shared overlap of the current group
-     * <br>Target: time O(n log n), space O(1) besides the sort
+     * Variant B
+     * <br>Target: time O(n log n), space O(1)
      * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int findMinArrowShotsB(int[][] points) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        Arrays.sort(points, Comparator.comparingInt(a -> a[1]));
+        int arrows = 1;
+        int x = points[0][1];
+        for (int i = 1; i < points.length; i++) {
+            if(x < points[i][0]){
+                arrows++;
+                x = points[i][1];
+            }
+        }
+        return arrows;
     }
 
     /**
-     * Variant C - this chapter's technique: sort by end, shoot at each unburst balloon's end
-     * <br>Target: time O(n log n), space O(1) besides the sort
+     * Variant C
+     * <br>Target: time O(n log n), space O(1)
      * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      */
     public static int findMinArrowShotsC(int[][] points) {

@@ -44,22 +44,9 @@ public class LC224BasicCalculator {
     }
 
     /**
-     * Variant B - recursion: a '(' starts a nested call that returns at the matching ')'
-     * <br>Target: time O(n), space O(n)    (the call stack can get n / 2 deep)
+     * Variant B
+     * <br>Target: time O(n), space O(n)
      * <br>Complete first: ch. 56 Recursion and the shape of a subproblem (later chapter)
-     */
-    public static int calculateRecursive(String s) {
-        // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
-    }
-
-    /**
-     * Variant C - this chapter's technique: stack saving the result and sign so far at each '('
-     * <br>Target: time O(n), space O(n)
-     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
-     */
-     * <br>Target: time O(n), space O(n)
-     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int calculateB(String s) {
         // TODO: write your solution
@@ -69,6 +56,7 @@ public class LC224BasicCalculator {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 15 Stacks and expression structure (this chapter)
      */
     public static int calculateC(String s) {
         // TODO: write your solution

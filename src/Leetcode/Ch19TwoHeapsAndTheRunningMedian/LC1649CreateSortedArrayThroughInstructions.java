@@ -44,12 +44,9 @@ public class LC1649CreateSortedArrayThroughInstructions {
     }
 
     /**
-     * Variant B - keep a sorted array; binary-search both counts, insert by shifting
-     * <br>Target: time O(n^2) worst case (only the shifting; the searches are O(log n)), space O(n)
+     * Variant B
+     * <br>Target: time O(n^2) worst case, space O(n)
      * <br>Complete first: ch. 10 Binary search on a sorted array
-     */
-    public static int createSortedArrayB(int[] instructions) {
-        // TODO: write your solution
      */
     public static int createSortedArrayB(int[] instructions) {
         // TODO: write your solution

@@ -71,8 +71,8 @@ public class LC23MergeKSortedLists {
     }
 
     /**
-     * Variant C - merge the lists in pairs, round after round, until one list is left
-     * <br>Target: time O(N log k), space O(1) extra (O(log k) if you use recursion)
+     * Variant C
+     * <br>Target: time O(N log k), space O(1) extra
      * <br>Complete first: ch. 14 Merge and the k-way merge (this chapter)
      *     + ch. 31 Linked lists and the dummy head (later chapter)
      */

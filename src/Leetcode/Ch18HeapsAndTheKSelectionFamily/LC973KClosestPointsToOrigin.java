@@ -35,12 +35,9 @@ import java.util.function.Supplier;
 public class LC973KClosestPointsToOrigin {
 
     /**
-     * Variant A - sort all points by their distance to the origin, take the first k
-     * <br>Target: time O(n log n), space O(n) for the sort (besides the answer)
+     * Variant A
+     * <br>Target: time O(n log n), space O(n) besides the answer
      * <br>Complete first: ch. 6 Sorting as a preprocessing step
-     */
-    public static int[][] kClosestA(int[][] points, int k) {
-        // TODO: write your solution
      */
     public static int[][] kClosestA(int[][] points, int k) {
         // TODO: write your solution

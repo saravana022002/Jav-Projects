@@ -55,13 +55,10 @@ public class LC732MyCalendarIII {
     }
 
     /**
-     * Variant B - this chapter's technique: ordered map of +1/-1 changes per coordinate, then sweep
-     * <br>Target: time O(n) per book (O(log n) to update, O(n) to sweep), space O(n)
+     * Variant B
+     * <br>Target: time O(n) per book, space O(n)
      * <br>Complete first: ch. 20 Intervals and sweep line (this chapter)
      *     + ch. 41 Ordered maps in practice (later chapter)
-     */
-    public static class MyCalendarThreeB {
-        public MyCalendarThreeB() {
      */
     public static class MyCalendarThreeB {
         public MyCalendarThreeB() {

@@ -75,8 +75,8 @@ public class LC881BoatsToSavePeople {
     }
 
     /**
-     * Variant C - this chapter's technique: sort, then two pointers pair the lightest with heaviest
-     * <br>Target: time O(n log n), space O(1) besides the sort
+     * Variant C
+     * <br>Target: time O(n log n), space O(1)
      * <br>Complete first: ch. 6 Sorting as a preprocessing step (this chapter)
      *     + ch. 8 Two pointers, converging (later chapter)
      */

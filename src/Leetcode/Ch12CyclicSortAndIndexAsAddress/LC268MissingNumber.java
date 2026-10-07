@@ -33,8 +33,8 @@ import java.util.function.Supplier;
 public class LC268MissingNumber {
 
     /**
-     * Variant A - brute force: sort, then find the first index whose value differs from it
-     * <br>Target: time O(n log n), space O(1) (sorting in place)
+     * Variant A
+     * <br>Target: time O(n log n), space O(1)
      * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int missingNumberA(int[] nums) {

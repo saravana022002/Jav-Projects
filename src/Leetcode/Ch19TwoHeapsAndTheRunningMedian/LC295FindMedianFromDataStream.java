@@ -62,12 +62,9 @@ public class LC295FindMedianFromDataStream {
     }
 
     /**
-     * Variant B - keep the numbers sorted at all times: binary-search the slot, then insert
-     * <br>Target: time O(n) per addNum (shifting), O(1) per findMedian, space O(n)
+     * Variant B
+     * <br>Target: time O(n) per addNum, O(1) per findMedian, space O(n)
      * <br>Complete first: ch. 10 Binary search on a sorted array
-     */
-    public static class MedianFinderB {
-        public MedianFinderB() {
      */
     public static class MedianFinderB {
         public MedianFinderB() {

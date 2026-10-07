@@ -42,8 +42,8 @@ public class LC462MinimumMovesToEqualArrayElementsII {
     }
 
     /**
-     * Variant B - sort the array, then read the best common target off the sorted order
-     * <br>Target: time O(n log n), space O(1) extra (the sort works in place)
+     * Variant B
+     * <br>Target: time O(n log n), space O(1) extra
      * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int minMoves2B(int[] nums) {

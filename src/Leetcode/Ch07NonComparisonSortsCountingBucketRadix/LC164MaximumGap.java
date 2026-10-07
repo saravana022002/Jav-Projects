@@ -31,8 +31,8 @@ import java.util.function.Supplier;
 public class LC164MaximumGap {
 
     /**
-     * Variant A - sort the array, then compare neighbours
-     * <br>Target: time O(n log n), space O(1)    (sort the input array in place)
+     * Variant A
+     * <br>Target: time O(n log n), space O(1)
      * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int maximumGapA(int[] nums) {
@@ -41,9 +41,7 @@ public class LC164MaximumGap {
     }
 
     /**
-     * Variant B - radix sort the values (one counting pass per digit), then compare neighbours
-     * <br>Target: time O(n), space O(n)    (the number of digits is fixed by the value range)
-     * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
+     * Variant B
      * <br>Target: time O(n), space O(n)
      * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
      */
@@ -55,6 +53,7 @@ public class LC164MaximumGap {
     /**
      * Variant C
      * <br>Target: time O(n), space O(n)
+     * <br>Complete first: ch. 7 Non-comparison sorts: counting, bucket, radix (this chapter)
      */
     public static int maximumGapC(int[] nums) {
         // TODO: write your solution

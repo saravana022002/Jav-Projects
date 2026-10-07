@@ -47,8 +47,8 @@ public class LC912SortAnArray {
     }
 
     /**
-     * Variant B - hand-written O(n log n) comparison sort (merge sort or heap sort)
-     * <br>Target: time O(n log n), space O(n)    (heap sort gets away with O(1))
+     * Variant B
+     * <br>Target: time O(n log n), space O(n)
      * <br>Complete first: ch. 6 Sorting as a preprocessing step
      */
     public static int[] sortArrayB(int[] nums) {

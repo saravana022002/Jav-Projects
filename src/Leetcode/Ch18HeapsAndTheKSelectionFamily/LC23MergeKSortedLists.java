@@ -60,13 +60,10 @@ public class LC23MergeKSortedLists {
     }
 
     /**
-     * Variant B - merge the lists two at a time, round after round
-     * <br>Target: time O(N log k), space O(1) extra (O(log k) if you use recursion)
+     * Variant B
+     * <br>Target: time O(N log k), space O(1) extra
      * <br>Complete first: ch. 14 Merge and the k-way merge
      *     + ch. 31 Linked lists and the dummy head (later chapter)
-     */
-    public static ListNode mergeKListsB(ListNode[] lists) {
-        // TODO: write your solution
      */
     public static ListNode mergeKListsB(ListNode[] lists) {
         // TODO: write your solution

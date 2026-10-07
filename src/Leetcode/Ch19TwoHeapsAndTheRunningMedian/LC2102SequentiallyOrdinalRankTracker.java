@@ -67,12 +67,9 @@ public class LC2102SequentiallyOrdinalRankTracker {
     }
 
     /**
-     * Variant B - keep the list sorted at all times: binary-search the slot, insert, index by i
-     * <br>Target: time O(n) per add (shifting), O(1) per get, space O(n)
+     * Variant B
+     * <br>Target: time O(n) per add, O(1) per get, space O(n)
      * <br>Complete first: ch. 10 Binary search on a sorted array
-     */
-    public static class SORTrackerB {
-        public SORTrackerB() {
      */
     public static class SORTrackerB {
         public SORTrackerB() {
