@@ -1,6 +1,8 @@
 package Leetcode.Ch07NonComparisonSortsCountingBucketRadix;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
 import java.util.function.Supplier;
 
@@ -71,7 +73,37 @@ public class LC347TopKFrequentElements {
      */
     public static int[] topKFrequentC(int[] nums, int k) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int[] freq = new int[20001];
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < nums.length; i++) {
+            freq[nums[i] + 10000]++;
+            max = Math.max(max, freq[nums[i] + 10000]);
+        }
+
+        List<Integer>[] ch = new List[max + 1];
+        for (int i = 0; i < 20001; i++) {
+            if(freq[i] > 0){
+                if(ch[freq[i]] == null) ch[freq[i]] = new ArrayList<>();
+                ch[freq[i]].add(i - 10000);
+            }
+        }
+        int[] ans = new int[k];
+        int m = 0;
+        for (int i = ch.length - 1; i >= 0; i--) {
+            if(ch[i] != null){
+                for (int j = 0; j < ch[i].size(); j++) {
+                    ans[m] = ch[i].get(j);
+                    m++;
+                    if(m == k){
+                        break;
+                    }
+                }
+            }
+            if(m == k){
+                break;
+            }
+        }
+        return ans;
     }
 
     public static void main(String[] args) {

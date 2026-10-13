@@ -53,13 +53,35 @@ public class LC1370IncreasingDecreasingString {
      */
     public static String sortStringB(String s) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        StringBuilder res = new StringBuilder();
+        int[] alpha = new int[26];
+        int totalStrlen = s.length();
+        for (int i = 0; i < totalStrlen; i++) {
+            alpha[s.charAt(i) - 'a']++;
+        }
+        while (res.length() < totalStrlen){
+            for (int i = 0; i < 26; i++) {
+                if (alpha[i] > 0){
+                    res.append((char) ('a' + i));
+                    alpha[i]--;
+                }
+            }
+            for (int i = 25; i > 0; i--) {
+                if (alpha[i] > 0){
+                    res.append((char) ('a' + i));
+                    alpha[i]--;
+                }
+            }
+        }
+        return res.toString();
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC1370IncreasingDecreasingString::sortStringA);
-        runAll("B", LC1370IncreasingDecreasingString::sortStringB);
+        String  s = "acdlnoqrsyysrqonldcadryr";
+        sortStringB(s);
+//        runAll("A", LC1370IncreasingDecreasingString::sortStringA);
+//        runAll("B", LC1370IncreasingDecreasingString::sortStringB);
         System.out.println(passed + "/" + total + " passed");
     }
 

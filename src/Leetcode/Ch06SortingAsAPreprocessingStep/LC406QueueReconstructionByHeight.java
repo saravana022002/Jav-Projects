@@ -1,6 +1,8 @@
 package Leetcode.Ch06SortingAsAPreprocessingStep;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
 import java.util.function.Supplier;
 
@@ -39,7 +41,15 @@ public class LC406QueueReconstructionByHeight {
      */
     public static int[][] reconstructQueueA(int[][] people) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        Arrays.sort(people, (a, b) -> a[0] != b[0]
+                ? Integer.compare(b[0], a[0])
+                : Integer.compare(a[1], b[1]));
+
+        List<int[]> q = new ArrayList<>();
+        for (int[] p : people) {
+            q.add(p[1], p);              // stand at index k
+        }
+        return q.toArray(new int[q.size()][]);
     }
 
     /**
@@ -65,9 +75,11 @@ public class LC406QueueReconstructionByHeight {
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC406QueueReconstructionByHeight::reconstructQueueA);
-        runAll("B", LC406QueueReconstructionByHeight::reconstructQueueB);
-        runAll("C", LC406QueueReconstructionByHeight::reconstructQueueC);
+        int[][] ans = {{7,0}, {7,1}, {6,2}, {5,1}, {5,4}, {4,4}};
+        reconstructQueueA(ans);
+//        runAll("A", LC406QueueReconstructionByHeight::reconstructQueueA);
+//        runAll("B", LC406QueueReconstructionByHeight::reconstructQueueB);
+//        runAll("C", LC406QueueReconstructionByHeight::reconstructQueueC);
         System.out.println(passed + "/" + total + " passed");
     }
 

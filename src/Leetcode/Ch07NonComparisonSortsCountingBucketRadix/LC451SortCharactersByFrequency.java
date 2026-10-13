@@ -1,6 +1,7 @@
 package Leetcode.Ch07NonComparisonSortsCountingBucketRadix;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Objects;
 import java.util.function.Supplier;
 
@@ -44,7 +45,23 @@ public class LC451SortCharactersByFrequency {
      */
     public static String frequencySortA(String s) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int[][] freq = new int[128][2];
+        for (int i = 0; i < s.length(); i++) {
+            freq[s.charAt(i)][0] = s.charAt(i);
+            freq[s.charAt(i)][1]++;
+        }
+        Arrays.sort(freq, Comparator.comparingInt(a -> a[1]));
+
+        StringBuilder str = new StringBuilder();
+        for (int i = freq.length - 1; i > 0; i--) {
+            if(freq[i][1] == 0){
+                break;
+            }
+            char[] chars = new char[freq[i][1]];
+            Arrays.fill(chars, (char) (freq[i][0]));
+            str.append(chars);
+        }
+        return str.toString();
     }
 
     /**
@@ -55,7 +72,25 @@ public class LC451SortCharactersByFrequency {
      */
     public static String frequencySortB(String s) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int max = Integer.MIN_VALUE;
+
+        int[][] freq = new int[128][2];
+        for (int i = 0; i < s.length(); i++) {
+            freq[s.charAt(i)][0] = s.charAt(i);
+            freq[s.charAt(i)][1]++;
+        }
+        Arrays.sort(freq, Comparator.comparingInt(a -> a[1]));
+
+        StringBuilder str = new StringBuilder();
+        for (int i = freq.length - 1; i > 0; i--) {
+            if(freq[i][1] == 0){
+                break;
+            }
+            char[] chars = new char[freq[i][1]];
+            Arrays.fill(chars, (char) (freq[i][0]));
+            str.append(chars);
+        }
+        return str.toString();
     }
 
     /**
@@ -66,7 +101,23 @@ public class LC451SortCharactersByFrequency {
      */
     public static String frequencySortC(String s) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+
+        int[][] freq = new int[128][2];
+        for (int i = 0; i < s.length(); i++) {
+            freq[s.charAt(i)][0] = s.charAt(i);
+            freq[s.charAt(i)][1]++;
+        }
+        Arrays.sort(freq, Comparator.comparingInt(a -> a[1]));
+
+        StringBuilder str = new StringBuilder();
+        for (int i = freq.length - 1; i > 0; i--) {
+            if(freq[i][1] > 0) {
+                char[] chars = new char[freq[i][1]];
+                Arrays.fill(chars, (char) (freq[i][0]));
+                str.append(chars);
+            }
+        }
+        return str.toString();
     }
 
     public static void main(String[] args) {

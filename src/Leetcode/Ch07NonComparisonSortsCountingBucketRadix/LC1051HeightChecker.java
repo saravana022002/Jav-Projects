@@ -39,7 +39,15 @@ public class LC1051HeightChecker {
      */
     public static int heightCheckerA(int[] heights) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int[] expected = heights.clone();
+        Arrays.sort(expected);
+        int ans = 0;
+        for (int i = 0; i < heights.length; i++) {
+            if(expected[i] != heights[i]){
+                ans++;
+            }
+        }
+        return ans;
     }
 
     /**
@@ -49,7 +57,20 @@ public class LC1051HeightChecker {
      */
     public static int heightCheckerB(int[] heights) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int[] count = new int[101];
+        for (int height : heights) {
+            count[height]++;
+        }
+        int j = 0;
+        int ans = 0;
+        for (int i = 0; i < count.length; i++) {
+            while (count[i] > 0){
+                if(heights[j] != i) ans++;
+                count[i]--;
+                j++;
+            }
+        }
+        return ans;
     }
 
     public static void main(String[] args) {

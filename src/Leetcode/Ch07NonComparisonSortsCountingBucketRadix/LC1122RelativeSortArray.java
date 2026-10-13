@@ -60,7 +60,27 @@ public class LC1122RelativeSortArray {
      */
     public static int[] relativeSortArrayC(int[] arr1, int[] arr2) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+
+        int[] ints = new int[1001];
+        for (int j : arr1) {
+            ints[j]++;
+        }
+        int j = 0;
+        for (int k : arr2) {
+            while (ints[k] > 0) {
+                arr1[j] = k;
+                ints[k]--;
+                j++;
+            }
+        }
+        for (int i = 0; i < ints.length; i++) {
+            while (ints[i] > 0){
+                arr1[j] = i;
+                ints[i]--;
+                j++;
+            }
+        }
+        return arr1;
     }
 
     public static void main(String[] args) {

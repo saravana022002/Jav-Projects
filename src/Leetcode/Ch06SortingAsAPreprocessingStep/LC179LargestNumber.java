@@ -1,6 +1,7 @@
 package Leetcode.Ch06SortingAsAPreprocessingStep;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Objects;
 import java.util.function.Supplier;
 
@@ -41,6 +42,44 @@ public class LC179LargestNumber {
         throw new UnsupportedOperationException("not solved yet");
     }
 
+
+    /**
+     * Variant C
+     * <br>Target: time O(n^2), space O(n)
+     * <br>Complete first: ch. 57 Backtracking (later chapter; needs ch. 56 first)
+     */
+    public static String largestNumberC(int[] nums) {
+        // TODO: write your solution
+        String[] str = new String[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            str[i] = ""+nums[i];
+        }
+        boolean changed = true;
+        while (changed) {
+            changed = false;
+            String temp1;
+            String temp2;
+            String temp;
+            for (int i = 1; i < nums.length; i++) {
+                temp1 = str[i - 1] + str[i];
+                temp2 = str[i] + str[i - 1];
+                if(temp2.compareTo(temp1) > 0){
+                    temp = str[i - 1];
+                    str[i - 1] = str[i];
+                    str[i] = temp;
+                    changed = true;
+                }
+            }
+        }
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String s : str) {
+            stringBuilder.append(s);
+        }
+        String ans = stringBuilder.toString();
+        if(ans.charAt(0) == '0') return "0";
+        return ans;
+    }
+
     /**
      * Variant B
      * <br>Target: time O(n log n), space O(n)
@@ -48,13 +87,20 @@ public class LC179LargestNumber {
      */
     public static String largestNumberB(int[] nums) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        String[] str = new String[nums.length];
+        for (int i = 0; i < nums.length; i++) str[i] = ""+nums[i];
+        Arrays.sort(str, (a, b) -> (b + a).compareTo(a + b));
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < nums.length; i++) stringBuilder.append(str[i]);
+        return stringBuilder.toString();
     }
 
     public static void main(String[] args) {
         // every case prints PASS or FAIL - all fail until you implement the methods
-        runAll("A", LC179LargestNumber::largestNumberA);
-        runAll("B", LC179LargestNumber::largestNumberB);
+
+        largestNumberB(new int[]{3, 30, 34, 5, 9});
+//        runAll("A", LC179LargestNumber::largestNumberA);
+//        runAll("B", LC179LargestNumber::largestNumberB);
         System.out.println(passed + "/" + total + " passed");
     }
 

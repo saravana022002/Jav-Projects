@@ -53,7 +53,16 @@ public class LC75SortColors {
      */
     public static void sortColorsB(int[] nums) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int[] count = new int[3];
+        for (int num : nums) {
+            count[num]++;
+        }
+        int k = 0;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < count[i]; j++) {
+                nums[k++] = i;
+            }
+        }
     }
 
     /**
