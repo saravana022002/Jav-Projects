@@ -38,7 +38,13 @@ public class LC977SquaresOfASortedArray {
      */
     public static int[] sortedSquaresA(int[] nums) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+
+        int[] ans = new int[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            ans[i] = (int) Math.pow(nums[i], 2);
+        }
+        Arrays.sort(ans);
+        return ans;
     }
 
     /**
@@ -58,7 +64,21 @@ public class LC977SquaresOfASortedArray {
      */
     public static int[] sortedSquaresC(int[] nums) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int[] ans = new int[nums.length];
+        int l = 0;
+        int r = nums.length - 1;
+        int k = r;
+        while(l <= r){
+            if(Math.abs(nums[l]) >= Math.abs(nums[r])){
+                ans[k] = (int) Math.pow(nums[l], 2);
+                l++;
+            }else {
+                ans[k] = (int) Math.pow(nums[r], 2);
+                r--;
+            }
+            k--;
+        }
+        return ans;
     }
 
     public static void main(String[] args) {
