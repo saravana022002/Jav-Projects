@@ -1,8 +1,6 @@
 package Leetcode.Ch07NonComparisonSortsCountingBucketRadix;
 
-import java.util.List;
-import java.util.Arrays;
-import java.util.Objects;
+import java.util.*;
 import java.util.function.Supplier;
 
 /**
@@ -66,7 +64,31 @@ public class LC692TopKFrequentWords {
      */
     public static List<String> topKFrequentC(String[] words, int k) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        Map<String, Integer> map = new HashMap<>();
+        for (String num : words) map.put(num, map.getOrDefault(num, 0) + 1);
+
+        List<String>[] ch = new List[words.length + 1];
+        for (Map.Entry<String, Integer> entry : map.entrySet()){
+            int f = entry.getValue();
+            if (f == 0) continue;
+            if(ch[f] == null) ch[f] = new ArrayList<>();
+            ch[f].add(entry.getKey());
+        }
+
+        List<String> ans = new ArrayList<>();
+        int m = 0;
+        for (int i = ch.length - 1; i >= 1; i--) {
+            if (ch[i] == null) continue;
+            Collections.sort(ch[i]);
+            for (String v : ch[i]) {
+                ans.add(v);
+                m++;
+                if(m == k) {
+                    return ans;
+                }
+            }
+        }
+        return ans;
     }
 
     public static void main(String[] args) {

@@ -38,7 +38,14 @@ public class LC11ContainerWithMostWater {
      */
     public static int maxAreaA(int[] height) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < height.length; i++) {
+            for (int j = i + 1; j < height.length; j++) {
+                int h = Math.min(height[i], height[j]);
+                max = Math.max(max, h * (j - i));
+            }
+        }
+        return max;
     }
 
     /**
@@ -48,7 +55,16 @@ public class LC11ContainerWithMostWater {
      */
     public static int maxAreaB(int[] height) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int low = 0;
+        int high = height.length - 1;
+        int max = Math.min(height[low], height[high]) * (high - low);
+        while (low < high){
+            int h = Math.min(height[low], height[high]);
+            max = Math.max(max, h * (high - low));
+            while(low < high && height[low] <= h) low++;
+            while(low < high && height[high] <= h) high--;
+        }
+        return max;
     }
 
     public static void main(String[] args) {

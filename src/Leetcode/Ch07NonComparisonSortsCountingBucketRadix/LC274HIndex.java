@@ -37,7 +37,20 @@ public class LC274HIndex {
      */
     public static int hIndexA(int[] citations) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int[] range = new int[1000 + 1];
+        for(int i = 0; i < range.length; i++){
+            for (int citation : citations) {
+                if (i <= citation) {
+                    range[i]++;
+                }
+            }
+        }
+
+        int ans = Integer.MIN_VALUE;
+        for (int i = 0; i < 1001; i++) {
+            ans = Math.max(ans, Math.min(i, range[i]));
+        }
+        return ans;
     }
 
     /**
@@ -47,7 +60,12 @@ public class LC274HIndex {
      */
     public static int hIndexB(int[] citations) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        Arrays.sort(citations);
+        int max = Integer.MIN_VALUE;
+        for (int j = citations.length - 1; j >= 0; j--) {
+            max = Math.max(max, Math.min(citations.length - j, citations[j]));
+        }
+        return max;
     }
 
     /**
@@ -57,7 +75,21 @@ public class LC274HIndex {
      */
     public static int hIndexC(int[] citations) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+
+        int[] range = new int[1001];
+        for (int citation : citations) {
+            range[citation]++;
+        }
+
+        int sum = 0;
+        int max = Integer.MIN_VALUE;
+        for (int i = range.length - 1; i >= 0; i--) {
+            if(range[i] > 0){
+                sum += range[i];
+                max = Math.max(max, Math.min(sum, i));
+            }
+        }
+        return max;
     }
 
     public static void main(String[] args) {

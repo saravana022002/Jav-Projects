@@ -37,7 +37,14 @@ public class LC344ReverseString {
      */
     public static void reverseStringA(char[] s) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        char[] temp = new char[s.length];
+        int j = 0;
+        for (int i = s.length - 1; i >= 0; i--) {
+            temp[j++] = s[i];
+        }
+        for (int i = 0; i < s.length; i++) {
+            s[i] = temp[i];
+        }
     }
 
     /**
@@ -47,7 +54,16 @@ public class LC344ReverseString {
      */
     public static void reverseStringB(char[] s) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int low = 0;
+        int high = s.length - 1;
+        char temp;
+        while (low < high){
+            temp = s[low];
+            s[low] = s[high];
+            s[high] = temp;
+            low++;
+            high--;
+        }
     }
 
     public static void main(String[] args) {

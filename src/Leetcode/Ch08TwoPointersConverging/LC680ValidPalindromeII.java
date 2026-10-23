@@ -36,8 +36,32 @@ public class LC680ValidPalindromeII {
      * <br>Complete first: ch. 1 Complexity, amortisation, and counting
      */
     public static boolean validPalindromeA(String s) {
-        // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int l;
+        int r;
+        for (int i = 0; i < s.length(); i++) {
+            l = 0;
+            r = s.length() - 1;
+            boolean noPalindrome = false;
+            while (l < r){
+                if(l == i){
+                    l++;
+                }
+                if(r == i){
+                   r--;
+                }
+
+                if(s.charAt(l) != s.charAt(r)){
+                    noPalindrome = true;
+                    break;
+                }
+                l++;
+                r--;
+            }
+            if(!noPalindrome){
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
@@ -46,8 +70,27 @@ public class LC680ValidPalindromeII {
      * <br>Complete first: ch. 8 Two pointers, converging (this chapter)
      */
     public static boolean validPalindromeB(String s) {
-        // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int l = 0;
+        int r = s.length() - 1;
+        while (l < r){
+            if(s.charAt(l) != s.charAt(r)){
+                return isPal(s, l + 1, r) || isPal(s, l, r - 1);
+            }
+            l++;
+            r--;
+        }
+        return true;
+    }
+
+    public static boolean isPal(String s, int l, int r){
+        while (l < r){
+            if(s.charAt(l) != s.charAt(r)){
+                return false;
+            }
+            l++;
+            r--;
+        }
+        return true;
     }
 
     public static void main(String[] args) {

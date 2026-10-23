@@ -1,9 +1,6 @@
 package Leetcode.Ch07NonComparisonSortsCountingBucketRadix;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 import java.util.function.Supplier;
 
 /**
@@ -73,34 +70,60 @@ public class LC347TopKFrequentElements {
      */
     public static int[] topKFrequentC(int[] nums, int k) {
         // TODO: write your solution
-        int[] freq = new int[20001];
-        int max = Integer.MIN_VALUE;
-        for (int i = 0; i < nums.length; i++) {
-            freq[nums[i] + 10000]++;
-            max = Math.max(max, freq[nums[i] + 10000]);
+        int min = nums[0], max = nums[0];
+        for (int v : nums) {
+            min = Math.min(min, v);
+            max = Math.max(max, v);
         }
 
-        List<Integer>[] ch = new List[max + 1];
-        for (int i = 0; i < 20001; i++) {
-            if(freq[i] > 0){
-                if(ch[freq[i]] == null) ch[freq[i]] = new ArrayList<>();
-                ch[freq[i]].add(i - 10000);
-            }
+        int[] freq = new int[max - min + 1];
+
+        int maxFreq = Integer.MIN_VALUE;
+        for (int i = 0; i < nums.length; i++) {
+            freq[nums[i] - min]++;
+            max = Math.max(max, freq[nums[i] - min]);
+        }
+
+        List<Integer>[] ch = new List[maxFreq + 1];
+        for (int i = 0; i < freq.length; i++) {
+            int f = freq[i];
+            if (f == 0) continue;
+            if(ch[f] == null) ch[f] = new ArrayList<>();
+            ch[f].add(i + min);
         }
         int[] ans = new int[k];
         int m = 0;
-        for (int i = ch.length - 1; i >= 0; i--) {
-            if(ch[i] != null){
-                for (int j = 0; j < ch[i].size(); j++) {
-                    ans[m] = ch[i].get(j);
-                    m++;
-                    if(m == k){
-                        break;
-                    }
-                }
+        for (int i = ch.length - 1; i >= 1; i--) {
+            if (ch[i] == null) continue;
+            for (int v : ch[i]) {
+                ans[m++] = v;
+                if(m == k) return ans;
             }
-            if(m == k){
-                break;
+        }
+        return ans;
+    }
+//Map version
+
+    public static int[] topKFrequentD(int[] nums, int k) {
+        // TODO: write your solution
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int num : nums) map.put(num, map.getOrDefault(num, 0) + 1);
+
+        List<Integer>[] ch = new List[nums.length + 1];
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()){
+            int f = entry.getValue();
+            if (f == 0) continue;
+            if(ch[f] == null) ch[f] = new ArrayList<>();
+            ch[f].add(entry.getKey());
+        }
+
+        int[] ans = new int[k];
+        int m = 0;
+        for (int i = ch.length - 1; i >= 1; i--) {
+            if (ch[i] == null) continue;
+            for (int v : ch[i]) {
+                ans[m++] = v;
+                if(m == k) return ans;
             }
         }
         return ans;

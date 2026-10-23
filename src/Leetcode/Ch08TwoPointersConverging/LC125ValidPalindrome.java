@@ -39,7 +39,25 @@ public class LC125ValidPalindrome {
      */
     public static boolean isPalindromeA(String s) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        StringBuilder stringBuilder = new StringBuilder();
+        int j = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if(Character.isAlphabetic(s.charAt(i)) || Character.isDigit(s.charAt(i))) {
+                stringBuilder.append(Character.toLowerCase(s.charAt(i)));
+            }
+        }
+        String comp =  stringBuilder.toString();
+        int low = 0;
+        int high = comp.length() - 1;
+        while (low < high){
+            if(comp.charAt(low) != comp.charAt(high)){
+                return false;
+            }else {
+                low++;
+                high--;
+            }
+        }
+        return true;
     }
 
     /**
@@ -49,7 +67,19 @@ public class LC125ValidPalindrome {
      */
     public static boolean isPalindromeB(String s) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int low = 0;
+        int high = s.length() - 1;
+        while (low < high){
+            while (low < high && !Character.isLetterOrDigit(s.charAt(low))) low++;
+            while (low < high && !Character.isLetterOrDigit(s.charAt(high))) high--;
+            if(Character.toLowerCase(s.charAt(low)) != Character.toLowerCase(s.charAt(high))){
+                return false;
+            }else {
+                low++;
+                high--;
+            }
+        }
+        return true;
     }
 
     public static void main(String[] args) {
