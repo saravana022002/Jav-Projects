@@ -37,7 +37,18 @@ public class LC611ValidTriangleNumber {
      */
     public static int triangleNumberA(int[] nums) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        int ans = 0;
+        Arrays.sort(nums);                                    // ADDED: now nums[k] is always the biggest
+        for (int i = 0; i < nums.length - 2; i++) {
+            for (int j = i + 1; j < nums.length - 1; j++) {
+                for (int k = j + 1; k < nums.length; k++) {
+                    if(nums[i] + nums[j] > nums[k]){
+                        ans++;
+                    }
+                }
+            }
+        }
+        return ans;
     }
 
     /**
@@ -59,7 +70,23 @@ public class LC611ValidTriangleNumber {
      */
     public static int triangleNumberC(int[] nums) {
         // TODO: write your solution
-        throw new UnsupportedOperationException("not solved yet");
+        Arrays.sort(nums);
+        int l;
+        int r;
+        int ans = 0;
+        for (int i = nums.length - 1; i >= 2; i--) {
+            l = 0;
+            r = i - 1;
+            while (l < r){
+                if(nums[l] + nums[r] > nums[i]) {
+                    ans += r - l;
+                    r--;
+                }else {
+                    l++;
+                }
+            }
+        }
+        return ans;
     }
 
     public static void main(String[] args) {
